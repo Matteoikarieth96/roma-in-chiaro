@@ -30,7 +30,9 @@ const js = [
 writeFileSync(join(GEN, "snapshots.js"), js);
 writeFileSync(join(GEN, "snapshots.d.ts"), "/* Generato da scripts/prepare-data.mjs */\nexport const D: Record<string, any>;\nexport const IX: any;\n");
 
-const py = join(ROOT, ".venv/bin/python");
-if (!existsSync(py)) throw new Error("manca " + py + ": crea il venv del progetto (vedi README)");
+/* L'indice usa solo la libreria standard di Python: il venv del progetto se c'è, altrimenti python3
+   del sistema (per esempio sulle macchine di build di Vercel). */
+const venv = join(ROOT, ".venv/bin/python");
+const py = existsSync(venv) ? venv : "python3";
 execFileSync(py, ["-I", join(WEB, "scripts/export_search_index.py"), join(GEN, "search-index.json")], { stdio: "inherit" });
 console.log(`snapshot: ${keys.length} (${keys.join(", ")})`);
