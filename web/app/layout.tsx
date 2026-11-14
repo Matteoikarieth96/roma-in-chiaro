@@ -15,6 +15,8 @@ import "./confronto/confronto.css";
 export const metadata: Metadata = {
   title: "Roma in chiaro",
   description: "Bilancio, appalti, progetti e profilo dei 15 Municipi di Roma Capitale, con fonte e periodo per ogni numero.",
+  openGraph: { title: "Roma in chiaro", description: "I conti dei 15 Municipi di Roma, con fonte e periodo per ogni numero.", siteName: "Roma in chiaro", locale: "it_IT", type: "website" },
+  twitter: { card: "summary_large_image" },
   /* icone: web/app/icon.svg (porpora, rosa col tema scuro) e web/app/apple-icon.png, generate da brand/logo/genera.py */
 };
 export const viewport: Viewport = {
