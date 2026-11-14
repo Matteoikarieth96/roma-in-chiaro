@@ -63,6 +63,21 @@ function fonte(prog: Programma, extra?: string) {
 }
 const NON_PAG = "Sono fondi del programma assegnati, non pagamenti.";
 
+/* Fette della ciambella "Dove vanno i fondi": i gruppi cittadini e i luoghi più grandi, al massimo cinque,
+   gli altri municipi in una sola fetta. Usata qui e nella pagina iniziale (lib/home.ts). */
+export function fette(prog: Programma) {
+  const rs = records(prog);
+  const byArea = (k: string) => rs.filter(x => x.area === k);
+  const parti = [...GRUPPI.map(([k, l]) => { const g = byArea(k); return { label: l, v: sum(g), n: g.length }; }).filter(g => g.v > 0),
+    ...IDS.map(id => { const l = byArea(id); return { label: "Municipio " + ROMANI[id], v: sum(l), n: l.length }; }).filter(m => m.v > 0).sort((a, b) => b.v - a.v)];
+  const keep = parti.slice(0, 5), rest = parti.slice(5);
+  const slices = keep.map((s, i) => ({ ...s, c: `var(--c${i + 1})`, nota: progetti(s.n) }));
+  if (rest.length) { const n = rest.reduce((s, x) => s + x.n, 0); slices.push({ label: `Altri ${rest.length} municipi`, v: rest.reduce((s, x) => s + x.v, 0), n, c: "var(--c-na)", nota: progetti(n) }); }
+  return slices;
+}
+export const fonteFondo = fonte;
+export const NON_PAGAMENTI = NON_PAG;
+
 /* ======================= pagina ======================= */
 export function htmlFondo(prog: Programma) {
   if (!P) return `<div class="hero"><h1>${esc(prog)}</h1></div>` + `<div class="panel"><p class="na-note">Progetti: dato non disponibile in questa versione.</p></div>`;
@@ -84,11 +99,7 @@ export function htmlFondo(prog: Programma) {
   </div>`;
 
   /* --- ciambella --- */
-  const parti = [...gr.filter(g => g.v > 0).map(g => ({ label: g.l, v: g.v, n: g.n })),
-    ...[...mun].filter(m => m.v > 0).sort((a, b) => b.v - a.v).map(m => ({ label: "Municipio " + ROMANI[m.id], v: m.v, n: m.n }))];
-  const keep = parti.slice(0, 5), rest = parti.slice(5);
-  const slices = keep.map((s, i) => ({ ...s, c: `var(--c${i + 1})`, nota: progetti(s.n) }));
-  if (rest.length) { const n = rest.reduce((s, x) => s + x.n, 0); slices.push({ label: `Altri ${rest.length} municipi`, v: rest.reduce((s, x) => s + x.v, 0), n, c: "var(--c-na)", nota: progetti(n) }); }
+  const slices = fette(prog);
   const refA = Math.max(0, ...mun.map(m => m.v), ...gr.map(g => g.v));
   const areeTab = datiTab(["Dove", "Progetti", "Fondi del programma", "Quota"], [
     ...mun.map(m => [`<td data-v="${m.id}"><a href="${R.mun(m.id)}">Municipio ${ROMANI[m.id]}</a></td>`, td(m.n, "int"), td(m.v, "eur", refA), `<td class="num" data-v="${tot ? m.v / tot * 100 : ""}">${pct(m.v, tot)}</td>`]),

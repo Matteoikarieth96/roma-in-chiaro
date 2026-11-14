@@ -20,12 +20,12 @@ const WEB = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = resolve(WEB, "..", "scripts", "da-web.js");
 
 /* in ordine: ogni file usa solo quelli prima di lui e le funzioni globali del sito statico */
-const FILES = ["lib/grafici.ts", "lib/fondi.ts", "lib/municipio-grafici.ts", "lib/confronto.ts", "lib/mappa.ts", "lib/mappa-leaflet.ts"];
-const EXPORTS = ["wireGrafici", "htmlFondo", "wireFondo", "graficiMunicipio", "htmlConfronto", "wireConfronto", "creditoMappa", "fontiMappa", "montaMappa"];
+const FILES = ["lib/grafici.ts", "lib/fondi.ts", "lib/home.ts", "lib/municipio-grafici.ts", "lib/confronto.ts", "lib/mappa.ts", "lib/mappa-leaflet.ts"];
+const EXPORTS = ["wireGrafici", "htmlFondo", "wireFondo", "classificheHome", "torteHome", "graficiMunicipio", "tempoTutti", "htmlConfronto", "wireConfronto", "creditoMappa", "fontiMappa", "montaMappa"];
 
 /* funzioni del sito statico che hanno lo stesso nome in engine.ts e pages.ts: devono esserci */
 const GLOBALI = ["A", "D", "IDS", "M", "POP_SRC", "ROMANI", "aLink", "afterRender", "breaks", "dateIt", "esc", "f1", "f2", "fEur", "fInt", "fmt",
-  "fonteHtml", "groupsOf", "info", "isNum", "kpi", "mapLabels", "metric", "naBlock", "safeUrl", "srcLine", "values"];
+  "fonteHtml", "groupsOf", "info", "isNum", "kpi", "mapLabels", "metric", "metricInfo", "naBlock", "safeUrl", "srcLine", "values"];
 
 /* sostituzioni puntuali: ognuna deve trovare esattamente il testo indicato */
 const SOST = {

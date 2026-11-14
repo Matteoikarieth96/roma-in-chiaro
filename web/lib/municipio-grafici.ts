@@ -87,38 +87,86 @@ function blkMissioni(id: string) {
     fonti([{ snap: "bilancio_peg_2026", testo: "Roma Capitale, PEG 2026-2028, Allegato A, competenza 2026" }]));
 }
 
-/* ======================= bilancio: negli anni e nei prossimi anni ======================= */
-const TIT = [{ label: "Spese correnti", c: "var(--c1)" }, { label: "Investimenti (conto capitale)", c: "var(--c2)" }, { label: "Altre spese (conto terzi e partite di giro)", c: "var(--c-na)" }];
-function blkBilancioAnni(id: string) {
-  const s = D.bilancio_peg_2026?.municipi[id]?.spese; if (!s) return "";
-  /* previsioni: PEG 2026-2028, per titolo */
-  const tit = s.per_titolo || [], get = (c: string, y: string) => tit.find((t: any) => t.codice === c)?.["competenza_" + y];
-  const altre = (y: string) => { const l = tit.filter((t: any) => t.codice !== "U.1" && t.codice !== "U.2").map((t: any) => t["competenza_" + y]); return l.length && l.every(isNum) ? l.reduce((a: number, b: number) => a + b, 0) : null; };
-  const YP = ["2026", "2027", "2028"];
-  const prev = YP.map(y => ({ y, c: get("U.1", y), k: get("U.2", y), a: altre(y), t: s["competenza_" + y] }));
-  const tipP = (r: typeof prev[number]) => `${r.y}: ${fmt(r.t, "eur")} (correnti ${fmt(r.c, "eur")}, investimenti ${fmt(r.k, "eur")}${isNum(r.a) && r.a > 0 ? `, altre ${fmt(r.a, "eur")}` : ""})`;
-  const chPrev = colChart({ rows: prev.map(r => ({ label: r.y, tip: tipP(r), segs: [{ v: r.c, c: TIT[0].c }, { v: r.k, c: TIT[1].c }, { v: r.a, c: TIT[2].c }] })), unit: "eur", aria: `Colonne impilate: stanziamenti previsti 2026-2028 del Municipio ${ROMANI[id]}` });
-  const ref = Math.max(...prev.map(r => r.t).filter(isNum));
-  const tabPrev = datiTab(["Anno", "Spese correnti", "Investimenti", "Altre spese", "Totale"], prev.map(r => [`<td data-v="${r.y}">${r.y}</td>`, td(r.c, "eur", ref), td(r.k, "eur", ref), td(r.a, "eur", ref), td(r.t, "eur", ref)]));
+/* ======================= ieri, oggi, domani: stanziamenti del PEG 2023-2028 =======================
+   Un solo dato, gli stanziamenti di spesa del PEG, in tre viste: spese correnti, tutto il bilancio, peso del municipio sui 15.
+   Ieri e oggi (2023-2026): il PEG di ogni anno, dalla serie controllata (storico). Domani (2027-2028): il PEG 2026-2028.
+   Il 2026 delle due fonti coincide per tutti i municipi (controllato il 14/11/2026). La somma dei 15 si scrive solo
+   se tutti e 15 hanno il valore: niente somme parziali. */
+const ANNI = ["2023", "2024", "2025", "2026", "2027", "2028"], FUT = new Set(["2027", "2028"]);
+const C_PEG = "var(--data)", C_PREV = "color-mix(in srgb, var(--data) 40%, transparent)";
+type VoceBil = "peg_correnti" | "peg_totale";
+function serieBil(id: string, k: VoceBil): (number | null)[] {
+  const st = ser(id, k), sp = D.bilancio_peg_2026?.municipi[id]?.spese;
+  const prev = (y: string) => k === "peg_totale" ? sp?.["competenza_" + y] : (sp?.per_titolo || []).find((t: any) => t.codice === "U.1")?.["competenza_" + y];
+  return ANNI.map(y => { const v = FUT.has(y) ? prev(y) : st?.valori[y]; return isNum(v) ? v : null; });
+}
+function somma15(k: VoceBil) {
+  const tutte = IDS.map(i => serieBil(i, k));
+  return ANNI.map((_, j) => { const l = tutte.map(s => s[j]); return l.every(isNum) ? l.reduce((a: number, b) => a + (b as number), 0) : null; });
+}
+const tipoAnno = (y: string) => y === "2024" ? " (PEG aggiornato a dicembre)" : FUT.has(y) ? " (previsione del PEG 2026-2028)" : "";
+const attoAnno = (y: string) => y === "2024" ? "PEG 2024 aggiornato a dicembre" : FUT.has(y) ? "PEG 2026-2028, previsione" : `PEG ${y}`;
+const xLab = (y: string) => y + (y === "2024" ? "*" : "");
+const LEG_PEG = legend([{ label: "PEG dell'anno", c: C_PEG }, { label: "Previsione 2027-2028", c: C_PREV }]);
 
-  /* negli anni: PEG di ogni anno, dalla serie controllata (solo anni confermati) */
-  const tot = ser(id, "peg_totale"), u1 = ser(id, "peg_correnti"), u2 = ser(id, "peg_capitale");
-  let storia = "";
-  if (tot && u1 && u2) {
-    const ys = Object.keys(tot.valori).sort();
-    const rows = ys.map(y => { const t = tot.valori[y], c = u1.valori[y], k = u2.valori[y];
-      const a = isNum(t) && isNum(c) && isNum(k) && t - c - k > -0.5 ? Math.max(0, Math.round((t - c - k) * 100) / 100) : null;
-      return { y, t, c, k, a, conf: tot.conferma[y] }; });
-    const refS = Math.max(...rows.map(r => r.t).filter(isNum));
-    storia = `<div class="panel"><h3>Negli anni: il PEG di ogni anno</h3>${legend(TIT)}${colChart({ rows: rows.map(r => ({ label: r.y + (r.y === "2024" ? "*" : ""), tip: `${r.y}${r.y === "2024" ? " (PEG aggiornato a dicembre)" : ""}: ${fmt(r.t, "eur")} (correnti ${fmt(r.c, "eur")}, investimenti ${fmt(r.k, "eur")})`, segs: [{ v: r.c, c: TIT[0].c }, { v: r.k, c: TIT[1].c }, { v: r.a, c: TIT[2].c }] })), unit: "eur", aria: `Colonne impilate: stanziamenti del PEG 2023-2026 del Municipio ${ROMANI[id]}` })}
-      ${nota("Ogni colonna è la competenza dell'anno scritta nel PEG di quell'anno. *2024: PEG aggiornato a dicembre (DGC 510/2024), non quello iniziale, quindi più alto. Gli anni prima del 2023 non sono mostrati: una sola tabella, e fino al 2019 un metodo diverso.")}
-      ${datiTab(["Anno", "Spese correnti", "Investimenti", "Altre spese", "Totale", "Controllo"], rows.map(r => [`<td data-v="${r.y}">${r.y}</td>`, td(r.c, "eur", refS), td(r.k, "eur", refS), td(r.a, "eur", refS), td(r.t, "eur", refS), `<td><small>${esc(r.conf || "")}</small></td>`]))}</div>`;
-  } else storia = `<div class="panel"><h3>Negli anni: il PEG di ogni anno</h3>${na("Serie storica: dato non disponibile in questa versione.")}</div>`;
+const colTempo = (vals: (number | null)[], nome: string, cosa: string) => colChart({ rows: ANNI.map((y, i) => ({ label: xLab(y), tip: `${nome}, ${y}${tipoAnno(y)}: ${isNum(vals[i]) ? fmt(vals[i], "eur") : "non disponibile"}`, segs: [{ v: vals[i], c: FUT.has(y) ? C_PREV : C_PEG }] })), unit: "eur", aria: `Colonne: ${cosa.toLowerCase()}, ${nome}, stanziamenti 2023-2028`, stagger: true });
+const FONTI_TEMPO = () => fonti([{ snap: "storico", testo: "PEG di Roma Capitale 2023-2026", extra: "Valori confermati da due tabelle o due letture dello stesso atto." }, { snap: "bilancio_peg_2026", testo: "PEG 2026-2028, competenza 2027 e 2028" }]);
 
-  return sez("Il bilancio negli anni", "Stanziamenti di spesa del municipio per anno, divisi tra spese correnti (personale, servizi, contributi), investimenti (opere e manutenzioni straordinarie) e altre spese (conto terzi e partite di giro). A sinistra quanto ha previsto il PEG di ogni anno; a destra quanto prevede il PEG 2026-2028 per i prossimi due anni. Sono previsioni di spesa, non pagamenti.",
-    `<div class="grid g2">${storia}
-    <div class="panel"><h3>Prossimi anni: il PEG 2026-2028</h3>${legend(TIT)}${chPrev}${nota("Il calo nel 2027 e 2028 è normale: gli investimenti vengono iscritti anno per anno. Non è una previsione di quanto il municipio spenderà.")}${tabPrev}</div></div>`,
-    fonti([{ snap: "storico", testo: "PEG di Roma Capitale 2023-2026", extra: "Valori confermati da due tabelle o due letture dello stesso atto." }, { snap: "bilancio_peg_2026", testo: "PEG 2026-2028, competenza 2026, 2027 e 2028" }]));
+/* pagina Tutti i municipi, in cima: lo stesso dato in aggregato, la somma dei 15 municipi per anno */
+export function tempoTutti() {
+  if (!D.bilancio_peg_2026 || !S) return "";
+  const c = somma15("peg_correnti"), t = somma15("peg_totale");
+  if (!c.some(isNum) && !t.some(isNum)) return "";
+  const ref = Math.max(...t.filter(isNum));
+  const tab = datiTab(["Anno", "Spese correnti", "Tutto il bilancio", "Atto"], ANNI.map((y, i) => [`<td data-v="${y}">${y}</td>`, td(c[i], "eur", ref), td(t[i], "eur", ref), `<td><small>${esc(attoAnno(y))}</small></td>`]));
+  return sez("Ieri, oggi, domani", "Quanto il Piano esecutivo di gestione stanzia per i 15 municipi messi insieme: ieri (2023-2025), oggi (2026) e domani (2027-2028). È la somma dei capitoli dei municipi, non il bilancio di Roma Capitale. Ieri e oggi sono il PEG approvato in ciascun anno; domani sono le previsioni del PEG 2026-2028. Sono previsioni di spesa, non pagamenti. Ogni municipio ha lo stesso grafico nella sua scheda.",
+    `<div class="iod-parte">${LEG_PEG}<div class="grid g2"><div class="panel"><h4>Spese correnti</h4>${colTempo(c, "I 15 municipi insieme", "Spese correnti")}</div><div class="panel"><h4>Tutto il bilancio</h4>${colTempo(t, "I 15 municipi insieme", "Tutto il bilancio")}</div></div>
+    ${nota("Spese correnti: personale, servizi e contributi. Tutto il bilancio: anche investimenti e altre spese. Il calo del totale nel 2027 e 2028 è normale: gli investimenti vengono iscritti anno per anno. *2024: PEG aggiornato a dicembre (DGC 510/2024), quindi più alto. Un anno ha la somma solo se tutti e 15 i municipi hanno il valore.")}${tab}</div>`,
+    FONTI_TEMPO());
+}
+
+function parteBil(id: string, k: VoceBil, h3: string, intro: string, testoNota: string) {
+  const me = serieBil(id, k), tot = somma15(k), chi = `Municipio ${ROMANI[id]}`;
+  if (!me.some(isNum)) return `<div class="iod-parte"><h3>${esc(h3)}</h3>${na("Dato non disponibile in questa versione.")}</div>`;
+  const col = (vals: (number | null)[], nome: string) => colTempo(vals, nome, h3);
+  const conf = ser(id, k)?.conferma || {};
+  const ref = Math.max(...me.filter(isNum));
+  const tab = datiTab(["Anno", chi, "I 15 municipi insieme", "Atto", "Controllo"], ANNI.map((y, i) => [`<td data-v="${y}">${y}</td>`, td(me[i], "eur", ref), td(tot[i], "eur"), `<td><small>${esc(attoAnno(y))}</small></td>`, `<td><small>${esc(FUT.has(y) ? "letto dal PEG 2026-2028" : conf[y] || "")}</small></td>`]));
+  return `<div class="iod-parte"><h3>${esc(h3)}</h3><p class="iod-intro">${esc(intro)}</p>${LEG_PEG}
+    <div class="grid g2"><div class="panel"><h4>${chi}</h4>${col(me, chi)}</div><div class="panel"><h4>I 15 municipi insieme</h4>${col(tot, "I 15 municipi insieme")}</div></div>
+    ${nota(testoNota)}${tab}</div>`;
+}
+
+function parteQuota(id: string) {
+  const tot = somma15("peg_correnti");
+  const q = IDS.map(i => ({ id: i, v: serieBil(i, "peg_correnti").map((v, j) => isNum(v) && isNum(tot[j]) && tot[j]! > 0 ? v / tot[j]! * 100 : null) }));
+  const me = q.find(x => x.id === id)!, chi = `Municipio ${ROMANI[id]}`;
+  if (!me.v.some(isNum)) return `<div class="iod-parte"><h3>Il peso del municipio sui 15</h3>${na("Dato non disponibile in questa versione.")}</div>`;
+  const p1 = (v: number | null) => isNum(v) ? f1.format(v) + "%" : "non disponibile";
+  const estremi = (j: number) => { const l = q.filter(x => isNum(x.v[j])).sort((a, b) => b.v[j]! - a.v[j]!); return { alto: l[0], basso: l[l.length - 1], pos: l.findIndex(x => x.id === id) + 1, n: l.length }; };
+  const ch = lineChart({ x: ANNI, unit: "pct", asse: "percentuale delle spese correnti dei 15 municipi",
+    tips: ANNI.map((y, j) => { const e = estremi(j); return `${y}${tipoAnno(y)}: ${chi} ${p1(me.v[j])} delle spese correnti dei 15 municipi${e.pos ? `, ${e.pos}° su ${e.n}` : ""}`; }),
+    series: [...q.filter(x => x.id !== id).map(x => ({ label: `Municipio ${ROMANI[x.id]}`, c: "var(--c-na)", vals: x.v })), { label: chi, c: "var(--data-hl)", vals: me.v }],
+    aria: `Linee: quota del ${chi} sulle spese correnti dei 15 municipi, 2023-2028, con gli altri 14 municipi` });
+  const leg = `<div class="legend"><span class="li"><i class="lg-me"></i>${chi}</span><span class="li"><i class="lg-o"></i>gli altri 14 municipi</span><span class="li"><i class="lg-prev"></i>Previsione 2027-2028</span></div>`;
+  const tab = datiTab(["Anno", `Quota del ${chi}`, "Posizione", "Quota più alta", "Quota più bassa"], ANNI.map((y, j) => { const e = estremi(j);
+    return [`<td data-v="${y}">${y}${y === "2024" ? "*" : ""}</td>`, cella(p1(me.v[j]), me.v[j] ?? ""), e.pos ? cella(`${e.pos}° su ${e.n}`, e.pos) : cella("non disponibile"),
+      e.alto ? cella(`${p1(e.alto.v[j])} (${ROMANI[e.alto.id]})`, e.alto.v[j]!) : cella("non disponibile"), e.basso ? cella(`${p1(e.basso.v[j])} (${ROMANI[e.basso.id]})`, e.basso.v[j]!) : cella("non disponibile")]; }));
+  return `<div class="iod-parte"><h3>Il peso del municipio sui 15</h3><p class="iod-intro">${esc(`Quanta parte delle spese correnti dei 15 municipi va al ${chi}, anno per anno. Non dipende da quanto cresce o cala il bilancio di tutti: dice se il municipio pesa di più o di meno rispetto agli altri.`)}</p>${leg}
+    <div class="panel iod-q">${ch}${nota("Spese correnti del municipio divise per la somma dei 15 nello stesso anno e nello stesso PEG. Posizione: 1° è la quota più alta. Non tiene conto dei residenti. Un peso più alto o più basso non è un giudizio.")}${tab}</div></div>`;
+}
+
+function blkTempo(id: string) {
+  if (!D.bilancio_peg_2026?.municipi[id]?.spese) return "";
+  const confini = (S?.confini_cambiati || []).includes(id);
+  const corpo = parteBil(id, "peg_correnti", "Spese correnti", "Personale, servizi e contributi: la parte del bilancio che si ripete di anno in anno.",
+    "*2024: PEG aggiornato a dicembre (DGC 510/2024), non quello iniziale, quindi più alto. 2027 e 2028 in colore più tenue: previsioni del PEG 2026-2028, che possono cambiare.")
+    + parteBil(id, "peg_totale", "Tutto il bilancio", "Tutti gli stanziamenti di spesa: spese correnti, investimenti (opere e manutenzioni straordinarie) e altre spese (conto terzi e partite di giro).",
+    "Il calo nel 2027 e 2028 è normale: gli investimenti vengono iscritti anno per anno, quindi gli anni futuri ne contengono pochi. Non è una previsione di quanto il municipio spenderà. *2024: PEG aggiornato a dicembre.")
+    + parteQuota(id);
+  return sez("Ieri, oggi, domani", `Quanto il Piano esecutivo di gestione stanzia per il municipio: ieri (2023-2025), oggi (2026) e domani (2027-2028). Ieri e oggi sono il PEG approvato in ciascun anno; domani sono le previsioni del PEG 2026-2028. Sono previsioni di spesa, non pagamenti. "I 15 municipi insieme" è la somma dei municipi, non il bilancio di Roma Capitale. Gli anni prima del 2023 non sono mostrati: una sola tabella, e fino al 2019 un metodo diverso.${confini ? " " + S.nota_confini : ""}`,
+    corpo,
+    FONTI_TEMPO());
 }
 
 /* ======================= appalti ======================= */
@@ -223,7 +271,7 @@ function blkResidenti(id: string) {
 /* blocks: l'HTML dei blocchi della scheda (MUN_BLOCKS). Ogni gruppo di grafici va dopo il blocco con lo stesso tema;
    se un titolo cambia e il blocco non si trova, i grafici vanno in fondo, prima del profilo. */
 const DOPO: [string, ((id: string) => string)[]][] = [
-  ["Il bilancio del municipio", [blkMissioni, blkBilancioAnni]],
+  ["Il bilancio del municipio", [blkMissioni, blkTempo]],
   ["Appalti avviati dal municipio", [blkAppalti]],
   ["Progetti sul territorio", [blkProgetti]],
   ["Asili nido", [blkNidi]],

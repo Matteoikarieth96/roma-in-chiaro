@@ -41,6 +41,7 @@ export function HomeView() {
     root.querySelector("#pick")?.addEventListener("change", e => setCur((e.target as HTMLSelectElement).value), { signal });
     wireMap(root, signal, id => nav(R.mun(id)));
     montaMappa(root, signal, homeMetric(cur), id => nav(R.mun(id))); /* mappa con i quartieri al posto dell'SVG */
+    const torte = root.querySelector<HTMLElement>(".torte"); if (torte) wireGrafici(torte, signal); /* suggerimenti delle ciambelle, solo lì */
     afterRender(root);
   }} />;
 }
@@ -52,7 +53,7 @@ export function MunicipioView({ id }: { id: string }) {
 
 export function TuttiView() {
   const html = useMemo(() => htmlTutti(), []);
-  return <HtmlView html={html} wire={root => afterRender(root)} />;
+  return <HtmlView html={html} wire={(root, signal) => { wireGrafici(root, signal); afterRender(root); }} />;
 }
 
 /* pagine dei fondi straordinari (PNRR, Giubileo 2025): grafici e tabelle da progetti.json */

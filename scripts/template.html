@@ -88,13 +88,13 @@ button,select,input{font:inherit;color:inherit}
 h1{font:700 clamp(32px,5vw,52px)/1.06 var(--display);letter-spacing:-.028em;margin:0 0 12px}
 h1 em{font-style:normal}
 h2{font:700 24px/1.2 var(--display);letter-spacing:-.018em;margin:0}
-h3{font-size:15px;line-height:1.3;margin:0 0 12px;font-weight:600;display:flex;align-items:center;gap:2px}
+h3{font-size:15px;line-height:1.3;margin:0 0 12px;font-weight:600}
 .lede{font-size:19px;line-height:1.4;color:var(--muted);max-width:60ch;margin:0}
 .hero{padding:48px 0 28px}
 section.block{padding:32px 0 8px}
 section.block>.head{display:flex;justify-content:space-between;gap:12px 16px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
 section.block>.head>div{min-width:0}
-section.block>.head h2{display:flex;align-items:center;gap:2px}
+section.block>.head h2{display:block}
 
 /* schede */
 .panel{background:var(--raised);border-radius:var(--r-lg);padding:22px;box-shadow:var(--shadow);min-width:0;overflow-wrap:anywhere}
@@ -116,7 +116,7 @@ section.block>.head h2{display:flex;align-items:center;gap:2px}
 /* fonte e note */
 .src{font-size:12px;color:var(--soft);margin:10px 0 0;line-height:1.45}
 .src a{color:var(--muted)}
-p.fonte{display:flex;align-items:center;gap:2px;margin-top:12px}
+p.fonte{margin-top:12px}
 .caveat{font-size:13px;background:var(--warn-bg);border-radius:var(--r-md);color:var(--text);padding:12px 14px;margin-top:14px}
 .caveat b{color:var(--warn)}
 .panel ul:not([class]){margin:10px 0;padding-left:20px}
@@ -128,6 +128,8 @@ p.fonte{display:flex;align-items:center;gap:2px;margin-top:12px}
 
 /* icona info e finestra */
 .info{display:inline-grid;place-items:center;flex:none;width:24px;height:24px;margin:-4px 0 -4px 2px;padding:0;border:0;border-radius:50%;background:none;color:var(--soft);cursor:pointer;vertical-align:middle}
+/* icona info attaccata all'ultima parola (incollaInfo in afterRender): non va a capo da sola */
+.info-g{white-space:nowrap}
 .info svg{width:16px;height:16px}
 .info:hover,.info[aria-expanded="true"]{color:var(--accent)}
 #pop{position:fixed;z-index:30;left:0;top:0;max-width:min(360px,calc(100vw - 32px));padding:12px 14px;border-radius:var(--r-md);border:1px solid var(--line);box-shadow:var(--shadow-pop);font-size:13px;line-height:1.45;color:var(--text);font-weight:400;text-align:left;white-space:normal;overflow-wrap:anywhere}
@@ -186,6 +188,20 @@ tr[hidden]{display:none}
 .btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:999px;border:0;background:var(--fill);text-decoration:none;font-size:14px;font-weight:500;cursor:pointer}
 .btn:hover{color:var(--accent)}
 .hero .btn{margin-top:16px}
+/* scheda municipio: quartieri sotto il presidente, ogni nome apre l'area su romaquartieri.it */
+.mun-q{margin:14px 0 0;max-width:82ch;font-size:15px;line-height:1.6;color:var(--muted)}
+.mun-q p{margin:0 0 6px}
+.mun-q a:not(.btn){color:var(--text);text-decoration:none;border-bottom:1px solid var(--line-strong)}
+.mun-q a:not(.btn):hover{color:var(--accent);border-color:currentColor}
+.mq-l{font-weight:600;color:var(--text);margin-right:4px}
+.mq-zf{font-size:14px}
+.mun-q .mq-map{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:12px 0 0}
+.hero .mun-q .btn{margin-top:0}
+.mun-title{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin:0 0 12px}
+.mun-title h1{margin:0}
+.hero .mun-title .btn{margin-top:0;flex:none;width:44px;height:44px;padding:0;justify-content:center}
+.mun-title .btn svg{width:22px;height:22px}
+.mq-map .src{margin:0;display:inline-flex;align-items:center;gap:4px}
 .pick2{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:20px}
 .pick2 label{display:inline-flex;align-items:center;gap:8px;min-width:0}
 .pick2 .btn{margin-top:0}
@@ -202,9 +218,47 @@ td.big{font-weight:600}
 .people small{color:var(--soft)}
 details summary{cursor:pointer;color:var(--muted);font-size:13px;margin-top:12px}
 details[open]>summary{margin-bottom:8px}
-footer{margin-top:56px;padding:28px 0 48px;color:var(--soft);font-size:12px;border-top:1px solid var(--line)}
+footer{margin-top:64px;padding:0 0 40px;color:var(--soft);font-size:12px}
 footer p{margin:0 0 8px;max-width:90ch}
-footer .indip{color:var(--text);font-size:13px;margin-bottom:12px}
+/* piè di pagina: scheda con marchio, avviso di indipendenza e quattro colonne di crediti; sotto le note legali */
+.piede-card{background:var(--raised);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:28px}
+.piede-top{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;padding-bottom:24px;margin-bottom:24px;border-bottom:1px solid var(--line)}
+.piede-brand strong{display:block;font-family:var(--display);font-size:21px;font-weight:700;letter-spacing:-.02em;color:var(--text)}
+.piede-brand p{margin:4px 0 0;font-size:13px;color:var(--muted)}
+.piede-brand .piede-hub{display:flex;align-items:center;gap:8px;margin-top:14px}
+.piede-hub span{font-size:11px;font-weight:500;color:var(--soft)}
+.piede-hub img{height:18px;width:auto;opacity:.9;display:block}
+:root[data-theme="dark"] .piede-hub img{filter:invert(1)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .piede-hub img{filter:invert(1)}}
+footer .indip{flex:0 1 380px;margin:0;padding:12px 16px;border-radius:var(--r-md);background:var(--accent-bg);color:var(--text);font-size:13px;line-height:1.45}
+.piede-cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:24px 32px}
+.piede-t{margin:0 0 12px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--soft)}
+.piede-cols ul{list-style:none;margin:0;padding:0}
+.piede-cols li{margin:0 0 12px;font-size:13px;line-height:1.35;color:var(--text)}
+.piede-cols li small{display:block;margin-top:2px;font-size:12px;color:var(--soft)}
+.piede-cols a{text-decoration:none}
+.piede-cols a:hover{text-decoration:underline}
+.piede-tutte{display:inline-block;margin-top:2px;font-size:13px;font-weight:600;color:var(--accent);text-decoration:none}
+.piede-tutte::after{content:" →"}
+.piede-tutte:hover{text-decoration:underline}
+.piede-legal{padding:20px 4px 0}
+.piede-legal p{margin:0 0 6px;max-width:100ch}
+@media (max-width:959px){.piede-cols{grid-template-columns:1fr 1fr}.piede-top{flex-direction:column}footer .indip{flex-basis:auto}}
+@media (max-width:640px){.piede-card{padding:20px}.piede-cols{grid-template-columns:1fr}footer{margin-top:48px}}
+/* pagina iniziale: classifiche (solo il primo municipio) e ciambelle di PNRR e Giubileo 2025 (lib/home.ts) */
+.primi{margin-top:16px}
+.primo .v{font-size:22px;line-height:1.2}
+.primo .v a{color:var(--accent);text-decoration:none}
+.primo .v a:hover{text-decoration:underline}
+.primi-src{margin-top:10px}
+.torta-h{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px 12px;margin-bottom:16px}
+.torta-h h3{margin:0}
+.torte .dn{grid-template-columns:minmax(0,1fr)}
+.torte .dn svg{margin:0 auto;max-width:200px}
+.piu{font-size:13px;font-weight:600;color:var(--accent);text-decoration:none;white-space:nowrap}
+.piu::after{content:" →"}
+.piu:hover{text-decoration:underline}
+@media (max-width:640px){.primo .v{font-size:18px}}
 
 @media (max-width:640px){
   .hero{padding:28px 0 20px}
@@ -389,12 +443,44 @@ a.rk-r:hover .rk-t{text-decoration:underline}
   <div class="scrim" id="scrim" hidden aria-hidden="true"></div>
   <div class="content" id="content">
 <main id="app" class="wrap"></main>
-<footer><div class="wrap">
-  <p class="indip"><strong>Sito indipendente, non è un sito di Roma Capitale.</strong> Non usa stemmi, loghi o marchi di Roma Capitale.</p>
-  <p>Ogni numero viene da un documento ufficiale: la fonte, il periodo e i limiti sono scritti sotto ogni blocco. Un valore insolito indica dove guardare meglio, non dimostra da solo uno spreco o un illecito.</p>
-  <p>Copyright 2026 contributori di Roma in chiaro, un progetto di Urbe Hub. Codice sotto licenza <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener">GNU AGPL-3.0</a>. Software fornito senza alcuna garanzia. <span id="repo-link">Codice sorgente: in pubblicazione</span>.</p>
-  <p>Impostazione grafica ed editoriale derivata da <a href="https://github.com/Italian-Builders-Org/DoveVannoINostriSoldi">DoveVannoINostriSoldi</a> (AGPL-3.0); questo sito non è affiliato a quel progetto.</p>
-  <p>Confini dei municipi © OpenStreetMap contributors (<a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank" rel="noopener">ODbL 1.0</a>). Dati ANAC sotto <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">CC BY-SA 4.0</a>, anche le tabelle che ne ricaviamo. Documenti di Roma Capitale riusati con citazione della fonte (art. 7 del D.Lgs. 33/2013 e art. 52 del CAD).</p>
+<footer class="piede"><div class="wrap">
+  <div class="piede-card">
+    <div class="piede-top">
+      <div class="piede-brand">
+        <strong><span class="marchio" aria-hidden="true"></span>Roma in chiaro</strong>
+        <p>I conti dei 15 Municipi di Roma, letti solo da documenti ufficiali.</p>
+        <p class="piede-hub"><span>un progetto di</span><img id="piede-logo" alt="Urbe Hub" width="126" height="21"></p>
+      </div>
+      <p class="indip"><strong>Sito indipendente, non è un sito di Roma Capitale.</strong> Non usa stemmi, loghi o marchi di Roma Capitale.</p>
+    </div>
+    <div class="piede-cols">
+      <div>
+        <h2 class="piede-t">Fonti dei dati</h2>
+        <ul id="piede-fonti"></ul>
+        <a class="piede-tutte" href="#/fonti">Tutte le fonti, i periodi e i limiti</a>
+      </div>
+      <div>
+        <h2 class="piede-t">Mappa</h2>
+        <ul>
+          <li><a href="https://romaquartieri.it/" target="_blank" rel="noopener noreferrer">Quartieri di Roma</a> di Urbe Hub<small><a href="https://github.com/urbe-hub/quartieri-roma-2026" target="_blank" rel="noopener noreferrer">Codice su GitHub</a>, licenza MIT</small></li>
+          <li>Confini e mappa di base © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a><small>Licenza ODbL 1.0</small></li>
+          <li>Aree dei quartieri: Roma Capitale, GeoRoma<small>Deliberazione n. 150/2026</small></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="piede-t">Ispirazione</h2>
+        <ul><li><a href="https://github.com/Italian-Builders-Org/DoveVannoINostriSoldi" target="_blank" rel="noopener noreferrer">DoveVannoINostriSoldi</a><small>Impostazione grafica ed editoriale derivata da questo progetto (AGPL-3.0). Non siamo affiliati.</small></li></ul>
+      </div>
+      <div>
+        <h2 class="piede-t">Codice</h2>
+        <ul><li><span id="repo-link">Codice su GitHub: in pubblicazione</span><small>Licenza <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener noreferrer">GNU AGPL-3.0</a></small></li></ul>
+      </div>
+    </div>
+  </div>
+  <div class="piede-legal">
+    <p>Ogni numero viene da un documento ufficiale: la fonte, il periodo e i limiti sono scritti sotto ogni blocco. Un valore insolito indica dove guardare meglio, non dimostra da solo uno spreco o un illecito.</p>
+    <p>Copyright 2026 contributori di Roma in chiaro, un progetto di Urbe Hub. Software fornito senza alcuna garanzia. Dati ANAC sotto <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">CC BY-SA 4.0</a>, anche le tabelle che ne ricaviamo. Documenti di Roma Capitale riusati con citazione della fonte (art. 7 del D.Lgs. 33/2013 e art. 52 del CAD).</p>
+  </div>
 </div></footer>
   </div>
 </div>
@@ -437,7 +523,7 @@ const INFO_SVG = `<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy
 /* html: markup già sicuro, costruito da questo script con esc() */
 const info = (html, label) => `<button type="button" class="info" aria-label="${esc("Più informazioni" + (label ? ": " + label : ""))}" aria-expanded="false" aria-controls="pop" data-info="${esc(html)}">${INFO_SVG}</button>`;
 function addInfo(el, html, label){
-  const b = el.querySelector(":scope > .info");
+  const b = el.querySelector(":scope > .info, :scope > .info-g > .info"); /* .info-g: icona attaccata all'ultima parola (incollaInfo) */
   if(b) b.dataset.info += html; else el.insertAdjacentHTML("beforeend", info(html, label));
 }
 
@@ -624,7 +710,22 @@ function enhanceTables(root){
     });
   });
 }
-function afterRender(root){ if(!/^#\/?fonti/.test(location.hash)) compact(root); enhanceTables(root); }
+/* L'icona info resta attaccata all'ultima parola (span.info-g, white-space:nowrap), come incollaInfo in web/lib/pages.ts:
+   se prima c'è un elemento in linea (non un link), l'icona entra al suo interno; un link corto resta intero con l'icona. */
+function incollaInfo(root){
+  root.querySelectorAll(".info").forEach(b => {
+    if(b.parentElement?.classList.contains("info-g")) return;
+    let prev = b.previousSibling;
+    while(prev instanceof HTMLElement && prev.tagName !== "A" && prev.lastChild && getComputedStyle(prev).display === "inline"){ prev.appendChild(b); prev = b.previousSibling; }
+    const g = document.createElement("span"); g.className = "info-g";
+    if(prev instanceof Text){
+      const m = /\S+\s*$/.exec(prev.textContent || ""); if(!m) return;
+      const parola = prev.splitText(m.index);
+      b.before(g); g.append(parola, b);
+    } else if(prev instanceof HTMLElement && prev.tagName === "A"){ b.before(g); g.append(prev, b); }
+  });
+}
+function afterRender(root){ if(!/^#\/?fonti/.test(location.hash)) compact(root); enhanceTables(root); incollaInfo(root); }
 
 /* ---------- pagine ---------- */
 /* un segnale per pagina mostrata: si chiude quando la pagina cambia e toglie i collegamenti del codice di web/lib */
@@ -642,11 +743,15 @@ function pageHome(){
   <section class="block"><div class="head"><div><h2>La mappa</h2><p>Scegli un indicatore: la mappa e la classifica si aggiornano. Clicca un municipio per aprire la sua scheda.</p></div><div class="metric-pick">${metricSelect(m.id)}</div></div>
     <div class="map-layout"><div class="panel map">${mapSvg(m)}${DAWEB.creditoMappa()}</div><div class="panel"><h3>${esc(m.label)}</h3>${barsRanking(m)}${m.note?`<p class="src">${esc(m.note)}</p>`:""}</div></div>
     ${metricSrc(m)}</section>
-  ${(window.HOME_BLOCKS||[]).map(f=>f()).join("")}`;
+  ${(window.HOME_BLOCKS||[]).map(f=>f()).join("")}
+  ${DAWEB.torteHome ? DAWEB.torteHome() : ""}`;
+  /* classifiche sotto i numeri principali, come in web/lib/pages.ts (DAWEB da web/lib/home.ts, npm run porta) */
+  if(DAWEB.classificheHome){ const g = $("#app .grid.g4"); if(g) g.insertAdjacentHTML("afterend", DAWEB.classificheHome()); }
   const signal = nuovaVista();
   $("#pick").addEventListener("change",e=>{curMetric=e.target.value;pageHome();});
   wireMap($("#app"));
   DAWEB.montaMappa($("#app"), signal, m, id => location.hash = "#/municipio/"+id); /* mappa con i quartieri al posto dell'SVG */
+  if($("#app .torte")) DAWEB.wireGrafici($("#app .torte"), signal); /* suggerimenti delle ciambelle, solo lì */
   afterRender($("#app"));
 }
 
@@ -656,8 +761,7 @@ function pageMunicipio(id){
   const head = (window.MUN_HEAD||[]).map(f=>f(id)).join("");
   $("#app").innerHTML = `
   <div class="hero"><nav class="mun-nav" aria-label="Municipi">${IDS.map(i=>`<a href="#/municipio/${i}"${i===id?' aria-current="page"':""}>${ROMANI[i]}</a>`).join("")}</nav>
-    <h1>Municipio ${ROMANI[id]}</h1>${head}
-    <a class="btn" href="#/confronto/${id}/${id==="1"?"2":"1"}">Confronta con un altro municipio</a></div>
+    <div class="mun-title"><h1>Municipio ${ROMANI[id]}</h1><a class="btn" href="#/confronto/${id}/${id==="1"?"2":"1"}" title="Confronta con un altro municipio" aria-label="Confronta il Municipio ${ROMANI[id]} con un altro municipio"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5v13M14 3.5v13"/><path d="M3.5 6 6 3.5 8.5 6M11.5 14l2.5 2.5 2.5-2.5"/></svg></a></div>${head}</div>
   <div class="grid g4">${(window.MUN_KPIS||[]).map(f=>f(id)).join("")}</div>
   ${DAWEB.graficiMunicipio(id, (window.MUN_BLOCKS||[]).map(f=>f(id)))}
   <section class="block"><div class="head"><div><h2>Profilo del territorio</h2><p>Abitanti, redditi, imprese e servizi. A destra il valore di Roma: sotto ogni numero è scritto se è la somma dei municipi o il totale della città.</p></div></div>
@@ -676,6 +780,7 @@ function pageTutti(){
   $("#app").innerHTML = `
   <div class="hero"><h1>Tutti i municipi</h1>
   <p class="lede">Ogni indicatore per i 15 municipi. Clicca un'intestazione per ordinare.</p></div>
+  ${DAWEB.tempoTutti ? DAWEB.tempoTutti() : ""}
   ${groups.map(g=>{const gc=cols.filter(m=>m.group===g);
     const ref = Object.fromEntries(gc.map(m=>[m.id, Math.max(...IDS.map(id=>m.get(id)).filter(isNum))]));
     return `<section class="block"><div class="head"><div><h2>${esc(g)}</h2><p>Gli indicatori hanno periodi diversi: leggi il periodo sotto ciascun nome prima di metterli in relazione.</p></div></div>
@@ -683,6 +788,7 @@ function pageTutti(){
   <tbody>${IDS.map(id=>`<tr><td data-v="${id}"><a href="#/municipio/${id}">Municipio ${ROMANI[id]}</a></td>${gc.map(m=>{const v=m.get(id);return `<td class="num" data-v="${isNum(v)?v:""}">${fmt(v,m.unit,ref[m.id])}</td>`}).join("")}</tr>`).join("")}
   ${gc.some(m=>isNum(m.roma))?`<tr class="tot"><td>Roma</td>${gc.map(m=>`<td class="num">${fmt(m.roma,m.unit)}${isNum(m.roma)?`<br><small style="font-weight:400">${esc(romaLabelOf(m))}</small>`:""}</td>`).join("")}</tr>`:""}</tbody></table></div>
   ${[...new Set(gc.map(m=>m.snap))].map(s=>srcLine(s)).join("")}</section>`}).join("")}`;
+  DAWEB.wireGrafici($("#app"), nuovaVista()); /* suggerimenti dei grafici "Ieri, oggi, domani" */
   afterRender($("#app"));
 }
 
@@ -827,7 +933,18 @@ function route(){
 window.addEventListener("hashchange",route);
 $("#theme").addEventListener("click",()=>{const r=document.documentElement;const dark=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;r.dataset.theme=dark?"light":"dark";try{localStorage.setItem("tema",r.dataset.theme)}catch(e){}});
 try{const t=localStorage.getItem("tema");if(t)document.documentElement.dataset.theme=t}catch(e){}
-if(safeUrl(REPO_URL)){ $("#repo-link").innerHTML = aLink(safeUrl(REPO_URL), "Codice sorgente");
+/* piè di pagina: fonti principali (snapshot, nome breve, ente), come PIEDE_FONTI in web/components/Shell.tsx; logo copiato dalla barra */
+$("#piede-fonti").innerHTML = [
+  ["bilancio_peg_2026", "Bilancio dei municipi (PEG 2026-2028)", "Roma Capitale"],
+  ["appalti_anac", "Appalti: open data CIG", "ANAC"],
+  ["progetti", "Progetti PNRR, Giubileo e fondi straordinari", "Roma Capitale"],
+  ["nidi", "Asili nido (Dashboard Nidi 2025)", "Roma Capitale"],
+  ["profilo_annuario", "Annuario statistico 2025", "Roma Capitale, Ufficio di Statistica"],
+  ["politica", "Organi politici dei municipi", "Roma Capitale"],
+].filter(([k]) => D[k] && D[k].fonte).map(([k, nome, ente]) => { const u = safeUrl(D[k].fonte.url);
+  return `<li>${u ? `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(nome)}</a>` : esc(nome)}<small>${esc(ente)}</small></li>`; }).join("");
+$("#piede-logo").src = $(".donor img").src;
+if(safeUrl(REPO_URL)){ $("#repo-link").innerHTML = `<a href="${esc(safeUrl(REPO_URL))}" target="_blank" rel="noopener noreferrer">Roma in chiaro su GitHub</a>`;
   const c = $("#repo-side .side-txt"); c.outerHTML = `<a href="${esc(safeUrl(REPO_URL))}" target="_blank" rel="noopener noreferrer">${c.querySelector("svg").outerHTML}<span>GitHub</span></a>`; }
 route();
 </script>

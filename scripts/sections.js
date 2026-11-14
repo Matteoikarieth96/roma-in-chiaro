@@ -128,13 +128,7 @@ if (D.progetti) {
     const all = sum + ["piu_municipi", "intermunicipale", "senza_municipio"].reduce((s, k) => s + (c[k]?.importo_totale_euro || 0), 0);
     return kpi("Progetti PNRR, Giubileo e fondi UE sul territorio dei municipi", sum, "eur", `su ${euroLike(all)} di progetti elencati da Roma Capitale. Li gestiscono per lo più i dipartimenti centrali.`, `<a href="#/fonti">pagine progetti</a>`);
   });
-  HOME_BLOCKS.push(() => {
-    const c = P.cittadino || {}, sum = IDS.reduce((s, id) => s + (pm(id)?.importo_totale_euro || 0), 0);
-    const rows = [{ label: "In un solo municipio", v: sum }, { label: "Su più municipi", v: c.piu_municipi?.importo_totale_euro },
-      { label: "Intermunicipali", v: c.intermunicipale?.importo_totale_euro }, { label: "Senza municipio indicato", v: c.senza_municipio?.importo_totale_euro }];
-    return `<section class="block"><div class="head"><div><h2>Dove finiscono i fondi straordinari</h2><p>PNRR, Giubileo 2025, PN Metro e fondi UE gestiti da Roma Capitale. Più della metà dell'importo riguarda opere su più municipi o sull'intera città, quindi non entra nelle schede dei singoli municipi. ${GESTIONE}${NOTA_IMP}</p></div></div>
-    <div class="panel">${barsList(rows, "eur")}</div>${srcLine("progetti", "elenco letto il " + dateIt(P.verificato))}</section>`;
-  });
+  /* nella pagina iniziale, al posto delle barre "Dove finiscono i fondi straordinari", le ciambelle di PNRR e Giubileo 2025 (DAWEB.torteHome, da web/lib/home.ts) */
   MUN_KPIS.push(id => kpi("Progetti PNRR, Giubileo e fondi UE sul territorio", pm(id)?.importo_totale_euro, "eur", `${fmt(pm(id)?.n_progetti, "int")} progetti collocati nel municipio`, "Roma Capitale, pagine progetti"));
   const FONTE_MUN = { testo_scheda: "municipio indicato nel testo della scheda", testo_programma: "municipio indicato nel testo del programma", cup_per_municipio: "scheda unica per più municipi, con un CUP e un importo per ciascuno" };
   MUN_BLOCKS.push(id => {
@@ -205,6 +199,31 @@ if (D.politica) {
         ${barsList(groups.map(([g, l]) => ({ label: g, v: l.length })), "int")}
         <details><summary>Elenco dei consiglieri</summary><ul class="people">${cons.map(c => `<li>${esc(c.nome)}${c.ruolo ? ` · ${esc(c.ruolo)}` : ""}<br><small>${esc(c.gruppo || c.gruppo_da_simbolo || "")}</small></li>`).join("")}</ul></details></div>
     </div>${srcLine("politica", "composizione pubblicata al " + dateIt(P.verificato))}</section>`;
+  });
+}
+
+/* ---------------- quartieri: i nomi delle aree del municipio, sotto il presidente ----------------
+   Ogni nome apre la sua area su Quartieri di Roma (romaquartieri.it/#<codice>): la mappa usa gli stessi
+   codici della deliberazione 150/2026 (controllati tutti e 457 il 14/11/2026). Uguale a web/lib/engine.ts. */
+const MAPPA_ROMA = "https://romaquartieri.it/";
+if (D.quartieri?.aree?.length) {
+  const Q = D.quartieri;
+  MUN_HEAD.push(id => {
+    const aree = Q.aree.filter(a => String(a.municipio) === id).sort((a, b) => a.nome.localeCompare(b.nome, "it"));
+    if (!aree.length) return "";
+    const nomeTipo = a => a.tipo[0].toUpperCase() + a.tipo.slice(1);
+    const link = a => `<a href="${esc(MAPPA_ROMA + "#" + encodeURIComponent(a.codice))}" target="_blank" rel="noopener" title="${esc(`${nomeTipo(a)} ${a.nome}: apri sulla mappa`)}">${esc(a.nome)}</a>`;
+    const riga = (l, xs, cls = "") => xs.length ? `<p${cls ? ` class="${cls}"` : ""}><span class="mq-l">${l} (${xs.length})</span> ${xs.map(link).join(", ")}</p>` : "";
+    const rq = aree.filter(a => a.tipo !== "zona funzionale"), zf = aree.filter(a => a.tipo === "zona funzionale");
+    const nR = rq.filter(a => a.tipo === "rione").length;
+    const conta = [nR ? `${nR} ${nR === 1 ? "rione" : "rioni"}` : "", rq.length - nR ? `${rq.length - nR} ${rq.length - nR === 1 ? "quartiere" : "quartieri"}` : "", zf.length ? `${zf.length} ${zf.length === 1 ? "zona funzionale" : "zone funzionali"}` : ""].filter(Boolean).join(", ");
+    const nm = Array.isArray(Q.non_misura) ? Q.non_misura : (Q.non_misura ? [Q.non_misura] : []);
+    const det = `<p>Le ${aree.length} aree del municipio secondo la deliberazione A.C. n. 150/2026: ${conta}. Le zone funzionali non sono né quartieri né rioni: per esempio parchi, riserve, aree militari, industriali o cimiteriali.</p>`
+      + `<p>Fonte: ${fonteHtml(Q.fonte)}${Q.fonte?.ente ? ", " + esc(Q.fonte.ente) : ""}. File scaricati il ${dateIt(Q.verificato)}.</p>`
+      + (nm.length ? `<p>Cosa non dice: ${nm.map(esc).join(" ")}</p>` : "")
+      + `<p>Ogni nome apre la sua area sulla mappa Quartieri di Roma di Urbe Hub, che usa gli stessi codici.</p>`;
+    return `<div class="mun-q">${riga(nR ? "Rioni e quartieri" : "Quartieri", rq)}${riga("Zone funzionali", zf, "mq-zf")}
+      <p class="mq-map"><a class="btn" href="${MAPPA_ROMA}" target="_blank" rel="noopener">Apri la mappa dei quartieri di Roma<span aria-hidden="true">↗</span></a><span class="src">Nomi: Roma Capitale, deliberazione 150/2026${info(det, "quartieri")}</span></p></div>`;
   });
 }
 

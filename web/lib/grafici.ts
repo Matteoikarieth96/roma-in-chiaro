@@ -17,6 +17,7 @@ const num = (v: number) => (Number.isInteger(v) ? fInt.format(v) : f1.format(v))
 function tick(v: number, unit: string, top: number) {
   if (v === 0) return "0";
   if (unit === "eur") return top >= 1e9 ? num(v / 1e9) + " mld" : top >= 1e6 ? num(v / 1e6) + " mln" : fInt.format(v);
+  if (unit === "pct") return num(v) + "%";
   return fInt.format(v);
 }
 /* asse: per i conteggi dice che cosa si conta (default: progetti) */

@@ -6,8 +6,9 @@ import {
   fonteHtml, groupsOf, info, isNum, licenzaTesto, mapSvg, metric, metricInfo, metricSelect, metricSrc, naBlock, romaLabelOf, safeUrl, srcLine, values,
 } from "./engine";
 import { R } from "./routes";
-import { graficiMunicipio } from "./municipio-grafici";
+import { graficiMunicipio, tempoTutti } from "./municipio-grafici";
 import { creditoMappa, fontiMappa } from "./mappa";
+import { classificheHome, torteHome } from "./home";
 
 export type Nav = (href: string) => void;
 
@@ -60,7 +61,23 @@ function enhanceTables(root: HTMLElement) {
     });
   });
 }
-export function afterRender(root: HTMLElement, fonti = false) { if (!fonti) compact(root); enhanceTables(root); }
+/* L'icona info resta attaccata all'ultima parola (span.info-g, white-space:nowrap): senza, a fine riga andava a capo
+   da sola. Se prima c'è un elemento in linea (non un link), l'icona entra al suo interno dopo l'ultimo testo;
+   un link corto resta intero con l'icona. Gira dopo compact, che cerca le icone come figlie dirette. */
+function incollaInfo(root: HTMLElement) {
+  root.querySelectorAll<HTMLElement>(".info").forEach(b => {
+    if (b.parentElement?.classList.contains("info-g")) return;
+    let prev = b.previousSibling;
+    while (prev instanceof HTMLElement && prev.tagName !== "A" && prev.lastChild && getComputedStyle(prev).display === "inline") { prev.appendChild(b); prev = b.previousSibling; }
+    const g = document.createElement("span"); g.className = "info-g";
+    if (prev instanceof Text) {
+      const m = /\S+\s*$/.exec(prev.textContent || ""); if (!m) return;
+      const parola = prev.splitText(m.index);
+      b.before(g); g.append(parola, b);
+    } else if (prev instanceof HTMLElement && prev.tagName === "A") { b.before(g); g.append(prev, b); }
+  });
+}
+export function afterRender(root: HTMLElement, fonti = false) { if (!fonti) compact(root); enhanceTables(root); incollaInfo(root); }
 
 export function wireMap(root: HTMLElement, signal: AbortSignal, onClick: (id: string) => void) {
   const tip = document.getElementById("tip");
@@ -81,10 +98,12 @@ export function htmlHome(cur: string | null) {
   <div class="hero"><div class="hero-marchio"><span class="marchio" aria-hidden="true"></span><h1>Dove vanno i soldi dei Municipi di Roma</h1></div>
     <p class="lede">Bilancio, appalti, progetti e servizi dei 15 municipi. Ogni numero ha fonte e periodo.</p></div>
   ${heroKpis ? `<div class="grid g4">${heroKpis}</div>` : ""}
+  ${classificheHome()}
   <section class="block"><div class="head"><div><h2>La mappa</h2><p>Scegli un indicatore: la mappa e la classifica si aggiornano. Clicca un municipio per aprire la sua scheda.</p></div><div class="metric-pick">${metricSelect(m.id)}</div></div>
     <div class="map-layout"><div class="panel map">${mapSvg(m)}${creditoMappa()}</div><div class="panel"><h3>${esc(m.label)}</h3>${barsRanking(m)}${m.note ? `<p class="src">${esc(m.note)}</p>` : ""}</div></div>
     ${metricSrc(m)}</section>
-  ${HOME_BLOCKS.map(f => f()).join("")}`;
+  ${HOME_BLOCKS.map(f => f()).join("")}
+  ${torteHome()}`;
 }
 
 export function htmlMunicipio(id: string) {
@@ -92,8 +111,7 @@ export function htmlMunicipio(id: string) {
   const head = MUN_HEAD.map(f => f(id)).join("");
   return `
   <div class="hero"><nav class="mun-nav" aria-label="Municipi">${IDS.map(i => `<a href="${R.mun(i)}"${i === id ? ' aria-current="page"' : ""}>${ROMANI[i]}</a>`).join("")}</nav>
-    <h1>Municipio ${ROMANI[id]}</h1>${head}
-    <a class="btn" href="${R.conf(id, id === "1" ? "2" : "1")}">Confronta con un altro municipio</a></div>
+    <div class="mun-title"><h1>Municipio ${ROMANI[id]}</h1><a class="btn" href="${R.conf(id, id === "1" ? "2" : "1")}" title="Confronta con un altro municipio" aria-label="Confronta il Municipio ${ROMANI[id]} con un altro municipio"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5v13M14 3.5v13"/><path d="M3.5 6 6 3.5 8.5 6M11.5 14l2.5 2.5 2.5-2.5"/></svg></a></div>${head}</div>
   <div class="grid g4">${MUN_KPIS.map(f => f(id)).join("")}</div>
   ${graficiMunicipio(id, MUN_BLOCKS.map(f => f(id)))}
   <section class="block"><div class="head"><div><h2>Profilo del territorio</h2><p>Abitanti, redditi, imprese e servizi. A destra il valore di Roma: sotto ogni numero è scritto se è la somma dei municipi o il totale della città.</p></div></div>
@@ -110,6 +128,7 @@ export function htmlTutti() {
   return `
   <div class="hero"><h1>Tutti i municipi</h1>
   <p class="lede">Ogni indicatore per i 15 municipi. Clicca un'intestazione per ordinare.</p></div>
+  ${tempoTutti()}
   ${groups.map(g => { const gc = cols.filter(m => m.group === g);
     const ref = Object.fromEntries(gc.map(m => [m.id, Math.max(...IDS.map(id => m.get(id)).filter(isNum))]));
     return `<section class="block"><div class="head"><div><h2>${esc(g)}</h2><p>Gli indicatori hanno periodi diversi: leggi il periodo sotto ciascun nome prima di metterli in relazione.</p></div></div>

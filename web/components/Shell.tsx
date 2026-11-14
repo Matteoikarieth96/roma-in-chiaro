@@ -4,7 +4,8 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
-import { REPO_URL, safeUrl } from "@/lib/engine";
+import { D, REPO_URL, safeUrl } from "@/lib/engine";
+import { OSM_COPYRIGHT, QR_REPO, QR_SITO } from "@/lib/mappa";
 import { BASE, R, fromHash, stripBase } from "@/lib/routes";
 import { focusRicerca } from "./views";
 
@@ -32,6 +33,16 @@ export const TELEGRAM = "https://t.me/+X7hXSib0Q-o5MTQ0";
 const IC_MAIL = ic(<><rect x="2.75" y="4.25" width="14.5" height="11.5" rx="2" /><path d="m3.5 5.5 6.5 5 6.5-5" /></>);
 const IC_CHAT = ic(<><path d="M17.25 3 2.75 9l5.5 2 2 5.75z" /><path d="M8.25 11 17.25 3" /></>);
 const IC_CODE = ic(<path d="M7 6 3 10l4 4M13 6l4 4-4 4" />);
+
+/* Piè di pagina: fonti principali (snapshot, nome breve, ente). L'indirizzo viene dallo snapshot; uguale in scripts/template.html. */
+const PIEDE_FONTI: [string, string, string][] = [
+  ["bilancio_peg_2026", "Bilancio dei municipi (PEG 2026-2028)", "Roma Capitale"],
+  ["appalti_anac", "Appalti: open data CIG", "ANAC"],
+  ["progetti", "Progetti PNRR, Giubileo e fondi straordinari", "Roma Capitale"],
+  ["nidi", "Asili nido (Dashboard Nidi 2025)", "Roma Capitale"],
+  ["profilo_annuario", "Annuario statistico 2025", "Roma Capitale, Ufficio di Statistica"],
+  ["politica", "Organi politici dei municipi", "Roma Capitale"],
+];
 
 const MOBILE = "(max-width: 959px)";
 /* colonna del menu chiusa sul computer: data-menu="chiuso" su <html> (messo prima del primo disegno da app/layout.tsx) */
@@ -194,12 +205,47 @@ export default function Shell({ children, logo }: { children: ReactNode; logo: {
 
         <div className="content" inert={drawer || undefined}>
           {children}
-          <footer><div className="wrap">
-            <p className="indip"><strong>Sito indipendente, non è un sito di Roma Capitale.</strong> Non usa stemmi, loghi o marchi di Roma Capitale.</p>
-            <p>Ogni numero viene da un documento ufficiale: la fonte, il periodo e i limiti sono scritti sotto ogni blocco. Un valore insolito indica dove guardare meglio, non dimostra da solo uno spreco o un illecito.</p>
-            <p>Copyright 2026 contributori di Roma in chiaro, un progetto di Urbe Hub. Codice sotto licenza <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener">GNU AGPL-3.0</a>. Software fornito senza alcuna garanzia. <span id="repo-link">{repo ? <a href={repo} target="_blank" rel="noopener">Codice sorgente</a> : "Codice sorgente: in pubblicazione"}</span>.</p>
-            <p>Impostazione grafica ed editoriale derivata da <a href="https://github.com/Italian-Builders-Org/DoveVannoINostriSoldi">DoveVannoINostriSoldi</a> (AGPL-3.0); questo sito non è affiliato a quel progetto.</p>
-            <p>Confini dei municipi © OpenStreetMap contributors (<a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank" rel="noopener">ODbL 1.0</a>). Dati ANAC sotto <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">CC BY-SA 4.0</a>, anche le tabelle che ne ricaviamo. Documenti di Roma Capitale riusati con citazione della fonte (art. 7 del D.Lgs. 33/2013 e art. 52 del CAD).</p>
+          <footer className="piede"><div className="wrap">
+            <div className="piede-card">
+              <div className="piede-top">
+                <div className="piede-brand">
+                  <strong><span className="marchio" aria-hidden="true" />Roma in chiaro</strong>
+                  <p>I conti dei 15 Municipi di Roma, letti solo da documenti ufficiali.</p>
+                  <p className="piede-hub"><span>un progetto di</span><img src={logo.src} alt="Urbe Hub" width={126} height={21} /></p>
+                </div>
+                <p className="indip"><strong>Sito indipendente, non è un sito di Roma Capitale.</strong> Non usa stemmi, loghi o marchi di Roma Capitale.</p>
+              </div>
+              <div className="piede-cols">
+                <div>
+                  <h2 className="piede-t">Fonti dei dati</h2>
+                  <ul>{PIEDE_FONTI.filter(([k]) => D[k]?.fonte).map(([k, nome, ente]) => {
+                    const u = safeUrl(D[k].fonte.url);
+                    return <li key={k}>{u ? <a href={u} target="_blank" rel="noopener noreferrer">{nome}</a> : nome}<small>{ente}</small></li>;
+                  })}</ul>
+                  <Link className="piede-tutte" href="/fonti/">Tutte le fonti, i periodi e i limiti</Link>
+                </div>
+                <div>
+                  <h2 className="piede-t">Mappa</h2>
+                  <ul>
+                    <li><a href={QR_SITO} target="_blank" rel="noopener noreferrer">Quartieri di Roma</a> di Urbe Hub<small><a href={QR_REPO} target="_blank" rel="noopener noreferrer">Codice su GitHub</a>, licenza MIT</small></li>
+                    <li>Confini e mappa di base © <a href={OSM_COPYRIGHT} target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a><small>Licenza ODbL 1.0</small></li>
+                    <li>Aree dei quartieri: Roma Capitale, GeoRoma<small>Deliberazione n. 150/2026</small></li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="piede-t">Ispirazione</h2>
+                  <ul><li><a href="https://github.com/Italian-Builders-Org/DoveVannoINostriSoldi" target="_blank" rel="noopener noreferrer">DoveVannoINostriSoldi</a><small>Impostazione grafica ed editoriale derivata da questo progetto (AGPL-3.0). Non siamo affiliati.</small></li></ul>
+                </div>
+                <div>
+                  <h2 className="piede-t">Codice</h2>
+                  <ul><li><span id="repo-link">{repo ? <a href={repo} target="_blank" rel="noopener noreferrer">Roma in chiaro su GitHub</a> : "Codice su GitHub: in pubblicazione"}</span><small>Licenza <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener noreferrer">GNU AGPL-3.0</a></small></li></ul>
+                </div>
+              </div>
+            </div>
+            <div className="piede-legal">
+              <p>Ogni numero viene da un documento ufficiale: la fonte, il periodo e i limiti sono scritti sotto ogni blocco. Un valore insolito indica dove guardare meglio, non dimostra da solo uno spreco o un illecito.</p>
+              <p>Copyright 2026 contributori di Roma in chiaro, un progetto di Urbe Hub. Software fornito senza alcuna garanzia. Dati ANAC sotto <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">CC BY-SA 4.0</a>, anche le tabelle che ne ricaviamo. Documenti di Roma Capitale riusati con citazione della fonte (art. 7 del D.Lgs. 33/2013 e art. 52 del CAD).</p>
+            </div>
           </div></footer>
         </div>
       </div>
