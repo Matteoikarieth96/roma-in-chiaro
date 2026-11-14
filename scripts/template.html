@@ -370,9 +370,9 @@ a.rk-r:hover .rk-t{text-decoration:underline}
       <div class="grp"><p class="grp-t">Fondi straordinari</p><ul><li><a href="#/pnrr"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5h14"/><path d="M5 16.5V9.5M10 16.5V6M15 16.5V11.5"/><path d="M3.5 7.5 10 3l6.5 4.5"/></svg><span>PNRR</span></a></li><li><a href="#/giubileo-2025"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.75v5.5M7.25 5.5h5.5"/><path d="M4 17.25V11a6 6 0 0 1 12 0v6.25"/><path d="M2.75 17.25h14.5"/></svg><span>Giubileo 2025</span></a></li></ul></div>
     </nav>
     <div class="grp contatti"><p class="grp-t">Contatti</p><ul>
-      <li><a href="mailto:matteo.dandreta@gmail.com"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="4.25" width="14.5" height="11.5" rx="2"/><path d="m3.5 5.5 6.5 5 6.5-5"/></svg><span>Segnalazioni, correzioni e nuovi dati: scrivi a<small>matteo.dandreta@<wbr>gmail.com</small></span></a></li>
-      <li><a href="https://t.me/+X7hXSib0Q-o5MTQ0" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17.25 3 2.75 9l5.5 2 2 5.75z"/><path d="M8.25 11 17.25 3"/></svg><span>Gruppo Telegram di Urbe Hub</span></a></li>
-      <li id="repo-side"><span class="side-txt"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 6 3 10l4 4M13 6l4 4-4 4"/></svg><span>Codice su GitHub: in arrivo</span></span></li>
+      <li><a href="mailto:matteo.dandreta@gmail.com" title="matteo.dandreta@gmail.com"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="4.25" width="14.5" height="11.5" rx="2"/><path d="m3.5 5.5 6.5 5 6.5-5"/></svg><span>Segnalazioni</span></a></li>
+      <li><a href="https://t.me/+X7hXSib0Q-o5MTQ0" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17.25 3 2.75 9l5.5 2 2 5.75z"/><path d="M8.25 11 17.25 3"/></svg><span>Urbe Hub TG</span></a></li>
+      <li id="repo-side"><span class="side-txt"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 6 3 10l4 4M13 6l4 4-4 4"/></svg><span>GitHub: in arrivo</span></span></li>
     </ul></div>
   </aside>
   <div class="scrim" id="scrim" hidden aria-hidden="true"></div>
@@ -817,7 +817,7 @@ window.addEventListener("hashchange",route);
 $("#theme").addEventListener("click",()=>{const r=document.documentElement;const dark=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;r.dataset.theme=dark?"light":"dark";try{localStorage.setItem("tema",r.dataset.theme)}catch(e){}});
 try{const t=localStorage.getItem("tema");if(t)document.documentElement.dataset.theme=t}catch(e){}
 if(safeUrl(REPO_URL)){ $("#repo-link").innerHTML = aLink(safeUrl(REPO_URL), "Codice sorgente");
-  const c = $("#repo-side .side-txt"); c.outerHTML = `<a href="${esc(safeUrl(REPO_URL))}" target="_blank" rel="noopener noreferrer">${c.querySelector("svg").outerHTML}<span>Codice su GitHub</span></a>`; }
+  const c = $("#repo-side .side-txt"); c.outerHTML = `<a href="${esc(safeUrl(REPO_URL))}" target="_blank" rel="noopener noreferrer">${c.querySelector("svg").outerHTML}<span>GitHub</span></a>`; }
 route();
 </script>
 </body>

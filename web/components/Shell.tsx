@@ -182,11 +182,11 @@ export default function Shell({ children, logo }: { children: ReactNode; logo: {
           <div className="grp contatti">
             <p className="grp-t">Contatti</p>
             <ul>
-              <li><a href={"mailto:" + EMAIL}>{IC_MAIL}<span>Segnalazioni, correzioni e nuovi dati: scrivi a<small>{EMAIL.split("@")[0]}@<wbr />{EMAIL.split("@")[1]}</small></span></a></li>
-              <li><a href={TELEGRAM} target="_blank" rel="noopener noreferrer">{IC_CHAT}<span>Gruppo Telegram di Urbe Hub</span></a></li>
+              <li><a href={"mailto:" + EMAIL} title={EMAIL}>{IC_MAIL}<span>Segnalazioni</span></a></li>
+              <li><a href={TELEGRAM} target="_blank" rel="noopener noreferrer">{IC_CHAT}<span>Urbe Hub TG</span></a></li>
               <li>{repo
-                ? <a href={repo} target="_blank" rel="noopener noreferrer">{IC_CODE}<span>Codice su GitHub</span></a>
-                : <span className="side-txt">{IC_CODE}<span>Codice su GitHub: in arrivo</span></span>}</li>
+                ? <a href={repo} target="_blank" rel="noopener noreferrer">{IC_CODE}<span>GitHub</span></a>
+                : <span className="side-txt">{IC_CODE}<span>GitHub: in arrivo</span></span>}</li>
             </ul>
           </div>
         </aside>
