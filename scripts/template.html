@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Roma in chiaro</title>
+<link rel="icon" type="image/svg+xml" href="__ROMA_ICON__">
 <meta name="description" content="Bilancio, appalti, progetti e profilo dei 15 Municipi di Roma Capitale, con fonte e periodo per ogni numero.">
 <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
@@ -350,13 +351,23 @@ a.rk-r:hover .rk-t{text-decoration:underline}
   .dn-leg li{grid-template-columns:14px minmax(0,1fr) auto 46px;gap:8px}
 }
 @media (prefers-reduced-motion:no-preference){.seg button{transition:background .15s}}
+
+/* Logo Roma in chiaro: la forma fa da maschera, il colore e' quello del tema (porpora, rosa col tema scuro) */
+.marchio{display:inline-block;flex:0 0 auto;height:var(--marchio,30px);aspect-ratio:80.58/100;background:var(--accent);-webkit-mask:url(__ROMA_LOGO__) center/contain no-repeat;mask:url(__ROMA_LOGO__) center/contain no-repeat}
+.brand{flex-direction:row;align-items:center;gap:10px}
+.brand-t{display:flex;flex-direction:column;min-width:0}
+.side-head strong{display:flex;align-items:center;gap:8px;--marchio:22px}
+.piede-brand strong{display:flex;align-items:center;gap:10px;--marchio:28px}
+.hero-marchio{display:flex;align-items:center;gap:18px;margin-bottom:12px;--marchio:76px}
+.hero-marchio h1{margin:0}
+@media (max-width:640px){.brand{gap:8px} .brand .marchio{--marchio:26px} .hero-marchio{gap:12px;--marchio:52px}}
 </style>
 <script>/* colonna del menu chiusa sul computer: prima del primo disegno */try{if(localStorage.getItem("menu")==="chiuso")document.documentElement.dataset.menu="chiuso"}catch(e){}</script>
 </head>
 <body>
 <header class="topbar" id="topbar"><div class="in">
   <button class="theme menu-btn" id="menu-btn" type="button" aria-label="Chiudi il menu" aria-controls="menu" aria-expanded="true"><svg class="ic-burger" viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 6h13M3.5 10h13M3.5 14h13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><svg class="ic-side" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="2.75" y="3.75" width="14.5" height="12.5" rx="2.25"/><path d="M7.75 3.75v12.5"/></svg></button>
-  <a class="brand" href="#/"><strong>Roma in chiaro</strong><small>I conti dei 15 Municipi di Roma</small></a>
+  <a class="brand" href="#/"><span class="marchio" aria-hidden="true"></span><span class="brand-t"><strong>Roma in chiaro</strong><small>I conti dei 15 Municipi di Roma</small></span></a>
   <div class="donor"><span>un progetto di</span><img src="__URBE_LOGO__" alt="Urbe Hub" width="126" height="21"></div>
   <div class="tools">
   <button class="theme" type="button" id="theme" aria-label="Cambia tema"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 2.5a7.5 7.5 0 0 1 0 15z" fill="currentColor"/></svg></button>
@@ -364,7 +375,7 @@ a.rk-r:hover .rk-t{text-decoration:underline}
 </div></header>
 <div class="frame">
   <aside id="menu" class="side">
-    <div class="side-head"><strong>Roma in chiaro</strong><button class="theme" type="button" id="menu-close" aria-label="Chiudi il menu"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5 5 15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button></div>
+    <div class="side-head"><strong><span class="marchio" aria-hidden="true"></span>Roma in chiaro</strong><button class="theme" type="button" id="menu-close" aria-label="Chiudi il menu"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5 5 15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button></div>
     <nav aria-label="Sezioni">
       <div class="grp"><ul><li><a href="#/"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.75 5.25 7.25 3.5l5.5 2 4.5-1.75v11L12.75 16.5l-5.5-2-4.5 1.75z"/><path d="M7.25 3.5v11M12.75 5.5v11"/></svg><span>Mappa</span></a></li><li><a href="#/municipio/1"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4.25" y="2.75" width="11.5" height="14.5" rx="2.25"/><path d="M7.5 7h5M7.5 10h5M7.5 13h3"/></svg><span>Schede</span></a></li><li><a href="#/tutti"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="3.75" width="14.5" height="12.5" rx="2.25"/><path d="M2.75 8h14.5M2.75 12h14.5M7.75 3.75v12.5"/></svg><span>Tutti i municipi</span></a></li><li><a href="#/confronto"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5v13M14 3.5v13"/><path d="M3.5 6 6 3.5 8.5 6M11.5 14l2.5 2.5 2.5-2.5"/></svg><span>Confronta</span></a></li><li><a href="#/fonti"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.75A1.75 1.75 0 0 1 5.75 3H16v11.5H5.75A1.75 1.75 0 0 0 4 16.25z"/><path d="M4 16.25A1.75 1.75 0 0 0 5.75 18H16"/></svg><span>Fonti</span></a></li></ul></div>
       <div class="grp"><p class="grp-t">Fondi straordinari</p><ul><li><a href="#/pnrr"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5h14"/><path d="M5 16.5V9.5M10 16.5V6M15 16.5V11.5"/><path d="M3.5 7.5 10 3l6.5 4.5"/></svg><span>PNRR</span></a></li><li><a href="#/giubileo-2025"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.75v5.5M7.25 5.5h5.5"/><path d="M4 17.25V11a6 6 0 0 1 12 0v6.25"/><path d="M2.75 17.25h14.5"/></svg><span>Giubileo 2025</span></a></li></ul></div>
@@ -625,7 +636,7 @@ function pageHome(){
   curMetric = m.id;
   const heroKpis = (window.HERO_KPIS || []).map(f=>f()).join("");
   $("#app").innerHTML = `
-  <div class="hero"><h1>Dove vanno i soldi dei Municipi di Roma</h1>
+  <div class="hero"><div class="hero-marchio"><span class="marchio" aria-hidden="true"></span><h1>Dove vanno i soldi dei Municipi di Roma</h1></div>
     <p class="lede">Bilancio, appalti, progetti e servizi dei 15 municipi. Ogni numero ha fonte e periodo.</p></div>
   ${heroKpis?`<div class="grid g4">${heroKpis}</div>`:""}
   <section class="block"><div class="head"><div><h2>La mappa</h2><p>Scegli un indicatore: la mappa e la classifica si aggiornano. Clicca un municipio per aprire la sua scheda.</p></div><div class="metric-pick">${metricSelect(m.id)}</div></div>

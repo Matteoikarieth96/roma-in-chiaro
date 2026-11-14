@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-roma-in-chiaro-scuro.svg">
+    <img src="assets/logo-roma-in-chiaro.svg" alt="Logo di Roma in chiaro: una lupa che ulula su quattro barre" width="110">
+  </picture>
+</p>
+
 # Roma in chiaro
 
 > **In English.** Roma in chiaro (live at https://roma-in-chiaro.vercel.app) shows where the money of Rome's 15 *municipi* (city districts) goes: budget allocations, public tenders, PNRR and Jubilee projects, nurseries, who governs and a statistical profile. Every figure comes from an official source and carries its period, the date it was read and what it does not measure. Python scripts turn the sources into JSON snapshots; a static site (Next.js in `web/`, plus a legacy single-file build) reads them. Code is AGPL-3.0; data keeps the licence of its source (see `LICENZE.md`). The project is in **beta**: report data errors with a link to the official source. Documentation is in Italian.

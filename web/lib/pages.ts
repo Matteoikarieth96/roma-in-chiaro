@@ -78,7 +78,7 @@ export function htmlHome(cur: string | null) {
   const m = homeMetric(cur);
   const heroKpis = HERO_KPIS.map(f => f()).join("");
   return `
-  <div class="hero"><h1>Dove vanno i soldi dei Municipi di Roma</h1>
+  <div class="hero"><div class="hero-marchio"><span class="marchio" aria-hidden="true"></span><h1>Dove vanno i soldi dei Municipi di Roma</h1></div>
     <p class="lede">Bilancio, appalti, progetti e servizi dei 15 municipi. Ogni numero ha fonte e periodo.</p></div>
   ${heroKpis ? `<div class="grid g4">${heroKpis}</div>` : ""}
   <section class="block"><div class="head"><div><h2>La mappa</h2><p>Scegli un indicatore: la mappa e la classifica si aggiornano. Clicca un municipio per aprire la sua scheda.</p></div><div class="metric-pick">${metricSelect(m.id)}</div></div>

@@ -147,7 +147,7 @@ export default function Shell({ children, logo }: { children: ReactNode; logo: {
           <svg className="ic-burger" viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 6h13M3.5 10h13M3.5 14h13" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" /></svg>
           <svg className="ic-side" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round"><rect x="2.75" y="3.75" width="14.5" height="12.5" rx="2.25" /><path d="M7.75 3.75v12.5" /></svg>
         </button>
-        <Link className="brand" href="/"><strong>Roma in chiaro</strong><small>I conti dei 15 Municipi di Roma</small></Link>
+        <Link className="brand" href="/"><span className="marchio" aria-hidden="true" /><span className="brand-t"><strong>Roma in chiaro</strong><small>I conti dei 15 Municipi di Roma</small></span></Link>
         <div className="donor"><span>un progetto di</span><img src={logo.src} alt="Urbe Hub" width={126} height={21} /></div>
         <div className="tools">
           <Link id="search-btn" className="theme search-btn" href="/cerca/" aria-label="Cerca" aria-keyshortcuts="/" title="Cerca (tasto /)"
@@ -164,7 +164,7 @@ export default function Shell({ children, logo }: { children: ReactNode; logo: {
         <aside ref={sideRef} id="menu" className="side" data-open={drawer ? "true" : undefined}
           {...(mobile ? { role: "dialog", "aria-modal": drawer ? true : undefined, "aria-label": "Menu", "aria-hidden": drawer ? undefined : true } : {})}>
           <div className="side-head">
-            <strong>Roma in chiaro</strong>
+            <strong><span className="marchio" aria-hidden="true" />Roma in chiaro</strong>
             <button className="theme" type="button" aria-label="Chiudi il menu" onClick={() => close()}>
               <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5 5 15" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" /></svg>
             </button>

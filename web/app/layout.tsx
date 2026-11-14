@@ -15,8 +15,7 @@ import "./confronto/confronto.css";
 export const metadata: Metadata = {
   title: "Roma in chiaro",
   description: "Bilancio, appalti, progetti e profilo dei 15 Municipi di Roma Capitale, con fonte e periodo per ogni numero.",
-  /* nessuna icona, come il sito statico: icona vuota così il browser non chiede /favicon.ico */
-  icons: { icon: "data:," },
+  /* icone: web/app/icon.svg (porpora, rosa col tema scuro) e web/app/apple-icon.png, generate da brand/logo/genera.py */
 };
 export const viewport: Viewport = {
   width: "device-width",

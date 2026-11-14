@@ -337,3 +337,13 @@ a.rk-r:hover .rk-t{text-decoration:underline}
   .dn-leg li{grid-template-columns:14px minmax(0,1fr) auto 46px;gap:8px}
 }
 @media (prefers-reduced-motion:no-preference){.seg button{transition:background .15s}}
+
+/* Logo Roma in chiaro: la forma fa da maschera, il colore e' quello del tema (porpora, rosa col tema scuro) */
+.marchio{display:inline-block;flex:0 0 auto;height:var(--marchio,30px);aspect-ratio:80.58/100;background:var(--accent);-webkit-mask:url("../../assets/logo-roma-in-chiaro.svg") center/contain no-repeat;mask:url("../../assets/logo-roma-in-chiaro.svg") center/contain no-repeat}
+.brand{flex-direction:row;align-items:center;gap:10px}
+.brand-t{display:flex;flex-direction:column;min-width:0}
+.side-head strong{display:flex;align-items:center;gap:8px;--marchio:22px}
+.piede-brand strong{display:flex;align-items:center;gap:10px;--marchio:28px}
+.hero-marchio{display:flex;align-items:center;gap:18px;margin-bottom:12px;--marchio:76px}
+.hero-marchio h1{margin:0}
+@media (max-width:640px){.brand{gap:8px} .brand .marchio{--marchio:26px} .hero-marchio{gap:12px;--marchio:52px}}

@@ -31,6 +31,10 @@ def main():
     import base64
     logo = base64.b64encode((ROOT / "assets/urbe-hub-donor.png").read_bytes()).decode()
     html = html.replace("__URBE_LOGO__", "data:image/png;base64," + logo)
+    # logo Roma in chiaro (maschera CSS) e favicon, da brand/logo/genera.py
+    for segnaposto, file in (("__ROMA_LOGO__", "assets/logo-roma-in-chiaro.svg"), ("__ROMA_ICON__", "web/app/icon.svg")):
+        svg64 = base64.b64encode((ROOT / file).read_bytes()).decode()
+        html = html.replace(segnaposto, "data:image/svg+xml;base64," + svg64)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(html)
     print(f"site/index.html: {len(data)} snapshot ({', '.join(data)}), {OUT.stat().st_size // 1024} KB")
