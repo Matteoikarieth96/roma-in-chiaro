@@ -1,0 +1,31 @@
+{
+  "name": "roma-in-chiaro",
+  "version": "0.1.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "description": "Roma in chiaro: sito Next.js (export statico) che legge gli snapshot in ../data/snapshot",
+  "scripts": {
+    "prepare-data": "node scripts/prepare-data.mjs",
+    "predev": "npm run prepare-data",
+    "dev": "next dev -p 8823",
+    "prebuild": "npm run prepare-data",
+    "build": "next build",
+    "serve": "../.venv/bin/python -I -m http.server --bind 127.0.0.1 --directory out 8824",
+    "typecheck": "tsc --noEmit",
+    "porta": "node scripts/porta-al-sito-statico.mjs"
+  },
+  "dependencies": {
+    "leaflet": "1.9.4",
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/leaflet": "1.9.20",
+    "@types/node": "24.19.2",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "puppeteer-core": "25.16.0",
+    "typescript": "5.9.3"
+  }
+}

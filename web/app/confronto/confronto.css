@@ -1,0 +1,111 @@
+/* Pagina Confronta (lib/confronto.ts). Tutto sotto .cf, per non toccare le altre pagine.
+   Colori controllati con validate_palette.js della skill dataviz:
+   - i due municipi: blu e oro (come --c2 e --c3 dei grafici PNRR), separati anche per daltonici
+     (ΔE 27 protan, chiaro e scuro). La porpora del sito resta fuori: accanto al rosso di "peggio" si confonderebbe.
+   - meglio e peggio: verde-acqua e rosso, ΔE 8,6 (chiaro) e 9,8 (scuro) per deuteranopia e protanopia,
+     testo sul badge 4,8:1 o più. Il colore non è mai da solo: c'è sempre l'icona e la parola. */
+.cf{
+  --cmp-a:#2a78d6;--cmp-b:#c98500;
+  --ok:#0a7d61;--on-ok:#ffffff;--ko:#cf3f2e;--on-ko:#ffffff;
+  --med:rgba(0,0,0,.62);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cf{
+  --cmp-a:#3987e5;--cmp-b:#c98500;
+  --ok:#22a080;--on-ok:#0f0f10;--ko:#ec5a4e;--on-ko:#0f0f10;
+  --med:rgba(255,255,255,.7);
+}}
+:root[data-theme="dark"] .cf{
+  --cmp-a:#3987e5;--cmp-b:#c98500;
+  --ok:#22a080;--on-ok:#0f0f10;--ko:#ec5a4e;--on-ko:#0f0f10;
+  --med:rgba(255,255,255,.7);
+}
+.cf .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* tasto Scambia: solo icona */
+.cf .cf-swap{width:40px;height:40px;padding:0;justify-content:center;border-radius:50%}
+.cf .cf-swap svg{display:block}
+
+/* podio */
+.cf .cf-top{padding-top:8px}
+.cf-pod h3{margin:0 0 12px;display:flex;align-items:center}
+.cf-pod-l0{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.cf-pod-i{display:grid;grid-template-columns:40px minmax(0,1fr);gap:12px;align-items:center}
+.cf-pos{width:40px;height:40px;border-radius:50%;background:var(--fill);display:flex;align-items:center;justify-content:center;font:600 17px var(--display);font-variant-numeric:tabular-nums}
+.cf-pod-t{display:flex;flex-direction:column;gap:1px;min-width:0}
+.cf-pod-l{font-weight:500;display:inline}
+.cf-pod-l .info{vertical-align:middle}
+.cf-pari{font-weight:400;color:var(--muted)}
+.cf-pod-v{font-size:13px;color:var(--soft);font-variant-numeric:tabular-nums}
+.cf-none{margin:12px 0 0;color:var(--soft);font-size:14px}
+.cf-more{margin-top:4px}
+.cf-more .cf-pod-l0{margin-top:10px}
+
+/* mappa e chi governa */
+.cf-ml{margin-top:24px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.cf-ml .map{display:flex;align-items:center;justify-content:center}
+.cf-ml .map svg{max-height:320px}
+@media (max-width:900px){.cf-ml{grid-template-columns:minmax(0,1fr)}.cf-ml .map svg{max-height:240px}}
+.cf-whos{display:flex;flex-direction:column;gap:16px;align-content:start}
+.cf-who{display:grid;grid-template-columns:12px minmax(0,1fr);gap:10px;align-items:start}
+.cf-who .dot{margin-top:6px}
+.cf-who>div{display:flex;flex-direction:column;gap:2px;color:var(--muted);font-size:14px}
+.cf-who b{color:var(--text);font-size:17px}
+.cf-scala{margin:0;padding-top:12px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+
+/* come leggiamo i colori */
+.cf-legwrap{margin-top:24px}
+.cf-leg summary{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;cursor:pointer;color:var(--text);font-size:15px;margin:0}
+.cf-leg[open]>summary{margin-bottom:12px}
+.cf-leg-s{display:inline-flex;gap:8px;align-items:center;flex-wrap:wrap;font-weight:400}
+.cf-neu{font-size:12px;color:var(--soft)}
+.cf-leg p{color:var(--muted);max-width:75ch}
+.cf-leg .table-wrap{box-shadow:none;border:1px solid var(--line);max-height:none;margin-top:8px}
+.cf-leg td{vertical-align:top}
+
+/* indicatori: due barre sulla scala dei 15 municipi */
+.cf-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:900px){.cf-grid{grid-template-columns:minmax(0,1fr)}}
+.cf-ind{display:flex;flex-direction:column;gap:12px;padding:18px 20px}
+.cf-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 12px}
+.cf-h h3{margin:0;font-size:15px;font-weight:600;line-height:1.3;display:block}
+.cf-h h3 .info{vertical-align:middle}
+.cf-per{font-size:12px;color:var(--soft)}
+.cf-pair{display:flex;flex-direction:column;gap:10px}
+.cf-r{display:grid;grid-template-columns:54px minmax(0,1fr) minmax(104px,auto);gap:10px;align-items:center}
+.cf-n{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.cf-n .dot{width:10px;height:10px}
+.cf-t{position:relative;height:14px;background:var(--track);border-radius:4px}
+.cf-t i{position:absolute;left:0;top:0;bottom:0;border-radius:4px;min-width:3px}
+.cf-r.a .cf-t i{background:var(--cmp-a)}
+.cf-r.b .cf-t i{background:var(--cmp-b)}
+.cf-med{position:absolute;top:-3px;bottom:-3px;width:2px;margin-left:-1px;background:var(--med);border-radius:1px;box-shadow:0 0 0 1px var(--raised)}
+.cf-v{display:flex;flex-direction:column;align-items:flex-end;text-align:right;gap:1px;line-height:1.25}
+.cf-num{font-weight:600;font-size:15px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.cf-v small{font-size:11px;color:var(--soft);white-space:nowrap}
+.cf-v.na .cf-num{font-weight:400;font-size:12px;color:var(--soft);white-space:normal}
+.cf-badge{display:inline-flex;align-items:center;gap:3px;padding:1px 8px 1px 5px;border-radius:999px;font-size:11.5px;font-weight:600;line-height:18px;margin-top:2px;white-space:nowrap}
+.cf-badge svg{width:12px;height:12px;flex:none}
+.cf-badge.ok{background:var(--ok);color:var(--on-ok)}
+.cf-badge.ko{background:var(--ko);color:var(--on-ko)}
+.cf-d{margin:0;font-size:13px;color:var(--muted);padding-top:10px;border-top:1px solid var(--line)}
+.cf-d.na{color:var(--soft)}
+
+/* totali */
+.cf-abs{margin-top:14px}
+.cf-abs>summary{cursor:pointer;font-size:14px;color:var(--muted);font-weight:500}
+.cf-abs .table-wrap{margin-top:10px}
+.cf-abs td small.cf-per{font-size:11px}
+.cf-abs th .dot{width:9px;height:9px}
+
+@media (max-width:640px){
+  .cf-ind{padding:16px}
+  .cf-r{grid-template-columns:50px minmax(0,1fr) minmax(84px,auto);gap:8px}
+  .cf-n{gap:5px;font-size:12px}
+  .cf-num{font-size:14px}
+  .cf-pod-i{grid-template-columns:34px minmax(0,1fr);gap:10px}
+  .cf-pos{width:34px;height:34px;font-size:15px}
+}
+@media (forced-colors:active){
+  .cf-t i{forced-color-adjust:none}
+  .cf-badge{border:1px solid CanvasText}
+}

@@ -1,0 +1,38 @@
+# ambiente Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# file scaricati dalle fonti (circa 1 GB): fuori dal repo, tranne i due che servono al build offline
+data/raw/*
+!data/raw/municipi-roma.geojson
+!data/raw/appalti/
+data/raw/appalti/*
+!data/raw/appalti/mappa_centri_di_costo.csv
+
+# output del build
+site/
+site-preview/
+
+# sito Next.js
+web/node_modules/
+web/.next/
+web/out/
+web/screenshots/
+web/next-env.d.ts
+web/*.tsbuildinfo
+web/generated/*
+!web/generated/.gitkeep
+
+# segreti e file locali
+.env
+.env.*
+*.pem
+*.key
+.claude/
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*~

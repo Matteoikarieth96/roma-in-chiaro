@@ -1,0 +1,12 @@
+# Propone aggiornamenti delle azioni della CI (fissate per SHA) e delle dipendenze del sito.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+  - package-ecosystem: npm
+    directory: /web
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5

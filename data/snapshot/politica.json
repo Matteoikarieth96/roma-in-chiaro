@@ -1,0 +1,2836 @@
+{
+ "id": "politica",
+ "titolo": "Chi governa ogni municipio: presidente, giunta e consiglio",
+ "fonte": {
+  "nome": "Organi politici dei Municipi",
+  "ente": "Roma Capitale",
+  "url": "https://www.comune.roma.it/web/it/organi-politici-dei-municipi.page",
+  "licenza": "Documento pubblicato da Roma Capitale. Riuso con citazione della fonte ai sensi dell'art. 7 del D.Lgs. 33/2013 e dell'art. 52, c. 2, del CAD (D.Lgs. 82/2005)."
+ },
+ "periodo": "Composizione pubblicata sulle pagine al 2026-11-13.",
+ "verificato": "2026-11-13",
+ "misura": "Nomi e ruoli come pubblicati sulle pagine istituzionali dei municipi; gruppo consiliare dal titolo della tabella.",
+ "non_misura": [
+  "Nessun recapito personale (telefono, email, indirizzo) è riportato, anche se presente sulla pagina.",
+  "La pagina può essere aggiornata in ritardo rispetto a dimissioni, surroghe o cambi di gruppo: vale la data di aggiornamento di ciascuna sezione.",
+  "Il nome del gruppo è quello scritto sulla pagina; dove il titolo manca è ricavato dal nome del file del simbolo (gruppo_da_simbolo).",
+  "Nomi riportati come scritti (in qualche caso cognome prima del nome).",
+  "Le commissioni consiliari non sono incluse.",
+  "Refusi della pagina non corretti (es. 'lacobelli' per Iacobelli nel Municipio XIII).",
+  "Ruoli consiliari (capogruppo, vicepresidente) solo dove la pagina li indica; alcune pagine non li indicano affatto."
+ ],
+ "municipi": {
+  "1": {
+   "pagina": "https://www.comune.roma.it/web/it/organi-politici-dei-municipi.page?municipio=mun_i",
+   "presidente": "Lorenza Bonaccorsi",
+   "giunta": [
+    {
+     "nome": "Alessandra Sermoneta",
+     "ruolo": "Vice Presidente",
+     "deleghe": "Lavori Pubblici - Edilizia Scolastica - P.N.R.R"
+    },
+    {
+     "nome": "Jacopo Scatà",
+     "ruolo": "Assessore",
+     "deleghe": "Anagrafico - Bilancio - Politiche Europee - Rapporti con il Consiglio . Commercio - Artigianato - Attività Produttive"
+    },
+    {
+     "nome": "Giulia Silvia Ghia",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche Culturali - Politiche educative - Sport - Politiche Giovanili"
+    },
+    {
+     "nome": "Adriano Labbucci",
+     "ruolo": "Assessore",
+     "deleghe": "Lavoro - Mobilità - Transizione Ecologica - Memoria"
+    },
+    {
+     "nome": "Claudia Santoloce",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche Sociali - Pari Opportunità"
+    },
+    {
+     "nome": "Stefano Marin",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche Ambientali - Rifiuti - Rapporti con i cittadini - Polizia Locale"
+    }
+   ],
+   "presidente_deleghe": "Turismo - Giubileo - Grandi Eventi - Patrimonio e tutte le altre deleghe non attribuite agli Assessori",
+   "consiglio": {
+    "presidente_del_consiglio": "Livio Ricciardelli",
+    "consiglieri_dichiarati_in_pagina": 24,
+    "consiglieri": [
+     {
+      "nome": "Livio Ricciardelli",
+      "ruolo": "Presidente del Consiglio",
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Giorgio Benigni",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Sergio Grazioli",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Ludovica Jaus",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Alessandro Monciotti",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Niccolò Camponi",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Giulia Callini",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Domenico Manente",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Daniela Spinaci",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Francesca Calamusa",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Antonella Pollicita",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "DEMOS DEMOCRAZIA SOLIDALE"
+     },
+     {
+      "nome": "Lorenzo Minio Paluello",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "ROMA FUTURA FEMMINISTA"
+     },
+     {
+      "nome": "Federico Auer",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "ALLEANZA VERDI E SINISTRA"
+     },
+     {
+      "nome": "Nathalie Naim",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "LISTA CIVICA GUALTIERI SINDACO"
+     },
+     {
+      "nome": "Renato Sartini",
+      "ruolo": "Vice Presidente Vicario del Consiglio",
+      "gruppo": "LISTA CIVICA GUALTIERI SINDACO"
+     },
+     {
+      "nome": "Lorenzo Maria Santonocito",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "GIORGIA MELONI FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Stefano Tozzi",
+      "ruolo": null,
+      "gruppo": "GIORGIA MELONI FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Marco Veloccia",
+      "ruolo": null,
+      "gruppo": "GIORGIA MELONI FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Daniela Gallo",
+      "ruolo": null,
+      "gruppo": "GIORGIA MELONI FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Luigi Servilio",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "LEGA SALVINI PREMIER"
+     },
+     {
+      "nome": "Giuseppe Lobefaro",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "AZIONE"
+     },
+     {
+      "nome": "Sofia De Dominicis",
+      "ruolo": "Vice Presidente del Consiglio",
+      "gruppo": "AZIONE"
+     },
+     {
+      "nome": "Maurizia Cicconi",
+      "ruolo": null,
+      "gruppo": "AZIONE"
+     },
+     {
+      "nome": "Federica Festa",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "MOVIMENTO CINQUE STELLE"
+     }
+    ],
+    "gruppi": [
+     "ALLEANZA VERDI E SINISTRA",
+     "AZIONE",
+     "DEMOS DEMOCRAZIA SOLIDALE",
+     "GIORGIA MELONI FRATELLI D'ITALIA",
+     "LEGA SALVINI PREMIER",
+     "LISTA CIVICA GUALTIERI SINDACO",
+     "MOVIMENTO CINQUE STELLE",
+     "PARTITO DEMOCRATICO",
+     "ROMA FUTURA FEMMINISTA"
+    ],
+    "note": null
+   },
+   "date_aggiornamento_sezioni": {
+    "presidente": [
+     "2026-04-22"
+    ],
+    "giunta": [],
+    "consiglio": [
+     "2026-01-13"
+    ]
+   },
+   "ultimo_aggiornamento": "2026-04-22",
+   "campi_mancanti": []
+  },
+  "2": {
+   "pagina": "https://www.comune.roma.it/web/it/organi-politici-dei-municipi.page?municipio=mun_ii",
+   "presidente": "Francesca Del Bello",
+   "giunta": [
+    {
+     "nome": "Emanuele Gisci",
+     "ruolo": "Vice Presidente",
+     "deleghe": "Bilancio, Patrimonio, Personale, Decentramento"
+    },
+    {
+     "nome": "Fabrizio Rufo",
+     "ruolo": "Assessore",
+     "deleghe": "Cultura, Università"
+    },
+    {
+     "nome": "Gianluca Bogino",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche Sociali, Giovanili, Pari Opportunità e Comunità straniere"
+    },
+    {
+     "nome": "Rosario Fabiano",
+     "ruolo": "Assessore",
+     "deleghe": "Ambiente, Sport"
+    },
+    {
+     "nome": "Valentina Caracciolo",
+     "ruolo": "Assessora",
+     "deleghe": "Attività Produttive, Mobilità e Turismo"
+    },
+    {
+     "nome": "Paola Rossi",
+     "ruolo": "Assessora",
+     "deleghe": "Scuola e Lavori Pubblici"
+    }
+   ],
+   "presidente_deleghe": "Presidente Giunta del Municipio",
+   "consiglio": {
+    "presidente_del_consiglio": "Gian Paolo Giovannelli",
+    "consiglieri_dichiarati_in_pagina": 24,
+    "consiglieri": [
+     {
+      "nome": "Gian Paolo Giovannelli",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Luca Onori",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Celeste Manno",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Roberto Ferraresi",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Federica Serratore",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Marco Pineschi",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Lucrezia Colmayer",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Emma Cavallucci",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Silvia Aloe",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Arianna Camellini",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Andrea De Rosa",
+      "ruolo": null,
+      "gruppo": "LISTA CIVICA GUALTIERI SINDACO"
+     },
+     {
+      "nome": "Monica Didò",
+      "ruolo": "Vice Presidente vicario del Consiglio - Presidente di Gruppo",
+      "gruppo": "LISTA CIVICA GUALTIERI SINDACO"
+     },
+     {
+      "nome": "Sonia Maurer",
+      "ruolo": null,
+      "gruppo": "LISTA CIVICA GUALTIERI SINDACO"
+     },
+     {
+      "nome": "Francesca Marina Morpurgo",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "ROMA FUTURA FEMMINISTA EGUALITARIA ECOLOGISTA"
+     },
+     {
+      "nome": "Barbara Auleta",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "ALLEANZA VERDI E SINISTRA"
+     },
+     {
+      "nome": "Patrizio Di Tursi",
+      "ruolo": "Vice Presidente del Consiglio - Presidente di Gruppo",
+      "gruppo": "Forza Italia"
+     },
+     {
+      "nome": "Holljwer Paolo",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "GIORGIA MELONI FRATELLI D’ ITALIA"
+     },
+     {
+      "nome": "Sandra Alessia Bertucci",
+      "ruolo": null,
+      "gruppo": "GIORGIA MELONI FRATELLI D’ ITALIA"
+     },
+     {
+      "nome": "Francesco De Salazar",
+      "ruolo": null,
+      "gruppo": "GIORGIA MELONI FRATELLI D’ ITALIA"
+     },
+     {
+      "nome": "Marinella Antonia Inguscio",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "AZIONE"
+     },
+     {
+      "nome": "Maria Beatrice Mattei",
+      "ruolo": null,
+      "gruppo": "AZIONE"
+     },
+     {
+      "nome": "Elisabetta Gagliassi",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "MOVIMENTO 5 STELLE"
+     },
+     {
+      "nome": "Marco Dolfi",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "GRUPPO MISTO"
+     },
+     {
+      "nome": "Aldo Stevanin",
+      "ruolo": null,
+      "gruppo": "GRUPPO MISTO"
+     }
+    ],
+    "gruppi": [
+     "ALLEANZA VERDI E SINISTRA",
+     "AZIONE",
+     "Forza Italia",
+     "GIORGIA MELONI FRATELLI D’ ITALIA",
+     "GRUPPO MISTO",
+     "LISTA CIVICA GUALTIERI SINDACO",
+     "MOVIMENTO 5 STELLE",
+     "PARTITO DEMOCRATICO",
+     "ROMA FUTURA FEMMINISTA EGUALITARIA ECOLOGISTA"
+    ],
+    "note": null
+   },
+   "date_aggiornamento_sezioni": {
+    "presidente": [
+     "2026-01-13"
+    ],
+    "giunta": [
+     "2026-05-04"
+    ],
+    "consiglio": [
+     "2026-06-23"
+    ]
+   },
+   "ultimo_aggiornamento": "2026-06-23",
+   "campi_mancanti": []
+  },
+  "3": {
+   "pagina": "https://www.comune.roma.it/web/it/organi-politici-dei-municipi.page?municipio=mun_iii",
+   "presidente": "Paolo Emilio Marchionne",
+   "giunta": [
+    {
+     "nome": "Paola Ilari",
+     "ruolo": "Vice Presidente",
+     "deleghe": "Delega in materia di Politiche Educative e Scolastiche, Edilizia e Verde Scolastico"
+    },
+    {
+     "nome": "Matteo Pietrosante",
+     "ruolo": "Assessore",
+     "deleghe": "Delega in materia di Attuazione Urbanistica, Lavori Pubblici e Mobilita, Politiche Giovanili"
+    },
+    {
+     "nome": "Matteo Zocchi",
+     "ruolo": "Assessore",
+     "deleghe": "Delega in materia di Politiche Ambientali, Rifiuti e Transizione Ecologica, Agricoltura, Politiche dello Sport"
+    },
+    {
+     "nome": "Luca Blasi",
+     "ruolo": "Assessore",
+     "deleghe": "Delega in materia di Politiche Culturali e Diritto all'Abitare"
+    },
+    {
+     "nome": "Biancamaria Rizzo",
+     "ruolo": "Assessora",
+     "deleghe": "Delega in materia di Urbanistica e Rigenerazione Urbana, Fondi Europei, Statali e Regionali, Partecipazione, Valorizzazione del Patrimonio"
+    },
+    {
+     "nome": "Maria Concetta Romano",
+     "ruolo": "Assessora",
+     "deleghe": "Delega in materia di Politiche Sociali e Servizi alla Persona, Politiche Sanitarie, Protezione Civile"
+    }
+   ],
+   "presidente_deleghe": "Delega in materia Pari Opportunità, Personale, Bilancio, Commercio, artigianato ed Attività Produttive, Sicurezza e Polizia Locale",
+   "consiglio": {
+    "presidente_del_consiglio": "Filippo Maria Laguzzi",
+    "consiglieri_dichiarati_in_pagina": 24,
+    "consiglieri": [
+     {
+      "nome": "Maria Tarallo",
+      "ruolo": "Capogruppo",
+      "gruppo": "lista civica gualtieri sindaco",
+      "gruppo_da_simbolo": true
+     },
+     {
+      "nome": "Simone Filomena",
+      "ruolo": "Capogruppo",
+      "gruppo": "SINISTRA CIVICA ECOLOGISTA"
+     },
+     {
+      "nome": "Filippo Maria Laguzzi",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Simona Sortino",
+      "ruolo": "Capogruppo",
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Lorenzo Spizzichino",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Nastassja Habdank",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Paola Cavalieri",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Giancarlo Cesarei",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Roberto Casamento",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Nicoletta Funghi",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Federica Rampini",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Italo Della Bella",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Antonio Comito",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Martina Testa",
+      "ruolo": "Capogruppo",
+      "gruppo": "ROMA FUTURA FEMMINISTA EGUALITARIA ECOLOGISTA"
+     },
+     {
+      "nome": "Francesca Farchi",
+      "ruolo": null,
+      "gruppo": "ROMA FUTURA FEMMINISTA EGUALITARIA ECOLOGISTA"
+     },
+     {
+      "nome": "Giordana Petrella",
+      "ruolo": null,
+      "gruppo": "GIORGIA MELONI - FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Manuel Bartolomeo",
+      "ruolo": "Capogruppo",
+      "gruppo": "GIORGIA MELONI - FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Fabrizio Bevilacqua",
+      "ruolo": null,
+      "gruppo": "GIORGIA MELONI - FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Fabrizio Santinelli",
+      "ruolo": null,
+      "gruppo": "GIORGIA MELONI - FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Serena Troiani",
+      "ruolo": null,
+      "gruppo": "GIORGIA MELONI - FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Dario Quattromani",
+      "ruolo": "Capogruppo",
+      "gruppo": "MOVIMENTO 5 STELLE \"2050\""
+     },
+     {
+      "nome": "Marina Battisti",
+      "ruolo": null,
+      "gruppo": "MOVIMENTO 5 STELLE \"2050\""
+     },
+     {
+      "nome": "Livia Pandolfi",
+      "ruolo": "Capogruppo",
+      "gruppo": "AZIONE"
+     },
+     {
+      "nome": "Marta Marziali",
+      "ruolo": "Capogruppo",
+      "gruppo": "ITALIA VIVA"
+     }
+    ],
+    "gruppi": [
+     "AZIONE",
+     "GIORGIA MELONI - FRATELLI D'ITALIA",
+     "ITALIA VIVA",
+     "MOVIMENTO 5 STELLE \"2050\"",
+     "PARTITO DEMOCRATICO",
+     "ROMA FUTURA FEMMINISTA EGUALITARIA ECOLOGISTA",
+     "SINISTRA CIVICA ECOLOGISTA",
+     "lista civica gualtieri sindaco"
+    ],
+    "note": null
+   },
+   "date_aggiornamento_sezioni": {
+    "presidente": [
+     "2026-01-02"
+    ],
+    "giunta": [
+     "2026-04-30"
+    ],
+    "consiglio": [
+     "2026-10-29"
+    ]
+   },
+   "ultimo_aggiornamento": "2026-10-29",
+   "campi_mancanti": []
+  },
+  "4": {
+   "pagina": "https://www.comune.roma.it/web/it/organi-politici-dei-municipi.page?municipio=mun_iv",
+   "presidente": "Massimiliano Umberti",
+   "giunta": [
+    {
+     "nome": "Annarita Leobruni",
+     "ruolo": "Vice Presidente",
+     "deleghe": "Servizi educativi e scolastici, Politiche giovanili, Politiche per l'infanzia, Edilizia scolastica, Pari opportunità"
+    },
+    {
+     "nome": "Concetto Zanghi",
+     "ruolo": "Assessore",
+     "deleghe": "Bilancio, P.N.R.R. e Fondi Europei, statali e regionali, Decentramento, La città dei 15', Innovazione, Mobilità e trasporti, Servizi anagrafici"
+    },
+    {
+     "nome": "Maurizio Rossi",
+     "ruolo": "Assessore",
+     "deleghe": "Attività sportive, Attività culturali, Formazione e Lavoro, Diritti civili, Memoria storica, Partecipazione civica"
+    },
+    {
+     "nome": "Dino Bacchetti",
+     "ruolo": "Assessore",
+     "deleghe": "Attuazione urbanistica, Infrastrutture, Lavori pubblici e Manutenzione urbana, Affari Generali, Trasparenza"
+    },
+    {
+     "nome": "Giovanna Sammarco",
+     "ruolo": "Assessora",
+     "deleghe": "Servizi sociali e alla persona, Sussidiarietà, Inclusione e disabilità, Integrazione socio-Sanitaria, Sostegno abitativo, Politiche attive per gli anziani, Politiche per la famiglia"
+    },
+    {
+     "nome": "Federica Desideri",
+     "ruolo": "Assessora",
+     "deleghe": "Ambiente, Parchi e verde urbano, Fiume Aniene, Decoro urbano, Ciclo dei Rifiuti - AMA, Politiche abitative"
+    }
+   ],
+   "presidente_deleghe": "Attività produttive e Commercio, Personale, Polizia Locale e Sicurezza, Grandi eventi, Promozione e Turismo, Transizione ecologica, Patrimonio e beni comuni, Protezione civile",
+   "consiglio": {
+    "presidente_del_consiglio": "Flavio Borocci",
+    "consiglieri_dichiarati_in_pagina": 24,
+    "consiglieri": [
+     {
+      "nome": "Borocci Flavio",
+      "ruolo": "Presidente del Consiglio",
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Brescia Adriano",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "De Paolis Paolo",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Fruci Danila",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Gallucci Onorina",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Iacomini Filippo",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Palmaccio Valerio",
+      "ruolo": "Vice Presidente Vicario del Consiglio",
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Pelliccia Sarah",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Piccolo Ruggiero",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Proietti Federico",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Remediani Silvia",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Garofalo Annalisa",
+      "ruolo": null,
+      "gruppo": "Lista Civica Gualtieri Sindaco"
+     },
+     {
+      "nome": "Pastorelli Fulvio",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "Lista Civica Gualtieri Sindaco"
+     },
+     {
+      "nome": "Bardini Gianluigi",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "Roma Futura Femminista Egualitaria Ecologista"
+     },
+     {
+      "nome": "Corciulo Carla",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "Sinistra Civica Ecologista"
+     },
+     {
+      "nome": "Mariani Matteo",
+      "ruolo": "Vice Presidente del Consiglio",
+      "gruppo": "Giorgia Meloni Fratelli d'Italia"
+     },
+     {
+      "nome": "Onofri Costanza",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni Fratelli d'Italia"
+     },
+     {
+      "nome": "Santoro Roberto",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni Fratelli d'Italia"
+     },
+     {
+      "nome": "Scerbo Polverato Luca",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "Giorgia Meloni Fratelli d'Italia"
+     },
+     {
+      "nome": "Sperandio Giorgio",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni Fratelli d'Italia"
+     },
+     {
+      "nome": "Rosati Stefano",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "Movimento Cinque Stelle"
+     },
+     {
+      "nome": "Giuliani Lavinia",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "Azione"
+     },
+     {
+      "nome": "Montanini Fabrizio",
+      "ruolo": "Presidente di Gruppo",
+      "gruppo": "Forza Italia"
+     },
+     {
+      "nome": "Colarossi Marco",
+      "ruolo": null,
+      "gruppo": "Forza Italia"
+     }
+    ],
+    "gruppi": [
+     "Azione",
+     "Forza Italia",
+     "Giorgia Meloni Fratelli d'Italia",
+     "Lista Civica Gualtieri Sindaco",
+     "Movimento Cinque Stelle",
+     "PD Partito Democratico",
+     "Roma Futura Femminista Egualitaria Ecologista",
+     "Sinistra Civica Ecologista"
+    ],
+    "note": null
+   },
+   "date_aggiornamento_sezioni": {
+    "presidente": [
+     "2026-01-12"
+    ],
+    "giunta": [
+     "2026-01-12"
+    ],
+    "consiglio": [
+     "2026-04-24"
+    ]
+   },
+   "ultimo_aggiornamento": "2026-04-24",
+   "campi_mancanti": []
+  },
+  "5": {
+   "pagina": "https://www.comune.roma.it/web/it/organi-politici-dei-municipi.page?municipio=mun_v",
+   "presidente": "Mauro Caliste",
+   "giunta": [
+    {
+     "nome": "Maura Lostia",
+     "ruolo": "Vice Presidente",
+     "deleghe": "Lavori Pubblici, Segnaletica e Manutenzione stradale, Edilizia privata e pubblica, Piani Urbani Parcheggi, Mobilità, Trasporti e opere TAV, Rapporti con Protezione Civile, ATER ed ERP"
+    },
+    {
+     "nome": "Marco Ricci",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche del Commercio, Attività Produttive, Sviluppo locale, Promozione del territorio, Sport e tempo libero"
+    },
+    {
+     "nome": "Sergio Scalia",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche urbanistiche, Bilancio, Politiche economiche e finanziarie, Tributi, Demanio, Patrimonio, Decentramento, Trasparenza ed Attuazione del Programma"
+    },
+    {
+     "nome": "Edoardo Annucci",
+     "ruolo": "Assessore",
+     "deleghe": "Ambiente, Verde pubblico, Ciclo dei Rifiuti, Agricoltura, Fiume Aniene, Fondi europei e regionali, Politiche Giovanili e Innovazione"
+    },
+    {
+     "nome": "Antonino De Cinti",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche Sociali, Rapporti con A.S.L., Servizi alla Persona, Politiche per l'Integrazione ed Intergenerazionalità, Emergenza Abitativa"
+    },
+    {
+     "nome": "Cecilia Fannunza",
+     "ruolo": "Assessora",
+     "deleghe": "Politiche Educative e Scolastiche, Edilizia scolastica, Verde scolastico, Trasporti scolastici, Formazione e Lavoro, Refezione scolastica"
+    }
+   ],
+   "presidente_deleghe": "Cultura, Grandi Eventi, Polizia Locale, Protezione Civile, Sicurezza, Personale, Turismo, Comunicazione istituzionale, Pari Opportunità e Diritti",
+   "consiglio": {
+    "presidente_del_consiglio": "David Di Cosmo",
+    "consiglieri_dichiarati_in_pagina": 24,
+    "consiglieri": [
+     {
+      "nome": "David Di Cosmo",
+      "ruolo": "Presidente del Consiglio del Municipio",
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Claudio Poverini",
+      "ruolo": "Capogruppo",
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Giampiero Buttitta",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Olga Di Cagno",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Alessandra Di Francia",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Marco Pietrosanti",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Tatiana Procacci",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Marco Toti",
+      "ruolo": "Vice Capogruppo",
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Emiliano Orlandi",
+      "ruolo": "Capogruppo",
+      "gruppo": "LISTA CIVICA GUALTIERI SINDACO"
+     },
+     {
+      "nome": "Mauro Ferrari",
+      "ruolo": null,
+      "gruppo": "LISTA CIVICA GUALTIERI SINDACO"
+     },
+     {
+      "nome": "Elena Antinozzi",
+      "ruolo": "Capogruppo",
+      "gruppo": "IMPEGNO CIVICO CALISTE PRESIDENTE"
+     },
+     {
+      "nome": "Antonella Fioretti",
+      "ruolo": null,
+      "gruppo": "IMPEGNO CIVICO CALISTE PRESIDENTE"
+     },
+     {
+      "nome": "Filippo Riniolo",
+      "ruolo": "Capogruppo",
+      "gruppo": "ROMA FUTURA"
+     },
+     {
+      "nome": "Eva Vittoria Cammerino",
+      "ruolo": null,
+      "gruppo": "ROMA FUTURA"
+     },
+     {
+      "nome": "Maurizio Mattana",
+      "ruolo": "Capogruppo",
+      "gruppo": "SINISTRA CIVICA ECOLOGISTA"
+     },
+     {
+      "nome": "Walter Pacifici",
+      "ruolo": "Capogruppo",
+      "gruppo": "FRATELLI D’ ITALIA"
+     },
+     {
+      "nome": "Marilena Noce",
+      "ruolo": null,
+      "gruppo": "FRATELLI D’ ITALIA"
+     },
+     {
+      "nome": "Fabio Piattoni",
+      "ruolo": null,
+      "gruppo": "FRATELLI D’ ITALIA"
+     },
+     {
+      "nome": "Agostino Platania",
+      "ruolo": null,
+      "gruppo": "FRATELLI D’ ITALIA"
+     },
+     {
+      "nome": "Daniele Rinaldi",
+      "ruolo": null,
+      "gruppo": "FRATELLI D’ ITALIA"
+     },
+     {
+      "nome": "Mauro Marocchini",
+      "ruolo": "Capogruppo",
+      "gruppo": "LEGA"
+     },
+     {
+      "nome": "Monia Maria Medaglia",
+      "ruolo": "Capogruppo",
+      "gruppo": "LISTA CIVICA VIRGINIA RAGGI"
+     },
+     {
+      "nome": "Mario Meuti",
+      "ruolo": "Capogruppo",
+      "gruppo": "MOVIMENTO 5 STELLE"
+     },
+     {
+      "nome": "Massimo Piccardi",
+      "ruolo": "Capogruppo",
+      "gruppo": "ITALIA VIVA"
+     }
+    ],
+    "gruppi": [
+     "FRATELLI D’ ITALIA",
+     "IMPEGNO CIVICO CALISTE PRESIDENTE",
+     "ITALIA VIVA",
+     "LEGA",
+     "LISTA CIVICA GUALTIERI SINDACO",
+     "LISTA CIVICA VIRGINIA RAGGI",
+     "MOVIMENTO 5 STELLE",
+     "PARTITO DEMOCRATICO",
+     "ROMA FUTURA",
+     "SINISTRA CIVICA ECOLOGISTA"
+    ],
+    "note": null
+   },
+   "date_aggiornamento_sezioni": {
+    "presidente": [
+     "2026-01-14"
+    ],
+    "giunta": [
+     "2026-01-21"
+    ],
+    "consiglio": [
+     "2026-01-21"
+    ]
+   },
+   "ultimo_aggiornamento": "2026-01-21",
+   "campi_mancanti": []
+  },
+  "6": {
+   "pagina": "https://www.comune.roma.it/web/it/organi-politici-dei-municipi.page?municipio=mun_vi",
+   "presidente": "Nicola Franco",
+   "giunta": [
+    {
+     "nome": "Andrea La Fortuna",
+     "ruolo": "Vice Presidente",
+     "deleghe": "Sicurezza, Protezione Civile, Politiche Agricole, Sport, Affari Generali"
+    },
+    {
+     "nome": "Giovanni Raiola",
+     "ruolo": "Assessore",
+     "deleghe": "Lavori Pubblici e Mobilità"
+    },
+    {
+     "nome": "Cristiano Bonelli",
+     "ruolo": "Assessore",
+     "deleghe": "Personale, ERP, Ambiente, Commercio, Attività Produttive"
+    },
+    {
+     "nome": "Romano Amato",
+     "ruolo": "Assessore",
+     "deleghe": "Bilancio, Politiche Sociali, Politiche Sanitarie, Servizi alla Persona, Benessere degli Animali"
+    },
+    {
+     "nome": "Chiara Del Guerra",
+     "ruolo": "Assessora",
+     "deleghe": "Valorizzazione Patrimonio Archeologico, Pari Opportunità, Turismo, Edilizia Scolastica"
+    },
+    {
+     "nome": "Barbara Del Bello",
+     "ruolo": "Assessora",
+     "deleghe": "Politiche Educative Scolastiche, Politiche Giovanili della Famiglia, benessere e corretti stili di vita, Patrimonio"
+    }
+   ],
+   "presidente_deleghe": "Delega alla Pianificazione del Territorio, Rigenerazione urbana, Trasformazione Ecologica, Progetti Speciali, Cultura",
+   "consiglio": {
+    "presidente_del_consiglio": "Emanuele Giuliani",
+    "consiglieri_dichiarati_in_pagina": 24,
+    "consiglieri": [
+     {
+      "nome": "Emanuele Giuliani",
+      "ruolo": "Presidente del Consiglio",
+      "gruppo": "Giorgia Meloni - Fratelli d'Italia"
+     },
+     {
+      "nome": "Marco Guercioni",
+      "ruolo": "Capogruppo",
+      "gruppo": "Giorgia Meloni - Fratelli d'Italia"
+     },
+     {
+      "nome": "Stefano Pelone",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni - Fratelli d'Italia"
+     },
+     {
+      "nome": "Pietro Dominici",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni - Fratelli d'Italia"
+     },
+     {
+      "nome": "Maria Leccese",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni - Fratelli d'Italia"
+     },
+     {
+      "nome": "Gabriele Manzo",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni - Fratelli d'Italia"
+     },
+     {
+      "nome": "Mariantonietta La Polla",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni - Fratelli d'Italia"
+     },
+     {
+      "nome": "Antonio Villino",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni - Fratelli d'Italia"
+     },
+     {
+      "nome": "Vanda Raco",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni - Fratelli d'Italia"
+     },
+     {
+      "nome": "Giuseppe Ferone",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni - Fratelli d'Italia"
+     },
+     {
+      "nome": "Alessio Rotondo",
+      "ruolo": null,
+      "gruppo": "Lega Salvini Premier"
+     },
+     {
+      "nome": "Alessandra Carinci",
+      "ruolo": null,
+      "gruppo": "Lega Salvini Premier"
+     },
+     {
+      "nome": "Emanuele Licopodio",
+      "ruolo": null,
+      "gruppo": "Lega Salvini Premier"
+     },
+     {
+      "nome": "Massimiliano Terrinoni",
+      "ruolo": null,
+      "gruppo": "Forza Italia – Noi Moderati"
+     },
+     {
+      "nome": "Anna Bertucci",
+      "ruolo": null,
+      "gruppo": "Forza Italia – Noi Moderati"
+     },
+     {
+      "nome": "Alessandro Agostini",
+      "ruolo": "Capogruppo",
+      "gruppo": "Lista Civica Le Torri per Nicola Franco Presidente"
+     },
+     {
+      "nome": "Valter Mastrangeli",
+      "ruolo": "Capogruppo",
+      "gruppo": "Calenda Sindaco"
+     },
+     {
+      "nome": "Fabrizio Compagnone",
+      "ruolo": "Capogruppo",
+      "gruppo": "PD – Partito Democratico"
+     },
+     {
+      "nome": "Gianfranco Gasparutto",
+      "ruolo": null,
+      "gruppo": "PD – Partito Democratico"
+     },
+     {
+      "nome": "Luca Bellino",
+      "ruolo": null,
+      "gruppo": "PD – Partito Democratico"
+     },
+     {
+      "nome": "Flavio Mancini",
+      "ruolo": "Vice Presidente del Consiglio",
+      "gruppo": "PD – Partito Democratico"
+     },
+     {
+      "nome": "Laura Arnetoli",
+      "ruolo": "Capogruppo",
+      "gruppo": "Movimento 5 Stelle \"2050\""
+     },
+     {
+      "nome": "Antonio Muzzone",
+      "ruolo": null,
+      "gruppo": "Gruppo Misto"
+     },
+     {
+      "nome": "Francesca Filipponi",
+      "ruolo": null,
+      "gruppo": "Gruppo Misto"
+     }
+    ],
+    "gruppi": [
+     "Calenda Sindaco",
+     "Forza Italia – Noi Moderati",
+     "Giorgia Meloni - Fratelli d'Italia",
+     "Gruppo Misto",
+     "Lega Salvini Premier",
+     "Lista Civica Le Torri per Nicola Franco Presidente",
+     "Movimento 5 Stelle \"2050\"",
+     "PD – Partito Democratico"
+    ],
+    "note": [
+     "Lega Salvini Premier: ruoli ['Capogruppo'] non attribuibili con certezza a ['Alessio Rotondo', 'Alessandra Carinci', 'Emanuele Licopodio']",
+     "Forza Italia – Noi Moderati: ruoli ['Capogruppo', 'Vice Presidente del Consiglio Vicario'] non attribuibili con certezza a ['Massimiliano Terrinoni', 'Anna Bertucci']"
+    ]
+   },
+   "date_aggiornamento_sezioni": {
+    "presidente": [],
+    "giunta": [],
+    "consiglio": [
+     "2026-01-15"
+    ]
+   },
+   "ultimo_aggiornamento": "2026-01-15",
+   "campi_mancanti": []
+  },
+  "7": {
+   "pagina": "https://www.comune.roma.it/web/it/organi-politici-dei-municipi.page?municipio=mun_vii",
+   "presidente": "Francesco Laddaga",
+   "giunta": [
+    {
+     "nome": "Marcello Morlacchi",
+     "ruolo": "Vice Presidente",
+     "deleghe": "Lavori Pubblici e Viabilità - Politiche educative e scolastiche - Politiche per il potenziamento dei servizi 0-6 anni - Edilizia Scolastica"
+    },
+    {
+     "nome": "Riccardo Sbordoni",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche Culturali- Valorizzazione del patrimonio culturale, artistico e archeologico - Turismo - Memoria Storica- Grandi Eventi - Giubileo - Rapporti con il Consiglio Municipale - Coordinamento e attuazione del programma"
+    },
+    {
+     "nome": "Fabrizio Grant",
+     "ruolo": "Assessore",
+     "deleghe": "Mobilità - Sicurezza stradale e strade scolastiche - Politiche giovanili - Legalità e Antimafia sociale - PNRR - Personale e rapporti con le organizzazioni sindacali"
+    },
+    {
+     "nome": "Adriana Rosasco",
+     "ruolo": "Assessora",
+     "deleghe": "Politiche Sociali e per l'integrazione socio-sanitaria - Politiche per l'integrazione e l'intercultura - Politiche abitative - Politiche di genere e Pari opportunità"
+    },
+    {
+     "nome": "Silvia Pieri",
+     "ruolo": "Assessora",
+     "deleghe": "Attività produttive e mercati - Bilancio - Sport - Fondi europei, statali e regionali"
+    },
+    {
+     "nome": "Estella Marino",
+     "ruolo": "Assessora",
+     "deleghe": "Politiche ambientali e agricole - Parchi e verde urbano - Politiche per la transizione ecologica e l’innovazione - Ciclo dei rifiuti e rapporti con AMA - Decentramento - Protezione Civile"
+    }
+   ],
+   "presidente_deleghe": "Urbanistica e Rigenerazione Urbana - Rapporti con la Polizia Locale di Roma Capitale - Partecipazione Civica - Patrimonio - Valorizzazione e cura dei Beni Comuni",
+   "consiglio": {
+    "presidente_del_consiglio": "Massimo Pellutri",
+    "consiglieri_dichiarati_in_pagina": 24,
+    "consiglieri": [
+     {
+      "nome": "Flavia Cardini",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Alessandro Olivieri",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Matteo Svolacchia",
+      "ruolo": "Capogruppo",
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Maria Mazzitelli",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Rosa Ferraro",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Massimo Pellutri",
+      "ruolo": "Presidente del Consiglio Municipale",
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Costantino Nicolini",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Marco Poli",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Pasqualina Cocciolo",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Roberto Colasanti",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Fabio Betulli",
+      "ruolo": null,
+      "gruppo": "Lista Civica Gualtieri Sindaco"
+     },
+     {
+      "nome": "Francesca Romana Armini",
+      "ruolo": "Vice Presidente Vicario del Consiglio Municipale",
+      "gruppo": "Lista Civica Gualtieri Sindaco"
+     },
+     {
+      "nome": "Claudio Lorenzini",
+      "ruolo": "Capogruppo",
+      "gruppo": "Lista Civica Gualtieri Sindaco"
+     },
+     {
+      "nome": "Emiliano Cofano",
+      "ruolo": "Capogruppo",
+      "gruppo": "Roma Futura Femminista Egualitaria Ecologista"
+     },
+     {
+      "nome": "Emanuela Ammerata",
+      "ruolo": "Capogruppo",
+      "gruppo": "Sinistra Civica Ecologista"
+     },
+     {
+      "nome": "Luigi Avveduto",
+      "ruolo": "Capogruppo",
+      "gruppo": "Gruppo Misto"
+     },
+     {
+      "nome": "Cristina De Simone",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni Fratelli D'Italia"
+     },
+     {
+      "nome": "Valter Conti",
+      "ruolo": "Capogruppo",
+      "gruppo": "Giorgia Meloni Fratelli D'Italia"
+     },
+     {
+      "nome": "Umberto Matronola",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni Fratelli D'Italia"
+     },
+     {
+      "nome": "Cristiano Buoncristiani",
+      "ruolo": "Capogruppo",
+      "gruppo": "Lega Salvini Premier"
+     },
+     {
+      "nome": "Luca Di Egidio",
+      "ruolo": "Capogruppo",
+      "gruppo": "Italia Viva"
+     },
+     {
+      "nome": "Isabella Alfano",
+      "ruolo": "Vice Presidente del Consiglio Municipale",
+      "gruppo": "Italia Viva"
+     },
+     {
+      "nome": "Emanuel Trombetta",
+      "ruolo": "Capogruppo",
+      "gruppo": "Movimento 5 Stelle \"2050\""
+     },
+     {
+      "nome": "Giulia Simonetti",
+      "ruolo": null,
+      "gruppo": "Movimento 5 Stelle \"2050\""
+     }
+    ],
+    "gruppi": [
+     "Giorgia Meloni Fratelli D'Italia",
+     "Gruppo Misto",
+     "Italia Viva",
+     "Lega Salvini Premier",
+     "Lista Civica Gualtieri Sindaco",
+     "Movimento 5 Stelle \"2050\"",
+     "PD Partito Democratico",
+     "Roma Futura Femminista Egualitaria Ecologista",
+     "Sinistra Civica Ecologista"
+    ],
+    "note": null
+   },
+   "date_aggiornamento_sezioni": {
+    "presidente": [
+     "2026-01-14"
+    ],
+    "giunta": [
+     "2026-01-14"
+    ],
+    "consiglio": []
+   },
+   "ultimo_aggiornamento": "2026-01-14",
+   "campi_mancanti": []
+  },
+  "8": {
+   "pagina": "https://www.comune.roma.it/web/it/organi-politici-dei-municipi.page?municipio=mun_viii",
+   "presidente": "Amedeo Ciaccheri",
+   "giunta": [
+    {
+     "nome": "Antonio Calicchia",
+     "ruolo": "Vice Presidente",
+     "deleghe": "Bilancio e Affari Generali, Turismo e Grandi Eventi, Commercio"
+    },
+    {
+     "nome": "Luciano Ummarino",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche Culturali, Politiche dell'Intercultura, Partecipazione, Beni Comuni, Memoria"
+    },
+    {
+     "nome": "Luca Gasperini",
+     "ruolo": "Assessore",
+     "deleghe": "Lavori Pubblici, Mobilità, Trasporti, Attuazione Urbanistica"
+    },
+    {
+     "nome": "Claudio Mannarino",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche Ambientali, Gestione Rifiuti, Tutela e Promozione del Tevere e dell'Almone, Coordinamento su Qualità Urbana con uffici centrali e decentrati"
+    },
+    {
+     "nome": "Alessandra Aluigi",
+     "ruolo": "Assessora",
+     "deleghe": "Politiche Sociali, Terza Età e Invecchiamento Attivo, Sanità, Politiche Abitative, Diritti LGBTQ+"
+    },
+    {
+     "nome": "Francesca Vetrugno",
+     "ruolo": "Assessora",
+     "deleghe": "Politiche Scolastiche ed Educative, Politiche Giovanili, Politiche di Genere, Edilizia Scolastica e Verde Scolastico, Progetti Speciali"
+    }
+   ],
+   "presidente_deleghe": "Delega alla Protezione civile, alla Sicurezza e alle politiche per lo Sport",
+   "consiglio": {
+    "presidente_del_consiglio": "Samuele Marcucci",
+    "consiglieri_dichiarati_in_pagina": 24,
+    "consiglieri": [
+     {
+      "nome": "Flavio Conia",
+      "ruolo": "capogruppo",
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Samuele Marcucci",
+      "ruolo": "Presidente del Consiglio del Municipio",
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Saverio Milana",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Monica Rossi",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Giovanni Fasiello",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Umberto Sposato",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Valchiria Vittori",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Lorenzo Giardinetti",
+      "ruolo": "capogruppo",
+      "gruppo": "Sinistra Civica Ecologista Ciaccheri Presidente"
+     },
+     {
+      "nome": "Michele Marini",
+      "ruolo": "Vice Presidente del Consiglio Vicario",
+      "gruppo": "Sinistra Civica Ecologista Ciaccheri Presidente"
+     },
+     {
+      "nome": "Marco Merafina",
+      "ruolo": null,
+      "gruppo": "Sinistra Civica Ecologista Ciaccheri Presidente"
+     },
+     {
+      "nome": "Massimo Lucidi",
+      "ruolo": null,
+      "gruppo": "Sinistra Civica Ecologista Ciaccheri Presidente"
+     },
+     {
+      "nome": "Alessandro Morlupo",
+      "ruolo": null,
+      "gruppo": "Sinistra Civica Ecologista Ciaccheri Presidente"
+     },
+     {
+      "nome": "Iacopo Nunziato",
+      "ruolo": null,
+      "gruppo": "Sinistra Civica Ecologista Ciaccheri Presidente"
+     },
+     {
+      "nome": "Massimo Nanni",
+      "ruolo": "capogruppo",
+      "gruppo": "Lista Civica Gualtieri Sindaco"
+     },
+     {
+      "nome": "Roberto Falasca",
+      "ruolo": "capogruppo",
+      "gruppo": "Demos Democrazia Solidale"
+     },
+     {
+      "nome": "Simonetta Novi",
+      "ruolo": "capogruppo",
+      "gruppo": "Gruppo Misto"
+     },
+     {
+      "nome": "Franco Federici",
+      "ruolo": "capogruppo",
+      "gruppo": "Giorgia Meloni Fratelli d'Italia"
+     },
+     {
+      "nome": "Alessio Scimè",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni Fratelli d'Italia"
+     },
+     {
+      "nome": "Lorenzo Mevi",
+      "ruolo": "Vice Presidente del Consiglio",
+      "gruppo": "Giorgia Meloni Fratelli d'Italia"
+     },
+     {
+      "nome": "Maurizio Buonincontro",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni Fratelli d'Italia"
+     },
+     {
+      "nome": "Sabrina Vicino",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni Fratelli d'Italia"
+     },
+     {
+      "nome": "Eleonora Talli",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni Fratelli d'Italia"
+     },
+     {
+      "nome": "Caterina Benetti",
+      "ruolo": "capogruppo",
+      "gruppo": "Forza Italia"
+     },
+     {
+      "nome": "Matteo Bruno",
+      "ruolo": null,
+      "gruppo": "Forza Italia"
+     }
+    ],
+    "gruppi": [
+     "Demos Democrazia Solidale",
+     "Forza Italia",
+     "Giorgia Meloni Fratelli d'Italia",
+     "Gruppo Misto",
+     "Lista Civica Gualtieri Sindaco",
+     "PD Partito Democratico",
+     "Sinistra Civica Ecologista Ciaccheri Presidente"
+    ],
+    "note": null
+   },
+   "date_aggiornamento_sezioni": {
+    "presidente": [
+     "2026-01-13"
+    ],
+    "giunta": [
+     "2026-01-13"
+    ],
+    "consiglio": [
+     "2026-03-19"
+    ]
+   },
+   "ultimo_aggiornamento": "2026-03-19",
+   "campi_mancanti": []
+  },
+  "9": {
+   "pagina": "https://www.comune.roma.it/web/it/organi-politici-dei-municipi.page?municipio=mun_ix",
+   "presidente": "Teresa Maria Di Salvo",
+   "giunta": [
+    {
+     "nome": "Augusto Gregori",
+     "ruolo": "Vice Presidente",
+     "deleghe": "Sviluppo Economico, Ambiente, Decoro e Sicurezza"
+    },
+    {
+     "nome": "Manuel Gagliardi",
+     "ruolo": "Assessore",
+     "deleghe": "Urbanistica, Innovazione e Beni Comuni"
+    },
+    {
+     "nome": "Paola Angelucci",
+     "ruolo": "Assessora",
+     "deleghe": "Scuola, Mobilità, Partecipazione e Memoria"
+    },
+    {
+     "nome": "Francesca Villani",
+     "ruolo": "Assessora",
+     "deleghe": "Sport"
+    },
+    {
+     "nome": "Luisa Laurelli",
+     "ruolo": "Assessora",
+     "deleghe": "Politiche Sociali e della Salute, Terzo Settore, Sicurezza Sociale e Democrazia Legalitaria"
+    },
+    {
+     "nome": "Ludovica Tranquilli",
+     "ruolo": "Assessora",
+     "deleghe": "Lavori Pubblici, Periferie, Città dei 15 Minuti"
+    }
+   ],
+   "presidente_deleghe": "Presidente del Municipio IX EUR con delega alla Cultura, Pari Opportunità, Bilancio, Patrimonio, Personale, Lavoro, Grandi Eventi, Politiche Giovanili e Sport",
+   "consiglio": {
+    "presidente_del_consiglio": "Luca Bedoni",
+    "consiglieri_dichiarati_in_pagina": 24,
+    "consiglieri": [
+     {
+      "nome": "Acampora Valeria",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Angelini Lorenzo",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Bedoni Luca",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Burgio Adriano",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Ecca Fabio",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "De Vivo Patrizia",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Grazioli Giuseppe",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Bartolelli Giorgio",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Vaccari Paola",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Vecchio Francesca Romana",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Marrocchini Giulia",
+      "ruolo": null,
+      "gruppo": "Lista Civica Gualtieri Sindaco"
+     },
+     {
+      "nome": "Sotillo Antonio",
+      "ruolo": null,
+      "gruppo": "Lista Civica Gualtieri Sindaco"
+     },
+     {
+      "nome": "Baiocchi Roberto",
+      "ruolo": null,
+      "gruppo": "Lista Civica Gualtieri Sindaco"
+     },
+     {
+      "nome": "Corrente Giulio",
+      "ruolo": null,
+      "gruppo": "Europa Verde ecologista European Green Party – Verdi"
+     },
+     {
+      "nome": "Borrelli Danilo",
+      "ruolo": null,
+      "gruppo": "Sinistra Civica Ecologista"
+     },
+     {
+      "nome": "De Juliis Massimiliano",
+      "ruolo": null,
+      "gruppo": "Fratelli d'Italia"
+     },
+     {
+      "nome": "Sordini Simone",
+      "ruolo": null,
+      "gruppo": "Fratelli d'Italia"
+     },
+     {
+      "nome": "Alleori Gino",
+      "ruolo": null,
+      "gruppo": "Fratelli d'Italia"
+     },
+     {
+      "nome": "Pasetti Laura",
+      "ruolo": null,
+      "gruppo": "Fratelli d'Italia"
+     },
+     {
+      "nome": "Cucunato Piero",
+      "ruolo": null,
+      "gruppo": "Lega Salvini Premier"
+     },
+     {
+      "nome": "Muro Pes Marco",
+      "ruolo": null,
+      "gruppo": "Azione"
+     },
+     {
+      "nome": "Bellassai Fulvio",
+      "ruolo": null,
+      "gruppo": "Azione"
+     },
+     {
+      "nome": "Canale Carla",
+      "ruolo": null,
+      "gruppo": "Lista Civica “Virginia Raggi”"
+     },
+     {
+      "nome": "Cerisola Marco",
+      "ruolo": null,
+      "gruppo": "Movimento Cinque Stelle “2050”"
+     }
+    ],
+    "gruppi": [
+     "Azione",
+     "Europa Verde ecologista European Green Party – Verdi",
+     "Fratelli d'Italia",
+     "Lega Salvini Premier",
+     "Lista Civica Gualtieri Sindaco",
+     "Lista Civica “Virginia Raggi”",
+     "Movimento Cinque Stelle “2050”",
+     "Partito Democratico",
+     "Sinistra Civica Ecologista"
+    ],
+    "note": null
+   },
+   "date_aggiornamento_sezioni": {
+    "presidente": [
+     "2026-01-13"
+    ],
+    "giunta": [
+     "2026-05-25"
+    ],
+    "consiglio": [
+     "2026-01-13"
+    ]
+   },
+   "ultimo_aggiornamento": "2026-05-25",
+   "campi_mancanti": []
+  },
+  "10": {
+   "pagina": "https://www.comune.roma.it/web/it/organi-politici-dei-municipi.page?municipio=mun_x",
+   "presidente": "Mario Falconi",
+   "giunta": [
+    {
+     "nome": "Valentina Prodon",
+     "ruolo": "Vice Presidente",
+     "deleghe": "Transizione Ecologica, Ambiente e Sport"
+    },
+    {
+     "nome": "Antonio Caliendo",
+     "ruolo": "Assessore",
+     "deleghe": "Attività Produttive, Turismo e Personale"
+    },
+    {
+     "nome": "Andrea Morelli",
+     "ruolo": "Assessore",
+     "deleghe": "Scuola e Politiche Giovanili"
+    },
+    {
+     "nome": "Guglielmo Calcerano",
+     "ruolo": "Assessore",
+     "deleghe": "Lavori Pubblici e Patrimonio"
+    },
+    {
+     "nome": "Giuseppe Sesa",
+     "ruolo": "Assessore",
+     "deleghe": "Bilancio, Politiche Abitative, Dissesto Idrogeologico, Protezione Civile"
+    },
+    {
+     "nome": "Denise Lancia",
+     "ruolo": "Assessora",
+     "deleghe": "Politiche sociali e Pari Opportunità"
+    }
+   ],
+   "presidente_deleghe": null,
+   "consiglio": {
+    "presidente_del_consiglio": "Giampaola Pau",
+    "consiglieri_dichiarati_in_pagina": 24,
+    "consiglieri": [
+     {
+      "nome": "Leonardo Di Matteo",
+      "ruolo": "Capogruppo",
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Valentina Scarfagna",
+      "ruolo": "Vice Presidente del Consiglio",
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Enrico Mercanti",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Raffaele Biondo",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Federica Fallacara",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Silvia Fiorucci",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Maurizio Lelli",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Giampaola Pau",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Valentina Proietti",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Margherita Welyam Mosaad Ghebryal",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Remo De Bartolomeo",
+      "ruolo": "Capogruppo",
+      "gruppo": "Lista Civica Gualtieri Sindaco"
+     },
+     {
+      "nome": "Carlo Linetti",
+      "ruolo": "Vicecapogruppo",
+      "gruppo": "Lista Civica Gualtieri Sindaco"
+     },
+     {
+      "nome": "Giuseppe Conforzi",
+      "ruolo": "Capogruppo",
+      "gruppo": "Giorgia Meloni Fratelli d'Italia"
+     },
+     {
+      "nome": "Pietro Malara",
+      "ruolo": "Vicecapogruppo",
+      "gruppo": "Giorgia Meloni Fratelli d'Italia"
+     },
+     {
+      "nome": "Sara Adriani",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni Fratelli d'Italia"
+     },
+     {
+      "nome": "Mirella Arcamone",
+      "ruolo": "Capogruppo",
+      "gruppo": "Demos Democrazia Solidale – Laboratorio Civico X"
+     },
+     {
+      "nome": "Alessandro Ieva",
+      "ruolo": "Capogruppo",
+      "gruppo": "Movimento Cinque Stelle 2050"
+     },
+     {
+      "nome": "Giuliana Di Pillo",
+      "ruolo": "Vicecapogruppo",
+      "gruppo": "Movimento Cinque Stelle 2050"
+     },
+     {
+      "nome": "Silvia Paoletti",
+      "ruolo": null,
+      "gruppo": "Movimento Cinque Stelle 2050"
+     },
+     {
+      "nome": "Valerio Facchinelli",
+      "ruolo": "Capogruppo",
+      "gruppo": "Europa Verde ecologista European Green Party – Verdi"
+     },
+     {
+      "nome": "Monica Picca",
+      "ruolo": "Capogruppo e Vice Presidente del Consiglio",
+      "gruppo": "Lega Salvini Premier"
+     },
+     {
+      "nome": "Alessandro Aguzzetti",
+      "ruolo": "Vicecapogruppo",
+      "gruppo": "Lega Salvini Premier"
+     },
+     {
+      "nome": "Marco Possanzini",
+      "ruolo": "Capogruppo",
+      "gruppo": "Sinistra Civica Ecologista"
+     },
+     {
+      "nome": "Andrea Bozzi",
+      "ruolo": "Capogruppo",
+      "gruppo": "Calenda Sindaco"
+     }
+    ],
+    "gruppi": [
+     "Calenda Sindaco",
+     "Demos Democrazia Solidale – Laboratorio Civico X",
+     "Europa Verde ecologista European Green Party – Verdi",
+     "Giorgia Meloni Fratelli d'Italia",
+     "Lega Salvini Premier",
+     "Lista Civica Gualtieri Sindaco",
+     "Movimento Cinque Stelle 2050",
+     "Partito Democratico",
+     "Sinistra Civica Ecologista"
+    ],
+    "note": null
+   },
+   "date_aggiornamento_sezioni": {
+    "presidente": [
+     "2026-01-14"
+    ],
+    "giunta": [
+     "2026-10-20"
+    ],
+    "consiglio": [
+     "2026-01-14",
+     "2026-09-18"
+    ]
+   },
+   "ultimo_aggiornamento": "2026-10-20",
+   "campi_mancanti": []
+  },
+  "11": {
+   "pagina": "https://www.comune.roma.it/web/it/organi-politici-dei-municipi.page?municipio=mun_xi",
+   "presidente": "Gianluca Lanzi",
+   "giunta": [
+    {
+     "nome": "Carmelo Ursino",
+     "ruolo": "Vice Presidente",
+     "deleghe": "Coordinamento e attuazione del programma di governo, Bilancio, Personale, Rapporti con le organizzazioni sindacali, Formazione, Promozione e valorizzazione sviluppo econ. e sociale del Municipio, Attività produttive e contrasto all'abusivismo commerciale"
+    },
+    {
+     "nome": "Angelo Vastola",
+     "ruolo": "Assessore",
+     "deleghe": "Recupero zone \"O\" e dei toponimi - Edilizia Scolastica"
+    },
+    {
+     "nome": "Alberto Belloni",
+     "ruolo": "Assessore",
+     "deleghe": "Patrimonio e manutenzione degli immobili comunali e dei mercati · Rapporti con ATER di Roma · Urbanistica e rigenerazione urbana · Contrasto all’abusivismo edilizio · Rapporti con il Consiglio municipale · Coordinamento interventi Giubileo 2025 e PNRR"
+    },
+    {
+     "nome": "Emiliano Castellino",
+     "ruolo": "Assessore",
+     "deleghe": "Trasporti e mobilità sostenibile · Rapporti con la Polizia locale di Roma Capitale · Rapporti con la Protezione civile · Partecipazione civica · Lavori pubblici esclusivamente con riferimento alla manutenzione del territorio"
+    },
+    {
+     "nome": "Daniela Gentili",
+     "ruolo": "Assessora",
+     "deleghe": "Politiche ambientali, agricole e verde urbano · Progetti per la transizione ecologica · Raccolta differenziata e rapporti con AMA · Decoro urbano · Valorizzazione dei parchi fluviali"
+    },
+    {
+     "nome": "Giulia Fainella",
+     "ruolo": "Assessora",
+     "deleghe": "Politiche centralità della persona - Sociali e multiculturali - Integrazione socio-sanitaria - Giovanili - Di genere · Pari opportunità - Diritti popolazione LGBT+ - Culturali - Abitative - Valorizzazione patrimonio archeologico, artistico e culturale"
+    }
+   ],
+   "presidente_deleghe": "Presidente del Municipio",
+   "consiglio": {
+    "presidente_del_consiglio": "Cristiano Sollazzo",
+    "consiglieri_dichiarati_in_pagina": 24,
+    "consiglieri": [
+     {
+      "nome": "Cristiano Migliorelli",
+      "ruolo": "Capogruppo",
+      "gruppo": "LISTA CIVICA GUALTIERI SINDACO"
+     },
+     {
+      "nome": "Daniela Marianello",
+      "ruolo": "Capogruppo",
+      "gruppo": "SINISTRA CIVICA ECOLOGISTA"
+     },
+     {
+      "nome": "Benedetta Martini",
+      "ruolo": "Capogruppo",
+      "gruppo": "PD PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Claudio Barocci",
+      "ruolo": null,
+      "gruppo": "PD PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Cristiano Sollazzo",
+      "ruolo": null,
+      "gruppo": "PD PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Maria Teresa Di Sarcina",
+      "ruolo": null,
+      "gruppo": "PD PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Matilde Santarelli",
+      "ruolo": null,
+      "gruppo": "PD PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Andrea Catalini",
+      "ruolo": null,
+      "gruppo": "PD PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Maria Pina Egidi",
+      "ruolo": null,
+      "gruppo": "PD PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Mirko Marsella",
+      "ruolo": null,
+      "gruppo": "PD PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Vincenzo Crea",
+      "ruolo": null,
+      "gruppo": "PD PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Vanessa Guerrini",
+      "ruolo": null,
+      "gruppo": "PD PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Valerio Garipoli",
+      "ruolo": "Capogruppo",
+      "gruppo": "GIORGIA MELONI FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Marco Palma",
+      "ruolo": null,
+      "gruppo": "GIORGIA MELONI FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Vanessa Borsari",
+      "ruolo": null,
+      "gruppo": "GIORGIA MELONI FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Daniele Calzetta",
+      "ruolo": null,
+      "gruppo": "GIORGIA MELONI FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Daniele Catalano",
+      "ruolo": "Capogruppo",
+      "gruppo": "LEGA SALVINI PREMIER"
+     },
+     {
+      "nome": "Rosaria Iani",
+      "ruolo": null,
+      "gruppo": "LEGA SALVINI PREMIER"
+     },
+     {
+      "nome": "Danilo Corsetti",
+      "ruolo": "Capogruppo",
+      "gruppo": "MOVIMENTO CINQUE STELLE \"2050\""
+     },
+     {
+      "nome": "Luca Ernesto Mellina",
+      "ruolo": null,
+      "gruppo": "MOVIMENTO CINQUE STELLE \"2050\""
+     },
+     {
+      "nome": "Gianluca Fioravanti",
+      "ruolo": "Capogruppo",
+      "gruppo": "PARTITO LIBERALDEMOCRATICO"
+     },
+     {
+      "nome": "Fabiana Di Segni",
+      "ruolo": null,
+      "gruppo": "PARTITO LIBERALDEMOCRATICO"
+     },
+     {
+      "nome": "Adriano Sias",
+      "ruolo": "Capogruppo",
+      "gruppo": "DEMOS DEMOCRAZIA SOLIDALE"
+     },
+     {
+      "nome": "Enrico Vulpiani",
+      "ruolo": null,
+      "gruppo": "DEMOS DEMOCRAZIA SOLIDALE"
+     }
+    ],
+    "gruppi": [
+     "DEMOS DEMOCRAZIA SOLIDALE",
+     "GIORGIA MELONI FRATELLI D'ITALIA",
+     "LEGA SALVINI PREMIER",
+     "LISTA CIVICA GUALTIERI SINDACO",
+     "MOVIMENTO CINQUE STELLE \"2050\"",
+     "PARTITO LIBERALDEMOCRATICO",
+     "PD PARTITO DEMOCRATICO",
+     "SINISTRA CIVICA ECOLOGISTA"
+    ],
+    "note": null
+   },
+   "date_aggiornamento_sezioni": {
+    "presidente": [
+     "2025-01-15"
+    ],
+    "giunta": [
+     "2025-01-15"
+    ],
+    "consiglio": [
+     "2025-01-15"
+    ]
+   },
+   "ultimo_aggiornamento": "2025-01-15",
+   "campi_mancanti": []
+  },
+  "12": {
+   "pagina": "https://www.comune.roma.it/web/it/organi-politici-dei-municipi.page?municipio=mun_xii",
+   "presidente": "Elio Tomassetti",
+   "giunta": [
+    {
+     "nome": "Alessia Salmoni",
+     "ruolo": "Vice Presidente",
+     "deleghe": "Politiche dello Sviluppo Economico ed Attività Produttive, Personale, Rapporti con le Organizzazioni Sindacali, Formazione, Gestione Rifiuti, Risanamento Ambientale, Rapporti con Ama e Progetti per la Transizione Ecologica"
+    },
+    {
+     "nome": "Francesco Geraci",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche dei Lavori Pubblici, Disciplina Edilizia, Politiche della Sicurezza e Protezione Civile, Rapporti con la Polizia Locale e Forze dell'Ordine, Coordinamento rapporti istituzionali con le Aziende, le Società e le Agenzie di Servizi del territorio"
+    },
+    {
+     "nome": "Mauro Marcheggiani",
+     "ruolo": "Assessore",
+     "deleghe": "Bilancio, Politiche dell'emergenza abitativa, Rapporti con Ater di Roma, Politiche del Verde, Politiche della Mobilità, della Viabilità e dei Trasporti"
+    },
+    {
+     "nome": "Fabio Bomarsi",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche Sociali, Rapporti con l'Associazionismo"
+    },
+    {
+     "nome": "Maria Stella Squillace",
+     "ruolo": "Assessora",
+     "deleghe": "Politiche Educative e Scolastiche, Politiche Giovanili, Edilizia Scolastica, Politiche del Patrimonio e Valorizzazione dei beni comuni"
+    },
+    {
+     "nome": "Gioia Farnocchia",
+     "ruolo": "Assessora",
+     "deleghe": "Politiche Culturali, Politiche dello Sport, Promozione del Benessere del Cittadino, Politiche di Genere e Pari Opportunità"
+    }
+   ],
+   "presidente_deleghe": "Innovazione Tecnologica, Semplificazione Amministrativa e Trasparenza, Tutela e Benessere degli Animali, Politiche dell'Urbanistica e della Rigenerazione Urbana, Fondi Europei e PNRR, Memoria Storica",
+   "consiglio": {
+    "presidente_del_consiglio": "Laura Di Domenico",
+    "consiglieri_dichiarati_in_pagina": 24,
+    "consiglieri": [
+     {
+      "nome": "Fabio Magrini",
+      "ruolo": null,
+      "gruppo": "Sinistra Civica Ecologista"
+     },
+     {
+      "nome": "Simone Colafranceschi",
+      "ruolo": null,
+      "gruppo": "Sinistra Civica Ecologista"
+     },
+     {
+      "nome": "Flavia Balestrieri",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Isabella Cognatti",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Cristian Cusella",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Francesco Di Carlo",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Laura Di Domenico",
+      "ruolo": "Presidente del Consiglio",
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Concetta Fabrizi",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Renato Midiri",
+      "ruolo": "Capogruppo",
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Thresiamma Puthoor",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Augusto Rossi",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Mario Sala",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Silvia Tomassetti",
+      "ruolo": null,
+      "gruppo": "PD Partito Democratico"
+     },
+     {
+      "nome": "Gianna Costantini",
+      "ruolo": "Capogruppo",
+      "gruppo": "Lista Civica Gualtieri Sindaco"
+     },
+     {
+      "nome": "Giovanni Picone",
+      "ruolo": "Capogruppo",
+      "gruppo": "Lega - Salvini Premier"
+     },
+     {
+      "nome": "Pietrangelo Massaro",
+      "ruolo": "Vice Presidente del Consiglio",
+      "gruppo": "Forza Italia - Berlusconi per Michetti - Libertas - Unione di Centro"
+     },
+     {
+      "nome": "Alessandro Galletti",
+      "ruolo": null,
+      "gruppo": "Forza Italia - Berlusconi per Michetti - Libertas - Unione di Centro"
+     },
+     {
+      "nome": "Fabio Vittorini",
+      "ruolo": null,
+      "gruppo": "Forza Italia - Berlusconi per Michetti - Libertas - Unione di Centro"
+     },
+     {
+      "nome": "Gianni De Lucia",
+      "ruolo": "Capogruppo",
+      "gruppo": "Giorgia Meloni Fratelli D’Italia"
+     },
+     {
+      "nome": "Daniela Pandolfi",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni Fratelli D’Italia"
+     },
+     {
+      "nome": "Alessandro Petroli",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni Fratelli D’Italia"
+     },
+     {
+      "nome": "Francesca Severi",
+      "ruolo": "Capogruppo",
+      "gruppo": "Azione con Calenda"
+     },
+     {
+      "nome": "Lorenzo Di Russo",
+      "ruolo": "Capogruppo",
+      "gruppo": "Movimento 5 Stelle “2050”"
+     },
+     {
+      "nome": "Alessandro Alongi",
+      "ruolo": "Vice Presidente Vicario del Consiglio",
+      "gruppo": "Gruppo Misto"
+     }
+    ],
+    "gruppi": [
+     "Azione con Calenda",
+     "Forza Italia - Berlusconi per Michetti - Libertas - Unione di Centro",
+     "Giorgia Meloni Fratelli D’Italia",
+     "Gruppo Misto",
+     "Lega - Salvini Premier",
+     "Lista Civica Gualtieri Sindaco",
+     "Movimento 5 Stelle “2050”",
+     "PD Partito Democratico",
+     "Sinistra Civica Ecologista"
+    ],
+    "note": null
+   },
+   "date_aggiornamento_sezioni": {
+    "presidente": [
+     "2025-12-31"
+    ],
+    "giunta": [
+     "2026-01-15"
+    ],
+    "consiglio": [
+     "2026-02-03"
+    ]
+   },
+   "ultimo_aggiornamento": "2026-02-03",
+   "campi_mancanti": []
+  },
+  "13": {
+   "pagina": "https://www.comune.roma.it/web/it/organi-politici-dei-municipi.page?municipio=mun_xiii",
+   "presidente": "Sabrina Giuseppetti",
+   "giunta": [
+    {
+     "nome": "Alberto Filisio",
+     "ruolo": "Vice Presidente",
+     "deleghe": "Politiche di Bilancio, Semplificazione Amministrativa, Attuazione del Programma"
+    },
+    {
+     "nome": "Arianna Ugolini",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche Educative, Scolastiche e dello Sport e Turismo"
+    },
+    {
+     "nome": "Biagio Capparella",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche dell'Urbanistica e dell'Edilizia privata"
+    },
+    {
+     "nome": "Salvatore Petracca",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche dei Lavori Pubblici Mobilità e Trasporti"
+    },
+    {
+     "nome": "Arianna Quarta",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche Sociali, Sanitarie e Pari Opportunità"
+    },
+    {
+     "nome": "Cinzia Giardini",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche dell'Ambiente, del Decoro Urbano, Politiche del Commercio, Sviluppo Locale"
+    }
+   ],
+   "presidente_deleghe": null,
+   "consiglio": {
+    "presidente_del_consiglio": "Marcello Iacobelli",
+    "consiglieri_dichiarati_in_pagina": 24,
+    "consiglieri": [
+     {
+      "nome": "Arvizzigno Mario",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Bordi Martina",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Fanara Angela Lidia",
+      "ruolo": "Capogruppo",
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Giovanni Bramante",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Fargione Vincenzo Maria",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Granata Enrico",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "lacobelli Marcello",
+      "ruolo": "Presidente del Consiglio",
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Mele Tony",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Satriano Giovanni",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Sbardella David",
+      "ruolo": null,
+      "gruppo": "Partito Democratico"
+     },
+     {
+      "nome": "Bonadies Maurizio",
+      "ruolo": "Capogruppo",
+      "gruppo": "Lista Civica Gualtieri Sindaco"
+     },
+     {
+      "nome": "Fabio Pieroni",
+      "ruolo": null,
+      "gruppo": "Lista Civica Gualtieri Sindaco"
+     },
+     {
+      "nome": "Cagnazzo Luigi",
+      "ruolo": "Vice Presidente del Consiglio - Capogruppo",
+      "gruppo": "Sinistra Civica Ecologista"
+     },
+     {
+      "nome": "laniro Lorenzo",
+      "ruolo": null,
+      "gruppo": "Aurelio in Comune"
+     },
+     {
+      "nome": "Urru Maristella",
+      "ruolo": "Capogruppo",
+      "gruppo": "Aurelio in Comune"
+     },
+     {
+      "nome": "Giorgi Isabel",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni - Fratelli D’Italia"
+     },
+     {
+      "nome": "Giovagnorio Marco",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni - Fratelli D’Italia"
+     },
+     {
+      "nome": "Mattana Simone",
+      "ruolo": "Capogruppo",
+      "gruppo": "Giorgia Meloni - Fratelli D’Italia"
+     },
+     {
+      "nome": "Pierangelini Giancarlo",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni - Fratelli D’Italia"
+     },
+     {
+      "nome": "Mattia Carlo",
+      "ruolo": null,
+      "gruppo": "Giorgia Meloni - Fratelli D’Italia"
+     },
+     {
+      "nome": "Castagnetta Giuseppina",
+      "ruolo": "Capogruppo",
+      "gruppo": "Movimento Cinque Stelle “2050”"
+     },
+     {
+      "nome": "Finelli Claudia",
+      "ruolo": "Capogruppo",
+      "gruppo": "Azione"
+     },
+     {
+      "nome": "Caterina Monticone",
+      "ruolo": "Capogruppo",
+      "gruppo": "Gruppo Misto"
+     },
+     {
+      "nome": "Alessio Marsili",
+      "ruolo": "Capogruppo",
+      "gruppo": "Forza Italia"
+     }
+    ],
+    "gruppi": [
+     "Aurelio in Comune",
+     "Azione",
+     "Forza Italia",
+     "Giorgia Meloni - Fratelli D’Italia",
+     "Gruppo Misto",
+     "Lista Civica Gualtieri Sindaco",
+     "Movimento Cinque Stelle “2050”",
+     "Partito Democratico",
+     "Sinistra Civica Ecologista"
+    ],
+    "note": null
+   },
+   "date_aggiornamento_sezioni": {
+    "presidente": [
+     "2026-01-15"
+    ],
+    "giunta": [
+     "2026-01-15"
+    ],
+    "consiglio": [
+     "2026-01-15",
+     "2025-05-27"
+    ]
+   },
+   "ultimo_aggiornamento": "2026-01-15",
+   "campi_mancanti": []
+  },
+  "14": {
+   "pagina": "https://www.comune.roma.it/web/it/organi-politici-dei-municipi.page?municipio=mun_xiv",
+   "presidente": "Marco Della Porta",
+   "giunta": [
+    {
+     "nome": "Enrico Sabri",
+     "ruolo": "Vice Presidente",
+     "deleghe": "Partecipazione, Beni Comuni, Agricoltura, Progettazione europea"
+    },
+    {
+     "nome": "Giuseppe Strazzera",
+     "ruolo": "Assessore",
+     "deleghe": "Lavori Pubblici, Urbanistica, Rigenerazione Urbana e Periferie"
+    },
+    {
+     "nome": "Simone Conte",
+     "ruolo": "Assessore",
+     "deleghe": "Politiche Sociali, Politiche Abitative e Rapporti con Ater"
+    },
+    {
+     "nome": "Claudia Salerno",
+     "ruolo": "Assessora",
+     "deleghe": "Politiche Educative e Scolastiche, Politiche per il Potenziamento dei Servizi 0-6, Edilizia Scolastica, Patrimonio"
+    },
+    {
+     "nome": "Olimpia Troili",
+     "ruolo": "Assessora",
+     "deleghe": "Trasporti, Mobilità Sostenibile e Pari Opportunità e Sport"
+    },
+    {
+     "nome": "Stefania Portaro",
+     "ruolo": "Assessora",
+     "deleghe": "Ambiente, Rifiuti, Rapporti con AMA, Commercio"
+    }
+   ],
+   "presidente_deleghe": "Delega al Bilancio; Personale; Politiche Giovanili; Cultura, Turismo, Grandi Eventi",
+   "consiglio": {
+    "presidente_del_consiglio": "Maurizi Andrea",
+    "consiglieri_dichiarati_in_pagina": 24,
+    "consiglieri": [
+     {
+      "nome": "Giuseppe Acquafredda",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Luciano Bravi",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Nino Bufalini",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Chiara Buonopera",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Ilaria Ceccarelli",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Lorenzo De Santis",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Daniele Giustozzi",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Simone Lepri",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Andrea Montanari",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Andrea Maurizi",
+      "ruolo": "Presidente del Consiglio",
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Alessandro Porra",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Paola Sala",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Emanuela Verrone",
+      "ruolo": "Capogruppo",
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Davide Filippi",
+      "ruolo": "Capogruppo",
+      "gruppo": "LISTA CIVICA GUALTIERI SINDACO"
+     },
+     {
+      "nome": "Elisa Sessa",
+      "ruolo": "Vice Presidente Vicario",
+      "gruppo": "LISTA CIVICA GUALTIERI SINDACO"
+     },
+     {
+      "nome": "Marco Palazzi",
+      "ruolo": "Capogruppo",
+      "gruppo": "LEGA SALVINI PREMIER"
+     },
+     {
+      "nome": "Domenico Naso",
+      "ruolo": null,
+      "gruppo": "LEGA SALVINI PREMIER"
+     },
+     {
+      "nome": "Alberto Mariani",
+      "ruolo": "Vice Presidente",
+      "gruppo": "GIORGIA MELONI FRATELLI D’ ITALIA"
+     },
+     {
+      "nome": "Stefano Oddo",
+      "ruolo": "Capogruppo",
+      "gruppo": "GIORGIA MELONI FRATELLI D’ ITALIA"
+     },
+     {
+      "nome": "Valentina Torresi",
+      "ruolo": null,
+      "gruppo": "GIORGIA MELONI FRATELLI D’ ITALIA"
+     },
+     {
+      "nome": "Sandro Chinni",
+      "ruolo": "Capogruppo",
+      "gruppo": "MOVIMENTO 5 STELLE"
+     },
+     {
+      "nome": "Andrea Paglione",
+      "ruolo": "Capogruppo",
+      "gruppo": "CALENDA SINDACO"
+     },
+     {
+      "nome": "Camilla Bargione",
+      "ruolo": "Capogruppo",
+      "gruppo": "GRUPPO MISTO"
+     },
+     {
+      "nome": "Michele Menna",
+      "ruolo": null,
+      "gruppo": "GRUPPO MISTO"
+     }
+    ],
+    "gruppi": [
+     "CALENDA SINDACO",
+     "GIORGIA MELONI FRATELLI D’ ITALIA",
+     "GRUPPO MISTO",
+     "LEGA SALVINI PREMIER",
+     "LISTA CIVICA GUALTIERI SINDACO",
+     "MOVIMENTO 5 STELLE",
+     "PARTITO DEMOCRATICO"
+    ],
+    "note": null
+   },
+   "date_aggiornamento_sezioni": {
+    "presidente": [
+     "2026-01-15"
+    ],
+    "giunta": [
+     "2026-01-15"
+    ],
+    "consiglio": [
+     "2026-01-15",
+     "2026-03-26"
+    ]
+   },
+   "ultimo_aggiornamento": "2026-03-26",
+   "campi_mancanti": []
+  },
+  "15": {
+   "pagina": "https://www.comune.roma.it/web/it/organi-politici-dei-municipi.page?municipio=mun_xv",
+   "presidente": "Daniele Torquati",
+   "giunta": [
+    {
+     "nome": "Alessandro Cozza",
+     "ruolo": "Vice Presidente",
+     "deleghe": "Delega in materia di Bilancio, Decentramento Amministrativo e Politiche Giovanili"
+    },
+    {
+     "nome": "Agnese Rollo",
+     "ruolo": "Assessore",
+     "deleghe": "Delega in materia di Politiche Sociali, Sanitarie e Pari Opportunità"
+    },
+    {
+     "nome": "Tatiana Marchisio",
+     "ruolo": "Assessore",
+     "deleghe": "Delega in materia di Politiche Scolastiche e Culturali"
+    },
+    {
+     "nome": "Tommaso Martelli",
+     "ruolo": "Assessore",
+     "deleghe": "Delega in materia di Politiche del Commercio, delle Attività Produttive e alle Politiche dello Sport"
+    },
+    {
+     "nome": "Marcello Ribera",
+     "ruolo": "Assessore",
+     "deleghe": "Delega in materia di Politiche Ambientali"
+    },
+    {
+     "nome": "Luigia Chirizzi",
+     "ruolo": "Assessore",
+     "deleghe": "Delega in materia di Politiche dei Lavori Pubblici"
+    }
+   ],
+   "presidente_deleghe": "Delega in Politiche della Pianificazione Urbanistica, Periferie e Grandi Opere, in Politiche del Turismo e Grandi Eventi, in Politiche del Personale, in Politiche della Mobilità e Rapporti con Protezione Civile, Polizia Locale e Organi Sicurezza Pubblica",
+   "consiglio": {
+    "presidente_del_consiglio": "Stefano Cavini",
+    "consiglieri_dichiarati_in_pagina": 24,
+    "consiglieri": [
+     {
+      "nome": "Petrassi Massimiliano",
+      "ruolo": "capogruppo",
+      "gruppo": "ITALIA VIVA"
+     },
+     {
+      "nome": "Vitaliano Elisamarzia",
+      "ruolo": null,
+      "gruppo": "ITALIA VIVA"
+     },
+     {
+      "nome": "Peschiaroli Stefano",
+      "ruolo": "VicePresidente del Consiglio - capogruppo",
+      "gruppo": "FORZA ITALIA"
+     },
+     {
+      "nome": "Mocci Giuseppe",
+      "ruolo": null,
+      "gruppo": "FORZA ITALIA"
+     },
+     {
+      "nome": "Calendino Giuseppe",
+      "ruolo": null,
+      "gruppo": "FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Glori Adriana Virginia",
+      "ruolo": "capogruppo",
+      "gruppo": "FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Ottaviani Marco",
+      "ruolo": null,
+      "gruppo": "FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Signorini Andrea",
+      "ruolo": null,
+      "gruppo": "FRATELLI D'ITALIA"
+     },
+     {
+      "nome": "Cava Egle",
+      "ruolo": null,
+      "gruppo": "LISTA CIVICA GUALTIERI SINDACO"
+     },
+     {
+      "nome": "Loffredi Gianluca",
+      "ruolo": null,
+      "gruppo": "LISTA CIVICA GUALTIERI SINDACO"
+     },
+     {
+      "nome": "Martorano Sara",
+      "ruolo": "VicePresidente Vicario del Consiglio - capogruppo",
+      "gruppo": "LISTA CIVICA GUALTIERI SINDACO"
+     },
+     {
+      "nome": "Betulia Rossana",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Borgioni Valeria",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Castrignanò Giovanni",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Cavini Stefano",
+      "ruolo": "Presidente del Consiglio",
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Gigli Laura",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Leppe Alessio",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Marinali Claudio",
+      "ruolo": "capogruppo",
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Massari Cristina",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Scoppola Enrico",
+      "ruolo": null,
+      "gruppo": "PARTITO DEMOCRATICO"
+     },
+     {
+      "nome": "Rago Alfonso",
+      "ruolo": "capogruppo",
+      "gruppo": "ROMA FUTURA FEMMINISTA EGUALITARIA ECOLOGISTA"
+     },
+     {
+      "nome": "Forti Giovanni",
+      "ruolo": "capogruppo",
+      "gruppo": "SINISTRA CIVICA ECOLOGISTA"
+     },
+     {
+      "nome": "De Angelis Stefania",
+      "ruolo": "capogruppo",
+      "gruppo": "EUROPA VERDE/VERDI/AVS"
+     },
+     {
+      "nome": "Badaracco Irene",
+      "ruolo": "capogruppo",
+      "gruppo": "GRUPPO MISTO"
+     }
+    ],
+    "gruppi": [
+     "EUROPA VERDE/VERDI/AVS",
+     "FORZA ITALIA",
+     "FRATELLI D'ITALIA",
+     "GRUPPO MISTO",
+     "ITALIA VIVA",
+     "LISTA CIVICA GUALTIERI SINDACO",
+     "PARTITO DEMOCRATICO",
+     "ROMA FUTURA FEMMINISTA EGUALITARIA ECOLOGISTA",
+     "SINISTRA CIVICA ECOLOGISTA"
+    ],
+    "note": null
+   },
+   "date_aggiornamento_sezioni": {
+    "presidente": [
+     "2026-01-15"
+    ],
+    "giunta": [
+     "2026-01-21"
+    ],
+    "consiglio": [
+     "2026-01-15"
+    ]
+   },
+   "ultimo_aggiornamento": "2026-01-21",
+   "campi_mancanti": []
+  }
+ }
+}

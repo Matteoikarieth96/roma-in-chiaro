@@ -1,0 +1,47 @@
+/* Grafici della scheda municipio (lib/municipio-grafici.ts) e pezzi nuovi di lib/grafici.ts:
+   linee nel tempo, barre impilate orizzontali, confronto tra i 15. Usa solo i token di globals.css. */
+
+/* linee nel tempo: stessa griglia delle colonne (.ch); le colonne trasparenti danno il suggerimento */
+.ln .ch-plot svg.ln-svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.ln-svg polyline{fill:none;stroke-width:2;vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round}
+.ln-dots{position:absolute;inset:0;pointer-events:none}
+.ln-dots i{position:absolute;width:8px;height:8px;border-radius:50%;transform:translate(-50%,50%);box-shadow:0 0 0 2px var(--raised)}
+
+/* barre orizzontali impilate */
+.sb .sb-t{background:var(--track);height:10px;border-radius:999px;display:block;position:relative}
+.sb .sb-b{position:absolute;left:0;top:0;bottom:0;display:flex;gap:2px;border-radius:999px;overflow:hidden;min-width:4px}
+.sb .sb-b i{display:block;flex-basis:0;min-width:2px}
+.sb .bar-row:hover .n{text-decoration:underline}
+
+/* intestazione di pannello con scelta della vista */
+.mg-h{display:flex;justify-content:space-between;align-items:center;gap:8px 12px;flex-wrap:wrap;margin-bottom:14px}
+.mg-h h3{margin:0}
+
+/* il municipio tra i 15: una striscia per indicatore */
+.cmp{display:flex;flex-direction:column;gap:18px;margin-top:16px}
+.cmp-row{display:grid;grid-template-columns:minmax(120px,220px) minmax(0,1fr) minmax(110px,auto);gap:16px;align-items:center;font-size:14px}
+.cmp-n{display:flex;flex-direction:column;font-weight:500;min-width:0}
+.cmp-n small,.cmp-v small{font-weight:400;color:var(--soft);font-size:12px}
+.cmp-t{position:relative;height:26px;margin:0 7px}
+.cmp-line{position:absolute;left:0;right:0;top:50%;height:2px;margin-top:-1px;background:var(--track);border-radius:2px}
+.cmp-o,.cmp-me{position:absolute;top:50%;border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 0 2px var(--raised)}
+.cmp-o{width:10px;height:10px;background:var(--c-na)}
+.cmp-me{width:14px;height:14px;background:var(--data-hl);z-index:2}
+.cmp-avg{position:absolute;top:1px;bottom:1px;width:2px;margin-left:-1px;background:var(--text);border-radius:2px;z-index:1}
+.cmp-o::after,.cmp-me::after,.cmp-avg::after{content:"";position:absolute;inset:-6px}
+.cmp-v{display:flex;flex-direction:column;text-align:right;font-variant-numeric:tabular-nums}
+.cmp-v b{font-size:15px;font-weight:600}
+.legend i.lg-me,.legend i.lg-o{width:12px;height:12px;border-radius:50%}
+.legend i.lg-me{background:var(--data-hl)}
+.legend i.lg-o{background:var(--c-na)}
+.legend i.lg-avg{width:2px;height:14px;border-radius:2px;background:var(--text)}
+
+@media (max-width:640px){
+  .cmp-row{grid-template-columns:minmax(0,1fr) auto;gap:6px 12px}
+  .cmp-t{grid-column:1/-1;grid-row:2}
+  .ln-dots i{width:6px;height:6px}
+}
+
+/* ciambella in mezzo pannello: legenda sotto, così i nomi restano leggibili */
+.mg .g2 .dn{grid-template-columns:minmax(0,1fr)}
+.mg .g2 .dn svg{margin:0 auto;max-width:200px}

@@ -1,0 +1,64 @@
+# Controlli a ogni push e pull request: niente download dalle fonti, niente segreti, sola lettura.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  dati-e-siti:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.14"
+
+      - name: Ambiente Python del progetto
+        run: |
+          python -m venv .venv
+          .venv/bin/pip install -q -r requirements.txt
+
+      - name: Script Python compilabili
+        run: .venv/bin/python -I -m compileall -q scripts web/scripts
+
+      - name: Controlli sugli snapshot (offline)
+        run: .venv/bin/python -I scripts/controlla_snapshot.py
+
+      - name: Confini dei municipi riproducibili dal file OSM
+        run: |
+          .venv/bin/python -I scripts/build_map.py
+          git diff --exit-code -- data/snapshot/mappa.json
+
+      - name: Sito statico dagli snapshot
+        run: ./aggiorna.sh sito
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Sito Next.js
+        working-directory: web
+        run: |
+          npm ci
+          npm run build
+
+      - name: Codice condiviso allineato tra i due siti
+        working-directory: web
+        run: |
+          npm run porta
+          git diff --exit-code -- ../scripts/da-web.js

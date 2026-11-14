@@ -1,0 +1,2762 @@
+{
+ "id": "quartieri",
+ "titolo": "Quartieri, rioni e zone funzionali di Roma con il loro municipio (usati dalla ricerca)",
+ "fonte": {
+  "nome": "Geoportale di Roma Capitale, strato DIPCUL:vst_nuove_localita (aree della deliberazione A.C. n. 150/2026)",
+  "ente": "Roma Capitale",
+  "url": "https://geoportale.comune.roma.it/",
+  "licenza": "Dati aperti di Roma Capitale (art. 52, c. 2, del CAD), con citazione della fonte"
+ },
+ "periodo": "Geografia della deliberazione n. 150/2026, file scaricati il 2026-10-30",
+ "verificato": "2026-10-30",
+ "misura": "Nome e municipio di 457 aree: 334 quartieri, 22 rioni, 101 zone funzionali. Servono alla ricerca per riconoscere i nomi dei luoghi.",
+ "non_misura": [
+  "Non sono le 155 zone urbanistiche usate dall'Annuario statistico: la deliberazione 150/2026 ha ridisegnato la geografia.",
+  "Un nome citato in un progetto o in un appalto non vuol dire che il progetto si trovi in quell'area.",
+  "I nomi sono presi dal progetto quartieri-roma-2026 di Urbe Hub, che li ha scaricati dal geoportale e ne ha corretto gli accenti."
+ ],
+ "aree": [
+  {
+   "nome": "Borgo",
+   "tipo": "rione",
+   "codice": "R.XIV",
+   "municipio": 1
+  },
+  {
+   "nome": "Campitelli",
+   "tipo": "rione",
+   "codice": "R.X",
+   "municipio": 1
+  },
+  {
+   "nome": "Campo Marzio",
+   "tipo": "rione",
+   "codice": "R.IV",
+   "municipio": 1
+  },
+  {
+   "nome": "Castro Pretorio",
+   "tipo": "rione",
+   "codice": "R.XVIII",
+   "municipio": 1
+  },
+  {
+   "nome": "Celio",
+   "tipo": "rione",
+   "codice": "R.XIX",
+   "municipio": 1
+  },
+  {
+   "nome": "Colonna",
+   "tipo": "rione",
+   "codice": "R.III",
+   "municipio": 1
+  },
+  {
+   "nome": "Della Vittoria",
+   "tipo": "quartiere",
+   "codice": "QU.I.03",
+   "municipio": 1
+  },
+  {
+   "nome": "Eroi Trionfale",
+   "tipo": "quartiere",
+   "codice": "QU.I.02",
+   "municipio": 1
+  },
+  {
+   "nome": "Esquilino",
+   "tipo": "rione",
+   "codice": "R.XV",
+   "municipio": 1
+  },
+  {
+   "nome": "Igea",
+   "tipo": "quartiere",
+   "codice": "QU.I.04",
+   "municipio": 1
+  },
+  {
+   "nome": "Ludovisi",
+   "tipo": "rione",
+   "codice": "R.XVI",
+   "municipio": 1
+  },
+  {
+   "nome": "Miani",
+   "tipo": "quartiere",
+   "codice": "QU.I.01",
+   "municipio": 1
+  },
+  {
+   "nome": "Monti",
+   "tipo": "rione",
+   "codice": "R.I",
+   "municipio": 1
+  },
+  {
+   "nome": "Parco di Monte Mario",
+   "tipo": "zona funzionale",
+   "codice": "ZF.I.01",
+   "municipio": 1
+  },
+  {
+   "nome": "Parione",
+   "tipo": "rione",
+   "codice": "R.VI",
+   "municipio": 1
+  },
+  {
+   "nome": "Pigna",
+   "tipo": "rione",
+   "codice": "R.IX",
+   "municipio": 1
+  },
+  {
+   "nome": "Ponte",
+   "tipo": "rione",
+   "codice": "R.V",
+   "municipio": 1
+  },
+  {
+   "nome": "Prati",
+   "tipo": "rione",
+   "codice": "R.XXII",
+   "municipio": 1
+  },
+  {
+   "nome": "Regola",
+   "tipo": "rione",
+   "codice": "R.VII",
+   "municipio": 1
+  },
+  {
+   "nome": "Ripa",
+   "tipo": "rione",
+   "codice": "R.XII",
+   "municipio": 1
+  },
+  {
+   "nome": "Sallustiano",
+   "tipo": "rione",
+   "codice": "R.XVII",
+   "municipio": 1
+  },
+  {
+   "nome": "San Saba",
+   "tipo": "rione",
+   "codice": "R.XXI",
+   "municipio": 1
+  },
+  {
+   "nome": "Sant'Angelo",
+   "tipo": "rione",
+   "codice": "R.XI",
+   "municipio": 1
+  },
+  {
+   "nome": "Sant'Eustachio",
+   "tipo": "rione",
+   "codice": "R.VIII",
+   "municipio": 1
+  },
+  {
+   "nome": "Testaccio",
+   "tipo": "rione",
+   "codice": "R.XX",
+   "municipio": 1
+  },
+  {
+   "nome": "Trastevere",
+   "tipo": "rione",
+   "codice": "R.XIII",
+   "municipio": 1
+  },
+  {
+   "nome": "Trevi",
+   "tipo": "rione",
+   "codice": "R.II",
+   "municipio": 1
+  },
+  {
+   "nome": "Acqua Acetosa",
+   "tipo": "zona funzionale",
+   "codice": "ZF.II.08",
+   "municipio": 2
+  },
+  {
+   "nome": "Africano",
+   "tipo": "quartiere",
+   "codice": "QU.II.10",
+   "municipio": 2
+  },
+  {
+   "nome": "Flaminio",
+   "tipo": "quartiere",
+   "codice": "QU.II.05",
+   "municipio": 2
+  },
+  {
+   "nome": "Italia",
+   "tipo": "quartiere",
+   "codice": "QU.II.09",
+   "municipio": 2
+  },
+  {
+   "nome": "Nomentano",
+   "tipo": "quartiere",
+   "codice": "QU.II.08",
+   "municipio": 2
+  },
+  {
+   "nome": "Parioli",
+   "tipo": "quartiere",
+   "codice": "QU.II.04",
+   "municipio": 2
+  },
+  {
+   "nome": "Pinciano",
+   "tipo": "quartiere",
+   "codice": "QU.II.03",
+   "municipio": 2
+  },
+  {
+   "nome": "Pretorio",
+   "tipo": "zona funzionale",
+   "codice": "ZF.II.03",
+   "municipio": 2
+  },
+  {
+   "nome": "Salario",
+   "tipo": "quartiere",
+   "codice": "QU.II.02",
+   "municipio": 2
+  },
+  {
+   "nome": "San Lorenzo",
+   "tipo": "quartiere",
+   "codice": "QU.II.01",
+   "municipio": 2
+  },
+  {
+   "nome": "Sapienza Università",
+   "tipo": "zona funzionale",
+   "codice": "ZF.II.04",
+   "municipio": 2
+  },
+  {
+   "nome": "Scalo San Lorenzo",
+   "tipo": "zona funzionale",
+   "codice": "ZF.II.06",
+   "municipio": 2
+  },
+  {
+   "nome": "Trieste",
+   "tipo": "quartiere",
+   "codice": "QU.II.07",
+   "municipio": 2
+  },
+  {
+   "nome": "Valle Giulia",
+   "tipo": "zona funzionale",
+   "codice": "ZF.II.02",
+   "municipio": 2
+  },
+  {
+   "nome": "Verano",
+   "tipo": "zona funzionale",
+   "codice": "ZF.II.05",
+   "municipio": 2
+  },
+  {
+   "nome": "Vescovio",
+   "tipo": "quartiere",
+   "codice": "QU.II.11",
+   "municipio": 2
+  },
+  {
+   "nome": "Villa Ada",
+   "tipo": "zona funzionale",
+   "codice": "ZF.II.07",
+   "municipio": 2
+  },
+  {
+   "nome": "Villa Borghese",
+   "tipo": "zona funzionale",
+   "codice": "ZF.II.01",
+   "municipio": 2
+  },
+  {
+   "nome": "Villaggio Olimpico",
+   "tipo": "quartiere",
+   "codice": "QU.II.06",
+   "municipio": 2
+  },
+  {
+   "nome": "Aeroporto dell'Urbe",
+   "tipo": "zona funzionale",
+   "codice": "ZF.III.02",
+   "municipio": 3
+  },
+  {
+   "nome": "Bufalotta",
+   "tipo": "quartiere",
+   "codice": "QU.III.18",
+   "municipio": 3
+  },
+  {
+   "nome": "Casal Boccone",
+   "tipo": "quartiere",
+   "codice": "QU.III.17",
+   "municipio": 3
+  },
+  {
+   "nome": "Castel Giubileo",
+   "tipo": "quartiere",
+   "codice": "QU.III.20",
+   "municipio": 3
+  },
+  {
+   "nome": "Cinquina",
+   "tipo": "quartiere",
+   "codice": "QU.III.19",
+   "municipio": 3
+  },
+  {
+   "nome": "Colle Salario",
+   "tipo": "quartiere",
+   "codice": "QU.III.12",
+   "municipio": 3
+  },
+  {
+   "nome": "Conca d'Oro",
+   "tipo": "quartiere",
+   "codice": "QU.III.02",
+   "municipio": 3
+  },
+  {
+   "nome": "Fidene",
+   "tipo": "quartiere",
+   "codice": "QU.III.10",
+   "municipio": 3
+  },
+  {
+   "nome": "Inviolatella Salaria",
+   "tipo": "zona funzionale",
+   "codice": "ZF.III.04",
+   "municipio": 3
+  },
+  {
+   "nome": "Marcigliana",
+   "tipo": "zona funzionale",
+   "codice": "ZF.III.05",
+   "municipio": 3
+  },
+  {
+   "nome": "Monte Sacro",
+   "tipo": "quartiere",
+   "codice": "QU.III.03",
+   "municipio": 3
+  },
+  {
+   "nome": "Nuova Talenti",
+   "tipo": "quartiere",
+   "codice": "QU.III.15",
+   "municipio": 3
+  },
+  {
+   "nome": "Nuovo Salario",
+   "tipo": "quartiere",
+   "codice": "QU.III.07",
+   "municipio": 3
+  },
+  {
+   "nome": "Parco delle Sabine",
+   "tipo": "zona funzionale",
+   "codice": "ZF.III.03",
+   "municipio": 3
+  },
+  {
+   "nome": "Parco delle Valli",
+   "tipo": "zona funzionale",
+   "codice": "ZF.III.01",
+   "municipio": 3
+  },
+  {
+   "nome": "Porta di Roma",
+   "tipo": "quartiere",
+   "codice": "QU.III.13",
+   "municipio": 3
+  },
+  {
+   "nome": "Prati Fiscali",
+   "tipo": "quartiere",
+   "codice": "QU.III.06",
+   "municipio": 3
+  },
+  {
+   "nome": "Sacco Pastore",
+   "tipo": "quartiere",
+   "codice": "QU.III.01",
+   "municipio": 3
+  },
+  {
+   "nome": "Santa Maria delle Grazie - Australiano",
+   "tipo": "quartiere",
+   "codice": "QU.III.16",
+   "municipio": 3
+  },
+  {
+   "nome": "Serpentara",
+   "tipo": "quartiere",
+   "codice": "QU.III.09",
+   "municipio": 3
+  },
+  {
+   "nome": "Settebagni",
+   "tipo": "quartiere",
+   "codice": "QU.III.21",
+   "municipio": 3
+  },
+  {
+   "nome": "Talenti",
+   "tipo": "quartiere",
+   "codice": "QU.III.14",
+   "municipio": 3
+  },
+  {
+   "nome": "Tor San Giovanni",
+   "tipo": "zona funzionale",
+   "codice": "ZF.III.06",
+   "municipio": 3
+  },
+  {
+   "nome": "Tufello",
+   "tipo": "quartiere",
+   "codice": "QU.III.04",
+   "municipio": 3
+  },
+  {
+   "nome": "Val Melaina",
+   "tipo": "quartiere",
+   "codice": "QU.III.05",
+   "municipio": 3
+  },
+  {
+   "nome": "Vigne Nuove",
+   "tipo": "quartiere",
+   "codice": "QU.III.08",
+   "municipio": 3
+  },
+  {
+   "nome": "Villa Spada",
+   "tipo": "quartiere",
+   "codice": "QU.III.11",
+   "municipio": 3
+  },
+  {
+   "nome": "Casal Bertone",
+   "tipo": "quartiere",
+   "codice": "QU.IV.01",
+   "municipio": 4
+  },
+  {
+   "nome": "Casal Bruciato",
+   "tipo": "quartiere",
+   "codice": "QU.IV.08",
+   "municipio": 4
+  },
+  {
+   "nome": "Casal Monastero",
+   "tipo": "quartiere",
+   "codice": "QU.IV.23",
+   "municipio": 4
+  },
+  {
+   "nome": "Casal Tidei",
+   "tipo": "quartiere",
+   "codice": "QU.IV.19",
+   "municipio": 4
+  },
+  {
+   "nome": "Casal de' Pazzi",
+   "tipo": "quartiere",
+   "codice": "QU.IV.15",
+   "municipio": 4
+  },
+  {
+   "nome": "Casale Cavallari",
+   "tipo": "quartiere",
+   "codice": "QU.IV.21",
+   "municipio": 4
+  },
+  {
+   "nome": "Casale Rocchi",
+   "tipo": "quartiere",
+   "codice": "QU.IV.06",
+   "municipio": 4
+  },
+  {
+   "nome": "Case Rosse",
+   "tipo": "quartiere",
+   "codice": "QU.IV.27",
+   "municipio": 4
+  },
+  {
+   "nome": "Collatina Vecchia",
+   "tipo": "quartiere",
+   "codice": "QU.IV.12",
+   "municipio": 4
+  },
+  {
+   "nome": "Colli Aniene",
+   "tipo": "quartiere",
+   "codice": "QU.IV.11",
+   "municipio": 4
+  },
+  {
+   "nome": "Collina Lanciani",
+   "tipo": "quartiere",
+   "codice": "QU.IV.05",
+   "municipio": 4
+  },
+  {
+   "nome": "Giardino Nomentano",
+   "tipo": "quartiere",
+   "codice": "QU.IV.17",
+   "municipio": 4
+  },
+  {
+   "nome": "Istituti Penitenziari Rebibbia",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IV.03",
+   "municipio": 4
+  },
+  {
+   "nome": "Monti Tiburtini",
+   "tipo": "quartiere",
+   "codice": "QU.IV.03",
+   "municipio": 4
+  },
+  {
+   "nome": "Parco Valle dell'Aniene",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IV.04",
+   "municipio": 4
+  },
+  {
+   "nome": "Parco della Cervelletta",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IV.05",
+   "municipio": 4
+  },
+  {
+   "nome": "Parco della Serenissima",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IV.01",
+   "municipio": 4
+  },
+  {
+   "nome": "Parco di Aguzzano",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IV.02",
+   "municipio": 4
+  },
+  {
+   "nome": "Pietralata",
+   "tipo": "quartiere",
+   "codice": "QU.IV.07",
+   "municipio": 4
+  },
+  {
+   "nome": "Podere Rosa",
+   "tipo": "quartiere",
+   "codice": "QU.IV.16",
+   "municipio": 4
+  },
+  {
+   "nome": "Ponte Mammolo",
+   "tipo": "quartiere",
+   "codice": "QU.IV.13",
+   "municipio": 4
+  },
+  {
+   "nome": "Portonaccio - Monti di Pietralata",
+   "tipo": "quartiere",
+   "codice": "QU.IV.04",
+   "municipio": 4
+  },
+  {
+   "nome": "Rebibbia",
+   "tipo": "quartiere",
+   "codice": "QU.IV.14",
+   "municipio": 4
+  },
+  {
+   "nome": "San Basilio",
+   "tipo": "quartiere",
+   "codice": "QU.IV.20",
+   "municipio": 4
+  },
+  {
+   "nome": "San Cleto",
+   "tipo": "quartiere",
+   "codice": "QU.IV.18",
+   "municipio": 4
+  },
+  {
+   "nome": "San Romano",
+   "tipo": "quartiere",
+   "codice": "QU.IV.02",
+   "municipio": 4
+  },
+  {
+   "nome": "Sant'Alessandro - Pratolungo",
+   "tipo": "quartiere",
+   "codice": "QU.IV.25",
+   "municipio": 4
+  },
+  {
+   "nome": "Septem Fratres",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IV.06",
+   "municipio": 4
+  },
+  {
+   "nome": "Settecamini",
+   "tipo": "quartiere",
+   "codice": "QU.IV.26",
+   "municipio": 4
+  },
+  {
+   "nome": "Tecnopolo",
+   "tipo": "quartiere",
+   "codice": "QU.IV.22",
+   "municipio": 4
+  },
+  {
+   "nome": "Tiburtino III",
+   "tipo": "quartiere",
+   "codice": "QU.IV.10",
+   "municipio": 4
+  },
+  {
+   "nome": "Tor Cervara",
+   "tipo": "quartiere",
+   "codice": "QU.IV.28",
+   "municipio": 4
+  },
+  {
+   "nome": "Torraccia",
+   "tipo": "quartiere",
+   "codice": "QU.IV.24",
+   "municipio": 4
+  },
+  {
+   "nome": "Verderocca",
+   "tipo": "quartiere",
+   "codice": "QU.IV.09",
+   "municipio": 4
+  },
+  {
+   "nome": "Aeroporto Militare Baracca",
+   "tipo": "zona funzionale",
+   "codice": "ZF.V.01",
+   "municipio": 5
+  },
+  {
+   "nome": "Alessandrino",
+   "tipo": "quartiere",
+   "codice": "QU.V.16",
+   "municipio": 5
+  },
+  {
+   "nome": "Casale Caletto",
+   "tipo": "quartiere",
+   "codice": "QU.V.21",
+   "municipio": 5
+  },
+  {
+   "nome": "Casale Rosso",
+   "tipo": "quartiere",
+   "codice": "QU.V.14",
+   "municipio": 5
+  },
+  {
+   "nome": "Centocelle",
+   "tipo": "quartiere",
+   "codice": "QU.V.11",
+   "municipio": 5
+  },
+  {
+   "nome": "Certosa",
+   "tipo": "quartiere",
+   "codice": "QU.V.04",
+   "municipio": 5
+  },
+  {
+   "nome": "Collatino",
+   "tipo": "quartiere",
+   "codice": "QU.V.12",
+   "municipio": 5
+  },
+  {
+   "nome": "La Rustica",
+   "tipo": "quartiere",
+   "codice": "QU.V.20",
+   "municipio": 5
+  },
+  {
+   "nome": "Longoni - Maggiolino",
+   "tipo": "quartiere",
+   "codice": "QU.V.19",
+   "municipio": 5
+  },
+  {
+   "nome": "Mistica",
+   "tipo": "zona funzionale",
+   "codice": "ZF.V.03",
+   "municipio": 5
+  },
+  {
+   "nome": "Nuova Gordiani",
+   "tipo": "quartiere",
+   "codice": "QU.V.06",
+   "municipio": 5
+  },
+  {
+   "nome": "Omo",
+   "tipo": "zona funzionale",
+   "codice": "ZF.V.04",
+   "municipio": 5
+  },
+  {
+   "nome": "Parco di Centocelle",
+   "tipo": "zona funzionale",
+   "codice": "ZF.V.02",
+   "municipio": 5
+  },
+  {
+   "nome": "Pigneto",
+   "tipo": "quartiere",
+   "codice": "QU.V.01",
+   "municipio": 5
+  },
+  {
+   "nome": "Prampolini",
+   "tipo": "quartiere",
+   "codice": "QU.V.13",
+   "municipio": 5
+  },
+  {
+   "nome": "Prenestino Labicano",
+   "tipo": "quartiere",
+   "codice": "QU.V.02",
+   "municipio": 5
+  },
+  {
+   "nome": "Quadraro Vecchio",
+   "tipo": "quartiere",
+   "codice": "QU.V.05",
+   "municipio": 5
+  },
+  {
+   "nome": "Quarticciolo",
+   "tipo": "quartiere",
+   "codice": "QU.V.15",
+   "municipio": 5
+  },
+  {
+   "nome": "Tor Pignattara",
+   "tipo": "quartiere",
+   "codice": "QU.V.03",
+   "municipio": 5
+  },
+  {
+   "nome": "Tor Sapienza",
+   "tipo": "quartiere",
+   "codice": "QU.V.17",
+   "municipio": 5
+  },
+  {
+   "nome": "Tor Tre Teste",
+   "tipo": "quartiere",
+   "codice": "QU.V.18",
+   "municipio": 5
+  },
+  {
+   "nome": "Tor de' Schiavi",
+   "tipo": "quartiere",
+   "codice": "QU.V.08",
+   "municipio": 5
+  },
+  {
+   "nome": "Torre di Salone",
+   "tipo": "zona funzionale",
+   "codice": "ZF.V.05",
+   "municipio": 5
+  },
+  {
+   "nome": "Villa Gordiani",
+   "tipo": "quartiere",
+   "codice": "QU.V.07",
+   "municipio": 5
+  },
+  {
+   "nome": "Villa de Sanctis",
+   "tipo": "quartiere",
+   "codice": "QU.V.10",
+   "municipio": 5
+  },
+  {
+   "nome": "Villini Santa Maria",
+   "tipo": "quartiere",
+   "codice": "QU.V.09",
+   "municipio": 5
+  },
+  {
+   "nome": "Acqua Vergine",
+   "tipo": "zona funzionale",
+   "codice": "ZF.VI.02",
+   "municipio": 6
+  },
+  {
+   "nome": "Arcacci",
+   "tipo": "quartiere",
+   "codice": "QU.VI.04",
+   "municipio": 6
+  },
+  {
+   "nome": "Area Archeologica Gabii",
+   "tipo": "zona funzionale",
+   "codice": "ZF.VI.06",
+   "municipio": 6
+  },
+  {
+   "nome": "Belvedere",
+   "tipo": "quartiere",
+   "codice": "QU.VI.13",
+   "municipio": 6
+  },
+  {
+   "nome": "Borghesiana",
+   "tipo": "quartiere",
+   "codice": "QU.VI.12",
+   "municipio": 6
+  },
+  {
+   "nome": "Campo Grazia",
+   "tipo": "zona funzionale",
+   "codice": "ZF.VI.07",
+   "municipio": 6
+  },
+  {
+   "nome": "Carcaricola",
+   "tipo": "quartiere",
+   "codice": "QU.VI.35",
+   "municipio": 6
+  },
+  {
+   "nome": "Castelverde",
+   "tipo": "quartiere",
+   "codice": "QU.VI.25",
+   "municipio": 6
+  },
+  {
+   "nome": "Colle Mattia",
+   "tipo": "quartiere",
+   "codice": "QU.VI.34",
+   "municipio": 6
+  },
+  {
+   "nome": "Colle Monfortani",
+   "tipo": "quartiere",
+   "codice": "QU.VI.37",
+   "municipio": 6
+  },
+  {
+   "nome": "Colle Prenestino",
+   "tipo": "quartiere",
+   "codice": "QU.VI.05",
+   "municipio": 6
+  },
+  {
+   "nome": "Colle degli Abeti",
+   "tipo": "quartiere",
+   "codice": "QU.VI.20",
+   "municipio": 6
+  },
+  {
+   "nome": "Colle del Sole - Tavernelle",
+   "tipo": "quartiere",
+   "codice": "QU.VI.22",
+   "municipio": 6
+  },
+  {
+   "nome": "Corcolle",
+   "tipo": "quartiere",
+   "codice": "QU.VI.29",
+   "municipio": 6
+  },
+  {
+   "nome": "Due Leoni",
+   "tipo": "quartiere",
+   "codice": "QU.VI.15",
+   "municipio": 6
+  },
+  {
+   "nome": "Finocchio",
+   "tipo": "quartiere",
+   "codice": "QU.VI.31",
+   "municipio": 6
+  },
+  {
+   "nome": "Fontana Candida",
+   "tipo": "quartiere",
+   "codice": "QU.VI.11",
+   "municipio": 6
+  },
+  {
+   "nome": "Fosso San Giuliano",
+   "tipo": "quartiere",
+   "codice": "QU.VI.27",
+   "municipio": 6
+  },
+  {
+   "nome": "Giardinetti",
+   "tipo": "quartiere",
+   "codice": "QU.VI.02",
+   "municipio": 6
+  },
+  {
+   "nome": "Grotte Celoni",
+   "tipo": "quartiere",
+   "codice": "QU.VI.16",
+   "municipio": 6
+  },
+  {
+   "nome": "Lunghezza",
+   "tipo": "quartiere",
+   "codice": "QU.VI.26",
+   "municipio": 6
+  },
+  {
+   "nome": "Nuova Ponte di Nona",
+   "tipo": "quartiere",
+   "codice": "QU.VI.19",
+   "municipio": 6
+  },
+  {
+   "nome": "Osteria dell'Osa - Valle Castiglione",
+   "tipo": "quartiere",
+   "codice": "QU.VI.28",
+   "municipio": 6
+  },
+  {
+   "nome": "Pantano Borghese",
+   "tipo": "quartiere",
+   "codice": "QU.VI.32",
+   "municipio": 6
+  },
+  {
+   "nome": "Prato Fiorito",
+   "tipo": "quartiere",
+   "codice": "QU.VI.18",
+   "municipio": 6
+  },
+  {
+   "nome": "Rocca Cencia",
+   "tipo": "quartiere",
+   "codice": "QU.VI.23",
+   "municipio": 6
+  },
+  {
+   "nome": "Salone",
+   "tipo": "zona funzionale",
+   "codice": "ZF.VI.04",
+   "municipio": 6
+  },
+  {
+   "nome": "San Vittorino",
+   "tipo": "quartiere",
+   "codice": "QU.VI.30",
+   "municipio": 6
+  },
+  {
+   "nome": "Tor Bella Monaca",
+   "tipo": "quartiere",
+   "codice": "QU.VI.07",
+   "municipio": 6
+  },
+  {
+   "nome": "Tor Vergata",
+   "tipo": "quartiere",
+   "codice": "QU.VI.36",
+   "municipio": 6
+  },
+  {
+   "nome": "Tor Vergata Università",
+   "tipo": "zona funzionale",
+   "codice": "ZF.VI.05",
+   "municipio": 6
+  },
+  {
+   "nome": "Toragnola",
+   "tipo": "zona funzionale",
+   "codice": "ZF.VI.03",
+   "municipio": 6
+  },
+  {
+   "nome": "Torre Angela",
+   "tipo": "quartiere",
+   "codice": "QU.VI.03",
+   "municipio": 6
+  },
+  {
+   "nome": "Torre Gaia - Due Torri",
+   "tipo": "quartiere",
+   "codice": "QU.VI.08",
+   "municipio": 6
+  },
+  {
+   "nome": "Torre Jacova",
+   "tipo": "quartiere",
+   "codice": "QU.VI.33",
+   "municipio": 6
+  },
+  {
+   "nome": "Torre Maura",
+   "tipo": "quartiere",
+   "codice": "QU.VI.01",
+   "municipio": 6
+  },
+  {
+   "nome": "Torrenova",
+   "tipo": "quartiere",
+   "codice": "QU.VI.06",
+   "municipio": 6
+  },
+  {
+   "nome": "Valle Bagnata",
+   "tipo": "zona funzionale",
+   "codice": "ZF.VI.01",
+   "municipio": 6
+  },
+  {
+   "nome": "Valle Borghesiana",
+   "tipo": "quartiere",
+   "codice": "QU.VI.17",
+   "municipio": 6
+  },
+  {
+   "nome": "Valle Fiorita",
+   "tipo": "quartiere",
+   "codice": "QU.VI.14",
+   "municipio": 6
+  },
+  {
+   "nome": "Villa Verde",
+   "tipo": "quartiere",
+   "codice": "QU.VI.10",
+   "municipio": 6
+  },
+  {
+   "nome": "Villaggio Breda",
+   "tipo": "quartiere",
+   "codice": "QU.VI.09",
+   "municipio": 6
+  },
+  {
+   "nome": "Villaggio Falcone",
+   "tipo": "quartiere",
+   "codice": "QU.VI.21",
+   "municipio": 6
+  },
+  {
+   "nome": "Villaggio Prenestino",
+   "tipo": "quartiere",
+   "codice": "QU.VI.24",
+   "municipio": 6
+  },
+  {
+   "nome": "Aeroporto Pastine",
+   "tipo": "zona funzionale",
+   "codice": "ZF.VII.04",
+   "municipio": 7
+  },
+  {
+   "nome": "Alberone",
+   "tipo": "quartiere",
+   "codice": "QU.VII.05",
+   "municipio": 7
+  },
+  {
+   "nome": "Appio Claudio",
+   "tipo": "quartiere",
+   "codice": "QU.VII.13",
+   "municipio": 7
+  },
+  {
+   "nome": "Appio Latino",
+   "tipo": "quartiere",
+   "codice": "QU.VII.02",
+   "municipio": 7
+  },
+  {
+   "nome": "Appio San Giovanni",
+   "tipo": "quartiere",
+   "codice": "QU.VII.01",
+   "municipio": 7
+  },
+  {
+   "nome": "Arco di Travertino",
+   "tipo": "quartiere",
+   "codice": "QU.VII.08",
+   "municipio": 7
+  },
+  {
+   "nome": "Caffarella - Parco dell'Appia Antica",
+   "tipo": "zona funzionale",
+   "codice": "ZF.VII.01",
+   "municipio": 7
+  },
+  {
+   "nome": "Campo Romano",
+   "tipo": "quartiere",
+   "codice": "QU.VII.26",
+   "municipio": 7
+  },
+  {
+   "nome": "Capannelle",
+   "tipo": "quartiere",
+   "codice": "QU.VII.20",
+   "municipio": 7
+  },
+  {
+   "nome": "Casilina Vecchia",
+   "tipo": "quartiere",
+   "codice": "QU.VII.04",
+   "municipio": 7
+  },
+  {
+   "nome": "Cecafumo",
+   "tipo": "quartiere",
+   "codice": "QU.VII.12",
+   "municipio": 7
+  },
+  {
+   "nome": "Centroni",
+   "tipo": "quartiere",
+   "codice": "QU.VII.28",
+   "municipio": 7
+  },
+  {
+   "nome": "Cinecittà",
+   "tipo": "zona funzionale",
+   "codice": "ZF.VII.03",
+   "municipio": 7
+  },
+  {
+   "nome": "Cinecittà Est",
+   "tipo": "quartiere",
+   "codice": "QU.VII.17",
+   "municipio": 7
+  },
+  {
+   "nome": "Colli Albani",
+   "tipo": "quartiere",
+   "codice": "QU.VII.07",
+   "municipio": 7
+  },
+  {
+   "nome": "Don Bosco",
+   "tipo": "quartiere",
+   "codice": "QU.VII.15",
+   "municipio": 7
+  },
+  {
+   "nome": "Furio Camillo",
+   "tipo": "quartiere",
+   "codice": "QU.VII.06",
+   "municipio": 7
+  },
+  {
+   "nome": "Gregna Sant'Andrea",
+   "tipo": "quartiere",
+   "codice": "QU.VII.23",
+   "municipio": 7
+  },
+  {
+   "nome": "Lamaro - Cinecittà",
+   "tipo": "quartiere",
+   "codice": "QU.VII.14",
+   "municipio": 7
+  },
+  {
+   "nome": "Morena",
+   "tipo": "quartiere",
+   "codice": "QU.VII.27",
+   "municipio": 7
+  },
+  {
+   "nome": "Nuova Tor Vergata",
+   "tipo": "quartiere",
+   "codice": "QU.VII.29",
+   "municipio": 7
+  },
+  {
+   "nome": "Osteria del Curato",
+   "tipo": "quartiere",
+   "codice": "QU.VII.18",
+   "municipio": 7
+  },
+  {
+   "nome": "Parco degli Acquedotti",
+   "tipo": "zona funzionale",
+   "codice": "ZF.VII.02",
+   "municipio": 7
+  },
+  {
+   "nome": "Ponte Linari Barcaccia",
+   "tipo": "quartiere",
+   "codice": "QU.VII.30",
+   "municipio": 7
+  },
+  {
+   "nome": "Quadraro",
+   "tipo": "quartiere",
+   "codice": "QU.VII.11",
+   "municipio": 7
+  },
+  {
+   "nome": "Quarto Miglio",
+   "tipo": "quartiere",
+   "codice": "QU.VII.22",
+   "municipio": 7
+  },
+  {
+   "nome": "Romanina",
+   "tipo": "quartiere",
+   "codice": "QU.VII.25",
+   "municipio": 7
+  },
+  {
+   "nome": "Statuario",
+   "tipo": "quartiere",
+   "codice": "QU.VII.21",
+   "municipio": 7
+  },
+  {
+   "nome": "Tor Fiscale",
+   "tipo": "quartiere",
+   "codice": "QU.VII.10",
+   "municipio": 7
+  },
+  {
+   "nome": "Tor di Mezzavia",
+   "tipo": "quartiere",
+   "codice": "QU.VII.24",
+   "municipio": 7
+  },
+  {
+   "nome": "Torre Spaccata",
+   "tipo": "quartiere",
+   "codice": "QU.VII.16",
+   "municipio": 7
+  },
+  {
+   "nome": "Tuscolano Lais",
+   "tipo": "quartiere",
+   "codice": "QU.VII.09",
+   "municipio": 7
+  },
+  {
+   "nome": "Tuscolano San Giovanni",
+   "tipo": "quartiere",
+   "codice": "QU.VII.03",
+   "municipio": 7
+  },
+  {
+   "nome": "Valle Marciana",
+   "tipo": "quartiere",
+   "codice": "QU.VII.32",
+   "municipio": 7
+  },
+  {
+   "nome": "Vermicino",
+   "tipo": "quartiere",
+   "codice": "QU.VII.31",
+   "municipio": 7
+  },
+  {
+   "nome": "Villaggio Appio",
+   "tipo": "quartiere",
+   "codice": "QU.VII.19",
+   "municipio": 7
+  },
+  {
+   "nome": "Appia Antica",
+   "tipo": "quartiere",
+   "codice": "QU.VIII.12",
+   "municipio": 8
+  },
+  {
+   "nome": "Ardeatino",
+   "tipo": "quartiere",
+   "codice": "QU.VIII.05",
+   "municipio": 8
+  },
+  {
+   "nome": "Fotografia - Annunziatella",
+   "tipo": "quartiere",
+   "codice": "QU.VIII.11",
+   "municipio": 8
+  },
+  {
+   "nome": "Garbatella",
+   "tipo": "quartiere",
+   "codice": "QU.VIII.02",
+   "municipio": 8
+  },
+  {
+   "nome": "Grotta Perfetta Rinnovamento",
+   "tipo": "quartiere",
+   "codice": "QU.VIII.10",
+   "municipio": 8
+  },
+  {
+   "nome": "Grotta Perfetta Roma 70",
+   "tipo": "quartiere",
+   "codice": "QU.VIII.08",
+   "municipio": 8
+  },
+  {
+   "nome": "Montagnola",
+   "tipo": "quartiere",
+   "codice": "QU.VIII.07",
+   "municipio": 8
+  },
+  {
+   "nome": "Ostiense",
+   "tipo": "quartiere",
+   "codice": "QU.VIII.01",
+   "municipio": 8
+  },
+  {
+   "nome": "Ottavo Colle",
+   "tipo": "quartiere",
+   "codice": "QU.VIII.13",
+   "municipio": 8
+  },
+  {
+   "nome": "Parco dell'Appia Antica",
+   "tipo": "zona funzionale",
+   "codice": "ZF.VIII.03",
+   "municipio": 8
+  },
+  {
+   "nome": "San Paolo",
+   "tipo": "quartiere",
+   "codice": "QU.VIII.03",
+   "municipio": 8
+  },
+  {
+   "nome": "Tenuta di Sant'Alessio",
+   "tipo": "zona funzionale",
+   "codice": "ZF.VIII.02",
+   "municipio": 8
+  },
+  {
+   "nome": "Tintoretto - Tre Fontane",
+   "tipo": "quartiere",
+   "codice": "QU.VIII.09",
+   "municipio": 8
+  },
+  {
+   "nome": "Tor Marancia",
+   "tipo": "quartiere",
+   "codice": "QU.VIII.06",
+   "municipio": 8
+  },
+  {
+   "nome": "Tor Marancia - Parco dell'Appia Antica",
+   "tipo": "zona funzionale",
+   "codice": "ZF.VIII.01",
+   "municipio": 8
+  },
+  {
+   "nome": "Torricola - Cornacchiole",
+   "tipo": "quartiere",
+   "codice": "QU.VIII.14",
+   "municipio": 8
+  },
+  {
+   "nome": "Valco San Paolo",
+   "tipo": "quartiere",
+   "codice": "QU.VIII.04",
+   "municipio": 8
+  },
+  {
+   "nome": "Acqua Acetosa Ostiense",
+   "tipo": "quartiere",
+   "codice": "QU.IX.15",
+   "municipio": 9
+  },
+  {
+   "nome": "Area Servizi Tor Pagnotta",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IX.03",
+   "municipio": 9
+  },
+  {
+   "nome": "Casal Brunori",
+   "tipo": "quartiere",
+   "codice": "QU.IX.30",
+   "municipio": 9
+  },
+  {
+   "nome": "Castel Romano",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IX.09",
+   "municipio": 9
+  },
+  {
+   "nome": "Castel di Decima",
+   "tipo": "quartiere",
+   "codice": "QU.IX.28",
+   "municipio": 9
+  },
+  {
+   "nome": "Castel di Leva",
+   "tipo": "quartiere",
+   "codice": "QU.IX.18",
+   "municipio": 9
+  },
+  {
+   "nome": "Castellaccio",
+   "tipo": "quartiere",
+   "codice": "QU.IX.10",
+   "municipio": 9
+  },
+  {
+   "nome": "Castello della Cecchignola",
+   "tipo": "quartiere",
+   "codice": "QU.IX.06",
+   "municipio": 9
+  },
+  {
+   "nome": "Cimitero Laurentino",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IX.10",
+   "municipio": 9
+  },
+  {
+   "nome": "Città Militare della Cecchignola",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IX.02",
+   "municipio": 9
+  },
+  {
+   "nome": "Colle dei Pini",
+   "tipo": "quartiere",
+   "codice": "QU.IX.22",
+   "municipio": 9
+  },
+  {
+   "nome": "Colle di Mezzo",
+   "tipo": "quartiere",
+   "codice": "QU.IX.03",
+   "municipio": 9
+  },
+  {
+   "nome": "Decima",
+   "tipo": "quartiere",
+   "codice": "QU.IX.12",
+   "municipio": 9
+  },
+  {
+   "nome": "Divino Amore",
+   "tipo": "quartiere",
+   "codice": "QU.IX.34",
+   "municipio": 9
+  },
+  {
+   "nome": "Eur",
+   "tipo": "quartiere",
+   "codice": "QU.IX.01",
+   "municipio": 9
+  },
+  {
+   "nome": "Falcognana",
+   "tipo": "quartiere",
+   "codice": "QU.IX.35",
+   "municipio": 9
+  },
+  {
+   "nome": "Ferratella",
+   "tipo": "quartiere",
+   "codice": "QU.IX.09",
+   "municipio": 9
+  },
+  {
+   "nome": "Fonte Laurentina",
+   "tipo": "quartiere",
+   "codice": "QU.IX.17",
+   "municipio": 9
+  },
+  {
+   "nome": "Fonte Meravigliosa",
+   "tipo": "quartiere",
+   "codice": "QU.IX.04",
+   "municipio": 9
+  },
+  {
+   "nome": "Fosso della Cecchignola",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IX.01",
+   "municipio": 9
+  },
+  {
+   "nome": "Giuliano Dalmata",
+   "tipo": "quartiere",
+   "codice": "QU.IX.02",
+   "municipio": 9
+  },
+  {
+   "nome": "La Castelluccia",
+   "tipo": "quartiere",
+   "codice": "QU.IX.19",
+   "municipio": 9
+  },
+  {
+   "nome": "La Selvotta",
+   "tipo": "quartiere",
+   "codice": "QU.IX.25",
+   "municipio": 9
+  },
+  {
+   "nome": "La Torretta",
+   "tipo": "quartiere",
+   "codice": "QU.IX.20",
+   "municipio": 9
+  },
+  {
+   "nome": "Laurentino Fonte Ostiense",
+   "tipo": "quartiere",
+   "codice": "QU.IX.08",
+   "municipio": 9
+  },
+  {
+   "nome": "Mezzocammino",
+   "tipo": "quartiere",
+   "codice": "QU.IX.29",
+   "municipio": 9
+  },
+  {
+   "nome": "Millevoi",
+   "tipo": "quartiere",
+   "codice": "QU.IX.05",
+   "municipio": 9
+  },
+  {
+   "nome": "Monte Lungo",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IX.12",
+   "municipio": 9
+  },
+  {
+   "nome": "Monte Migliore",
+   "tipo": "quartiere",
+   "codice": "QU.IX.26",
+   "municipio": 9
+  },
+  {
+   "nome": "Monte della Caccia",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IX.06",
+   "municipio": 9
+  },
+  {
+   "nome": "Monte di Leva",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IX.07",
+   "municipio": 9
+  },
+  {
+   "nome": "Mostacciano",
+   "tipo": "quartiere",
+   "codice": "QU.IX.14",
+   "municipio": 9
+  },
+  {
+   "nome": "Porta Medaglia Bella Cenci",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IX.11",
+   "municipio": 9
+  },
+  {
+   "nome": "Santa Fumia",
+   "tipo": "quartiere",
+   "codice": "QU.IX.37",
+   "municipio": 9
+  },
+  {
+   "nome": "Santa Palomba",
+   "tipo": "quartiere",
+   "codice": "QU.IX.38",
+   "municipio": 9
+  },
+  {
+   "nome": "Schizzanello",
+   "tipo": "quartiere",
+   "codice": "QU.IX.23",
+   "municipio": 9
+  },
+  {
+   "nome": "Solfarata",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IX.08",
+   "municipio": 9
+  },
+  {
+   "nome": "Spinaceto",
+   "tipo": "quartiere",
+   "codice": "QU.IX.31",
+   "municipio": 9
+  },
+  {
+   "nome": "Spregamore",
+   "tipo": "quartiere",
+   "codice": "QU.IX.24",
+   "municipio": 9
+  },
+  {
+   "nome": "Tor Pagnotta",
+   "tipo": "quartiere",
+   "codice": "QU.IX.07",
+   "municipio": 9
+  },
+  {
+   "nome": "Tor de' Cenci",
+   "tipo": "quartiere",
+   "codice": "QU.IX.36",
+   "municipio": 9
+  },
+  {
+   "nome": "Tor di Valle",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IX.04",
+   "municipio": 9
+  },
+  {
+   "nome": "Torrino Nord",
+   "tipo": "quartiere",
+   "codice": "QU.IX.11",
+   "municipio": 9
+  },
+  {
+   "nome": "Torrino Sud",
+   "tipo": "quartiere",
+   "codice": "QU.IX.13",
+   "municipio": 9
+  },
+  {
+   "nome": "Tre Pini - Villaggio Azzurro",
+   "tipo": "quartiere",
+   "codice": "QU.IX.32",
+   "municipio": 9
+  },
+  {
+   "nome": "Trigoria",
+   "tipo": "quartiere",
+   "codice": "QU.IX.21",
+   "municipio": 9
+  },
+  {
+   "nome": "Trigoria Alta",
+   "tipo": "quartiere",
+   "codice": "QU.IX.27",
+   "municipio": 9
+  },
+  {
+   "nome": "Valle della Perna",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IX.05",
+   "municipio": 9
+  },
+  {
+   "nome": "Vallerano",
+   "tipo": "quartiere",
+   "codice": "QU.IX.16",
+   "municipio": 9
+  },
+  {
+   "nome": "Vitinia",
+   "tipo": "quartiere",
+   "codice": "QU.IX.33",
+   "municipio": 9
+  },
+  {
+   "nome": "Zona Industriale Santa Palomba",
+   "tipo": "zona funzionale",
+   "codice": "ZF.IX.13",
+   "municipio": 9
+  },
+  {
+   "nome": "Acilia Centro",
+   "tipo": "quartiere",
+   "codice": "QU.X.05",
+   "municipio": 10
+  },
+  {
+   "nome": "Acilia Nord Monti di San Paolo",
+   "tipo": "quartiere",
+   "codice": "QU.X.07",
+   "municipio": 10
+  },
+  {
+   "nome": "Acilia Sud",
+   "tipo": "quartiere",
+   "codice": "QU.X.16",
+   "municipio": 10
+  },
+  {
+   "nome": "Axa",
+   "tipo": "quartiere",
+   "codice": "QU.X.14",
+   "municipio": 10
+  },
+  {
+   "nome": "Bagnoletto",
+   "tipo": "quartiere",
+   "codice": "QU.X.12",
+   "municipio": 10
+  },
+  {
+   "nome": "Casal Bernocchi",
+   "tipo": "quartiere",
+   "codice": "QU.X.03",
+   "municipio": 10
+  },
+  {
+   "nome": "Casal Palocco",
+   "tipo": "quartiere",
+   "codice": "QU.X.18",
+   "municipio": 10
+  },
+  {
+   "nome": "Casaletto di Giano",
+   "tipo": "quartiere",
+   "codice": "QU.X.06",
+   "municipio": 10
+  },
+  {
+   "nome": "Castel Fusano",
+   "tipo": "zona funzionale",
+   "codice": "ZF.X.04",
+   "municipio": 10
+  },
+  {
+   "nome": "Castel Porziano",
+   "tipo": "zona funzionale",
+   "codice": "ZF.X.03",
+   "municipio": 10
+  },
+  {
+   "nome": "Centro Giano",
+   "tipo": "quartiere",
+   "codice": "QU.X.02",
+   "municipio": 10
+  },
+  {
+   "nome": "Dragona",
+   "tipo": "quartiere",
+   "codice": "QU.X.11",
+   "municipio": 10
+  },
+  {
+   "nome": "Dragoncello",
+   "tipo": "quartiere",
+   "codice": "QU.X.10",
+   "municipio": 10
+  },
+  {
+   "nome": "Giardino di Roma",
+   "tipo": "quartiere",
+   "codice": "QU.X.01",
+   "municipio": 10
+  },
+  {
+   "nome": "Idroscalo di Ostia",
+   "tipo": "quartiere",
+   "codice": "QU.X.27",
+   "municipio": 10
+  },
+  {
+   "nome": "Infernetto",
+   "tipo": "quartiere",
+   "codice": "QU.X.19",
+   "municipio": 10
+  },
+  {
+   "nome": "La Lingua",
+   "tipo": "quartiere",
+   "codice": "QU.X.20",
+   "municipio": 10
+  },
+  {
+   "nome": "Lido di Castel Fusano",
+   "tipo": "quartiere",
+   "codice": "QU.X.25",
+   "municipio": 10
+  },
+  {
+   "nome": "Longarina",
+   "tipo": "quartiere",
+   "codice": "QU.X.23",
+   "municipio": 10
+  },
+  {
+   "nome": "Madonnetta",
+   "tipo": "quartiere",
+   "codice": "QU.X.15",
+   "municipio": 10
+  },
+  {
+   "nome": "Malafede",
+   "tipo": "quartiere",
+   "codice": "QU.X.04",
+   "municipio": 10
+  },
+  {
+   "nome": "Nuova Palocco",
+   "tipo": "quartiere",
+   "codice": "QU.X.17",
+   "municipio": 10
+  },
+  {
+   "nome": "Ostia Antica",
+   "tipo": "quartiere",
+   "codice": "QU.X.22",
+   "municipio": 10
+  },
+  {
+   "nome": "Ostia Levante",
+   "tipo": "quartiere",
+   "codice": "QU.X.24",
+   "municipio": 10
+  },
+  {
+   "nome": "Ostia Ponente",
+   "tipo": "quartiere",
+   "codice": "QU.X.26",
+   "municipio": 10
+  },
+  {
+   "nome": "Parco Archeologico Ostia Antica",
+   "tipo": "zona funzionale",
+   "codice": "ZF.X.02",
+   "municipio": 10
+  },
+  {
+   "nome": "Riserva Naturale Statale del Litorale Romano",
+   "tipo": "zona funzionale",
+   "codice": "ZF.X.01",
+   "municipio": 10
+  },
+  {
+   "nome": "Stagni di Ostia",
+   "tipo": "quartiere",
+   "codice": "QU.X.21",
+   "municipio": 10
+  },
+  {
+   "nome": "Tre Pizzi Bagnolo",
+   "tipo": "quartiere",
+   "codice": "QU.X.13",
+   "municipio": 10
+  },
+  {
+   "nome": "Villaggio San Francesco",
+   "tipo": "quartiere",
+   "codice": "QU.X.08",
+   "municipio": 10
+  },
+  {
+   "nome": "Villaggio San Giorgio di Acilia",
+   "tipo": "quartiere",
+   "codice": "QU.X.09",
+   "municipio": 10
+  },
+  {
+   "nome": "Borgata Petrelli",
+   "tipo": "quartiere",
+   "codice": "QU.XI.06",
+   "municipio": 11
+  },
+  {
+   "nome": "Campo di Merlo",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XI.06",
+   "municipio": 11
+  },
+  {
+   "nome": "Casetta Mattei",
+   "tipo": "quartiere",
+   "codice": "QU.XI.10",
+   "municipio": 11
+  },
+  {
+   "nome": "Chiesola",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XI.07",
+   "municipio": 11
+  },
+  {
+   "nome": "Colle del Sole",
+   "tipo": "quartiere",
+   "codice": "QU.XI.12",
+   "municipio": 11
+  },
+  {
+   "nome": "Corviale",
+   "tipo": "quartiere",
+   "codice": "QU.XI.11",
+   "municipio": 11
+  },
+  {
+   "nome": "Idrovore della Magliana",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XI.02",
+   "municipio": 11
+  },
+  {
+   "nome": "Magliana",
+   "tipo": "quartiere",
+   "codice": "QU.XI.05",
+   "municipio": 11
+  },
+  {
+   "nome": "Malnome",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XI.08",
+   "municipio": 11
+  },
+  {
+   "nome": "Marconi",
+   "tipo": "quartiere",
+   "codice": "QU.XI.01",
+   "municipio": 11
+  },
+  {
+   "nome": "Monte Cucco",
+   "tipo": "quartiere",
+   "codice": "QU.XI.09",
+   "municipio": 11
+  },
+  {
+   "nome": "Monte Stallonara",
+   "tipo": "quartiere",
+   "codice": "QU.XI.18",
+   "municipio": 11
+  },
+  {
+   "nome": "Monte delle Capre",
+   "tipo": "quartiere",
+   "codice": "QU.XI.13",
+   "municipio": 11
+  },
+  {
+   "nome": "Muratella",
+   "tipo": "quartiere",
+   "codice": "QU.XI.15",
+   "municipio": 11
+  },
+  {
+   "nome": "Nuova Fiera di Roma",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XI.05",
+   "municipio": 11
+  },
+  {
+   "nome": "Parco de' Medici",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XI.03",
+   "municipio": 11
+  },
+  {
+   "nome": "Parrocchietta",
+   "tipo": "quartiere",
+   "codice": "QU.XI.07",
+   "municipio": 11
+  },
+  {
+   "nome": "Pian Due Torri",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XI.01",
+   "municipio": 11
+  },
+  {
+   "nome": "Piana del Sole",
+   "tipo": "quartiere",
+   "codice": "QU.XI.20",
+   "municipio": 11
+  },
+  {
+   "nome": "Pisana Parco della Pace",
+   "tipo": "quartiere",
+   "codice": "QU.XI.19",
+   "municipio": 11
+  },
+  {
+   "nome": "Ponte Galeria",
+   "tipo": "quartiere",
+   "codice": "QU.XI.16",
+   "municipio": 11
+  },
+  {
+   "nome": "Portuense",
+   "tipo": "quartiere",
+   "codice": "QU.XI.03",
+   "municipio": 11
+  },
+  {
+   "nome": "Prati della Chiavichetta",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XI.04",
+   "municipio": 11
+  },
+  {
+   "nome": "Spallette",
+   "tipo": "quartiere",
+   "codice": "QU.XI.17",
+   "municipio": 11
+  },
+  {
+   "nome": "Tenuta dei Massimi",
+   "tipo": "quartiere",
+   "codice": "QU.XI.14",
+   "municipio": 11
+  },
+  {
+   "nome": "Trullo",
+   "tipo": "quartiere",
+   "codice": "QU.XI.08",
+   "municipio": 11
+  },
+  {
+   "nome": "Vigna Pia",
+   "tipo": "quartiere",
+   "codice": "QU.XI.02",
+   "municipio": 11
+  },
+  {
+   "nome": "Villa Bonelli",
+   "tipo": "quartiere",
+   "codice": "QU.XI.04",
+   "municipio": 11
+  },
+  {
+   "nome": "Bravetta",
+   "tipo": "quartiere",
+   "codice": "QU.XII.05",
+   "municipio": 12
+  },
+  {
+   "nome": "Casal Lumbroso",
+   "tipo": "quartiere",
+   "codice": "QU.XII.11",
+   "municipio": 12
+  },
+  {
+   "nome": "Casaletto - Colli Portuensi",
+   "tipo": "quartiere",
+   "codice": "QU.XII.04",
+   "municipio": 12
+  },
+  {
+   "nome": "Castel di Guido Sud",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XII.06",
+   "municipio": 12
+  },
+  {
+   "nome": "Colle Aurelio",
+   "tipo": "quartiere",
+   "codice": "QU.XII.09",
+   "municipio": 12
+  },
+  {
+   "nome": "Colle Massimo",
+   "tipo": "quartiere",
+   "codice": "QU.XII.07",
+   "municipio": 12
+  },
+  {
+   "nome": "La Pisana",
+   "tipo": "quartiere",
+   "codice": "QU.XII.06",
+   "municipio": 12
+  },
+  {
+   "nome": "Maglianella di Sotto",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XII.03",
+   "municipio": 12
+  },
+  {
+   "nome": "Malagrotta",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XII.04",
+   "municipio": 12
+  },
+  {
+   "nome": "Massimina",
+   "tipo": "quartiere",
+   "codice": "QU.XII.12",
+   "municipio": 12
+  },
+  {
+   "nome": "Monteverde Nuovo",
+   "tipo": "quartiere",
+   "codice": "QU.XII.03",
+   "municipio": 12
+  },
+  {
+   "nome": "Monteverde Vecchio",
+   "tipo": "quartiere",
+   "codice": "QU.XII.02",
+   "municipio": 12
+  },
+  {
+   "nome": "Ospedali San Camillo Spallanzani",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XII.02",
+   "municipio": 12
+  },
+  {
+   "nome": "Pantan di Grano",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XII.05",
+   "municipio": 12
+  },
+  {
+   "nome": "Pisana Brava",
+   "tipo": "quartiere",
+   "codice": "QU.XII.10",
+   "municipio": 12
+  },
+  {
+   "nome": "Porta Portese",
+   "tipo": "quartiere",
+   "codice": "QU.XII.01",
+   "municipio": 12
+  },
+  {
+   "nome": "Santa Cecilia",
+   "tipo": "quartiere",
+   "codice": "QU.XII.13",
+   "municipio": 12
+  },
+  {
+   "nome": "Villa Pamphili",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XII.01",
+   "municipio": 12
+  },
+  {
+   "nome": "Villa Troili",
+   "tipo": "quartiere",
+   "codice": "QU.XII.08",
+   "municipio": 12
+  },
+  {
+   "nome": "Aurelio",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.08",
+   "municipio": 13
+  },
+  {
+   "nome": "Baldo degli Ubaldi",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.04",
+   "municipio": 13
+  },
+  {
+   "nome": "Bastogi",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.13",
+   "municipio": 13
+  },
+  {
+   "nome": "Boccea Cornelia",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.07",
+   "municipio": 13
+  },
+  {
+   "nome": "Casal Selce",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.18",
+   "municipio": 13
+  },
+  {
+   "nome": "Casalotti",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.17",
+   "municipio": 13
+  },
+  {
+   "nome": "Castel di Guido",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.20",
+   "municipio": 13
+  },
+  {
+   "nome": "Castel di Guido Nord",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XIII.03",
+   "municipio": 13
+  },
+  {
+   "nome": "Cavalleggeri - San Pietro",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.01",
+   "municipio": 13
+  },
+  {
+   "nome": "Collina delle Muse",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.15",
+   "municipio": 13
+  },
+  {
+   "nome": "Gregorio VII",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.03",
+   "municipio": 13
+  },
+  {
+   "nome": "Maglianella",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.16",
+   "municipio": 13
+  },
+  {
+   "nome": "Monachina - Maglianella di Sopra",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XIII.02",
+   "municipio": 13
+  },
+  {
+   "nome": "Monte del Gallo",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.02",
+   "municipio": 13
+  },
+  {
+   "nome": "Monte del Marmo",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.14",
+   "municipio": 13
+  },
+  {
+   "nome": "Montespaccato",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.11",
+   "municipio": 13
+  },
+  {
+   "nome": "Monti di Creta",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.06",
+   "municipio": 13
+  },
+  {
+   "nome": "Parco Acquafredda",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XIII.01",
+   "municipio": 13
+  },
+  {
+   "nome": "Pineta Sacchetti",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.10",
+   "municipio": 13
+  },
+  {
+   "nome": "Santa Rufina - Pantan Monastero",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.19",
+   "municipio": 13
+  },
+  {
+   "nome": "Torrevecchia Bassa",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.12",
+   "municipio": 13
+  },
+  {
+   "nome": "Val Cannuta",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.09",
+   "municipio": 13
+  },
+  {
+   "nome": "Valle Aurelia Nuova",
+   "tipo": "quartiere",
+   "codice": "QU.XIII.05",
+   "municipio": 13
+  },
+  {
+   "nome": "Balduina",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.02",
+   "municipio": 14
+  },
+  {
+   "nome": "Cacciarella",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.20",
+   "municipio": 14
+  },
+  {
+   "nome": "Casal del Marmo",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XIV.05",
+   "municipio": 14
+  },
+  {
+   "nome": "Casale San Nicola",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.19",
+   "municipio": 14
+  },
+  {
+   "nome": "Castelluccia",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.16",
+   "municipio": 14
+  },
+  {
+   "nome": "Cerquette Grandi",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.17",
+   "municipio": 14
+  },
+  {
+   "nome": "Igea Trionfale",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.07",
+   "municipio": 14
+  },
+  {
+   "nome": "Monte Mario",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.06",
+   "municipio": 14
+  },
+  {
+   "nome": "Ospedale Gemelli",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XIV.03",
+   "municipio": 14
+  },
+  {
+   "nome": "Ottavia",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.12",
+   "municipio": 14
+  },
+  {
+   "nome": "Palmarola",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.11",
+   "municipio": 14
+  },
+  {
+   "nome": "Parco Monte Ciocci",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XIV.01",
+   "municipio": 14
+  },
+  {
+   "nome": "Parco dell'Insugherata",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XIV.06",
+   "municipio": 14
+  },
+  {
+   "nome": "Pineta Sacchetti - Gemelli",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.03",
+   "municipio": 14
+  },
+  {
+   "nome": "Pineto",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XIV.02",
+   "municipio": 14
+  },
+  {
+   "nome": "Podere San Giusto - Podere Zara",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.09",
+   "municipio": 14
+  },
+  {
+   "nome": "Primavalle",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.04",
+   "municipio": 14
+  },
+  {
+   "nome": "Quartaccio",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.08",
+   "municipio": 14
+  },
+  {
+   "nome": "Sant'Andrea",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.13",
+   "municipio": 14
+  },
+  {
+   "nome": "Santa Maria della Pietà",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XIV.04",
+   "municipio": 14
+  },
+  {
+   "nome": "Santa Maria di Galeria",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.21",
+   "municipio": 14
+  },
+  {
+   "nome": "Santa Rosa Marina Militare",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XIV.07",
+   "municipio": 14
+  },
+  {
+   "nome": "Selva Candida",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.14",
+   "municipio": 14
+  },
+  {
+   "nome": "Selva Nera",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.15",
+   "municipio": 14
+  },
+  {
+   "nome": "Torresina",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.10",
+   "municipio": 14
+  },
+  {
+   "nome": "Torrevecchia Alta",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.05",
+   "municipio": 14
+  },
+  {
+   "nome": "Tragliatella",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.22",
+   "municipio": 14
+  },
+  {
+   "nome": "Valle Aurelia Vecchia",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.01",
+   "municipio": 14
+  },
+  {
+   "nome": "Valle Santa",
+   "tipo": "quartiere",
+   "codice": "QU.XIV.18",
+   "municipio": 14
+  },
+  {
+   "nome": "Anguillarese Colle Due Pini",
+   "tipo": "quartiere",
+   "codice": "QU.XV.26",
+   "municipio": 15
+  },
+  {
+   "nome": "Borgo di Cesano",
+   "tipo": "quartiere",
+   "codice": "QU.XV.23",
+   "municipio": 15
+  },
+  {
+   "nome": "Bosco Baccano - La Melazza",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.18",
+   "municipio": 15
+  },
+  {
+   "nome": "Camilluccia",
+   "tipo": "quartiere",
+   "codice": "QU.XV.05",
+   "municipio": 15
+  },
+  {
+   "nome": "Casaccia",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.17",
+   "municipio": 15
+  },
+  {
+   "nome": "Cesano",
+   "tipo": "quartiere",
+   "codice": "QU.XV.22",
+   "municipio": 15
+  },
+  {
+   "nome": "Cimitero Flaminio",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.11",
+   "municipio": 15
+  },
+  {
+   "nome": "Collina Fleming",
+   "tipo": "quartiere",
+   "codice": "QU.XV.02",
+   "municipio": 15
+  },
+  {
+   "nome": "Cortina d'Ampezzo",
+   "tipo": "quartiere",
+   "codice": "QU.XV.06",
+   "municipio": 15
+  },
+  {
+   "nome": "Due Ponti",
+   "tipo": "quartiere",
+   "codice": "QU.XV.09",
+   "municipio": 15
+  },
+  {
+   "nome": "Farnesina",
+   "tipo": "quartiere",
+   "codice": "QU.XV.04",
+   "municipio": 15
+  },
+  {
+   "nome": "Farneto",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.02",
+   "municipio": 15
+  },
+  {
+   "nome": "Foro Italico",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.01",
+   "municipio": 15
+  },
+  {
+   "nome": "Grottarossa",
+   "tipo": "quartiere",
+   "codice": "QU.XV.10",
+   "municipio": 15
+  },
+  {
+   "nome": "Grottarossa Valle Vescovo",
+   "tipo": "quartiere",
+   "codice": "QU.XV.11",
+   "municipio": 15
+  },
+  {
+   "nome": "Inviolatella Borghese",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.04",
+   "municipio": 15
+  },
+  {
+   "nome": "Isola Farnese",
+   "tipo": "quartiere",
+   "codice": "QU.XV.20",
+   "municipio": 15
+  },
+  {
+   "nome": "La Giustiniana",
+   "tipo": "quartiere",
+   "codice": "QU.XV.18",
+   "municipio": 15
+  },
+  {
+   "nome": "La Storta",
+   "tipo": "quartiere",
+   "codice": "QU.XV.19",
+   "municipio": 15
+  },
+  {
+   "nome": "Labaro",
+   "tipo": "quartiere",
+   "codice": "QU.XV.13",
+   "municipio": 15
+  },
+  {
+   "nome": "Malborghetto",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.13",
+   "municipio": 15
+  },
+  {
+   "nome": "Monte Caminetto",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.14",
+   "municipio": 15
+  },
+  {
+   "nome": "Monte Oliviero",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.08",
+   "municipio": 15
+  },
+  {
+   "nome": "Olgiata",
+   "tipo": "quartiere",
+   "codice": "QU.XV.21",
+   "municipio": 15
+  },
+  {
+   "nome": "Osteria Nuova",
+   "tipo": "quartiere",
+   "codice": "QU.XV.25",
+   "municipio": 15
+  },
+  {
+   "nome": "Parco Papacci - Parco Volusia",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.05",
+   "municipio": 15
+  },
+  {
+   "nome": "Piana del Tevere",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.06",
+   "municipio": 15
+  },
+  {
+   "nome": "Polline Martignano",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.20",
+   "municipio": 15
+  },
+  {
+   "nome": "Ponte Milvio",
+   "tipo": "quartiere",
+   "codice": "QU.XV.01",
+   "municipio": 15
+  },
+  {
+   "nome": "Prima Porta",
+   "tipo": "quartiere",
+   "codice": "QU.XV.14",
+   "municipio": 15
+  },
+  {
+   "nome": "Procoio",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.12",
+   "municipio": 15
+  },
+  {
+   "nome": "Radio Vaticana",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.15",
+   "municipio": 15
+  },
+  {
+   "nome": "Riserva di Livia",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.07",
+   "municipio": 15
+  },
+  {
+   "nome": "San Godenzo",
+   "tipo": "quartiere",
+   "codice": "QU.XV.08",
+   "municipio": 15
+  },
+  {
+   "nome": "Santa Cornelia",
+   "tipo": "quartiere",
+   "codice": "QU.XV.16",
+   "municipio": 15
+  },
+  {
+   "nome": "Saxa Rubra",
+   "tipo": "quartiere",
+   "codice": "QU.XV.12",
+   "municipio": 15
+  },
+  {
+   "nome": "Scuola di Fanteria Cesano",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.19",
+   "municipio": 15
+  },
+  {
+   "nome": "Tiberina - Sant'Isidoro",
+   "tipo": "quartiere",
+   "codice": "QU.XV.24",
+   "municipio": 15
+  },
+  {
+   "nome": "Tomba di Nerone",
+   "tipo": "quartiere",
+   "codice": "QU.XV.07",
+   "municipio": 15
+  },
+  {
+   "nome": "Tor de' Venti",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.16",
+   "municipio": 15
+  },
+  {
+   "nome": "Tor di Quinto",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.03",
+   "municipio": 15
+  },
+  {
+   "nome": "Vaccareccia",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.09",
+   "municipio": 15
+  },
+  {
+   "nome": "Valle Muricana",
+   "tipo": "quartiere",
+   "codice": "QU.XV.15",
+   "municipio": 15
+  },
+  {
+   "nome": "Veientana",
+   "tipo": "quartiere",
+   "codice": "QU.XV.17",
+   "municipio": 15
+  },
+  {
+   "nome": "Veio",
+   "tipo": "zona funzionale",
+   "codice": "ZF.XV.10",
+   "municipio": 15
+  },
+  {
+   "nome": "Vigna Clara",
+   "tipo": "quartiere",
+   "codice": "QU.XV.03",
+   "municipio": 15
+  }
+ ]
+}

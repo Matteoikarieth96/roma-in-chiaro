@@ -1,0 +1,1718 @@
+{
+ "id": "storico",
+ "titolo": "Serie storiche per municipio: residenti, stanziamenti del PEG e appalti avviati",
+ "fonte": {
+  "nome": "Tavole anagrafiche dell'Ufficio di Statistica e Annuario statistico di Roma Capitale; PEG di Roma Capitale 2023-2026; ANAC open data CIG 2016-2025",
+  "ente": "Roma Capitale e ANAC",
+  "link": [
+   {
+    "nome": "Popolazione iscritta in Anagrafe",
+    "url": "https://www.comune.roma.it/web/it/dettaglio-analisi-e-dati-statistici.page?contentId=ADS1565149"
+   },
+   {
+    "nome": "Piano esecutivo di gestione",
+    "url": "https://www.comune.roma.it/web/it/amministrazione-trasparente-piano-esecutivo-di-gestione.page"
+   },
+   {
+    "nome": "ANAC open data CIG",
+    "url": "https://dati.anticorruzione.it/opendata/dataset/cig"
+   }
+  ],
+  "licenza": "Dati di Roma Capitale: riuso con citazione della fonte ai sensi dell'art. 7 del D.Lgs. 33/2013 e dell'art. 52, c. 2, del CAD. Dati ANAC: CC BY-SA 4.0."
+ },
+ "periodo": "Residenti al 31 dicembre 2016-2025; stanziamenti di competenza del PEG 2023-2026 (il 2024 è il PEG aggiornato a dicembre, DGC 510/2024); importo dei CIG ANAC 2016-2025 per anno di pubblicazione; numero di CIG solo 2024-2025.",
+ "verificato": "2026-11-14",
+ "misura": "Valori per municipio e anno copiati dalla serie controllata serie_10_indicatori.csv (cartella di verifica), con il livello di conferma di ogni anno. Sono tenute solo le righe con fonte ufficiale e senza segnalazioni di dato non confermato.",
+ "non_misura": [
+  "Le serie dei municipi IV, V, VI e VII non sono omogenee nel tempo: dal 2021 la zona urbanistica 8A è passata dal VI al VII; dal 2024 parti delle zone 5F e 5L (dal IV) e 8D (dal VI) sono passate al V. La serie non è omogenea nel tempo.",
+  "Gli stanziamenti del PEG sono previsioni di spesa, non pagamenti. Il 2016-2022 non è incluso: una sola tabella e, fino al 2019, un metodo diverso. Il 2020 e il 2021 mancano nella fonte.",
+  "L'importo dei CIG è il valore a base di gara o di affidamento, non quanto è stato pagato, e puo' coprire più anni. Fino al 2023 i file ANAC non comprendono gli SmartCIG (contratti sotto 40.000 euro): il numero di CIG prima del 2024 non è confrontabile e non è mostrato.",
+  "Quasi tutte le conferme vengono da pubblicazioni dello stesso ente: provano che il numero è trascritto e attribuito bene, non che la misura alla radice sia esatta."
+ ],
+ "indicatori": {
+  "residenti": {
+   "etichetta": "Residenti",
+   "tabella": "tavole anagrafe al 31/12, confrontate con l'Annuario statistico",
+   "periodo": "2016-2025",
+   "non_misura": [
+    "Confini cambiati: dal 2021 la zona urbanistica 8A è passata dal VI al VII; dal 2024 parti delle zone 5F e 5L (dal IV) e 8D (dal VI) sono passate al V. La serie non è omogenea nel tempo."
+   ]
+  },
+  "peg_totale": {
+   "etichetta": "Stanziamenti di spesa del PEG",
+   "tabella": "PEG di ogni anno, stanziamenti di competenza per struttura",
+   "periodo": "2023-2026",
+   "non_misura": [
+    "Previsioni di spesa, non pagamenti. Il 2024 è il PEG aggiornato a dicembre, non quello iniziale: i valori sono più alti."
+   ]
+  },
+  "anac_importo_netto": {
+   "etichetta": "Appalti avviati: importo dei CIG",
+   "tabella": "ANAC open data CIG, centri di costo del municipio, al netto dei doppi conteggi",
+   "periodo": "2016-2025",
+   "non_misura": [
+    "Importo a base di gara, non pagamenti. Fino al 2023 mancano gli SmartCIG (sotto 40.000 euro)."
+   ]
+  },
+  "anac_n_cig": {
+   "etichetta": "Appalti avviati: numero di CIG",
+   "tabella": "ANAC open data CIG",
+   "periodo": "2024-2025",
+   "non_misura": [
+    "Solo 2024 e 2025: prima mancano gli SmartCIG e il numero non è confrontabile."
+   ]
+  }
+ },
+ "confini_cambiati": [
+  "4",
+  "5",
+  "6",
+  "7"
+ ],
+ "nota_confini": "Confini cambiati: dal 2021 la zona urbanistica 8A è passata dal VI al VII; dal 2024 parti delle zone 5F e 5L (dal IV) e 8D (dal VI) sono passate al V. La serie non è omogenea nel tempo.",
+ "municipi": {
+  "1": {
+   "residenti": {
+    "valori": {
+     "2016": 185435,
+     "2017": 180606,
+     "2018": 170328,
+     "2019": 167330,
+     "2020": 165435,
+     "2021": 165967,
+     "2022": 164520,
+     "2023": 163420,
+     "2024": 161647,
+     "2025": 160377
+    },
+    "conferma": {
+     "2016": "2 pubblicazioni uguali",
+     "2017": "2 pubblicazioni uguali",
+     "2018": "2 pubblicazioni uguali",
+     "2019": "2 pubblicazioni uguali",
+     "2020": "2 pubblicazioni uguali",
+     "2021": "2 pubblicazioni uguali",
+     "2022": "2 pubblicazioni uguali",
+     "2023": "2 pubblicazioni uguali",
+     "2024": "2 pubblicazioni uguali",
+     "2025": "2 pubblicazioni uguali"
+    }
+   },
+   "peg_correnti": {
+    "valori": {
+     "2023": 69199970.79,
+     "2024": 75310685.74,
+     "2025": 70215574.42,
+     "2026": 68713379.8
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_capitale": {
+    "valori": {
+     "2023": 38661563.72,
+     "2024": 33119587.9,
+     "2025": 22927514.72,
+     "2026": 22356967.33
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_totale": {
+    "valori": {
+     "2023": 108314221.2,
+     "2024": 109820712.52,
+     "2025": 95006678.35,
+     "2026": 91523033.82
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "anac_importo_netto": {
+    "valori": {
+     "2016": 8709440.35,
+     "2017": 32533720.25,
+     "2018": 21983688.79,
+     "2019": 26634430.72,
+     "2020": 42378600.61,
+     "2021": 25424410.21,
+     "2022": 23970279.06,
+     "2023": 32959628.49,
+     "2024": 17674196.11,
+     "2025": 18545854.55
+    },
+    "conferma": {
+     "2016": "1 fonte, attribuzione controllata con L.190",
+     "2017": "1 fonte, attribuzione controllata con L.190",
+     "2018": "1 fonte, attribuzione controllata con L.190",
+     "2019": "1 fonte, attribuzione controllata con L.190",
+     "2020": "1 fonte, attribuzione controllata con L.190",
+     "2021": "1 fonte",
+     "2022": "1 fonte",
+     "2023": "1 fonte",
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   },
+   "anac_n_cig": {
+    "valori": {
+     "2024": 134,
+     "2025": 152
+    },
+    "conferma": {
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   }
+  },
+  "2": {
+   "residenti": {
+    "valori": {
+     "2016": 168354,
+     "2017": 168469,
+     "2018": 168410,
+     "2019": 167649,
+     "2020": 166007,
+     "2021": 164968,
+     "2022": 165496,
+     "2023": 164747,
+     "2024": 163097,
+     "2025": 163806
+    },
+    "conferma": {
+     "2016": "2 pubblicazioni uguali",
+     "2017": "2 pubblicazioni uguali",
+     "2018": "2 pubblicazioni uguali",
+     "2019": "2 pubblicazioni uguali",
+     "2020": "2 pubblicazioni uguali",
+     "2021": "2 pubblicazioni uguali",
+     "2022": "2 pubblicazioni uguali",
+     "2023": "2 pubblicazioni uguali",
+     "2024": "2 pubblicazioni uguali",
+     "2025": "2 pubblicazioni uguali"
+    }
+   },
+   "peg_correnti": {
+    "valori": {
+     "2023": 60912825.45,
+     "2024": 66957460.07,
+     "2025": 63754725.68,
+     "2026": 64738152.39
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_capitale": {
+    "valori": {
+     "2023": 44973873.0,
+     "2024": 41700313.51,
+     "2025": 20654872.01,
+     "2026": 29612519.51
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_totale": {
+    "valori": {
+     "2023": 106333562.21,
+     "2024": 110210119.94,
+     "2025": 86154978.03,
+     "2026": 94797535.66
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "anac_importo_netto": {
+    "valori": {
+     "2016": 21636851.28,
+     "2017": 25280029.65,
+     "2018": 19816406.11,
+     "2019": 16328927.64,
+     "2020": 21018026.64,
+     "2021": 20842620.56,
+     "2022": 50002670.75,
+     "2023": 47977060.5,
+     "2024": 16350284.61,
+     "2025": 26533559.09
+    },
+    "conferma": {
+     "2016": "1 fonte, attribuzione controllata con L.190",
+     "2017": "1 fonte, attribuzione controllata con L.190",
+     "2018": "1 fonte, attribuzione controllata con L.190",
+     "2019": "1 fonte, attribuzione controllata con L.190",
+     "2020": "1 fonte, attribuzione controllata con L.190",
+     "2021": "1 fonte",
+     "2022": "1 fonte",
+     "2023": "1 fonte",
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   },
+   "anac_n_cig": {
+    "valori": {
+     "2024": 82,
+     "2025": 97
+    },
+    "conferma": {
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   }
+  },
+  "3": {
+   "residenti": {
+    "valori": {
+     "2016": 205019,
+     "2017": 205446,
+     "2018": 205832,
+     "2019": 205759,
+     "2020": 203436,
+     "2021": 203687,
+     "2022": 204342,
+     "2023": 203396,
+     "2024": 202442,
+     "2025": 202614
+    },
+    "conferma": {
+     "2016": "2 pubblicazioni uguali",
+     "2017": "2 pubblicazioni uguali",
+     "2018": "2 pubblicazioni uguali",
+     "2019": "2 pubblicazioni uguali",
+     "2020": "2 pubblicazioni uguali",
+     "2021": "2 pubblicazioni uguali",
+     "2022": "2 pubblicazioni uguali",
+     "2023": "2 pubblicazioni uguali",
+     "2024": "2 pubblicazioni uguali",
+     "2025": "2 pubblicazioni uguali"
+    }
+   },
+   "peg_correnti": {
+    "valori": {
+     "2023": 85074364.79,
+     "2024": 100574158.87,
+     "2025": 91960145.04,
+     "2026": 89219395.23
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_capitale": {
+    "valori": {
+     "2023": 48002137.49,
+     "2024": 46721371.25,
+     "2025": 26462222.15,
+     "2026": 21953821.45
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_totale": {
+    "valori": {
+     "2023": 133273254.14,
+     "2024": 148912485.59,
+     "2025": 120723687.68,
+     "2026": 111369968.54
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "anac_importo_netto": {
+    "valori": {
+     "2016": 10809797.58,
+     "2017": 19219940.24,
+     "2018": 23979102.56,
+     "2019": 13021116.05,
+     "2020": 27444860.75,
+     "2021": 20492913.33,
+     "2022": 53821714.52,
+     "2023": 38535406.14,
+     "2024": 29645182.36,
+     "2025": 16766399.91
+    },
+    "conferma": {
+     "2016": "1 fonte, attribuzione controllata con L.190",
+     "2017": "1 fonte, attribuzione controllata con L.190",
+     "2018": "1 fonte, attribuzione controllata con L.190",
+     "2019": "1 fonte, attribuzione controllata con L.190",
+     "2020": "1 fonte, attribuzione controllata con L.190",
+     "2021": "1 fonte",
+     "2022": "1 fonte",
+     "2023": "1 fonte",
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   },
+   "anac_n_cig": {
+    "valori": {
+     "2024": 109,
+     "2025": 107
+    },
+    "conferma": {
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   }
+  },
+  "4": {
+   "residenti": {
+    "valori": {
+     "2016": 176981,
+     "2017": 176738,
+     "2018": 175921,
+     "2019": 174638,
+     "2020": 173284,
+     "2021": 171734,
+     "2022": 171890,
+     "2023": 168527,
+     "2024": 168039,
+     "2025": 167978
+    },
+    "conferma": {
+     "2016": "2 pubblicazioni uguali",
+     "2017": "2 pubblicazioni uguali",
+     "2018": "2 pubblicazioni uguali",
+     "2019": "2 pubblicazioni uguali",
+     "2020": "2 pubblicazioni uguali",
+     "2021": "2 pubblicazioni uguali",
+     "2022": "2 pubblicazioni uguali",
+     "2023": "2 pubblicazioni uguali",
+     "2024": "2 pubblicazioni uguali",
+     "2025": "2 pubblicazioni uguali"
+    }
+   },
+   "peg_correnti": {
+    "valori": {
+     "2023": 77590761.76,
+     "2024": 84967922.89,
+     "2025": 79877816.24,
+     "2026": 79544792.29
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_capitale": {
+    "valori": {
+     "2023": 50498240.82,
+     "2024": 55129118.59,
+     "2025": 16632213.33,
+     "2026": 38420886.52
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_totale": {
+    "valori": {
+     "2023": 128380982.94,
+     "2024": 141183174.17,
+     "2025": 98295161.35,
+     "2026": 118257659.17
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "anac_importo_netto": {
+    "valori": {
+     "2016": 9873992.38,
+     "2017": 9982726.47,
+     "2018": 12885493.26,
+     "2019": 17452761.45,
+     "2020": 13644247.31,
+     "2021": 19759535.01,
+     "2022": 33500181.02,
+     "2023": 49391332.96,
+     "2024": 22575005.99,
+     "2025": 21095495.31
+    },
+    "conferma": {
+     "2016": "1 fonte, attribuzione controllata con L.190",
+     "2017": "1 fonte, attribuzione controllata con L.190",
+     "2018": "1 fonte, attribuzione controllata con L.190",
+     "2019": "1 fonte, attribuzione controllata con L.190",
+     "2020": "1 fonte, attribuzione controllata con L.190",
+     "2021": "1 fonte",
+     "2022": "1 fonte",
+     "2023": "1 fonte",
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   },
+   "anac_n_cig": {
+    "valori": {
+     "2024": 72,
+     "2025": 81
+    },
+    "conferma": {
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   }
+  },
+  "5": {
+   "residenti": {
+    "valori": {
+     "2016": 247302,
+     "2017": 247859,
+     "2018": 245073,
+     "2019": 243607,
+     "2020": 240032,
+     "2021": 238487,
+     "2022": 237648,
+     "2023": 241165,
+     "2024": 239925,
+     "2025": 239788
+    },
+    "conferma": {
+     "2016": "2 pubblicazioni uguali",
+     "2017": "2 pubblicazioni uguali",
+     "2018": "2 pubblicazioni uguali",
+     "2019": "2 pubblicazioni uguali",
+     "2020": "2 pubblicazioni uguali",
+     "2021": "2 pubblicazioni uguali",
+     "2022": "2 pubblicazioni uguali",
+     "2023": "2 pubblicazioni uguali",
+     "2024": "2 pubblicazioni uguali",
+     "2025": "2 pubblicazioni uguali"
+    }
+   },
+   "peg_correnti": {
+    "valori": {
+     "2023": 104215976.67,
+     "2024": 113543082.78,
+     "2025": 107482450.2,
+     "2026": 112435532.92
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_capitale": {
+    "valori": {
+     "2023": 24442421.18,
+     "2024": 25262108.29,
+     "2025": 14832531.79,
+     "2026": 17811094.06
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_totale": {
+    "valori": {
+     "2023": 129099357.95,
+     "2024": 139939370.98,
+     "2025": 123788426.0,
+     "2026": 130687587.08
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "anac_importo_netto": {
+    "valori": {
+     "2016": 24189185.97,
+     "2017": 19024870.73,
+     "2018": 27993319.21,
+     "2019": 24861196.6,
+     "2020": 29255154.19,
+     "2021": 28371866.16,
+     "2022": 33342589.74,
+     "2023": 45484796.89,
+     "2024": 36721016.62,
+     "2025": 19458286.2
+    },
+    "conferma": {
+     "2016": "1 fonte, attribuzione controllata con L.190",
+     "2017": "1 fonte, attribuzione controllata con L.190",
+     "2018": "1 fonte, attribuzione controllata con L.190",
+     "2019": "1 fonte, attribuzione controllata con L.190",
+     "2020": "1 fonte, attribuzione controllata con L.190",
+     "2021": "1 fonte",
+     "2022": "1 fonte",
+     "2023": "1 fonte",
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   },
+   "anac_n_cig": {
+    "valori": {
+     "2024": 155,
+     "2025": 121
+    },
+    "conferma": {
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   }
+  },
+  "6": {
+   "residenti": {
+    "valori": {
+     "2016": 257534,
+     "2017": 258989,
+     "2018": 257556,
+     "2019": 256878,
+     "2020": 254379,
+     "2021": 241414,
+     "2022": 242082,
+     "2023": 242048,
+     "2024": 242069,
+     "2025": 243836
+    },
+    "conferma": {
+     "2016": "2 pubblicazioni uguali",
+     "2017": "2 pubblicazioni uguali",
+     "2018": "2 pubblicazioni uguali",
+     "2019": "2 pubblicazioni uguali",
+     "2020": "2 pubblicazioni uguali",
+     "2021": "2 pubblicazioni uguali",
+     "2022": "2 pubblicazioni uguali",
+     "2023": "2 pubblicazioni uguali",
+     "2024": "2 pubblicazioni uguali",
+     "2025": "2 pubblicazioni uguali"
+    }
+   },
+   "peg_correnti": {
+    "valori": {
+     "2023": 97763679.88,
+     "2024": 107172025.56,
+     "2025": 98084879.6,
+     "2026": 100382758.91
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_capitale": {
+    "valori": {
+     "2023": 36149035.05,
+     "2024": 47935967.33,
+     "2025": 6251023.67,
+     "2026": 29179038.68
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_totale": {
+    "valori": {
+     "2023": 134417840.51,
+     "2024": 156685453.04,
+     "2025": 106191575.91,
+     "2026": 130066923.17
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "anac_importo_netto": {
+    "valori": {
+     "2016": 15044570.21,
+     "2017": 19465115.59,
+     "2018": 24441108.34,
+     "2019": 25131859.29,
+     "2020": 37934685.55,
+     "2021": 38660274.23,
+     "2022": 55789623.97,
+     "2023": 36858276.63,
+     "2024": 32043570.84,
+     "2025": 22082345.17
+    },
+    "conferma": {
+     "2016": "1 fonte, attribuzione controllata con L.190",
+     "2017": "1 fonte, attribuzione controllata con L.190",
+     "2018": "1 fonte, attribuzione controllata con L.190",
+     "2019": "1 fonte, attribuzione controllata con L.190",
+     "2020": "1 fonte, attribuzione controllata con L.190",
+     "2021": "1 fonte",
+     "2022": "1 fonte",
+     "2023": "1 fonte",
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   },
+   "anac_n_cig": {
+    "valori": {
+     "2024": 109,
+     "2025": 125
+    },
+    "conferma": {
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   }
+  },
+  "7": {
+   "residenti": {
+    "valori": {
+     "2016": 308076,
+     "2017": 307839,
+     "2018": 307184,
+     "2019": 305003,
+     "2020": 300720,
+     "2021": 311416,
+     "2022": 311500,
+     "2023": 313164,
+     "2024": 311895,
+     "2025": 314428
+    },
+    "conferma": {
+     "2016": "2 pubblicazioni uguali",
+     "2017": "2 pubblicazioni uguali",
+     "2018": "2 pubblicazioni uguali",
+     "2019": "2 pubblicazioni uguali",
+     "2020": "2 pubblicazioni uguali",
+     "2021": "2 pubblicazioni uguali",
+     "2022": "2 pubblicazioni uguali",
+     "2023": "2 pubblicazioni uguali",
+     "2024": "2 pubblicazioni uguali",
+     "2025": "2 pubblicazioni uguali"
+    }
+   },
+   "peg_correnti": {
+    "valori": {
+     "2023": 127018053.95,
+     "2024": 139161006.76,
+     "2025": 130324687.77,
+     "2026": 127663834.88
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_capitale": {
+    "valori": {
+     "2023": 78138204.57,
+     "2024": 61841343.33,
+     "2025": 53099156.71,
+     "2026": 59113158.86
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_totale": {
+    "valori": {
+     "2023": 205449658.5,
+     "2024": 202258044.7,
+     "2025": 185148440.4,
+     "2026": 187070393.72
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "anac_importo_netto": {
+    "valori": {
+     "2016": 15549786.21,
+     "2017": 23482373.24,
+     "2018": 45692333.26,
+     "2019": 41719937.81,
+     "2020": 25548591.03,
+     "2021": 44470308.06,
+     "2022": 46154950.95,
+     "2023": 32313466.9,
+     "2024": 24971961.23,
+     "2025": 32188350.44
+    },
+    "conferma": {
+     "2016": "1 fonte, attribuzione controllata con L.190",
+     "2017": "1 fonte, attribuzione controllata con L.190",
+     "2018": "1 fonte, attribuzione controllata con L.190",
+     "2019": "1 fonte, attribuzione controllata con L.190",
+     "2020": "1 fonte, attribuzione controllata con L.190",
+     "2021": "1 fonte",
+     "2022": "1 fonte",
+     "2023": "1 fonte",
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   },
+   "anac_n_cig": {
+    "valori": {
+     "2024": 112,
+     "2025": 162
+    },
+    "conferma": {
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   }
+  },
+  "8": {
+   "residenti": {
+    "valori": {
+     "2016": 131180,
+     "2017": 131075,
+     "2018": 130784,
+     "2019": 130089,
+     "2020": 129152,
+     "2021": 128914,
+     "2022": 128417,
+     "2023": 128048,
+     "2024": 127086,
+     "2025": 126745
+    },
+    "conferma": {
+     "2016": "2 pubblicazioni uguali",
+     "2017": "2 pubblicazioni uguali",
+     "2018": "2 pubblicazioni uguali",
+     "2019": "2 pubblicazioni uguali",
+     "2020": "2 pubblicazioni uguali",
+     "2021": "2 pubblicazioni uguali",
+     "2022": "2 pubblicazioni uguali",
+     "2023": "2 pubblicazioni uguali",
+     "2024": "2 pubblicazioni uguali",
+     "2025": "2 pubblicazioni uguali"
+    }
+   },
+   "peg_correnti": {
+    "valori": {
+     "2023": 61699927.47,
+     "2024": 69104160.04,
+     "2025": 65374008.69,
+     "2026": 63167270.93
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_capitale": {
+    "valori": {
+     "2023": 16659502.18,
+     "2024": 19000064.53,
+     "2025": 14425313.47,
+     "2026": 16666845.11
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_totale": {
+    "valori": {
+     "2023": 78607954.49,
+     "2024": 88889218.35,
+     "2025": 80813411.64,
+     "2026": 80082640.88
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "anac_importo_netto": {
+    "valori": {
+     "2016": 8032362.7,
+     "2017": 17909160.16,
+     "2018": 17575301.96,
+     "2019": 9884118.09,
+     "2020": 12292814.13,
+     "2021": 12373870.31,
+     "2022": 19341695.63,
+     "2023": 25131128.59,
+     "2024": 13161324.49,
+     "2025": 18379055.05
+    },
+    "conferma": {
+     "2016": "1 fonte, attribuzione controllata con L.190",
+     "2017": "1 fonte, attribuzione controllata con L.190",
+     "2018": "1 fonte, attribuzione controllata con L.190",
+     "2019": "1 fonte, attribuzione controllata con L.190",
+     "2020": "1 fonte, attribuzione controllata con L.190",
+     "2021": "1 fonte",
+     "2022": "1 fonte",
+     "2023": "1 fonte",
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   },
+   "anac_n_cig": {
+    "valori": {
+     "2024": 101,
+     "2025": 87
+    },
+    "conferma": {
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   }
+  },
+  "9": {
+   "residenti": {
+    "valori": {
+     "2016": 182026,
+     "2017": 183019,
+     "2018": 183343,
+     "2019": 183476,
+     "2020": 182770,
+     "2021": 182643,
+     "2022": 183282,
+     "2023": 183029,
+     "2024": 183043,
+     "2025": 183840
+    },
+    "conferma": {
+     "2016": "2 pubblicazioni uguali",
+     "2017": "2 pubblicazioni uguali",
+     "2018": "2 pubblicazioni uguali",
+     "2019": "2 pubblicazioni uguali",
+     "2020": "2 pubblicazioni uguali",
+     "2021": "2 pubblicazioni uguali",
+     "2022": "2 pubblicazioni uguali",
+     "2023": "2 pubblicazioni uguali",
+     "2024": "2 pubblicazioni uguali",
+     "2025": "2 pubblicazioni uguali"
+    }
+   },
+   "peg_correnti": {
+    "valori": {
+     "2023": 79260479.69,
+     "2024": 85103249.49,
+     "2025": 80673900.62,
+     "2026": 83503847.57
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_capitale": {
+    "valori": {
+     "2023": 23954548.33,
+     "2024": 23595268.73,
+     "2025": 9163889.48,
+     "2026": 16960460.5
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_totale": {
+    "valori": {
+     "2023": 103457887.96,
+     "2024": 109479266.84,
+     "2025": 90965129.09,
+     "2026": 100707168.01
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "anac_importo_netto": {
+    "valori": {
+     "2016": 11082649.79,
+     "2017": 19919690.64,
+     "2018": 22536667.07,
+     "2019": 20864827.63,
+     "2020": 28322490.54,
+     "2021": 10599426.44,
+     "2022": 26719561.65,
+     "2023": 17188937.13,
+     "2024": 33269183.16,
+     "2025": 21033573.77
+    },
+    "conferma": {
+     "2016": "1 fonte, attribuzione controllata con L.190",
+     "2017": "1 fonte, attribuzione controllata con L.190",
+     "2018": "1 fonte, attribuzione controllata con L.190",
+     "2019": "1 fonte, attribuzione controllata con L.190",
+     "2020": "1 fonte, attribuzione controllata con L.190",
+     "2021": "1 fonte",
+     "2022": "1 fonte",
+     "2023": "1 fonte",
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   },
+   "anac_n_cig": {
+    "valori": {
+     "2024": 96,
+     "2025": 110
+    },
+    "conferma": {
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   }
+  },
+  "10": {
+   "residenti": {
+    "valori": {
+     "2016": 231723,
+     "2017": 231752,
+     "2018": 231701,
+     "2019": 231220,
+     "2020": 229511,
+     "2021": 228731,
+     "2022": 228042,
+     "2023": 227372,
+     "2024": 226842,
+     "2025": 227271
+    },
+    "conferma": {
+     "2016": "2 pubblicazioni uguali",
+     "2017": "2 pubblicazioni uguali",
+     "2018": "2 pubblicazioni uguali",
+     "2019": "2 pubblicazioni uguali",
+     "2020": "2 pubblicazioni uguali",
+     "2021": "2 pubblicazioni uguali",
+     "2022": "2 pubblicazioni uguali",
+     "2023": "2 pubblicazioni uguali",
+     "2024": "2 pubblicazioni uguali",
+     "2025": "2 pubblicazioni uguali"
+    }
+   },
+   "peg_correnti": {
+    "valori": {
+     "2023": 102968092.66,
+     "2024": 109369639.74,
+     "2025": 97597526.98,
+     "2026": 98977124.13
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_capitale": {
+    "valori": {
+     "2023": 54953602.55,
+     "2024": 37824709.56,
+     "2025": 4413147.91,
+     "2026": 22081767.4
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_totale": {
+    "valori": {
+     "2023": 158232259.42,
+     "2024": 148925156.27,
+     "2025": 104300714.57,
+     "2026": 121367819.66
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "anac_importo_netto": {
+    "valori": {
+     "2016": 16509777.07,
+     "2017": 20356289.24,
+     "2018": 14738934.94,
+     "2019": 41634415.34,
+     "2020": 43201567.16,
+     "2021": 48244555.69,
+     "2022": 28381874.0,
+     "2023": 53049079.34,
+     "2024": 8658602.27,
+     "2025": 35803975.14
+    },
+    "conferma": {
+     "2016": "1 fonte, attribuzione controllata con L.190",
+     "2017": "1 fonte, attribuzione controllata con L.190",
+     "2018": "1 fonte, attribuzione controllata con L.190",
+     "2019": "1 fonte, attribuzione controllata con L.190",
+     "2020": "1 fonte, attribuzione controllata con L.190",
+     "2021": "1 fonte",
+     "2022": "1 fonte",
+     "2023": "1 fonte",
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   },
+   "anac_n_cig": {
+    "valori": {
+     "2024": 85,
+     "2025": 99
+    },
+    "conferma": {
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   }
+  },
+  "11": {
+   "residenti": {
+    "valori": {
+     "2016": 155586,
+     "2017": 156103,
+     "2018": 155652,
+     "2019": 154974,
+     "2020": 153472,
+     "2021": 152924,
+     "2022": 152569,
+     "2023": 151479,
+     "2024": 151057,
+     "2025": 150997
+    },
+    "conferma": {
+     "2016": "2 pubblicazioni uguali",
+     "2017": "2 pubblicazioni uguali",
+     "2018": "2 pubblicazioni uguali",
+     "2019": "2 pubblicazioni uguali",
+     "2020": "2 pubblicazioni uguali",
+     "2021": "2 pubblicazioni uguali",
+     "2022": "2 pubblicazioni uguali",
+     "2023": "2 pubblicazioni uguali",
+     "2024": "2 pubblicazioni uguali",
+     "2025": "2 pubblicazioni uguali"
+    }
+   },
+   "peg_correnti": {
+    "valori": {
+     "2023": 61505343.49,
+     "2024": 68129937.48,
+     "2025": 62358419.56,
+     "2026": 64706547.22
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_capitale": {
+    "valori": {
+     "2023": 10947520.01,
+     "2024": 11634997.38,
+     "2025": 6108611.4,
+     "2026": 9075547.72
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_totale": {
+    "valori": {
+     "2023": 72899182.14,
+     "2024": 80661972.76,
+     "2025": 69584819.06,
+     "2026": 74228413.58
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "anac_importo_netto": {
+    "valori": {
+     "2016": 10664284.86,
+     "2017": 9597050.74,
+     "2018": 14824303.2,
+     "2019": 11826343.18,
+     "2020": 8067942.27,
+     "2021": 13788560.7,
+     "2022": 16657242.22,
+     "2023": 16382927.07,
+     "2024": 16811193.63,
+     "2025": 18049008.56
+    },
+    "conferma": {
+     "2016": "1 fonte, attribuzione controllata con L.190",
+     "2017": "1 fonte, attribuzione controllata con L.190",
+     "2018": "1 fonte, attribuzione controllata con L.190",
+     "2019": "1 fonte, attribuzione controllata con L.190",
+     "2020": "1 fonte, attribuzione controllata con L.190",
+     "2021": "1 fonte",
+     "2022": "1 fonte",
+     "2023": "1 fonte",
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   },
+   "anac_n_cig": {
+    "valori": {
+     "2024": 95,
+     "2025": 101
+    },
+    "conferma": {
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   }
+  },
+  "12": {
+   "residenti": {
+    "valori": {
+     "2016": 141104,
+     "2017": 141085,
+     "2018": 141141,
+     "2019": 140719,
+     "2020": 139809,
+     "2021": 139838,
+     "2022": 140337,
+     "2023": 139749,
+     "2024": 138694,
+     "2025": 139835
+    },
+    "conferma": {
+     "2016": "2 pubblicazioni uguali",
+     "2017": "2 pubblicazioni uguali",
+     "2018": "2 pubblicazioni uguali",
+     "2019": "2 pubblicazioni uguali",
+     "2020": "2 pubblicazioni uguali",
+     "2021": "2 pubblicazioni uguali",
+     "2022": "2 pubblicazioni uguali",
+     "2023": "2 pubblicazioni uguali",
+     "2024": "2 pubblicazioni uguali",
+     "2025": "2 pubblicazioni uguali"
+    }
+   },
+   "peg_correnti": {
+    "valori": {
+     "2023": 51232449.23,
+     "2024": 57569050.17,
+     "2025": 52281577.83,
+     "2026": 53879039.72
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_capitale": {
+    "valori": {
+     "2023": 34019544.77,
+     "2024": 25827332.89,
+     "2025": 23800402.11,
+     "2026": 29989437.28
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_totale": {
+    "valori": {
+     "2023": 85415504.15,
+     "2024": 84050460.0,
+     "2025": 76929007.52,
+     "2026": 84031987.15
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "anac_importo_netto": {
+    "valori": {
+     "2016": 7810884.45,
+     "2017": 10569723.27,
+     "2018": 13968252.41,
+     "2019": 13462312.82,
+     "2020": 13130662.74,
+     "2021": 7202826.05,
+     "2022": 12268443.22,
+     "2023": 7528790.98,
+     "2024": 11069929.51,
+     "2025": 27339829.88
+    },
+    "conferma": {
+     "2016": "1 fonte, attribuzione controllata con L.190",
+     "2017": "1 fonte, attribuzione controllata con L.190",
+     "2018": "1 fonte, attribuzione controllata con L.190",
+     "2019": "1 fonte, attribuzione controllata con L.190",
+     "2020": "1 fonte, attribuzione controllata con L.190",
+     "2021": "1 fonte",
+     "2022": "1 fonte",
+     "2023": "1 fonte",
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   },
+   "anac_n_cig": {
+    "valori": {
+     "2024": 76,
+     "2025": 99
+    },
+    "conferma": {
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   }
+  },
+  "13": {
+   "residenti": {
+    "valori": {
+     "2016": 134147,
+     "2017": 133587,
+     "2018": 133367,
+     "2019": 133388,
+     "2020": 131429,
+     "2021": 130997,
+     "2022": 130379,
+     "2023": 130988,
+     "2024": 130333,
+     "2025": 130244
+    },
+    "conferma": {
+     "2016": "2 pubblicazioni uguali",
+     "2017": "2 pubblicazioni uguali",
+     "2018": "2 pubblicazioni uguali",
+     "2019": "2 pubblicazioni uguali",
+     "2020": "2 pubblicazioni uguali",
+     "2021": "2 pubblicazioni uguali",
+     "2022": "2 pubblicazioni uguali",
+     "2023": "2 pubblicazioni uguali",
+     "2024": "2 pubblicazioni uguali",
+     "2025": "2 pubblicazioni uguali"
+    }
+   },
+   "peg_correnti": {
+    "valori": {
+     "2023": 64403593.52,
+     "2024": 69307875.97,
+     "2025": 64774308.3,
+     "2026": 63755702.49
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_capitale": {
+    "valori": {
+     "2023": 39419630.37,
+     "2024": 36620220.06,
+     "2025": 15821151.28,
+     "2026": 14771863.65
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_totale": {
+    "valori": {
+     "2023": 103991767.1,
+     "2024": 107075161.72,
+     "2025": 82009986.82,
+     "2026": 78696109.35
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "anac_importo_netto": {
+    "valori": {
+     "2016": 13364940.51,
+     "2017": 7598612.51,
+     "2018": 22205715.52,
+     "2019": 11016456.49,
+     "2020": 30620282.52,
+     "2021": 18643560.71,
+     "2022": 18285430.55,
+     "2023": 31789389.85,
+     "2024": 12267563.24,
+     "2025": 12242058.22
+    },
+    "conferma": {
+     "2016": "1 fonte, attribuzione controllata con L.190",
+     "2017": "1 fonte, attribuzione controllata con L.190",
+     "2018": "1 fonte, attribuzione controllata con L.190",
+     "2019": "1 fonte, attribuzione controllata con L.190",
+     "2020": "1 fonte, attribuzione controllata con L.190",
+     "2021": "1 fonte",
+     "2022": "1 fonte",
+     "2023": "1 fonte",
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   },
+   "anac_n_cig": {
+    "valori": {
+     "2024": 173,
+     "2025": 133
+    },
+    "conferma": {
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   }
+  },
+  "14": {
+   "residenti": {
+    "valori": {
+     "2016": 191776,
+     "2017": 192331,
+     "2018": 192000,
+     "2019": 191851,
+     "2020": 190191,
+     "2021": 189779,
+     "2022": 190283,
+     "2023": 190855,
+     "2024": 189909,
+     "2025": 190701
+    },
+    "conferma": {
+     "2016": "2 pubblicazioni uguali",
+     "2017": "2 pubblicazioni uguali",
+     "2018": "2 pubblicazioni uguali",
+     "2019": "2 pubblicazioni uguali",
+     "2020": "2 pubblicazioni uguali",
+     "2021": "2 pubblicazioni uguali",
+     "2022": "2 pubblicazioni uguali",
+     "2023": "2 pubblicazioni uguali",
+     "2024": "2 pubblicazioni uguali",
+     "2025": "2 pubblicazioni uguali"
+    }
+   },
+   "peg_correnti": {
+    "valori": {
+     "2023": 68411039.69,
+     "2024": 74696790.99,
+     "2025": 69434702.23,
+     "2026": 70262473.91
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_capitale": {
+    "valori": {
+     "2023": 47728182.66,
+     "2024": 50567597.21,
+     "2025": 17800707.81,
+     "2026": 21354489.31
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_totale": {
+    "valori": {
+     "2023": 116413338.59,
+     "2024": 126480007.61,
+     "2025": 88861880.87,
+     "2026": 91891079.46
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "anac_importo_netto": {
+    "valori": {
+     "2016": 21269855.02,
+     "2017": 17871377.15,
+     "2018": 17062784.46,
+     "2019": 20356410.12,
+     "2020": 21565117.99,
+     "2021": 10339827.46,
+     "2022": 22870194.69,
+     "2023": 28839976.7,
+     "2024": 20316737.84,
+     "2025": 15931054.96
+    },
+    "conferma": {
+     "2016": "1 fonte, attribuzione controllata con L.190",
+     "2017": "1 fonte, attribuzione controllata con L.190",
+     "2018": "1 fonte, attribuzione controllata con L.190",
+     "2019": "1 fonte, attribuzione controllata con L.190",
+     "2020": "1 fonte, attribuzione controllata con L.190",
+     "2021": "1 fonte",
+     "2022": "1 fonte",
+     "2023": "1 fonte",
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   },
+   "anac_n_cig": {
+    "valori": {
+     "2024": 85,
+     "2025": 86
+    },
+    "conferma": {
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   }
+  },
+  "15": {
+   "residenti": {
+    "valori": {
+     "2016": 159984,
+     "2017": 160781,
+     "2018": 160795,
+     "2019": 160502,
+     "2020": 159342,
+     "2021": 159469,
+     "2022": 160630,
+     "2023": 160313,
+     "2024": 160620,
+     "2025": 161218
+    },
+    "conferma": {
+     "2016": "2 pubblicazioni uguali",
+     "2017": "2 pubblicazioni uguali",
+     "2018": "2 pubblicazioni uguali",
+     "2019": "2 pubblicazioni uguali",
+     "2020": "2 pubblicazioni uguali",
+     "2021": "2 pubblicazioni uguali",
+     "2022": "2 pubblicazioni uguali",
+     "2023": "2 pubblicazioni uguali",
+     "2024": "2 pubblicazioni uguali",
+     "2025": "2 pubblicazioni uguali"
+    }
+   },
+   "peg_correnti": {
+    "valori": {
+     "2023": 55558763.45,
+     "2024": 66352351.19,
+     "2025": 58903354.68,
+     "2026": 63464992.35
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_capitale": {
+    "valori": {
+     "2023": 47862564.05,
+     "2024": 36664692.06,
+     "2025": 24732120.45,
+     "2026": 29552709.34
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "peg_totale": {
+    "valori": {
+     "2023": 103643601.63,
+     "2024": 104558458.02,
+     "2025": 85715273.52,
+     "2026": 93239975.82
+    },
+    "conferma": {
+     "2023": "2 tabelle dello stesso atto uguali",
+     "2024": "2 tabelle dello stesso atto uguali",
+     "2025": "2 tabelle dello stesso atto uguali",
+     "2026": "2 letture dello stesso atto uguali"
+    }
+   },
+   "anac_importo_netto": {
+    "valori": {
+     "2016": 11986539.23,
+     "2017": 14464526.73,
+     "2018": 16678803.93,
+     "2019": 15276024.3,
+     "2020": 18780698.69,
+     "2021": 19268283.23,
+     "2022": 19051692.11,
+     "2023": 26577101.29,
+     "2024": 27197842.94,
+     "2025": 23160759.96
+    },
+    "conferma": {
+     "2016": "1 fonte, attribuzione controllata con L.190",
+     "2017": "1 fonte, attribuzione controllata con L.190",
+     "2018": "1 fonte, attribuzione controllata con L.190",
+     "2019": "1 fonte, attribuzione controllata con L.190",
+     "2020": "1 fonte, attribuzione controllata con L.190",
+     "2021": "1 fonte",
+     "2022": "1 fonte",
+     "2023": "1 fonte",
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   },
+   "anac_n_cig": {
+    "valori": {
+     "2024": 220,
+     "2025": 196
+    },
+    "conferma": {
+     "2024": "1 fonte",
+     "2025": "2 letture dello stesso dato uguali"
+    }
+   }
+  }
+ },
+ "esclusi": [],
+ "discordanze": [
+  {
+   "indicatore": "nidi_iscritti",
+   "municipio": "10",
+   "anno": "2017/2018",
+   "valore": 2034.0,
+   "fonte": "Roma Capitale, Dashboard Nidi 2025 (xlsx)",
+   "seconda_fonte": "Annuario statistico di Roma Capitale (comunali + privati convenzionati)",
+   "valore_seconda_fonte": 2110.0,
+   "nota": ""
+  },
+  {
+   "indicatore": "nidi_iscritti",
+   "municipio": "12",
+   "anno": "2017/2018",
+   "valore": 909.0,
+   "fonte": "Roma Capitale, Dashboard Nidi 2025 (xlsx)",
+   "seconda_fonte": "Annuario statistico di Roma Capitale (comunali + privati convenzionati)",
+   "valore_seconda_fonte": 943.0,
+   "nota": ""
+  },
+  {
+   "indicatore": "nidi_iscritti",
+   "municipio": "14",
+   "anno": "2017/2018",
+   "valore": 1198.0,
+   "fonte": "Roma Capitale, Dashboard Nidi 2025 (xlsx)",
+   "seconda_fonte": "Annuario statistico di Roma Capitale (comunali + privati convenzionati)",
+   "valore_seconda_fonte": 1204.0,
+   "nota": ""
+  },
+  {
+   "indicatore": "nidi_iscritti",
+   "municipio": "15",
+   "anno": "2017/2018",
+   "valore": 647.0,
+   "fonte": "Roma Capitale, Dashboard Nidi 2025 (xlsx)",
+   "seconda_fonte": "Annuario statistico di Roma Capitale (comunali + privati convenzionati)",
+   "valore_seconda_fonte": 674.0,
+   "nota": ""
+  },
+  {
+   "indicatore": "nidi_iscritti",
+   "municipio": "12",
+   "anno": "2019/2020",
+   "valore": 809.0,
+   "fonte": "Roma Capitale, Dashboard Nidi 2025 (xlsx)",
+   "seconda_fonte": "Annuario statistico di Roma Capitale (comunali + privati convenzionati)",
+   "valore_seconda_fonte": 709.0,
+   "nota": "Annuario 2020 stampa 86 privati iscritti, le sue colonne danno 186: refuso, xlsx conferma 186"
+  }
+ ]
+}

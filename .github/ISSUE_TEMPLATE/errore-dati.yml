@@ -1,0 +1,51 @@
+name: Errore nei dati
+description: Un numero del sito non corrisponde alla fonte ufficiale
+title: "[Dati] "
+labels: ["dati"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie. Una correzione richiede sempre una **fonte ufficiale** (Roma Capitale, un Municipio, ANAC o un altro ente pubblico). Articoli, post e comunicati non bastano.
+  - type: input
+    id: pagina
+    attributes:
+      label: Pagina del sito
+      description: L'indirizzo della pagina dove compare il numero
+      placeholder: https://.../municipio/6/
+    validations:
+      required: true
+  - type: textarea
+    id: dato
+    attributes:
+      label: Il dato che non torna
+      description: Il numero come compare sul sito e il blocco in cui si trova
+    validations:
+      required: true
+  - type: input
+    id: fonte
+    attributes:
+      label: Link alla fonte ufficiale
+      description: Obbligatorio. Se è un PDF, indica sotto la pagina e la tabella
+      placeholder: https://www.comune.roma.it/...
+    validations:
+      required: true
+  - type: textarea
+    id: valore
+    attributes:
+      label: Cosa dice la fonte
+      description: Il valore che leggi nella fonte, con pagina, tabella o riga
+    validations:
+      required: true
+  - type: input
+    id: periodo
+    attributes:
+      label: Periodo del dato
+      placeholder: per esempio competenza 2026, anno 2025, al 31/12/2025
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: Altro
+      description: Qualsiasi altra informazione utile

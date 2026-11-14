@@ -1,0 +1,2705 @@
+{
+ "id": "nidi",
+ "titolo": "Asili nido per municipio: posti, iscritti, domande e liste d'attesa",
+ "fonte": {
+  "nome": "Dashboard Nidi 2025 (file Excel)",
+  "ente": "Roma Capitale",
+  "url": "https://www.comune.roma.it/web-resources/cms/documents/Dashboard_Nidi_2025.xlsx",
+  "licenza": "Documento pubblicato da Roma Capitale. Riuso con citazione della fonte ai sensi dell'art. 7 del D.Lgs. 33/2013 e dell'art. 52, c. 2, del CAD (D.Lgs. 82/2005).",
+  "metadati_file": {
+   "ultima_modifica": "2025-10-14"
+  }
+ },
+ "periodo": "Anno educativo 2024-2025 (serie storica 2011-2012 - 2024-2025); data di estrazione dei dati sulle strutture per 2024-2025: 2025-07-29",
+ "verificato": "2026-11-13",
+ "misura": "Per municipio: numero di strutture (righe del file), posti (colonna 'Capienza'), iscritti, iscritti stranieri, iscritti diversamente abili ('Iscritti DA'), domande valide pervenute, lista d'attesa iniziale e finale. Somme delle righe del file, nessuna stima.",
+ "non_misura": [
+  "Comprende nidi comunali (gestione capitolina, in appalto, 'ponte') e privati convenzionati, aziendali, in project financing e spazi gioco privati in convenzione presenti nel file; non i nidi privati senza rapporto con Roma Capitale.",
+  "Le domande e le liste d'attesa riguardano le domande al servizio comunale; non sono il numero di bambini senza posto in assoluto.",
+  "Iscritti può superare i posti (Capienza) in alcune strutture: è il dato del file, non un errore di calcolo.",
+  "Alcune strutture hanno capienza zero nell'anno (chiuse o nuove): sono contate in n_strutture e indicate in strutture_capienza_zero.",
+  "Il grafico 'Iscritti diversamente abili' del file conta le righe invece di sommare: qui il valore è la somma della colonna.",
+  "Non è un dato di spesa: il costo dei nidi non è in questo file.",
+  "Gli anni educativi 2011-2012 e 2012-2013 precedono il riordino dei municipi del 2013: il file li attribuisce già ai municipi attuali (colonna 'Municipio New', es. 'MUNICIPIO ROMA VIII (ex XI)')."
+ ],
+ "municipi": {
+  "1": {
+   "anno_educativo": "2024-2025",
+   "n_strutture": 19,
+   "posti": 746,
+   "iscritti": 694,
+   "iscritti_stranieri": 48,
+   "iscritti_diversamente_abili": 7,
+   "strutture_capienza_zero": 0,
+   "righe_senza_dato_disabili": 0,
+   "posti_per_tipologia": {
+    "COMUNALE - Capitolina": 619,
+    "COMUNALE - Ponte": 80,
+    "PRIVATO - Aziendale": 26,
+    "PRIVATO - Convenzione": 21
+   },
+   "strutture_per_tipologia": {
+    "COMUNALE - Capitolina": 12,
+    "COMUNALE - Ponte": 4,
+    "PRIVATO - Aziendale": 2,
+    "PRIVATO - Convenzione": 1
+   },
+   "domande_valide": 518,
+   "lista_attesa_iniziale": 138,
+   "lista_attesa_finale": 30,
+   "serie_storica": {
+    "2011-2012": {
+     "n_strutture": 16,
+     "posti": 695,
+     "iscritti": 693,
+     "iscritti_stranieri": 57,
+     "iscritti_diversamente_abili": 8,
+     "domande_valide": 857,
+     "lista_attesa_iniziale": 445,
+     "lista_attesa_finale": 216
+    },
+    "2012-2013": {
+     "n_strutture": 16,
+     "posti": 744,
+     "iscritti": 736,
+     "iscritti_stranieri": 72,
+     "iscritti_diversamente_abili": 7,
+     "domande_valide": 910,
+     "lista_attesa_iniziale": 500,
+     "lista_attesa_finale": 196
+    },
+    "2013-2014": {
+     "n_strutture": 16,
+     "posti": 780,
+     "iscritti": 761,
+     "iscritti_stranieri": 61,
+     "iscritti_diversamente_abili": 13,
+     "domande_valide": 952,
+     "lista_attesa_iniziale": 532,
+     "lista_attesa_finale": 273
+    },
+    "2014-2015": {
+     "n_strutture": 16,
+     "posti": 772,
+     "iscritti": 745,
+     "iscritti_stranieri": 65,
+     "iscritti_diversamente_abili": 17,
+     "domande_valide": 851,
+     "lista_attesa_iniziale": 389,
+     "lista_attesa_finale": 78
+    },
+    "2015-2016": {
+     "n_strutture": 19,
+     "posti": 818,
+     "iscritti": 759,
+     "iscritti_stranieri": 68,
+     "iscritti_diversamente_abili": 12,
+     "domande_valide": 718,
+     "lista_attesa_iniziale": 290,
+     "lista_attesa_finale": 25
+    },
+    "2016-2017": {
+     "n_strutture": 20,
+     "posti": 839,
+     "iscritti": 753,
+     "iscritti_stranieri": 73,
+     "iscritti_diversamente_abili": 15,
+     "domande_valide": 664,
+     "lista_attesa_iniziale": 196,
+     "lista_attesa_finale": 11
+    },
+    "2017-2018": {
+     "n_strutture": 20,
+     "posti": 827,
+     "iscritti": 771,
+     "iscritti_stranieri": 85,
+     "iscritti_diversamente_abili": 13,
+     "domande_valide": 633,
+     "lista_attesa_iniziale": 199,
+     "lista_attesa_finale": 5
+    },
+    "2018-2019": {
+     "n_strutture": 20,
+     "posti": 851,
+     "iscritti": 780,
+     "iscritti_stranieri": 86,
+     "iscritti_diversamente_abili": 18,
+     "domande_valide": 637,
+     "lista_attesa_iniziale": 177,
+     "lista_attesa_finale": 13
+    },
+    "2019-2020": {
+     "n_strutture": 21,
+     "posti": 866,
+     "iscritti": 758,
+     "iscritti_stranieri": 87,
+     "iscritti_diversamente_abili": 19,
+     "domande_valide": 557,
+     "lista_attesa_iniziale": 154,
+     "lista_attesa_finale": 3
+    },
+    "2020-2021": {
+     "n_strutture": 21,
+     "posti": 866,
+     "iscritti": 667,
+     "iscritti_stranieri": 65,
+     "iscritti_diversamente_abili": 10,
+     "domande_valide": 502,
+     "lista_attesa_iniziale": 103,
+     "lista_attesa_finale": 1
+    },
+    "2021-2022": {
+     "n_strutture": 21,
+     "posti": 820,
+     "iscritti": 703,
+     "iscritti_stranieri": 55,
+     "iscritti_diversamente_abili": 9,
+     "domande_valide": 562,
+     "lista_attesa_iniziale": 124,
+     "lista_attesa_finale": 0
+    },
+    "2022-2023": {
+     "n_strutture": 21,
+     "posti": 817,
+     "iscritti": 759,
+     "iscritti_stranieri": 70,
+     "iscritti_diversamente_abili": 6,
+     "domande_valide": 512,
+     "lista_attesa_iniziale": 135,
+     "lista_attesa_finale": 7
+    },
+    "2023-2024": {
+     "n_strutture": 19,
+     "posti": 777,
+     "iscritti": 729,
+     "iscritti_stranieri": 56,
+     "iscritti_diversamente_abili": 11,
+     "domande_valide": 542,
+     "lista_attesa_iniziale": 178,
+     "lista_attesa_finale": 34
+    },
+    "2024-2025": {
+     "n_strutture": 19,
+     "posti": 746,
+     "iscritti": 694,
+     "iscritti_stranieri": 48,
+     "iscritti_diversamente_abili": 7,
+     "domande_valide": 518,
+     "lista_attesa_iniziale": 138,
+     "lista_attesa_finale": 30
+    }
+   }
+  },
+  "2": {
+   "anno_educativo": "2024-2025",
+   "n_strutture": 18,
+   "posti": 916,
+   "iscritti": 820,
+   "iscritti_stranieri": 60,
+   "iscritti_diversamente_abili": 8,
+   "strutture_capienza_zero": 0,
+   "righe_senza_dato_disabili": 0,
+   "posti_per_tipologia": {
+    "COMUNALE - Capitolina": 759,
+    "PRIVATO - Aziendale": 6,
+    "PRIVATO - Convenzione": 101,
+    "SPAZIO GIOCO PRIVATO - Convenzione": 50
+   },
+   "strutture_per_tipologia": {
+    "COMUNALE - Capitolina": 13,
+    "PRIVATO - Aziendale": 1,
+    "PRIVATO - Convenzione": 3,
+    "SPAZIO GIOCO PRIVATO - Convenzione": 1
+   },
+   "domande_valide": 616,
+   "lista_attesa_iniziale": 162,
+   "lista_attesa_finale": 39,
+   "serie_storica": {
+    "2011-2012": {
+     "n_strutture": 22,
+     "posti": 981,
+     "iscritti": 1018,
+     "iscritti_stranieri": 98,
+     "iscritti_diversamente_abili": 17,
+     "domande_valide": 1038,
+     "lista_attesa_iniziale": 535,
+     "lista_attesa_finale": 266
+    },
+    "2012-2013": {
+     "n_strutture": 21,
+     "posti": 1083,
+     "iscritti": 1004,
+     "iscritti_stranieri": 87,
+     "iscritti_diversamente_abili": 14,
+     "domande_valide": 1035,
+     "lista_attesa_iniziale": 486,
+     "lista_attesa_finale": 186
+    },
+    "2013-2014": {
+     "n_strutture": 21,
+     "posti": 1055,
+     "iscritti": 1008,
+     "iscritti_stranieri": 77,
+     "iscritti_diversamente_abili": 18,
+     "domande_valide": 1071,
+     "lista_attesa_iniziale": 516,
+     "lista_attesa_finale": 158
+    },
+    "2014-2015": {
+     "n_strutture": 21,
+     "posti": 1043,
+     "iscritti": 1004,
+     "iscritti_stranieri": 77,
+     "iscritti_diversamente_abili": 17,
+     "domande_valide": 1093,
+     "lista_attesa_iniziale": 537,
+     "lista_attesa_finale": 152
+    },
+    "2015-2016": {
+     "n_strutture": 23,
+     "posti": 1089,
+     "iscritti": 999,
+     "iscritti_stranieri": 99,
+     "iscritti_diversamente_abili": 13,
+     "domande_valide": 919,
+     "lista_attesa_iniziale": 324,
+     "lista_attesa_finale": 6
+    },
+    "2016-2017": {
+     "n_strutture": 22,
+     "posti": 1067,
+     "iscritti": 964,
+     "iscritti_stranieri": 96,
+     "iscritti_diversamente_abili": 23,
+     "domande_valide": 785,
+     "lista_attesa_iniziale": 221,
+     "lista_attesa_finale": 30
+    },
+    "2017-2018": {
+     "n_strutture": 20,
+     "posti": 1031,
+     "iscritti": 935,
+     "iscritti_stranieri": 98,
+     "iscritti_diversamente_abili": 16,
+     "domande_valide": 770,
+     "lista_attesa_iniziale": 233,
+     "lista_attesa_finale": 14
+    },
+    "2018-2019": {
+     "n_strutture": 20,
+     "posti": 994,
+     "iscritti": 888,
+     "iscritti_stranieri": 76,
+     "iscritti_diversamente_abili": 11,
+     "domande_valide": 766,
+     "lista_attesa_iniziale": 233,
+     "lista_attesa_finale": 26
+    },
+    "2019-2020": {
+     "n_strutture": 18,
+     "posti": 974,
+     "iscritti": 860,
+     "iscritti_stranieri": 93,
+     "iscritti_diversamente_abili": 13,
+     "domande_valide": 690,
+     "lista_attesa_iniziale": 182,
+     "lista_attesa_finale": 20
+    },
+    "2020-2021": {
+     "n_strutture": 19,
+     "posti": 976,
+     "iscritti": 764,
+     "iscritti_stranieri": 66,
+     "iscritti_diversamente_abili": 9,
+     "domande_valide": 624,
+     "lista_attesa_iniziale": 135,
+     "lista_attesa_finale": 8
+    },
+    "2021-2022": {
+     "n_strutture": 18,
+     "posti": 974,
+     "iscritti": 811,
+     "iscritti_stranieri": 69,
+     "iscritti_diversamente_abili": 15,
+     "domande_valide": 639,
+     "lista_attesa_iniziale": 145,
+     "lista_attesa_finale": 13
+    },
+    "2022-2023": {
+     "n_strutture": 19,
+     "posti": 950,
+     "iscritti": 878,
+     "iscritti_stranieri": 78,
+     "iscritti_diversamente_abili": 11,
+     "domande_valide": 681,
+     "lista_attesa_iniziale": 189,
+     "lista_attesa_finale": 38
+    },
+    "2023-2024": {
+     "n_strutture": 19,
+     "posti": 950,
+     "iscritti": 868,
+     "iscritti_stranieri": 69,
+     "iscritti_diversamente_abili": 9,
+     "domande_valide": 634,
+     "lista_attesa_iniziale": 172,
+     "lista_attesa_finale": 25
+    },
+    "2024-2025": {
+     "n_strutture": 18,
+     "posti": 916,
+     "iscritti": 820,
+     "iscritti_stranieri": 60,
+     "iscritti_diversamente_abili": 8,
+     "domande_valide": 616,
+     "lista_attesa_iniziale": 162,
+     "lista_attesa_finale": 39
+    }
+   }
+  },
+  "3": {
+   "anno_educativo": "2024-2025",
+   "n_strutture": 32,
+   "posti": 1639,
+   "iscritti": 1554,
+   "iscritti_stranieri": 94,
+   "iscritti_diversamente_abili": 28,
+   "strutture_capienza_zero": 0,
+   "righe_senza_dato_disabili": 0,
+   "posti_per_tipologia": {
+    "COMUNALE - Capitolina": 1104,
+    "COMUNALE - Ponte": 60,
+    "PRIVATO - Convenzione": 458,
+    "SPAZIO GIOCO PRIVATO - Convenzione": 17
+   },
+   "strutture_per_tipologia": {
+    "COMUNALE - Capitolina": 17,
+    "COMUNALE - Ponte": 3,
+    "PRIVATO - Convenzione": 11,
+    "SPAZIO GIOCO PRIVATO - Convenzione": 1
+   },
+   "domande_valide": 1047,
+   "lista_attesa_iniziale": 311,
+   "lista_attesa_finale": 19,
+   "serie_storica": {
+    "2011-2012": {
+     "n_strutture": 28,
+     "posti": 1299,
+     "iscritti": 1340,
+     "iscritti_stranieri": 85,
+     "iscritti_diversamente_abili": 24,
+     "domande_valide": 1438,
+     "lista_attesa_iniziale": 671,
+     "lista_attesa_finale": 437
+    },
+    "2012-2013": {
+     "n_strutture": 26,
+     "posti": 1425,
+     "iscritti": 1414,
+     "iscritti_stranieri": 70,
+     "iscritti_diversamente_abili": 20,
+     "domande_valide": 1552,
+     "lista_attesa_iniziale": 721,
+     "lista_attesa_finale": 437
+    },
+    "2013-2014": {
+     "n_strutture": 26,
+     "posti": 1425,
+     "iscritti": 1419,
+     "iscritti_stranieri": 82,
+     "iscritti_diversamente_abili": 34,
+     "domande_valide": 1669,
+     "lista_attesa_iniziale": 871,
+     "lista_attesa_finale": 598
+    },
+    "2014-2015": {
+     "n_strutture": 26,
+     "posti": 1425,
+     "iscritti": 1414,
+     "iscritti_stranieri": 77,
+     "iscritti_diversamente_abili": 38,
+     "domande_valide": 1533,
+     "lista_attesa_iniziale": 709,
+     "lista_attesa_finale": 386
+    },
+    "2015-2016": {
+     "n_strutture": 29,
+     "posti": 1485,
+     "iscritti": 1419,
+     "iscritti_stranieri": 92,
+     "iscritti_diversamente_abili": 27,
+     "domande_valide": 1268,
+     "lista_attesa_iniziale": 441,
+     "lista_attesa_finale": 83
+    },
+    "2016-2017": {
+     "n_strutture": 29,
+     "posti": 1485,
+     "iscritti": 1418,
+     "iscritti_stranieri": 110,
+     "iscritti_diversamente_abili": 28,
+     "domande_valide": 1190,
+     "lista_attesa_iniziale": 358,
+     "lista_attesa_finale": 81
+    },
+    "2017-2018": {
+     "n_strutture": 29,
+     "posti": 1485,
+     "iscritti": 1415,
+     "iscritti_stranieri": 87,
+     "iscritti_diversamente_abili": 37,
+     "domande_valide": 1186,
+     "lista_attesa_iniziale": 371,
+     "lista_attesa_finale": 78
+    },
+    "2018-2019": {
+     "n_strutture": 30,
+     "posti": 1495,
+     "iscritti": 1383,
+     "iscritti_stranieri": 111,
+     "iscritti_diversamente_abili": 30,
+     "domande_valide": 1150,
+     "lista_attesa_iniziale": 337,
+     "lista_attesa_finale": 82
+    },
+    "2019-2020": {
+     "n_strutture": 30,
+     "posti": 1496,
+     "iscritti": 1399,
+     "iscritti_stranieri": 123,
+     "iscritti_diversamente_abili": 27,
+     "domande_valide": 1045,
+     "lista_attesa_iniziale": 268,
+     "lista_attesa_finale": 17
+    },
+    "2020-2021": {
+     "n_strutture": 30,
+     "posti": 1496,
+     "iscritti": 1254,
+     "iscritti_stranieri": 88,
+     "iscritti_diversamente_abili": 25,
+     "domande_valide": 1042,
+     "lista_attesa_iniziale": 284,
+     "lista_attesa_finale": 63
+    },
+    "2021-2022": {
+     "n_strutture": 31,
+     "posti": 1566,
+     "iscritti": 1356,
+     "iscritti_stranieri": 94,
+     "iscritti_diversamente_abili": 23,
+     "domande_valide": 1091,
+     "lista_attesa_iniziale": 244,
+     "lista_attesa_finale": 12
+    },
+    "2022-2023": {
+     "n_strutture": 32,
+     "posti": 1634,
+     "iscritti": 1471,
+     "iscritti_stranieri": 97,
+     "iscritti_diversamente_abili": 33,
+     "domande_valide": 1008,
+     "lista_attesa_iniziale": 274,
+     "lista_attesa_finale": 30
+    },
+    "2023-2024": {
+     "n_strutture": 32,
+     "posti": 1635,
+     "iscritti": 1523,
+     "iscritti_stranieri": 93,
+     "iscritti_diversamente_abili": 37,
+     "domande_valide": 1058,
+     "lista_attesa_iniziale": 309,
+     "lista_attesa_finale": 53
+    },
+    "2024-2025": {
+     "n_strutture": 32,
+     "posti": 1639,
+     "iscritti": 1554,
+     "iscritti_stranieri": 94,
+     "iscritti_diversamente_abili": 28,
+     "domande_valide": 1047,
+     "lista_attesa_iniziale": 311,
+     "lista_attesa_finale": 19
+    }
+   }
+  },
+  "4": {
+   "anno_educativo": "2024-2025",
+   "n_strutture": 31,
+   "posti": 1412,
+   "iscritti": 1306,
+   "iscritti_stranieri": 99,
+   "iscritti_diversamente_abili": 41,
+   "strutture_capienza_zero": 0,
+   "righe_senza_dato_disabili": 0,
+   "posti_per_tipologia": {
+    "COMUNALE - Capitolina": 890,
+    "COMUNALE - In appalto": 77,
+    "COMUNALE - Ponte": 20,
+    "PRIVATO - Aziendale": 45,
+    "PRIVATO - Convenzione": 318,
+    "PRIVATO - Project Financing": 62
+   },
+   "strutture_per_tipologia": {
+    "COMUNALE - Capitolina": 17,
+    "COMUNALE - In appalto": 1,
+    "COMUNALE - Ponte": 1,
+    "PRIVATO - Aziendale": 2,
+    "PRIVATO - Convenzione": 9,
+    "PRIVATO - Project Financing": 1
+   },
+   "domande_valide": 806,
+   "lista_attesa_iniziale": 234,
+   "lista_attesa_finale": 82,
+   "serie_storica": {
+    "2011-2012": {
+     "n_strutture": 36,
+     "posti": 1791,
+     "iscritti": 1827,
+     "iscritti_stranieri": 123,
+     "iscritti_diversamente_abili": 11,
+     "domande_valide": 1150,
+     "lista_attesa_iniziale": 293,
+     "lista_attesa_finale": 64
+    },
+    "2012-2013": {
+     "n_strutture": 36,
+     "posti": 1933,
+     "iscritti": 1778,
+     "iscritti_stranieri": 121,
+     "iscritti_diversamente_abili": 19,
+     "domande_valide": 1128,
+     "lista_attesa_iniziale": 284,
+     "lista_attesa_finale": 36
+    },
+    "2013-2014": {
+     "n_strutture": 36,
+     "posti": 1941,
+     "iscritti": 1783,
+     "iscritti_stranieri": 116,
+     "iscritti_diversamente_abili": 22,
+     "domande_valide": 1260,
+     "lista_attesa_iniziale": 302,
+     "lista_attesa_finale": 27
+    },
+    "2014-2015": {
+     "n_strutture": 36,
+     "posti": 1949,
+     "iscritti": 1771,
+     "iscritti_stranieri": 113,
+     "iscritti_diversamente_abili": 26,
+     "domande_valide": 1246,
+     "lista_attesa_iniziale": 267,
+     "lista_attesa_finale": 51
+    },
+    "2015-2016": {
+     "n_strutture": 38,
+     "posti": 1852,
+     "iscritti": 1482,
+     "iscritti_stranieri": 102,
+     "iscritti_diversamente_abili": 22,
+     "domande_valide": 991,
+     "lista_attesa_iniziale": 392,
+     "lista_attesa_finale": 66
+    },
+    "2016-2017": {
+     "n_strutture": 37,
+     "posti": 1771,
+     "iscritti": 1504,
+     "iscritti_stranieri": 133,
+     "iscritti_diversamente_abili": 21,
+     "domande_valide": 1009,
+     "lista_attesa_iniziale": 120,
+     "lista_attesa_finale": 11
+    },
+    "2017-2018": {
+     "n_strutture": 36,
+     "posti": 1666,
+     "iscritti": 1491,
+     "iscritti_stranieri": 135,
+     "iscritti_diversamente_abili": 29,
+     "domande_valide": 971,
+     "lista_attesa_iniziale": 200,
+     "lista_attesa_finale": 27
+    },
+    "2018-2019": {
+     "n_strutture": 32,
+     "posti": 1548,
+     "iscritti": 1388,
+     "iscritti_stranieri": 129,
+     "iscritti_diversamente_abili": 27,
+     "domande_valide": 917,
+     "lista_attesa_iniziale": 244,
+     "lista_attesa_finale": 29
+    },
+    "2019-2020": {
+     "n_strutture": 31,
+     "posti": 1503,
+     "iscritti": 1317,
+     "iscritti_stranieri": 137,
+     "iscritti_diversamente_abili": 16,
+     "domande_valide": 785,
+     "lista_attesa_iniziale": 107,
+     "lista_attesa_finale": 13
+    },
+    "2020-2021": {
+     "n_strutture": 31,
+     "posti": 1439,
+     "iscritti": 1119,
+     "iscritti_stranieri": 105,
+     "iscritti_diversamente_abili": 18,
+     "domande_valide": 726,
+     "lista_attesa_iniziale": 155,
+     "lista_attesa_finale": 30
+    },
+    "2021-2022": {
+     "n_strutture": 32,
+     "posti": 1558,
+     "iscritti": 1285,
+     "iscritti_stranieri": 121,
+     "iscritti_diversamente_abili": 23,
+     "domande_valide": 777,
+     "lista_attesa_iniziale": 78,
+     "lista_attesa_finale": 5
+    },
+    "2022-2023": {
+     "n_strutture": 32,
+     "posti": 1540,
+     "iscritti": 1370,
+     "iscritti_stranieri": 120,
+     "iscritti_diversamente_abili": 26,
+     "domande_valide": 710,
+     "lista_attesa_iniziale": 68,
+     "lista_attesa_finale": 1
+    },
+    "2023-2024": {
+     "n_strutture": 32,
+     "posti": 1464,
+     "iscritti": 1320,
+     "iscritti_stranieri": 100,
+     "iscritti_diversamente_abili": 26,
+     "domande_valide": 752,
+     "lista_attesa_iniziale": 203,
+     "lista_attesa_finale": 69
+    },
+    "2024-2025": {
+     "n_strutture": 31,
+     "posti": 1412,
+     "iscritti": 1306,
+     "iscritti_stranieri": 99,
+     "iscritti_diversamente_abili": 41,
+     "domande_valide": 806,
+     "lista_attesa_iniziale": 234,
+     "lista_attesa_finale": 82
+    }
+   }
+  },
+  "5": {
+   "anno_educativo": "2024-2025",
+   "n_strutture": 33,
+   "posti": 1807,
+   "iscritti": 1730,
+   "iscritti_stranieri": 226,
+   "iscritti_diversamente_abili": 35,
+   "strutture_capienza_zero": 0,
+   "righe_senza_dato_disabili": 0,
+   "posti_per_tipologia": {
+    "COMUNALE - Capitolina": 1517,
+    "COMUNALE - Ponte": 40,
+    "PRIVATO - Aziendale": 47,
+    "PRIVATO - Convenzione": 203
+   },
+   "strutture_per_tipologia": {
+    "COMUNALE - Capitolina": 23,
+    "COMUNALE - Ponte": 2,
+    "PRIVATO - Aziendale": 2,
+    "PRIVATO - Convenzione": 6
+   },
+   "domande_valide": 1207,
+   "lista_attesa_iniziale": 391,
+   "lista_attesa_finale": 68,
+   "serie_storica": {
+    "2011-2012": {
+     "n_strutture": 32,
+     "posti": 1540,
+     "iscritti": 1629,
+     "iscritti_stranieri": 226,
+     "iscritti_diversamente_abili": 9,
+     "domande_valide": 1528,
+     "lista_attesa_iniziale": 641,
+     "lista_attesa_finale": 248
+    },
+    "2012-2013": {
+     "n_strutture": 32,
+     "posti": 1740,
+     "iscritti": 1656,
+     "iscritti_stranieri": 229,
+     "iscritti_diversamente_abili": 28,
+     "domande_valide": 1490,
+     "lista_attesa_iniziale": 521,
+     "lista_attesa_finale": 227
+    },
+    "2013-2014": {
+     "n_strutture": 32,
+     "posti": 1713,
+     "iscritti": 1642,
+     "iscritti_stranieri": 236,
+     "iscritti_diversamente_abili": 35,
+     "domande_valide": 1610,
+     "lista_attesa_iniziale": 677,
+     "lista_attesa_finale": 405
+    },
+    "2014-2015": {
+     "n_strutture": 31,
+     "posti": 1713,
+     "iscritti": 1666,
+     "iscritti_stranieri": 213,
+     "iscritti_diversamente_abili": 31,
+     "domande_valide": 1620,
+     "lista_attesa_iniziale": 713,
+     "lista_attesa_finale": 279
+    },
+    "2015-2016": {
+     "n_strutture": 36,
+     "posti": 1803,
+     "iscritti": 1715,
+     "iscritti_stranieri": 253,
+     "iscritti_diversamente_abili": 35,
+     "domande_valide": 1460,
+     "lista_attesa_iniziale": 504,
+     "lista_attesa_finale": 112
+    },
+    "2016-2017": {
+     "n_strutture": 36,
+     "posti": 1797,
+     "iscritti": 1697,
+     "iscritti_stranieri": 246,
+     "iscritti_diversamente_abili": 46,
+     "domande_valide": 1417,
+     "lista_attesa_iniziale": 453,
+     "lista_attesa_finale": 134
+    },
+    "2017-2018": {
+     "n_strutture": 36,
+     "posti": 1776,
+     "iscritti": 1655,
+     "iscritti_stranieri": 236,
+     "iscritti_diversamente_abili": 34,
+     "domande_valide": 1442,
+     "lista_attesa_iniziale": 543,
+     "lista_attesa_finale": 134
+    },
+    "2018-2019": {
+     "n_strutture": 35,
+     "posti": 1827,
+     "iscritti": 1741,
+     "iscritti_stranieri": 259,
+     "iscritti_diversamente_abili": 38,
+     "domande_valide": 1410,
+     "lista_attesa_iniziale": 393,
+     "lista_attesa_finale": 100
+    },
+    "2019-2020": {
+     "n_strutture": 35,
+     "posti": 1823,
+     "iscritti": 1749,
+     "iscritti_stranieri": 253,
+     "iscritti_diversamente_abili": 41,
+     "domande_valide": 1212,
+     "lista_attesa_iniziale": 276,
+     "lista_attesa_finale": 68
+    },
+    "2020-2021": {
+     "n_strutture": 36,
+     "posti": 1834,
+     "iscritti": 1590,
+     "iscritti_stranieri": 199,
+     "iscritti_diversamente_abili": 28,
+     "domande_valide": 1186,
+     "lista_attesa_iniziale": 280,
+     "lista_attesa_finale": 13
+    },
+    "2021-2022": {
+     "n_strutture": 34,
+     "posti": 1794,
+     "iscritti": 1693,
+     "iscritti_stranieri": 192,
+     "iscritti_diversamente_abili": 29,
+     "domande_valide": 1201,
+     "lista_attesa_iniziale": 339,
+     "lista_attesa_finale": 56
+    },
+    "2022-2023": {
+     "n_strutture": 33,
+     "posti": 1754,
+     "iscritti": 1721,
+     "iscritti_stranieri": 176,
+     "iscritti_diversamente_abili": 31,
+     "domande_valide": 1157,
+     "lista_attesa_iniziale": 388,
+     "lista_attesa_finale": 113
+    },
+    "2023-2024": {
+     "n_strutture": 33,
+     "posti": 1754,
+     "iscritti": 1728,
+     "iscritti_stranieri": 203,
+     "iscritti_diversamente_abili": 31,
+     "domande_valide": 1216,
+     "lista_attesa_iniziale": 423,
+     "lista_attesa_finale": 119
+    },
+    "2024-2025": {
+     "n_strutture": 33,
+     "posti": 1807,
+     "iscritti": 1730,
+     "iscritti_stranieri": 226,
+     "iscritti_diversamente_abili": 35,
+     "domande_valide": 1207,
+     "lista_attesa_iniziale": 391,
+     "lista_attesa_finale": 68
+    }
+   }
+  },
+  "6": {
+   "anno_educativo": "2024-2025",
+   "n_strutture": 39,
+   "posti": 1814,
+   "iscritti": 1774,
+   "iscritti_stranieri": 344,
+   "iscritti_diversamente_abili": 37,
+   "strutture_capienza_zero": 0,
+   "righe_senza_dato_disabili": 0,
+   "posti_per_tipologia": {
+    "COMUNALE - Capitolina": 860,
+    "COMUNALE - In appalto": 72,
+    "PRIVATO - Convenzione": 882
+   },
+   "strutture_per_tipologia": {
+    "COMUNALE - Capitolina": 15,
+    "COMUNALE - In appalto": 1,
+    "PRIVATO - Convenzione": 23
+   },
+   "domande_valide": 1253,
+   "lista_attesa_iniziale": 459,
+   "lista_attesa_finale": 196,
+   "serie_storica": {
+    "2011-2012": {
+     "n_strutture": 35,
+     "posti": 1589,
+     "iscritti": 1602,
+     "iscritti_stranieri": 261,
+     "iscritti_diversamente_abili": 1,
+     "domande_valide": 1761,
+     "lista_attesa_iniziale": 866,
+     "lista_attesa_finale": 569
+    },
+    "2012-2013": {
+     "n_strutture": 35,
+     "posti": 1678,
+     "iscritti": 1639,
+     "iscritti_stranieri": 265,
+     "iscritti_diversamente_abili": 27,
+     "domande_valide": 1809,
+     "lista_attesa_iniziale": 928,
+     "lista_attesa_finale": 571
+    },
+    "2013-2014": {
+     "n_strutture": 36,
+     "posti": 1781,
+     "iscritti": 1739,
+     "iscritti_stranieri": 269,
+     "iscritti_diversamente_abili": 37,
+     "domande_valide": 1885,
+     "lista_attesa_iniziale": 840,
+     "lista_attesa_finale": 495
+    },
+    "2014-2015": {
+     "n_strutture": 36,
+     "posti": 1783,
+     "iscritti": 1753,
+     "iscritti_stranieri": 266,
+     "iscritti_diversamente_abili": 51,
+     "domande_valide": 1915,
+     "lista_attesa_iniziale": 952,
+     "lista_attesa_finale": 595
+    },
+    "2015-2016": {
+     "n_strutture": 38,
+     "posti": 1856,
+     "iscritti": 1807,
+     "iscritti_stranieri": 332,
+     "iscritti_diversamente_abili": 41,
+     "domande_valide": 1467,
+     "lista_attesa_iniziale": 460,
+     "lista_attesa_finale": 35
+    },
+    "2016-2017": {
+     "n_strutture": 38,
+     "posti": 1848,
+     "iscritti": 1833,
+     "iscritti_stranieri": 378,
+     "iscritti_diversamente_abili": 41,
+     "domande_valide": 1466,
+     "lista_attesa_iniziale": 473,
+     "lista_attesa_finale": 126
+    },
+    "2017-2018": {
+     "n_strutture": 39,
+     "posti": 1865,
+     "iscritti": 1842,
+     "iscritti_stranieri": 423,
+     "iscritti_diversamente_abili": 35,
+     "domande_valide": 1530,
+     "lista_attesa_iniziale": 491,
+     "lista_attesa_finale": 92
+    },
+    "2018-2019": {
+     "n_strutture": 39,
+     "posti": 1865,
+     "iscritti": 1837,
+     "iscritti_stranieri": 428,
+     "iscritti_diversamente_abili": 34,
+     "domande_valide": 1559,
+     "lista_attesa_iniziale": 552,
+     "lista_attesa_finale": 165
+    },
+    "2019-2020": {
+     "n_strutture": 39,
+     "posti": 1868,
+     "iscritti": 1762,
+     "iscritti_stranieri": 396,
+     "iscritti_diversamente_abili": 35,
+     "domande_valide": 1369,
+     "lista_attesa_iniziale": 457,
+     "lista_attesa_finale": 137
+    },
+    "2020-2021": {
+     "n_strutture": 38,
+     "posti": 1818,
+     "iscritti": 1528,
+     "iscritti_stranieri": 300,
+     "iscritti_diversamente_abili": 26,
+     "domande_valide": 1230,
+     "lista_attesa_iniziale": 339,
+     "lista_attesa_finale": 105
+    },
+    "2021-2022": {
+     "n_strutture": 38,
+     "posti": 1808,
+     "iscritti": 1646,
+     "iscritti_stranieri": 368,
+     "iscritti_diversamente_abili": 39,
+     "domande_valide": 1246,
+     "lista_attesa_iniziale": 386,
+     "lista_attesa_finale": 145
+    },
+    "2022-2023": {
+     "n_strutture": 37,
+     "posti": 1744,
+     "iscritti": 1673,
+     "iscritti_stranieri": 361,
+     "iscritti_diversamente_abili": 48,
+     "domande_valide": 1107,
+     "lista_attesa_iniziale": 325,
+     "lista_attesa_finale": 159
+    },
+    "2023-2024": {
+     "n_strutture": 38,
+     "posti": 1811,
+     "iscritti": 1760,
+     "iscritti_stranieri": 347,
+     "iscritti_diversamente_abili": 46,
+     "domande_valide": 1227,
+     "lista_attesa_iniziale": 451,
+     "lista_attesa_finale": 203
+    },
+    "2024-2025": {
+     "n_strutture": 39,
+     "posti": 1814,
+     "iscritti": 1774,
+     "iscritti_stranieri": 344,
+     "iscritti_diversamente_abili": 37,
+     "domande_valide": 1253,
+     "lista_attesa_iniziale": 459,
+     "lista_attesa_finale": 196
+    }
+   }
+  },
+  "7": {
+   "anno_educativo": "2024-2025",
+   "n_strutture": 42,
+   "posti": 2236,
+   "iscritti": 2219,
+   "iscritti_stranieri": 178,
+   "iscritti_diversamente_abili": 54,
+   "strutture_capienza_zero": 0,
+   "righe_senza_dato_disabili": 0,
+   "posti_per_tipologia": {
+    "COMUNALE - Capitolina": 1538,
+    "COMUNALE - Ponte": 60,
+    "PRIVATO - Convenzione": 470,
+    "PRIVATO - Project Financing": 138,
+    "SPAZIO GIOCO PRIVATO - Convenzione": 30
+   },
+   "strutture_per_tipologia": {
+    "COMUNALE - Capitolina": 24,
+    "COMUNALE - Ponte": 3,
+    "PRIVATO - Convenzione": 12,
+    "PRIVATO - Project Financing": 2,
+    "SPAZIO GIOCO PRIVATO - Convenzione": 1
+   },
+   "domande_valide": 1546,
+   "lista_attesa_iniziale": 532,
+   "lista_attesa_finale": 114,
+   "serie_storica": {
+    "2011-2012": {
+     "n_strutture": 47,
+     "posti": 2234,
+     "iscritti": 2346,
+     "iscritti_stranieri": 173,
+     "iscritti_diversamente_abili": 4,
+     "domande_valide": 2186,
+     "lista_attesa_iniziale": 975,
+     "lista_attesa_finale": 533
+    },
+    "2012-2013": {
+     "n_strutture": 47,
+     "posti": 2428,
+     "iscritti": 2371,
+     "iscritti_stranieri": 182,
+     "iscritti_diversamente_abili": 43,
+     "domande_valide": 2259,
+     "lista_attesa_iniziale": 979,
+     "lista_attesa_finale": 514
+    },
+    "2013-2014": {
+     "n_strutture": 46,
+     "posti": 2423,
+     "iscritti": 2357,
+     "iscritti_stranieri": 196,
+     "iscritti_diversamente_abili": 70,
+     "domande_valide": 2374,
+     "lista_attesa_iniziale": 1134,
+     "lista_attesa_finale": 546
+    },
+    "2014-2015": {
+     "n_strutture": 46,
+     "posti": 2423,
+     "iscritti": 2336,
+     "iscritti_stranieri": 187,
+     "iscritti_diversamente_abili": 65,
+     "domande_valide": 2161,
+     "lista_attesa_iniziale": 880,
+     "lista_attesa_finale": 249
+    },
+    "2015-2016": {
+     "n_strutture": 49,
+     "posti": 2454,
+     "iscritti": 2228,
+     "iscritti_stranieri": 190,
+     "iscritti_diversamente_abili": 40,
+     "domande_valide": 1743,
+     "lista_attesa_iniziale": 557,
+     "lista_attesa_finale": 70
+    },
+    "2016-2017": {
+     "n_strutture": 51,
+     "posti": 2444,
+     "iscritti": 2226,
+     "iscritti_stranieri": 211,
+     "iscritti_diversamente_abili": 51,
+     "domande_valide": 1596,
+     "lista_attesa_iniziale": 399,
+     "lista_attesa_finale": 79
+    },
+    "2017-2018": {
+     "n_strutture": 46,
+     "posti": 2334,
+     "iscritti": 2112,
+     "iscritti_stranieri": 201,
+     "iscritti_diversamente_abili": 63,
+     "domande_valide": 1624,
+     "lista_attesa_iniziale": 484,
+     "lista_attesa_finale": 86
+    },
+    "2018-2019": {
+     "n_strutture": 45,
+     "posti": 2278,
+     "iscritti": 2160,
+     "iscritti_stranieri": 215,
+     "iscritti_diversamente_abili": 55,
+     "domande_valide": 1656,
+     "lista_attesa_iniziale": 492,
+     "lista_attesa_finale": 123
+    },
+    "2019-2020": {
+     "n_strutture": 45,
+     "posti": 2277,
+     "iscritti": 2165,
+     "iscritti_stranieri": 236,
+     "iscritti_diversamente_abili": 58,
+     "domande_valide": 1489,
+     "lista_attesa_iniziale": 408,
+     "lista_attesa_finale": 65
+    },
+    "2020-2021": {
+     "n_strutture": 43,
+     "posti": 2240,
+     "iscritti": 1859,
+     "iscritti_stranieri": 177,
+     "iscritti_diversamente_abili": 37,
+     "domande_valide": 1404,
+     "lista_attesa_iniziale": 423,
+     "lista_attesa_finale": 105
+    },
+    "2021-2022": {
+     "n_strutture": 41,
+     "posti": 2205,
+     "iscritti": 2025,
+     "iscritti_stranieri": 190,
+     "iscritti_diversamente_abili": 28,
+     "domande_valide": 1462,
+     "lista_attesa_iniziale": 424,
+     "lista_attesa_finale": 85
+    },
+    "2022-2023": {
+     "n_strutture": 42,
+     "posti": 2221,
+     "iscritti": 2176,
+     "iscritti_stranieri": 192,
+     "iscritti_diversamente_abili": 35,
+     "domande_valide": 1507,
+     "lista_attesa_iniziale": 520,
+     "lista_attesa_finale": 91
+    },
+    "2023-2024": {
+     "n_strutture": 42,
+     "posti": 2233,
+     "iscritti": 2218,
+     "iscritti_stranieri": 195,
+     "iscritti_diversamente_abili": 37,
+     "domande_valide": 1593,
+     "lista_attesa_iniziale": 580,
+     "lista_attesa_finale": 158
+    },
+    "2024-2025": {
+     "n_strutture": 42,
+     "posti": 2236,
+     "iscritti": 2219,
+     "iscritti_stranieri": 178,
+     "iscritti_diversamente_abili": 54,
+     "domande_valide": 1546,
+     "lista_attesa_iniziale": 532,
+     "lista_attesa_finale": 114
+    }
+   }
+  },
+  "8": {
+   "anno_educativo": "2024-2025",
+   "n_strutture": 17,
+   "posti": 919,
+   "iscritti": 851,
+   "iscritti_stranieri": 51,
+   "iscritti_diversamente_abili": 15,
+   "strutture_capienza_zero": 0,
+   "righe_senza_dato_disabili": 0,
+   "posti_per_tipologia": {
+    "COMUNALE - Capitolina": 837,
+    "COMUNALE - Ponte": 18,
+    "PRIVATO - Aziendale": 42,
+    "PRIVATO - Convenzione": 22
+   },
+   "strutture_per_tipologia": {
+    "COMUNALE - Capitolina": 13,
+    "COMUNALE - Ponte": 1,
+    "PRIVATO - Aziendale": 2,
+    "PRIVATO - Convenzione": 1
+   },
+   "domande_valide": 554,
+   "lista_attesa_iniziale": 128,
+   "lista_attesa_finale": 27,
+   "serie_storica": {
+    "2011-2012": {
+     "n_strutture": 22,
+     "posti": 995,
+     "iscritti": 1032,
+     "iscritti_stranieri": 77,
+     "iscritti_diversamente_abili": 5,
+     "domande_valide": 1031,
+     "lista_attesa_iniziale": 397,
+     "lista_attesa_finale": 223
+    },
+    "2012-2013": {
+     "n_strutture": 22,
+     "posti": 1100,
+     "iscritti": 1061,
+     "iscritti_stranieri": 73,
+     "iscritti_diversamente_abili": 19,
+     "domande_valide": 1075,
+     "lista_attesa_iniziale": 478,
+     "lista_attesa_finale": 268
+    },
+    "2013-2014": {
+     "n_strutture": 22,
+     "posti": 1100,
+     "iscritti": 1072,
+     "iscritti_stranieri": 73,
+     "iscritti_diversamente_abili": 20,
+     "domande_valide": 1050,
+     "lista_attesa_iniziale": 488,
+     "lista_attesa_finale": 212
+    },
+    "2014-2015": {
+     "n_strutture": 22,
+     "posti": 1100,
+     "iscritti": 1006,
+     "iscritti_stranieri": 72,
+     "iscritti_diversamente_abili": 25,
+     "domande_valide": 974,
+     "lista_attesa_iniziale": 423,
+     "lista_attesa_finale": 167
+    },
+    "2015-2016": {
+     "n_strutture": 23,
+     "posti": 1072,
+     "iscritti": 939,
+     "iscritti_stranieri": 69,
+     "iscritti_diversamente_abili": 19,
+     "domande_valide": 803,
+     "lista_attesa_iniziale": 237,
+     "lista_attesa_finale": 7
+    },
+    "2016-2017": {
+     "n_strutture": 23,
+     "posti": 1065,
+     "iscritti": 968,
+     "iscritti_stranieri": 83,
+     "iscritti_diversamente_abili": 19,
+     "domande_valide": 774,
+     "lista_attesa_iniziale": 193,
+     "lista_attesa_finale": 8
+    },
+    "2017-2018": {
+     "n_strutture": 22,
+     "posti": 1037,
+     "iscritti": 946,
+     "iscritti_stranieri": 79,
+     "iscritti_diversamente_abili": 18,
+     "domande_valide": 746,
+     "lista_attesa_iniziale": 208,
+     "lista_attesa_finale": 14
+    },
+    "2018-2019": {
+     "n_strutture": 22,
+     "posti": 1012,
+     "iscritti": 880,
+     "iscritti_stranieri": 71,
+     "iscritti_diversamente_abili": 18,
+     "domande_valide": 637,
+     "lista_attesa_iniziale": 101,
+     "lista_attesa_finale": 6
+    },
+    "2019-2020": {
+     "n_strutture": 21,
+     "posti": 986,
+     "iscritti": 884,
+     "iscritti_stranieri": 76,
+     "iscritti_diversamente_abili": 18,
+     "domande_valide": 609,
+     "lista_attesa_iniziale": 119,
+     "lista_attesa_finale": 14
+    },
+    "2020-2021": {
+     "n_strutture": 21,
+     "posti": 984,
+     "iscritti": 745,
+     "iscritti_stranieri": 55,
+     "iscritti_diversamente_abili": 13,
+     "domande_valide": 557,
+     "lista_attesa_iniziale": 112,
+     "lista_attesa_finale": 23
+    },
+    "2021-2022": {
+     "n_strutture": 18,
+     "posti": 939,
+     "iscritti": 784,
+     "iscritti_stranieri": 50,
+     "iscritti_diversamente_abili": 15,
+     "domande_valide": 598,
+     "lista_attesa_iniziale": 74,
+     "lista_attesa_finale": 9
+    },
+    "2022-2023": {
+     "n_strutture": 16,
+     "posti": 897,
+     "iscritti": 863,
+     "iscritti_stranieri": 51,
+     "iscritti_diversamente_abili": 12,
+     "domande_valide": 585,
+     "lista_attesa_iniziale": 136,
+     "lista_attesa_finale": 31
+    },
+    "2023-2024": {
+     "n_strutture": 18,
+     "posti": 939,
+     "iscritti": 879,
+     "iscritti_stranieri": 47,
+     "iscritti_diversamente_abili": 9,
+     "domande_valide": 621,
+     "lista_attesa_iniziale": 174,
+     "lista_attesa_finale": 55
+    },
+    "2024-2025": {
+     "n_strutture": 17,
+     "posti": 919,
+     "iscritti": 851,
+     "iscritti_stranieri": 51,
+     "iscritti_diversamente_abili": 15,
+     "domande_valide": 554,
+     "lista_attesa_iniziale": 128,
+     "lista_attesa_finale": 27
+    }
+   }
+  },
+  "9": {
+   "anno_educativo": "2024-2025",
+   "n_strutture": 27,
+   "posti": 1439,
+   "iscritti": 1374,
+   "iscritti_stranieri": 87,
+   "iscritti_diversamente_abili": 32,
+   "strutture_capienza_zero": 0,
+   "righe_senza_dato_disabili": 0,
+   "posti_per_tipologia": {
+    "COMUNALE - Capitolina": 836,
+    "COMUNALE - In appalto": 202,
+    "PRIVATO - Aziendale": 18,
+    "PRIVATO - Convenzione": 383
+   },
+   "strutture_per_tipologia": {
+    "COMUNALE - Capitolina": 13,
+    "COMUNALE - In appalto": 2,
+    "PRIVATO - Aziendale": 2,
+    "PRIVATO - Convenzione": 10
+   },
+   "domande_valide": 826,
+   "lista_attesa_iniziale": 162,
+   "lista_attesa_finale": 0,
+   "serie_storica": {
+    "2011-2012": {
+     "n_strutture": 34,
+     "posti": 1442,
+     "iscritti": 1492,
+     "iscritti_stranieri": 89,
+     "iscritti_diversamente_abili": 32,
+     "domande_valide": 1285,
+     "lista_attesa_iniziale": 435,
+     "lista_attesa_finale": 77
+    },
+    "2012-2013": {
+     "n_strutture": 33,
+     "posti": 1524,
+     "iscritti": 1514,
+     "iscritti_stranieri": 86,
+     "iscritti_diversamente_abili": 32,
+     "domande_valide": 1361,
+     "lista_attesa_iniziale": 626,
+     "lista_attesa_finale": 272
+    },
+    "2013-2014": {
+     "n_strutture": 33,
+     "posti": 1443,
+     "iscritti": 1431,
+     "iscritti_stranieri": 85,
+     "iscritti_diversamente_abili": 42,
+     "domande_valide": 1527,
+     "lista_attesa_iniziale": 755,
+     "lista_attesa_finale": 374
+    },
+    "2014-2015": {
+     "n_strutture": 33,
+     "posti": 1509,
+     "iscritti": 1500,
+     "iscritti_stranieri": 83,
+     "iscritti_diversamente_abili": 44,
+     "domande_valide": 1484,
+     "lista_attesa_iniziale": 760,
+     "lista_attesa_finale": 122
+    },
+    "2015-2016": {
+     "n_strutture": 37,
+     "posti": 1595,
+     "iscritti": 1426,
+     "iscritti_stranieri": 88,
+     "iscritti_diversamente_abili": 34,
+     "domande_valide": 1172,
+     "lista_attesa_iniziale": 394,
+     "lista_attesa_finale": 22
+    },
+    "2016-2017": {
+     "n_strutture": 37,
+     "posti": 1531,
+     "iscritti": 1403,
+     "iscritti_stranieri": 107,
+     "iscritti_diversamente_abili": 35,
+     "domande_valide": 1112,
+     "lista_attesa_iniziale": 265,
+     "lista_attesa_finale": 9
+    },
+    "2017-2018": {
+     "n_strutture": 35,
+     "posti": 1500,
+     "iscritti": 1341,
+     "iscritti_stranieri": 114,
+     "iscritti_diversamente_abili": 30,
+     "domande_valide": 940,
+     "lista_attesa_iniziale": 258,
+     "lista_attesa_finale": 9
+    },
+    "2018-2019": {
+     "n_strutture": 34,
+     "posti": 1567,
+     "iscritti": 1348,
+     "iscritti_stranieri": 109,
+     "iscritti_diversamente_abili": 29,
+     "domande_valide": 967,
+     "lista_attesa_iniziale": 188,
+     "lista_attesa_finale": 2
+    },
+    "2019-2020": {
+     "n_strutture": 32,
+     "posti": 1544,
+     "iscritti": 1370,
+     "iscritti_stranieri": 116,
+     "iscritti_diversamente_abili": 28,
+     "domande_valide": 822,
+     "lista_attesa_iniziale": 136,
+     "lista_attesa_finale": 0
+    },
+    "2020-2021": {
+     "n_strutture": 32,
+     "posti": 1504,
+     "iscritti": 1216,
+     "iscritti_stranieri": 100,
+     "iscritti_diversamente_abili": 23,
+     "domande_valide": 798,
+     "lista_attesa_iniziale": 150,
+     "lista_attesa_finale": 4
+    },
+    "2021-2022": {
+     "n_strutture": 29,
+     "posti": 1465,
+     "iscritti": 1223,
+     "iscritti_stranieri": 79,
+     "iscritti_diversamente_abili": 24,
+     "domande_valide": 803,
+     "lista_attesa_iniziale": 144,
+     "lista_attesa_finale": 0
+    },
+    "2022-2023": {
+     "n_strutture": 29,
+     "posti": 1509,
+     "iscritti": 1367,
+     "iscritti_stranieri": 74,
+     "iscritti_diversamente_abili": 23,
+     "domande_valide": 869,
+     "lista_attesa_iniziale": 99,
+     "lista_attesa_finale": 1
+    },
+    "2023-2024": {
+     "n_strutture": 28,
+     "posti": 1467,
+     "iscritti": 1409,
+     "iscritti_stranieri": 89,
+     "iscritti_diversamente_abili": 26,
+     "domande_valide": 825,
+     "lista_attesa_iniziale": 169,
+     "lista_attesa_finale": 2
+    },
+    "2024-2025": {
+     "n_strutture": 27,
+     "posti": 1439,
+     "iscritti": 1374,
+     "iscritti_stranieri": 87,
+     "iscritti_diversamente_abili": 32,
+     "domande_valide": 826,
+     "lista_attesa_iniziale": 162,
+     "lista_attesa_finale": 0
+    }
+   }
+  },
+  "10": {
+   "anno_educativo": "2024-2025",
+   "n_strutture": 53,
+   "posti": 2174,
+   "iscritti": 2048,
+   "iscritti_stranieri": 221,
+   "iscritti_diversamente_abili": 52,
+   "strutture_capienza_zero": 0,
+   "righe_senza_dato_disabili": 0,
+   "posti_per_tipologia": {
+    "COMUNALE - Capitolina": 758,
+    "COMUNALE - Ponte": 20,
+    "PRIVATO - Convenzione": 1348,
+    "SPAZIO GIOCO PRIVATO - Convenzione": 48
+   },
+   "strutture_per_tipologia": {
+    "COMUNALE - Capitolina": 13,
+    "COMUNALE - Ponte": 1,
+    "PRIVATO - Convenzione": 38,
+    "SPAZIO GIOCO PRIVATO - Convenzione": 1
+   },
+   "domande_valide": 927,
+   "lista_attesa_iniziale": 145,
+   "lista_attesa_finale": 6,
+   "serie_storica": {
+    "2011-2012": {
+     "n_strutture": 58,
+     "posti": 2138,
+     "iscritti": 2178,
+     "iscritti_stranieri": 201,
+     "iscritti_diversamente_abili": 41,
+     "domande_valide": 2036,
+     "lista_attesa_iniziale": 816,
+     "lista_attesa_finale": 479
+    },
+    "2012-2013": {
+     "n_strutture": 55,
+     "posti": 2193,
+     "iscritti": 2178,
+     "iscritti_stranieri": 207,
+     "iscritti_diversamente_abili": 55,
+     "domande_valide": 2026,
+     "lista_attesa_iniziale": 824,
+     "lista_attesa_finale": 446
+    },
+    "2013-2014": {
+     "n_strutture": 57,
+     "posti": 2218,
+     "iscritti": 2212,
+     "iscritti_stranieri": 189,
+     "iscritti_diversamente_abili": 49,
+     "domande_valide": 2047,
+     "lista_attesa_iniziale": 745,
+     "lista_attesa_finale": 314
+    },
+    "2014-2015": {
+     "n_strutture": 57,
+     "posti": 2234,
+     "iscritti": 2227,
+     "iscritti_stranieri": 198,
+     "iscritti_diversamente_abili": 49,
+     "domande_valide": 1890,
+     "lista_attesa_iniziale": 672,
+     "lista_attesa_finale": 234
+    },
+    "2015-2016": {
+     "n_strutture": 61,
+     "posti": 2357,
+     "iscritti": 1971,
+     "iscritti_stranieri": 206,
+     "iscritti_diversamente_abili": 42,
+     "domande_valide": 1415,
+     "lista_attesa_iniziale": 338,
+     "lista_attesa_finale": 4
+    },
+    "2016-2017": {
+     "n_strutture": 65,
+     "posti": 2317,
+     "iscritti": 2103,
+     "iscritti_stranieri": 243,
+     "iscritti_diversamente_abili": 30,
+     "domande_valide": 1410,
+     "lista_attesa_iniziale": 228,
+     "lista_attesa_finale": 36
+    },
+    "2017-2018": {
+     "n_strutture": 59,
+     "posti": 2220,
+     "iscritti": 2034,
+     "iscritti_stranieri": 262,
+     "iscritti_diversamente_abili": 37,
+     "domande_valide": 1275,
+     "lista_attesa_iniziale": 326,
+     "lista_attesa_finale": 47
+    },
+    "2018-2019": {
+     "n_strutture": 58,
+     "posti": 2213,
+     "iscritti": 2056,
+     "iscritti_stranieri": 269,
+     "iscritti_diversamente_abili": 45,
+     "domande_valide": 1297,
+     "lista_attesa_iniziale": 283,
+     "lista_attesa_finale": 23
+    },
+    "2019-2020": {
+     "n_strutture": 58,
+     "posti": 2231,
+     "iscritti": 2066,
+     "iscritti_stranieri": 293,
+     "iscritti_diversamente_abili": 35,
+     "domande_valide": 1097,
+     "lista_attesa_iniziale": 194,
+     "lista_attesa_finale": 10
+    },
+    "2020-2021": {
+     "n_strutture": 59,
+     "posti": 2247,
+     "iscritti": 1828,
+     "iscritti_stranieri": 251,
+     "iscritti_diversamente_abili": 26,
+     "domande_valide": 863,
+     "lista_attesa_iniziale": 137,
+     "lista_attesa_finale": 10
+    },
+    "2021-2022": {
+     "n_strutture": 57,
+     "posti": 2214,
+     "iscritti": 1816,
+     "iscritti_stranieri": 223,
+     "iscritti_diversamente_abili": 43,
+     "domande_valide": 914,
+     "lista_attesa_iniziale": 112,
+     "lista_attesa_finale": 2
+    },
+    "2022-2023": {
+     "n_strutture": 55,
+     "posti": 2194,
+     "iscritti": 2009,
+     "iscritti_stranieri": 214,
+     "iscritti_diversamente_abili": 60,
+     "domande_valide": 955,
+     "lista_attesa_iniziale": 179,
+     "lista_attesa_finale": 21
+    },
+    "2023-2024": {
+     "n_strutture": 55,
+     "posti": 2183,
+     "iscritti": 2059,
+     "iscritti_stranieri": 234,
+     "iscritti_diversamente_abili": 57,
+     "domande_valide": 952,
+     "lista_attesa_iniziale": 207,
+     "lista_attesa_finale": 18
+    },
+    "2024-2025": {
+     "n_strutture": 53,
+     "posti": 2174,
+     "iscritti": 2048,
+     "iscritti_stranieri": 221,
+     "iscritti_diversamente_abili": 52,
+     "domande_valide": 927,
+     "lista_attesa_iniziale": 145,
+     "lista_attesa_finale": 6
+    }
+   }
+  },
+  "11": {
+   "anno_educativo": "2024-2025",
+   "n_strutture": 24,
+   "posti": 1149,
+   "iscritti": 1121,
+   "iscritti_stranieri": 99,
+   "iscritti_diversamente_abili": 21,
+   "strutture_capienza_zero": 0,
+   "righe_senza_dato_disabili": 0,
+   "posti_per_tipologia": {
+    "COMUNALE - Capitolina": 1001,
+    "PRIVATO - Aziendale": 44,
+    "PRIVATO - Convenzione": 104
+   },
+   "strutture_per_tipologia": {
+    "COMUNALE - Capitolina": 20,
+    "PRIVATO - Aziendale": 1,
+    "PRIVATO - Convenzione": 3
+   },
+   "domande_valide": 682,
+   "lista_attesa_iniziale": 217,
+   "lista_attesa_finale": 32,
+   "serie_storica": {
+    "2011-2012": {
+     "n_strutture": 23,
+     "posti": 1051,
+     "iscritti": 1138,
+     "iscritti_stranieri": 103,
+     "iscritti_diversamente_abili": 2,
+     "domande_valide": 1047,
+     "lista_attesa_iniziale": 413,
+     "lista_attesa_finale": 207
+    },
+    "2012-2013": {
+     "n_strutture": 23,
+     "posti": 1170,
+     "iscritti": 1149,
+     "iscritti_stranieri": 106,
+     "iscritti_diversamente_abili": 10,
+     "domande_valide": 1071,
+     "lista_attesa_iniziale": 452,
+     "lista_attesa_finale": 268
+    },
+    "2013-2014": {
+     "n_strutture": 23,
+     "posti": 1171,
+     "iscritti": 1155,
+     "iscritti_stranieri": 93,
+     "iscritti_diversamente_abili": 15,
+     "domande_valide": 1064,
+     "lista_attesa_iniziale": 400,
+     "lista_attesa_finale": 223
+    },
+    "2014-2015": {
+     "n_strutture": 23,
+     "posti": 1178,
+     "iscritti": 1142,
+     "iscritti_stranieri": 112,
+     "iscritti_diversamente_abili": 17,
+     "domande_valide": 1000,
+     "lista_attesa_iniziale": 328,
+     "lista_attesa_finale": 78
+    },
+    "2015-2016": {
+     "n_strutture": 25,
+     "posti": 1238,
+     "iscritti": 1146,
+     "iscritti_stranieri": 104,
+     "iscritti_diversamente_abili": 17,
+     "domande_valide": 915,
+     "lista_attesa_iniziale": 254,
+     "lista_attesa_finale": 28
+    },
+    "2016-2017": {
+     "n_strutture": 25,
+     "posti": 1238,
+     "iscritti": 1149,
+     "iscritti_stranieri": 113,
+     "iscritti_diversamente_abili": 18,
+     "domande_valide": 866,
+     "lista_attesa_iniziale": 228,
+     "lista_attesa_finale": 55
+    },
+    "2017-2018": {
+     "n_strutture": 25,
+     "posti": 1238,
+     "iscritti": 1163,
+     "iscritti_stranieri": 147,
+     "iscritti_diversamente_abili": 19,
+     "domande_valide": 835,
+     "lista_attesa_iniziale": 198,
+     "lista_attesa_finale": 11
+    },
+    "2018-2019": {
+     "n_strutture": 24,
+     "posti": 1206,
+     "iscritti": 1143,
+     "iscritti_stranieri": 171,
+     "iscritti_diversamente_abili": 19,
+     "domande_valide": 794,
+     "lista_attesa_iniziale": 200,
+     "lista_attesa_finale": 15
+    },
+    "2019-2020": {
+     "n_strutture": 24,
+     "posti": 1166,
+     "iscritti": 1084,
+     "iscritti_stranieri": 169,
+     "iscritti_diversamente_abili": 18,
+     "domande_valide": 745,
+     "lista_attesa_iniziale": 223,
+     "lista_attesa_finale": 14
+    },
+    "2020-2021": {
+     "n_strutture": 25,
+     "posti": 1246,
+     "iscritti": 890,
+     "iscritti_stranieri": 113,
+     "iscritti_diversamente_abili": 15,
+     "domande_valide": 717,
+     "lista_attesa_iniziale": 214,
+     "lista_attesa_finale": 69
+    },
+    "2021-2022": {
+     "n_strutture": 24,
+     "posti": 1195,
+     "iscritti": 1033,
+     "iscritti_stranieri": 138,
+     "iscritti_diversamente_abili": 10,
+     "domande_valide": 750,
+     "lista_attesa_iniziale": 139,
+     "lista_attesa_finale": 10
+    },
+    "2022-2023": {
+     "n_strutture": 24,
+     "posti": 1177,
+     "iscritti": 1108,
+     "iscritti_stranieri": 149,
+     "iscritti_diversamente_abili": 23,
+     "domande_valide": 679,
+     "lista_attesa_iniziale": 176,
+     "lista_attesa_finale": 32
+    },
+    "2023-2024": {
+     "n_strutture": 24,
+     "posti": 1146,
+     "iscritti": 1116,
+     "iscritti_stranieri": 130,
+     "iscritti_diversamente_abili": 22,
+     "domande_valide": 686,
+     "lista_attesa_iniziale": 214,
+     "lista_attesa_finale": 62
+    },
+    "2024-2025": {
+     "n_strutture": 24,
+     "posti": 1149,
+     "iscritti": 1121,
+     "iscritti_stranieri": 99,
+     "iscritti_diversamente_abili": 21,
+     "domande_valide": 682,
+     "lista_attesa_iniziale": 217,
+     "lista_attesa_finale": 32
+    }
+   }
+  },
+  "12": {
+   "anno_educativo": "2024-2025",
+   "n_strutture": 16,
+   "posti": 764,
+   "iscritti": 757,
+   "iscritti_stranieri": 42,
+   "iscritti_diversamente_abili": 15,
+   "strutture_capienza_zero": 0,
+   "righe_senza_dato_disabili": 0,
+   "posti_per_tipologia": {
+    "COMUNALE - Capitolina": 583,
+    "COMUNALE - In appalto": 58,
+    "PRIVATO - Convenzione": 89,
+    "SPAZIO GIOCO PRIVATO - Convenzione": 34
+   },
+   "strutture_per_tipologia": {
+    "COMUNALE - Capitolina": 10,
+    "COMUNALE - In appalto": 1,
+    "PRIVATO - Convenzione": 3,
+    "SPAZIO GIOCO PRIVATO - Convenzione": 2
+   },
+   "domande_valide": 573,
+   "lista_attesa_iniziale": 252,
+   "lista_attesa_finale": 65,
+   "serie_storica": {
+    "2011-2012": {
+     "n_strutture": 20,
+     "posti": 865,
+     "iscritti": 928,
+     "iscritti_stranieri": 96,
+     "iscritti_diversamente_abili": 18,
+     "domande_valide": 828,
+     "lista_attesa_iniziale": 341,
+     "lista_attesa_finale": 177
+    },
+    "2012-2013": {
+     "n_strutture": 20,
+     "posti": 981,
+     "iscritti": 950,
+     "iscritti_stranieri": 98,
+     "iscritti_diversamente_abili": 22,
+     "domande_valide": 836,
+     "lista_attesa_iniziale": 337,
+     "lista_attesa_finale": 134
+    },
+    "2013-2014": {
+     "n_strutture": 20,
+     "posti": 970,
+     "iscritti": 940,
+     "iscritti_stranieri": 96,
+     "iscritti_diversamente_abili": 21,
+     "domande_valide": 939,
+     "lista_attesa_iniziale": 449,
+     "lista_attesa_finale": 296
+    },
+    "2014-2015": {
+     "n_strutture": 20,
+     "posti": 970,
+     "iscritti": 941,
+     "iscritti_stranieri": 72,
+     "iscritti_diversamente_abili": 28,
+     "domande_valide": 822,
+     "lista_attesa_iniziale": 344,
+     "lista_attesa_finale": 174
+    },
+    "2015-2016": {
+     "n_strutture": 22,
+     "posti": 1034,
+     "iscritti": 887,
+     "iscritti_stranieri": 81,
+     "iscritti_diversamente_abili": 14,
+     "domande_valide": 679,
+     "lista_attesa_iniziale": 192,
+     "lista_attesa_finale": 23
+    },
+    "2016-2017": {
+     "n_strutture": 22,
+     "posti": 1013,
+     "iscritti": 905,
+     "iscritti_stranieri": 83,
+     "iscritti_diversamente_abili": 13,
+     "domande_valide": 648,
+     "lista_attesa_iniziale": 161,
+     "lista_attesa_finale": 43
+    },
+    "2017-2018": {
+     "n_strutture": 21,
+     "posti": 987,
+     "iscritti": 909,
+     "iscritti_stranieri": 86,
+     "iscritti_diversamente_abili": 8,
+     "domande_valide": 665,
+     "lista_attesa_iniziale": 177,
+     "lista_attesa_finale": 39
+    },
+    "2018-2019": {
+     "n_strutture": 20,
+     "posti": 965,
+     "iscritti": 852,
+     "iscritti_stranieri": 92,
+     "iscritti_diversamente_abili": 15,
+     "domande_valide": 570,
+     "lista_attesa_iniziale": 146,
+     "lista_attesa_finale": 32
+    },
+    "2019-2020": {
+     "n_strutture": 18,
+     "posti": 860,
+     "iscritti": 809,
+     "iscritti_stranieri": 110,
+     "iscritti_diversamente_abili": 18,
+     "domande_valide": 506,
+     "lista_attesa_iniziale": 107,
+     "lista_attesa_finale": 40
+    },
+    "2020-2021": {
+     "n_strutture": 19,
+     "posti": 901,
+     "iscritti": 762,
+     "iscritti_stranieri": 71,
+     "iscritti_diversamente_abili": 11,
+     "domande_valide": 536,
+     "lista_attesa_iniziale": 162,
+     "lista_attesa_finale": 5
+    },
+    "2021-2022": {
+     "n_strutture": 17,
+     "posti": 867,
+     "iscritti": 792,
+     "iscritti_stranieri": 79,
+     "iscritti_diversamente_abili": 12,
+     "domande_valide": 526,
+     "lista_attesa_iniziale": 175,
+     "lista_attesa_finale": 1
+    },
+    "2022-2023": {
+     "n_strutture": 17,
+     "posti": 863,
+     "iscritti": 816,
+     "iscritti_stranieri": 70,
+     "iscritti_diversamente_abili": 13,
+     "domande_valide": 559,
+     "lista_attesa_iniziale": 181,
+     "lista_attesa_finale": 10
+    },
+    "2023-2024": {
+     "n_strutture": 17,
+     "posti": 838,
+     "iscritti": 828,
+     "iscritti_stranieri": 62,
+     "iscritti_diversamente_abili": 10,
+     "domande_valide": 538,
+     "lista_attesa_iniziale": 153,
+     "lista_attesa_finale": 30
+    },
+    "2024-2025": {
+     "n_strutture": 16,
+     "posti": 764,
+     "iscritti": 757,
+     "iscritti_stranieri": 42,
+     "iscritti_diversamente_abili": 15,
+     "domande_valide": 573,
+     "lista_attesa_iniziale": 252,
+     "lista_attesa_finale": 65
+    }
+   }
+  },
+  "13": {
+   "anno_educativo": "2024-2025",
+   "n_strutture": 25,
+   "posti": 1105,
+   "iscritti": 1015,
+   "iscritti_stranieri": 114,
+   "iscritti_diversamente_abili": 19,
+   "strutture_capienza_zero": 0,
+   "righe_senza_dato_disabili": 0,
+   "posti_per_tipologia": {
+    "COMUNALE - Capitolina": 618,
+    "COMUNALE - In appalto": 108,
+    "PRIVATO - Convenzione": 379
+   },
+   "strutture_per_tipologia": {
+    "COMUNALE - Capitolina": 10,
+    "COMUNALE - In appalto": 1,
+    "PRIVATO - Convenzione": 14
+   },
+   "domande_valide": 611,
+   "lista_attesa_iniziale": 206,
+   "lista_attesa_finale": 35,
+   "serie_storica": {
+    "2011-2012": {
+     "n_strutture": 26,
+     "posti": 1183,
+     "iscritti": 1164,
+     "iscritti_stranieri": 128,
+     "iscritti_diversamente_abili": 4,
+     "domande_valide": 915,
+     "lista_attesa_iniziale": 293,
+     "lista_attesa_finale": 97
+    },
+    "2012-2013": {
+     "n_strutture": 26,
+     "posti": 1281,
+     "iscritti": 1205,
+     "iscritti_stranieri": 139,
+     "iscritti_diversamente_abili": 19,
+     "domande_valide": 957,
+     "lista_attesa_iniziale": 327,
+     "lista_attesa_finale": 121
+    },
+    "2013-2014": {
+     "n_strutture": 26,
+     "posti": 1260,
+     "iscritti": 1214,
+     "iscritti_stranieri": 145,
+     "iscritti_diversamente_abili": 24,
+     "domande_valide": 937,
+     "lista_attesa_iniziale": 301,
+     "lista_attesa_finale": 103
+    },
+    "2014-2015": {
+     "n_strutture": 25,
+     "posti": 1243,
+     "iscritti": 1202,
+     "iscritti_stranieri": 140,
+     "iscritti_diversamente_abili": 19,
+     "domande_valide": 904,
+     "lista_attesa_iniziale": 251,
+     "lista_attesa_finale": 48
+    },
+    "2015-2016": {
+     "n_strutture": 25,
+     "posti": 1247,
+     "iscritti": 1047,
+     "iscritti_stranieri": 133,
+     "iscritti_diversamente_abili": 7,
+     "domande_valide": 710,
+     "lista_attesa_iniziale": 109,
+     "lista_attesa_finale": 15
+    },
+    "2016-2017": {
+     "n_strutture": 26,
+     "posti": 1271,
+     "iscritti": 1075,
+     "iscritti_stranieri": 164,
+     "iscritti_diversamente_abili": 11,
+     "domande_valide": 664,
+     "lista_attesa_iniziale": 51,
+     "lista_attesa_finale": 15
+    },
+    "2017-2018": {
+     "n_strutture": 26,
+     "posti": 1267,
+     "iscritti": 1003,
+     "iscritti_stranieri": 153,
+     "iscritti_diversamente_abili": 19,
+     "domande_valide": 555,
+     "lista_attesa_iniziale": 35,
+     "lista_attesa_finale": 0
+    },
+    "2018-2019": {
+     "n_strutture": 25,
+     "posti": 1224,
+     "iscritti": 975,
+     "iscritti_stranieri": 148,
+     "iscritti_diversamente_abili": 17,
+     "domande_valide": 575,
+     "lista_attesa_iniziale": 57,
+     "lista_attesa_finale": 1
+    },
+    "2019-2020": {
+     "n_strutture": 25,
+     "posti": 1162,
+     "iscritti": 999,
+     "iscritti_stranieri": 170,
+     "iscritti_diversamente_abili": 12,
+     "domande_valide": 552,
+     "lista_attesa_iniziale": 59,
+     "lista_attesa_finale": 1
+    },
+    "2020-2021": {
+     "n_strutture": 25,
+     "posti": 1175,
+     "iscritti": 927,
+     "iscritti_stranieri": 138,
+     "iscritti_diversamente_abili": 9,
+     "domande_valide": 539,
+     "lista_attesa_iniziale": 45,
+     "lista_attesa_finale": 1
+    },
+    "2021-2022": {
+     "n_strutture": 26,
+     "posti": 1214,
+     "iscritti": 1042,
+     "iscritti_stranieri": 163,
+     "iscritti_diversamente_abili": 9,
+     "domande_valide": 588,
+     "lista_attesa_iniziale": 54,
+     "lista_attesa_finale": 3
+    },
+    "2022-2023": {
+     "n_strutture": 26,
+     "posti": 1216,
+     "iscritti": 1131,
+     "iscritti_stranieri": 124,
+     "iscritti_diversamente_abili": 6,
+     "domande_valide": 594,
+     "lista_attesa_iniziale": 97,
+     "lista_attesa_finale": 15
+    },
+    "2023-2024": {
+     "n_strutture": 26,
+     "posti": 1206,
+     "iscritti": 1170,
+     "iscritti_stranieri": 116,
+     "iscritti_diversamente_abili": 7,
+     "domande_valide": 651,
+     "lista_attesa_iniziale": 172,
+     "lista_attesa_finale": 36
+    },
+    "2024-2025": {
+     "n_strutture": 25,
+     "posti": 1105,
+     "iscritti": 1015,
+     "iscritti_stranieri": 114,
+     "iscritti_diversamente_abili": 19,
+     "domande_valide": 611,
+     "lista_attesa_iniziale": 206,
+     "lista_attesa_finale": 35
+    }
+   }
+  },
+  "14": {
+   "anno_educativo": "2024-2025",
+   "n_strutture": 21,
+   "posti": 1168,
+   "iscritti": 1156,
+   "iscritti_stranieri": 141,
+   "iscritti_diversamente_abili": 27,
+   "strutture_capienza_zero": 0,
+   "righe_senza_dato_disabili": 0,
+   "posti_per_tipologia": {
+    "COMUNALE - Capitolina": 599,
+    "COMUNALE - In appalto": 74,
+    "PRIVATO - Aziendale": 36,
+    "PRIVATO - Convenzione": 390,
+    "PRIVATO - Project Financing": 69
+   },
+   "strutture_per_tipologia": {
+    "COMUNALE - Capitolina": 10,
+    "COMUNALE - In appalto": 1,
+    "PRIVATO - Aziendale": 1,
+    "PRIVATO - Convenzione": 8,
+    "PRIVATO - Project Financing": 1
+   },
+   "domande_valide": 804,
+   "lista_attesa_iniziale": 269,
+   "lista_attesa_finale": 39,
+   "serie_storica": {
+    "2011-2012": {
+     "n_strutture": 22,
+     "posti": 1007,
+     "iscritti": 1082,
+     "iscritti_stranieri": 112,
+     "iscritti_diversamente_abili": 13,
+     "domande_valide": 1095,
+     "lista_attesa_iniziale": 534,
+     "lista_attesa_finale": 264
+    },
+    "2012-2013": {
+     "n_strutture": 22,
+     "posti": 1098,
+     "iscritti": 1087,
+     "iscritti_stranieri": 113,
+     "iscritti_diversamente_abili": 26,
+     "domande_valide": 1206,
+     "lista_attesa_iniziale": 625,
+     "lista_attesa_finale": 391
+    },
+    "2013-2014": {
+     "n_strutture": 22,
+     "posti": 1098,
+     "iscritti": 1091,
+     "iscritti_stranieri": 102,
+     "iscritti_diversamente_abili": 36,
+     "domande_valide": 1270,
+     "lista_attesa_iniziale": 679,
+     "lista_attesa_finale": 424
+    },
+    "2014-2015": {
+     "n_strutture": 22,
+     "posti": 1098,
+     "iscritti": 1100,
+     "iscritti_stranieri": 121,
+     "iscritti_diversamente_abili": 32,
+     "domande_valide": 1174,
+     "lista_attesa_iniziale": 562,
+     "lista_attesa_finale": 306
+    },
+    "2015-2016": {
+     "n_strutture": 25,
+     "posti": 1292,
+     "iscritti": 1152,
+     "iscritti_stranieri": 143,
+     "iscritti_diversamente_abili": 33,
+     "domande_valide": 1059,
+     "lista_attesa_iniziale": 401,
+     "lista_attesa_finale": 40
+    },
+    "2016-2017": {
+     "n_strutture": 25,
+     "posti": 1292,
+     "iscritti": 1241,
+     "iscritti_stranieri": 179,
+     "iscritti_diversamente_abili": 29,
+     "domande_valide": 1010,
+     "lista_attesa_iniziale": 342,
+     "lista_attesa_finale": 97
+    },
+    "2017-2018": {
+     "n_strutture": 24,
+     "posti": 1266,
+     "iscritti": 1198,
+     "iscritti_stranieri": 188,
+     "iscritti_diversamente_abili": 27,
+     "domande_valide": 970,
+     "lista_attesa_iniziale": 316,
+     "lista_attesa_finale": 45
+    },
+    "2018-2019": {
+     "n_strutture": 23,
+     "posti": 1240,
+     "iscritti": 1192,
+     "iscritti_stranieri": 211,
+     "iscritti_diversamente_abili": 21,
+     "domande_valide": 895,
+     "lista_attesa_iniziale": 258,
+     "lista_attesa_finale": 19
+    },
+    "2019-2020": {
+     "n_strutture": 23,
+     "posti": 1243,
+     "iscritti": 1175,
+     "iscritti_stranieri": 193,
+     "iscritti_diversamente_abili": 23,
+     "domande_valide": 812,
+     "lista_attesa_iniziale": 210,
+     "lista_attesa_finale": 23
+    },
+    "2020-2021": {
+     "n_strutture": 22,
+     "posti": 1146,
+     "iscritti": 1032,
+     "iscritti_stranieri": 125,
+     "iscritti_diversamente_abili": 21,
+     "domande_valide": 781,
+     "lista_attesa_iniziale": 235,
+     "lista_attesa_finale": 37
+    },
+    "2021-2022": {
+     "n_strutture": 22,
+     "posti": 1144,
+     "iscritti": 1097,
+     "iscritti_stranieri": 145,
+     "iscritti_diversamente_abili": 21,
+     "domande_valide": 892,
+     "lista_attesa_iniziale": 302,
+     "lista_attesa_finale": 24
+    },
+    "2022-2023": {
+     "n_strutture": 23,
+     "posti": 1213,
+     "iscritti": 1173,
+     "iscritti_stranieri": 155,
+     "iscritti_diversamente_abili": 20,
+     "domande_valide": 795,
+     "lista_attesa_iniziale": 227,
+     "lista_attesa_finale": 62
+    },
+    "2023-2024": {
+     "n_strutture": 21,
+     "posti": 1139,
+     "iscritti": 1131,
+     "iscritti_stranieri": 146,
+     "iscritti_diversamente_abili": 23,
+     "domande_valide": 755,
+     "lista_attesa_iniziale": 305,
+     "lista_attesa_finale": 93
+    },
+    "2024-2025": {
+     "n_strutture": 21,
+     "posti": 1168,
+     "iscritti": 1156,
+     "iscritti_stranieri": 141,
+     "iscritti_diversamente_abili": 27,
+     "domande_valide": 804,
+     "lista_attesa_iniziale": 269,
+     "lista_attesa_finale": 39
+    }
+   }
+  },
+  "15": {
+   "anno_educativo": "2024-2025",
+   "n_strutture": 14,
+   "posti": 619,
+   "iscritti": 598,
+   "iscritti_stranieri": 137,
+   "iscritti_diversamente_abili": 20,
+   "strutture_capienza_zero": 0,
+   "righe_senza_dato_disabili": 0,
+   "posti_per_tipologia": {
+    "COMUNALE - Capitolina": 534,
+    "COMUNALE - Ponte": 20,
+    "PRIVATO - Convenzione": 65
+   },
+   "strutture_per_tipologia": {
+    "COMUNALE - Capitolina": 10,
+    "COMUNALE - Ponte": 1,
+    "PRIVATO - Convenzione": 3
+   },
+   "domande_valide": 595,
+   "lista_attesa_iniziale": 278,
+   "lista_attesa_finale": 125,
+   "serie_storica": {
+    "2011-2012": {
+     "n_strutture": 15,
+     "posti": 591,
+     "iscritti": 635,
+     "iscritti_stranieri": 114,
+     "iscritti_diversamente_abili": 6,
+     "domande_valide": 821,
+     "lista_attesa_iniziale": 450,
+     "lista_attesa_finale": 294
+    },
+    "2012-2013": {
+     "n_strutture": 15,
+     "posti": 652,
+     "iscritti": 642,
+     "iscritti_stranieri": 128,
+     "iscritti_diversamente_abili": 9,
+     "domande_valide": 892,
+     "lista_attesa_iniziale": 535,
+     "lista_attesa_finale": 368
+    },
+    "2013-2014": {
+     "n_strutture": 15,
+     "posti": 652,
+     "iscritti": 651,
+     "iscritti_stranieri": 106,
+     "iscritti_diversamente_abili": 18,
+     "domande_valide": 996,
+     "lista_attesa_iniziale": 639,
+     "lista_attesa_finale": 444
+    },
+    "2014-2015": {
+     "n_strutture": 15,
+     "posti": 627,
+     "iscritti": 620,
+     "iscritti_stranieri": 100,
+     "iscritti_diversamente_abili": 21,
+     "domande_valide": 834,
+     "lista_attesa_iniziale": 509,
+     "lista_attesa_finale": 307
+    },
+    "2015-2016": {
+     "n_strutture": 16,
+     "posti": 673,
+     "iscritti": 649,
+     "iscritti_stranieri": 116,
+     "iscritti_diversamente_abili": 10,
+     "domande_valide": 706,
+     "lista_attesa_iniziale": 339,
+     "lista_attesa_finale": 138
+    },
+    "2016-2017": {
+     "n_strutture": 16,
+     "posti": 676,
+     "iscritti": 642,
+     "iscritti_stranieri": 143,
+     "iscritti_diversamente_abili": 18,
+     "domande_valide": 599,
+     "lista_attesa_iniziale": 235,
+     "lista_attesa_finale": 58
+    },
+    "2017-2018": {
+     "n_strutture": 16,
+     "posti": 676,
+     "iscritti": 647,
+     "iscritti_stranieri": 136,
+     "iscritti_diversamente_abili": 15,
+     "domande_valide": 634,
+     "lista_attesa_iniziale": 276,
+     "lista_attesa_finale": 73
+    },
+    "2018-2019": {
+     "n_strutture": 16,
+     "posti": 671,
+     "iscritti": 596,
+     "iscritti_stranieri": 113,
+     "iscritti_diversamente_abili": 15,
+     "domande_valide": 645,
+     "lista_attesa_iniziale": 280,
+     "lista_attesa_finale": 88
+    },
+    "2019-2020": {
+     "n_strutture": 16,
+     "posti": 672,
+     "iscritti": 611,
+     "iscritti_stranieri": 128,
+     "iscritti_diversamente_abili": 16,
+     "domande_valide": 604,
+     "lista_attesa_iniziale": 214,
+     "lista_attesa_finale": 43
+    },
+    "2020-2021": {
+     "n_strutture": 17,
+     "posti": 689,
+     "iscritti": 561,
+     "iscritti_stranieri": 122,
+     "iscritti_diversamente_abili": 13,
+     "domande_valide": 519,
+     "lista_attesa_iniziale": 186,
+     "lista_attesa_finale": 80
+    },
+    "2021-2022": {
+     "n_strutture": 15,
+     "posti": 629,
+     "iscritti": 605,
+     "iscritti_stranieri": 127,
+     "iscritti_diversamente_abili": 20,
+     "domande_valide": 552,
+     "lista_attesa_iniziale": 198,
+     "lista_attesa_finale": 70
+    },
+    "2022-2023": {
+     "n_strutture": 15,
+     "posti": 629,
+     "iscritti": 620,
+     "iscritti_stranieri": 130,
+     "iscritti_diversamente_abili": 16,
+     "domande_valide": 612,
+     "lista_attesa_iniziale": 310,
+     "lista_attesa_finale": 128
+    },
+    "2023-2024": {
+     "n_strutture": 15,
+     "posti": 637,
+     "iscritti": 617,
+     "iscritti_stranieri": 119,
+     "iscritti_diversamente_abili": 23,
+     "domande_valide": 576,
+     "lista_attesa_iniziale": 265,
+     "lista_attesa_finale": 116
+    },
+    "2024-2025": {
+     "n_strutture": 14,
+     "posti": 619,
+     "iscritti": 598,
+     "iscritti_stranieri": 137,
+     "iscritti_diversamente_abili": 20,
+     "domande_valide": 595,
+     "lista_attesa_iniziale": 278,
+     "lista_attesa_finale": 125
+    }
+   }
+  }
+ },
+ "roma": {
+  "anno_educativo": "2024-2025",
+  "n_strutture": 411,
+  "posti": 19907,
+  "iscritti": 19017,
+  "iscritti_stranieri": 1941,
+  "iscritti_diversamente_abili": 411,
+  "strutture_capienza_zero": 0,
+  "righe_senza_dato_disabili": 0,
+  "posti_per_tipologia": {
+   "COMUNALE - Capitolina": 13053,
+   "COMUNALE - In appalto": 591,
+   "COMUNALE - Ponte": 318,
+   "PRIVATO - Aziendale": 264,
+   "PRIVATO - Convenzione": 5233,
+   "PRIVATO - Project Financing": 269,
+   "SPAZIO GIOCO PRIVATO - Convenzione": 179
+  },
+  "strutture_per_tipologia": {
+   "COMUNALE - Capitolina": 220,
+   "COMUNALE - In appalto": 7,
+   "COMUNALE - Ponte": 16,
+   "PRIVATO - Aziendale": 13,
+   "PRIVATO - Convenzione": 145,
+   "PRIVATO - Project Financing": 4,
+   "SPAZIO GIOCO PRIVATO - Convenzione": 6
+  },
+  "domande_valide": 12565,
+  "lista_attesa_iniziale": 3884,
+  "lista_attesa_finale": 877,
+  "serie_storica": {
+   "2011-2012": {
+    "n_strutture": 436,
+    "posti": 19401,
+    "iscritti": 20104,
+    "iscritti_stranieri": 1943,
+    "iscritti_diversamente_abili": 195,
+    "domande_valide": 19016,
+    "lista_attesa_iniziale": 8105,
+    "lista_attesa_finale": 4151
+   },
+   "2012-2013": {
+    "n_strutture": 429,
+    "posti": 21030,
+    "iscritti": 20384,
+    "iscritti_stranieri": 1976,
+    "iscritti_diversamente_abili": 350,
+    "domande_valide": 19607,
+    "lista_attesa_iniziale": 8623,
+    "lista_attesa_finale": 4435
+   },
+   "2013-2014": {
+    "n_strutture": 431,
+    "posti": 21030,
+    "iscritti": 20475,
+    "iscritti_stranieri": 1926,
+    "iscritti_diversamente_abili": 454,
+    "domande_valide": 20651,
+    "lista_attesa_iniziale": 9328,
+    "lista_attesa_finale": 4892
+   },
+   "2014-2015": {
+    "n_strutture": 429,
+    "posti": 21067,
+    "iscritti": 20427,
+    "iscritti_stranieri": 1896,
+    "iscritti_diversamente_abili": 480,
+    "domande_valide": 19501,
+    "lista_attesa_iniziale": 8296,
+    "lista_attesa_finale": 3226
+   },
+   "2015-2016": {
+    "n_strutture": 466,
+    "posti": 21865,
+    "iscritti": 19626,
+    "iscritti_stranieri": 2076,
+    "iscritti_diversamente_abili": 366,
+    "domande_valide": 16025,
+    "lista_attesa_iniziale": 5232,
+    "lista_attesa_finale": 674
+   },
+   "2016-2017": {
+    "n_strutture": 472,
+    "posti": 21654,
+    "iscritti": 19881,
+    "iscritti_stranieri": 2362,
+    "iscritti_diversamente_abili": 398,
+    "domande_valide": 15210,
+    "lista_attesa_iniziale": 3923,
+    "lista_attesa_finale": 793
+   },
+   "2017-2018": {
+    "n_strutture": 454,
+    "posti": 21175,
+    "iscritti": 19462,
+    "iscritti_stranieri": 2430,
+    "iscritti_diversamente_abili": 400,
+    "domande_valide": 14776,
+    "lista_attesa_iniziale": 4315,
+    "lista_attesa_finale": 674
+   },
+   "2018-2019": {
+    "n_strutture": 443,
+    "posti": 20956,
+    "iscritti": 19219,
+    "iscritti_stranieri": 2488,
+    "iscritti_diversamente_abili": 392,
+    "domande_valide": 14475,
+    "lista_attesa_iniziale": 3941,
+    "lista_attesa_finale": 724
+   },
+   "2019-2020": {
+    "n_strutture": 436,
+    "posti": 20671,
+    "iscritti": 19008,
+    "iscritti_stranieri": 2580,
+    "iscritti_diversamente_abili": 377,
+    "domande_valide": 12894,
+    "lista_attesa_iniziale": 3114,
+    "lista_attesa_finale": 468
+   },
+   "2020-2021": {
+    "n_strutture": 438,
+    "posti": 20561,
+    "iscritti": 16742,
+    "iscritti_stranieri": 1975,
+    "iscritti_diversamente_abili": 284,
+    "domande_valide": 12024,
+    "lista_attesa_iniziale": 2960,
+    "lista_attesa_finale": 554
+   },
+   "2021-2022": {
+    "n_strutture": 423,
+    "posti": 20392,
+    "iscritti": 17911,
+    "iscritti_stranieri": 2093,
+    "iscritti_diversamente_abili": 320,
+    "domande_valide": 12601,
+    "lista_attesa_iniziale": 2938,
+    "lista_attesa_finale": 435
+   },
+   "2022-2023": {
+    "n_strutture": 421,
+    "posti": 20358,
+    "iscritti": 19135,
+    "iscritti_stranieri": 2061,
+    "iscritti_diversamente_abili": 363,
+    "domande_valide": 12330,
+    "lista_attesa_iniziale": 3304,
+    "lista_attesa_finale": 739
+   },
+   "2023-2024": {
+    "n_strutture": 419,
+    "posti": 20179,
+    "iscritti": 19355,
+    "iscritti_stranieri": 2006,
+    "iscritti_diversamente_abili": 374,
+    "domande_valide": 12626,
+    "lista_attesa_iniziale": 3975,
+    "lista_attesa_finale": 1073
+   },
+   "2024-2025": {
+    "n_strutture": 411,
+    "posti": 19907,
+    "iscritti": 19017,
+    "iscritti_stranieri": 1941,
+    "iscritti_diversamente_abili": 411,
+    "domande_valide": 12565,
+    "lista_attesa_iniziale": 3884,
+    "lista_attesa_finale": 877
+   }
+  }
+ }
+}

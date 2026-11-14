@@ -1,0 +1,35 @@
+name: Problema del sito
+description: Una pagina non si apre, si vede male o un comando non funziona
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Per un numero sbagliato usa il modello "Errore nei dati". Per un problema di sicurezza non aprire una issue: vedi SECURITY.md.
+  - type: input
+    id: pagina
+    attributes:
+      label: Pagina o comando
+      placeholder: https://.../confronto/?a=1&b=2 oppure npm run build
+    validations:
+      required: true
+  - type: textarea
+    id: cosa
+    attributes:
+      label: Cosa succede
+      description: Cosa ti aspettavi e cosa vedi invece. Se c'è un errore, incollalo
+    validations:
+      required: true
+  - type: textarea
+    id: passi
+    attributes:
+      label: Come riprodurlo
+      placeholder: |
+        1. apri ...
+        2. clicca ...
+  - type: input
+    id: ambiente
+    attributes:
+      label: Browser e dispositivo, o sistema e versioni
+      placeholder: Safari 26 su iPhone; oppure macOS, Node 24, Python 3.14

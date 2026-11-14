@@ -1,0 +1,8 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+# scritti da scripts/prepare-data.mjs a ogni dev/build: si rigenerano dagli snapshot
+generated/*
+!generated/.gitkeep

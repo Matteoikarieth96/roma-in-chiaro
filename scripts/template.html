@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roma in chiaro</title>
+<meta name="description" content="Bilancio, appalti, progetti e profilo dei 15 Municipi di Roma Capitale, con fonte e periodo per ogni numero.">
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<!-- Nessun font esterno: caratteri di sistema (vedi --font). -->
+<!--
+  Codice distribuito sotto GNU AGPL-3.0 (vedi LICENSE).
+  Palette, regole di formato e impostazione editoriale derivano da
+  DoveVannoINostriSoldi (github.com/Italian-Builders-Org/DoveVannoINostriSoldi, AGPL-3.0).
+-->
+<style>
+/* Stile sobrio: fondo grigio chiaro, schede bianche con angoli arrotondati, vetro solo dove qualcosa galleggia
+   (testata, finestre informative). Porpora come unico colore d'accento.
+   Solo colori: nessuno stemma, logo o marchio di Roma Capitale. Contrasti in NOTE.md. */
+:root{
+  color-scheme:light;
+  --bg:#f5f5f7;--raised:#ffffff;--surface:#f0f0f3;--text:#1d1d1f;--muted:#424245;--soft:#68686d;
+  --glass:rgba(245,245,247,.74);--glass-hi:rgba(255,255,255,.86);
+  --line:rgba(0,0,0,.08);--line-strong:rgba(0,0,0,.2);--fill:rgba(0,0,0,.055);--fill-hi:#ffffff;
+  --shadow:0 1px 2px rgba(0,0,0,.04),0 6px 24px rgba(0,0,0,.05);--shadow-pop:0 14px 44px rgba(0,0,0,.18);
+  --accent:#8c1d33;--accent-bg:#f6e8eb;--on-accent:#ffffff;
+  --data:#b8566b;--data-hl:#8c1d33;--track:#e8e8ed;
+  --map-1:#f5ebcf;--map-2:#e2c27c;--map-3:#c98b4a;--map-4:#a44f3e;--map-5:#761b31;--map-na:#dcdce0;--map-edge:#ffffff;
+  --cmp-a:#8c1d33;--cmp-b:#9a6f1c;
+  --warn:#7a5300;--warn-bg:#fbf3df;
+  --strong-bg:#1d1d1f;--on-strong:#ffffff;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --display:-apple-system,BlinkMacSystemFont,"SF Pro Display",system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+  --r-lg:20px;--r-md:14px;--r-sm:10px;
+  --max:1200px;--gutter:28px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --bg:#000000;--raised:#1c1c1e;--surface:#2c2c2e;--text:#f5f5f7;--muted:#d1d1d6;--soft:#98989d;
+  --glass:rgba(22,22,23,.72);--glass-hi:rgba(44,44,46,.88);
+  --line:rgba(255,255,255,.1);--line-strong:rgba(255,255,255,.24);--fill:rgba(255,255,255,.08);--fill-hi:rgba(255,255,255,.18);
+  --shadow:0 0 0 1px rgba(255,255,255,.04);--shadow-pop:0 14px 44px rgba(0,0,0,.6);
+  --accent:#ff9aab;--accent-bg:#3a1a22;--on-accent:#2a0d14;
+  --data:#c06a80;--data-hl:#ff9aab;--track:#38383a;
+  --map-1:#3b2630;--map-2:#6a2f41;--map-3:#a24b4b;--map-4:#cf8a52;--map-5:#ecca82;--map-na:#3a3a3c;--map-edge:#1c1c1e;
+  --cmp-a:#ff9aab;--cmp-b:#a8822f;
+  --warn:#e9bc68;--warn-bg:#302619;
+  --strong-bg:#f5f5f7;--on-strong:#1c1c1e;
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#000000;--raised:#1c1c1e;--surface:#2c2c2e;--text:#f5f5f7;--muted:#d1d1d6;--soft:#98989d;
+  --glass:rgba(22,22,23,.72);--glass-hi:rgba(44,44,46,.88);
+  --line:rgba(255,255,255,.1);--line-strong:rgba(255,255,255,.24);--fill:rgba(255,255,255,.08);--fill-hi:rgba(255,255,255,.18);
+  --shadow:0 0 0 1px rgba(255,255,255,.04);--shadow-pop:0 14px 44px rgba(0,0,0,.6);
+  --accent:#ff9aab;--accent-bg:#3a1a22;--on-accent:#2a0d14;
+  --data:#c06a80;--data-hl:#ff9aab;--track:#38383a;
+  --map-1:#3b2630;--map-2:#6a2f41;--map-3:#a24b4b;--map-4:#cf8a52;--map-5:#ecca82;--map-na:#3a3a3c;--map-edge:#1c1c1e;
+  --cmp-a:#ff9aab;--cmp-b:#a8822f;
+  --warn:#e9bc68;--warn-bg:#302619;
+  --strong-bg:#f5f5f7;--on-strong:#1c1c1e;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:15px;line-height:1.47;-webkit-font-smoothing:antialiased;letter-spacing:-.003em}
+a{color:inherit;text-decoration-color:var(--line-strong);text-underline-offset:3px}
+a:hover{text-decoration-color:currentColor}
+button,select,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+@media (max-width:640px){:root{--gutter:16px}}
+.glass{background:var(--glass-hi);-webkit-backdrop-filter:blur(24px) saturate(180%);backdrop-filter:blur(24px) saturate(180%)}
+
+.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1.15;min-width:0}
+.brand strong{font:600 17px/1.15 var(--display);letter-spacing:-.015em}
+.brand small{font-size:11px;color:var(--soft)}
+.donor{margin-left:8px;display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.donor span{font-size:11px;color:var(--soft);font-weight:500;white-space:nowrap}
+.donor img{height:21px;width:auto;opacity:.9;display:block}
+:root[data-theme="dark"] .donor img{filter:invert(1)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .donor img{filter:invert(1)}}
+.theme{flex:none;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:0;background:var(--fill);cursor:pointer}
+.theme svg{width:17px;height:17px}
+.theme:hover{color:var(--accent)}
+/* tipografia */
+h1{font:700 clamp(32px,5vw,52px)/1.06 var(--display);letter-spacing:-.028em;margin:0 0 12px}
+h1 em{font-style:normal}
+h2{font:700 24px/1.2 var(--display);letter-spacing:-.018em;margin:0}
+h3{font-size:15px;line-height:1.3;margin:0 0 12px;font-weight:600;display:flex;align-items:center;gap:2px}
+.lede{font-size:19px;line-height:1.4;color:var(--muted);max-width:60ch;margin:0}
+.hero{padding:48px 0 28px}
+section.block{padding:32px 0 8px}
+section.block>.head{display:flex;justify-content:space-between;gap:12px 16px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+section.block>.head>div{min-width:0}
+section.block>.head h2{display:flex;align-items:center;gap:2px}
+
+/* schede */
+.panel{background:var(--raised);border-radius:var(--r-lg);padding:22px;box-shadow:var(--shadow);min-width:0;overflow-wrap:anywhere}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.map-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:14px}
+@media (max-width:900px){.g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.map-layout,.g2{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.g3{grid-template-columns:minmax(0,1fr)}}
+
+/* KPI */
+.kpi{background:var(--raised);border-radius:var(--r-lg);padding:18px 20px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:2px;min-width:0}
+.kpi .l{font-size:13px;color:var(--soft);font-weight:500}
+.kpi .v{font:600 30px/1.15 var(--display);letter-spacing:-.025em;font-variant-numeric:tabular-nums;margin-top:4px}
+.kpi .x{font-size:13px;color:var(--soft);font-variant-numeric:tabular-nums}
+.kpi.na .v{color:var(--soft);font-size:18px;font-weight:500}
+
+/* fonte e note */
+.src{font-size:12px;color:var(--soft);margin:10px 0 0;line-height:1.45}
+.src a{color:var(--muted)}
+p.fonte{display:flex;align-items:center;gap:2px;margin-top:12px}
+.caveat{font-size:13px;background:var(--warn-bg);border-radius:var(--r-md);color:var(--text);padding:12px 14px;margin-top:14px}
+.caveat b{color:var(--warn)}
+.panel ul:not([class]){margin:10px 0;padding-left:20px}
+.panel ul:not([class])>li+li{margin-top:7px}
+.panel p{margin:12px 0}
+.panel>:first-child,.panel>h3+p{margin-top:0}
+.panel>:last-child{margin-bottom:0}
+.na-note{color:var(--soft)}
+
+/* icona info e finestra */
+.info{display:inline-grid;place-items:center;flex:none;width:24px;height:24px;margin:-4px 0 -4px 2px;padding:0;border:0;border-radius:50%;background:none;color:var(--soft);cursor:pointer;vertical-align:middle}
+.info svg{width:16px;height:16px}
+.info:hover,.info[aria-expanded="true"]{color:var(--accent)}
+#pop{position:fixed;z-index:30;left:0;top:0;max-width:min(360px,calc(100vw - 32px));padding:12px 14px;border-radius:var(--r-md);border:1px solid var(--line);box-shadow:var(--shadow-pop);font-size:13px;line-height:1.45;color:var(--text);font-weight:400;text-align:left;white-space:normal;overflow-wrap:anywhere}
+#pop[hidden]{display:none}
+#pop p,#pop ul{margin:0 0 6px}#pop>:last-child{margin-bottom:0}
+#pop a{color:var(--accent)}
+
+/* mappa */
+.map svg{width:100%;height:auto;display:block}
+.map path{stroke:var(--map-edge);stroke-width:1.2;cursor:pointer}
+.map path:hover,.map path.on{stroke:var(--text);stroke-width:2}
+.map text{font:600 14px var(--display);fill:var(--text);pointer-events:none;paint-order:stroke;stroke:var(--map-edge);stroke-width:3px}
+.legend{display:flex;gap:6px 14px;align-items:center;font-size:12px;color:var(--soft);margin-top:14px;flex-wrap:wrap}
+.legend .li{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:4px}
+.metric-pick{display:flex;gap:8px;align-items:center;min-width:0;max-width:100%}
+select{background:var(--raised);border:1px solid var(--line);border-radius:999px;padding:8px 14px;min-width:0;max-width:100%;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+select{padding-right:10px;text-overflow:ellipsis}
+.tip{position:fixed;pointer-events:none;background:var(--strong-bg);color:var(--on-strong);padding:7px 11px;border-radius:var(--r-sm);font-size:13px;z-index:20;display:none;max-width:260px;box-shadow:var(--shadow-pop)}
+
+/* barre */
+.bars{display:flex;flex-direction:column;gap:8px}
+.bar-row{display:grid;grid-template-columns:minmax(90px,170px) minmax(0,1fr) auto;gap:12px;align-items:center;font-size:13px;text-decoration:none}
+.bar-row .n{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-row .t{background:var(--track);height:10px;border-radius:999px;position:relative}
+.bar-row .t i{position:absolute;left:0;top:0;bottom:0;background:var(--data);border-radius:999px;min-width:4px}
+.bar-row .t b{position:absolute;top:-4px;bottom:-4px;width:2px;border-radius:2px;background:var(--text)}
+.bar-row .val{font-variant-numeric:tabular-nums;text-align:right;min-width:84px}
+.bar-row.hl .n{font-weight:600}
+.bar-row.hl .t i{background:var(--data-hl)}
+a.bar-row:hover .n{text-decoration:underline}
+
+/* tabelle */
+.table-wrap{overflow:auto;background:var(--raised);border-radius:var(--r-lg);box-shadow:var(--shadow);max-height:80vh}
+table{border-collapse:separate;border-spacing:0;width:100%;font-size:13px}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-weight:600;font-size:12px;color:var(--soft);background:var(--surface);position:sticky;top:0;z-index:1}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:var(--fill)}
+th.sort{cursor:pointer;user-select:none}
+th.sort:hover{color:var(--text)}
+th[aria-sort]{color:var(--text)}
+th[aria-sort="ascending"] .lab::after{content:" ↑"}
+th[aria-sort="descending"] .lab::after{content:" ↓"}
+th small{font-weight:400}
+tr.tot td{font-weight:600;background:var(--surface)}
+td>a[href^="#/municipio/"]:only-child{white-space:nowrap}
+tr[hidden]{display:none}
+
+/* municipio e confronto */
+.mun-nav{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 24px}
+.mun-nav a{min-width:42px;text-align:center;padding:6px 10px;border-radius:999px;text-decoration:none;font-size:13px;font-weight:600;background:var(--raised);box-shadow:var(--shadow)}
+.mun-nav a:hover{color:var(--accent)}
+.mun-nav a[aria-current="page"]{background:var(--accent);color:var(--on-accent)}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:999px;border:0;background:var(--fill);text-decoration:none;font-size:14px;font-weight:500;cursor:pointer}
+.btn:hover{color:var(--accent)}
+.hero .btn{margin-top:16px}
+.pick2{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:20px}
+.pick2 label{display:inline-flex;align-items:center;gap:8px;min-width:0}
+.pick2 .btn{margin-top:0}
+.dot{display:inline-block;flex:none;width:12px;height:12px;border-radius:50%}
+.dot.a{background:var(--cmp-a)}.dot.b{background:var(--cmp-b)}
+.who{display:flex;flex-direction:column;gap:6px}
+.who h3{margin:0 0 4px}
+.who p{margin:0;color:var(--muted)}
+td.big{font-weight:600}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font-size:12px;padding:3px 10px;border-radius:999px;background:var(--fill)}
+.people{columns:2 260px;font-size:13px;margin:0;padding:0;list-style:none}
+.people li{padding:6px 0;border-bottom:1px solid var(--line);break-inside:avoid}
+.people small{color:var(--soft)}
+details summary{cursor:pointer;color:var(--muted);font-size:13px;margin-top:12px}
+details[open]>summary{margin-bottom:8px}
+footer{margin-top:56px;padding:28px 0 48px;color:var(--soft);font-size:12px;border-top:1px solid var(--line)}
+footer p{margin:0 0 8px;max-width:90ch}
+footer .indip{color:var(--text);font-size:13px;margin-bottom:12px}
+
+@media (max-width:640px){
+  .hero{padding:28px 0 20px}
+  .lede{font-size:17px}
+  .grid.g4{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .kpi{padding:14px}
+  .kpi .v{font-size:22px}
+  .bar-row{grid-template-columns:minmax(70px,110px) minmax(0,1fr) auto;gap:8px}
+  .mun-nav a{min-width:38px;padding:5px 8px}
+  .metric-pick,.metric-pick select{width:100%}
+    .panel{padding:16px}
+  th,td{padding:10px 8px}
+  th:first-child,td:first-child{padding-left:12px;min-width:9.5em}
+  th:last-child,td:last-child{padding-right:12px}
+}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ================= menu a sinistra (14/11, come la versione Next.js in web/) =================
+   Barra in alto sottile: nome, "un progetto di" Urbe Hub, ricerca e tema.
+   Le sezioni passano nel menu a sinistra; sotto i 960px il menu diventa un pannello che si apre
+   con il pulsante a sinistra del nome. */
+:root{--side:236px;--bar:58px;--side-bg:#ebebef;--side-on:#ffffff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--side-bg:#121214;--side-on:#2c2c2e}}
+:root[data-theme="dark"]{--side-bg:#121214;--side-on:#2c2c2e}
+.topbar{position:sticky;top:0;z-index:20;background:var(--glass);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--line)}
+.topbar .in{display:flex;align-items:center;gap:12px;min-height:var(--bar);padding:0 var(--gutter)}
+.topbar .brand{margin-right:auto}
+.topbar .tools{display:flex;align-items:center;gap:8px;flex:none}
+/* pulsante del menu: sul computer apre e chiude la colonna (icona a pannello), sul telefono apre il pannello (icona a righe) */
+.menu-btn{display:grid}
+.menu-btn .ic-burger{display:none}
+/* colonna del menu come quella di un'app: tutta l'altezza, fondo appena diverso dalla pagina, linea sottile a destra */
+.frame{display:grid;grid-template-columns:var(--side) minmax(0,1fr);align-items:start}
+.content{min-width:0}
+.content>.wrap,.content>footer>.wrap{max-width:var(--max);padding:0 var(--gutter)}
+.side{position:sticky;top:var(--bar);height:calc(100vh - var(--bar));height:calc(100dvh - var(--bar));overflow:auto;padding:24px 12px 24px calc(var(--gutter) - 12px);overscroll-behavior:contain;background:var(--side-bg);border-right:1px solid var(--line)}
+@media (min-width:960px){
+  :root[data-menu="chiuso"] .frame{grid-template-columns:minmax(0,1fr)}
+  :root[data-menu="chiuso"] .side{display:none}
+}
+.side-head{display:none}
+.side ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.side .grp+.grp{margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+.side .grp-t{font-size:12px;font-weight:600;color:var(--soft);margin:0 12px 6px}
+.side a{display:flex;align-items:center;gap:10px;min-height:38px;padding:8px 12px;border-radius:var(--r-sm);text-decoration:none;font-size:14px;font-weight:500;color:var(--muted)}
+.side a svg{width:18px;height:18px;flex:none;color:var(--soft)}
+.side a:hover{background:var(--fill);color:var(--text)}
+.side a[aria-current="page"]{background:var(--side-on);color:var(--text);font-weight:600;box-shadow:var(--shadow)}
+.side a[aria-current="page"] svg{color:var(--accent)}
+/* contatti, in fondo alla colonna */
+.side .contatti{margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+.side .contatti a,.side .side-txt{align-items:flex-start}
+.side .contatti svg{margin-top:1px}
+.side .contatti small{display:block;margin-top:2px;font-size:12px;font-weight:400;color:var(--soft);overflow-wrap:break-word}
+.side .side-txt{display:flex;gap:10px;min-height:38px;padding:8px 12px;font-size:14px;color:var(--soft)}
+.side .side-txt svg{width:18px;height:18px;flex:none}
+.scrim{display:none}
+@media (max-width:959px){
+  .frame{display:block}
+  .menu-btn .ic-burger{display:block}
+  .menu-btn .ic-side{display:none}
+  .side{position:fixed;top:0;left:0;bottom:0;z-index:40;width:min(300px,86vw);max-height:none;height:100dvh;padding:12px 12px 24px;
+    background:var(--raised);box-shadow:var(--shadow-pop);transform:translateX(-104%);visibility:hidden;transition:transform .22s ease,visibility 0s linear .22s}
+  .side[data-open="true"]{transform:none;visibility:visible;transition:transform .22s ease}
+  .side-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:4px 4px 12px 12px;margin-bottom:8px;border-bottom:1px solid var(--line)}
+  .side-head strong{font:600 17px/1.15 var(--display);letter-spacing:-.015em}
+  .side a,.side .side-txt{min-height:44px;font-size:15px}
+  .side a[aria-current="page"]{background:var(--fill);box-shadow:none}
+  .scrim{display:block;position:fixed;inset:0;z-index:39;background:rgba(0,0,0,.36)}
+  .scrim[hidden]{display:none}
+}
+@media (prefers-reduced-motion:reduce){.side,.side[data-open="true"]{transition:none}}
+@media (max-width:640px){
+  .topbar{position:static}
+  .topbar .in{flex-wrap:wrap;gap:8px 10px;padding-top:10px;padding-bottom:10px}
+  .topbar .brand{flex:1;min-width:0}
+  .topbar .brand strong{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .donor{order:4;width:100%;margin:0;justify-content:center}
+  .donor img{height:16px}
+}
+
+/* ---------- grafici delle pagine PNRR e Giubileo 2025 (sections.js, come web/lib/fondi.ts) ----------
+   Colori per categoria controllati con validate_palette.js della skill dataviz, in ordine fisso:
+   chiaro su #ffffff, scuro su #1c1c1e; --c1 è la porpora del sito, --c3 l'oro. --c-na = "altri" o "non indicato". */
+:root{--c1:#b23a55;--c2:#2a78d6;--c3:#c98500;--c4:#1baf7a;--c5:#6250d6;--c-na:#a1a1a6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--c1:#d9607a;--c2:#3987e5;--c3:#c98500;--c4:#199e70;--c5:#9085e9;--c-na:#636366}}
+:root[data-theme="dark"]{--c1:#d9607a;--c2:#3987e5;--c3:#c98500;--c4:#199e70;--c5:#9085e9;--c-na:#636366}
+
+.ch{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:8px;--h:200px;margin-top:14px}
+.ch-y{position:relative;height:var(--h);font-size:11px;color:var(--soft)}
+.ch-y span{position:absolute;right:0;transform:translateY(50%);white-space:nowrap;font-variant-numeric:tabular-nums;line-height:1}
+.ch-plot{position:relative;height:var(--h)}
+.ch-grid i{position:absolute;left:0;right:0;height:1px;background:var(--line)}
+.ch-grid i.base{background:var(--line-strong)}
+.ch-cols{position:absolute;inset:0;display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr))}
+.ch-col{position:relative;display:flex;align-items:flex-end;justify-content:center;min-width:0}
+.ch-col:hover{background:var(--fill);border-radius:6px 6px 0 0}
+.ch-bar{width:min(24px,66%);display:flex;flex-direction:column-reverse;gap:2px;border-radius:4px 4px 0 0;overflow:hidden}
+.ch-bar i{display:block;flex-basis:0;min-height:1px}
+.ch-top{position:absolute;left:50%;transform:translateX(-50%);font-size:11px;font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
+.ch-top.end{left:auto;right:0;transform:none}
+.ch-top.start{left:0;transform:none}
+.ch-x{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));font-size:11px;color:var(--soft);text-align:center;margin-top:6px;line-height:1.1}
+.ch-x span{white-space:nowrap;min-width:0;overflow:visible}
+.ch-unit{font-size:12px;color:var(--soft);margin:8px 0 0}
+.panel .ch-note{margin:10px 0 0}
+.panel .legend{margin-top:0}
+details.dati{margin-top:14px}
+details.dati summary{cursor:pointer;font-size:13px;color:var(--muted);font-weight:500}
+details.dati .table-wrap{margin-top:10px;box-shadow:none;border:1px solid var(--line);max-height:60vh}
+
+.dn{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:20px 28px;align-items:center}
+.dn svg{width:100%;max-width:220px;height:auto;display:block}
+.dn path{cursor:default}
+.dn path:hover{opacity:.82}
+.dn-l{font-size:12px;fill:var(--soft)}
+.dn-v{font:600 17px var(--display);fill:var(--text)}
+.dn-leg{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;font-size:14px}
+.dn-leg li{display:grid;grid-template-columns:14px minmax(0,1fr) auto 54px;gap:10px;align-items:center}
+.dn-leg i{width:14px;height:14px;border-radius:4px}
+.dn-leg .v,.dn-leg .p{text-align:right;font-variant-numeric:tabular-nums}
+.dn-leg .p{color:var(--soft)}
+
+.seg{display:inline-flex;background:var(--fill);border-radius:999px;padding:3px}
+.seg button{border:0;background:none;padding:6px 14px;border-radius:999px;font-size:13px;cursor:pointer;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--raised);color:var(--text);font-weight:600;box-shadow:var(--shadow)}
+
+.rk{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.rk-r{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px 12px;text-decoration:none;font-size:14px}
+.rk-t{grid-column:1/-1;font-weight:500}
+a.rk-r:hover .rk-t{text-decoration:underline}
+.rk-m{grid-column:1/-1;font-size:12px;color:var(--soft)}
+.rk-b{background:var(--track);height:10px;border-radius:999px;position:relative;align-self:center}
+.rk-b i{position:absolute;left:0;top:0;bottom:0;background:var(--data);border-radius:999px;min-width:4px}
+.rk-v{font-variant-numeric:tabular-nums;text-align:right;min-width:84px}
+
+@media (max-width:640px){
+  .ch{--h:170px;column-gap:6px}
+  .ch-x{font-size:10px}
+  .ch-x.stagger span:nth-child(even){padding-top:12px}
+  .dn{grid-template-columns:minmax(0,1fr)}
+  .dn svg{margin:0 auto;max-width:200px}
+  .dn-leg{font-size:13px}
+  .dn-leg li{grid-template-columns:14px minmax(0,1fr) auto 46px;gap:8px}
+}
+@media (prefers-reduced-motion:no-preference){.seg button{transition:background .15s}}
+</style>
+<script>/* colonna del menu chiusa sul computer: prima del primo disegno */try{if(localStorage.getItem("menu")==="chiuso")document.documentElement.dataset.menu="chiuso"}catch(e){}</script>
+</head>
+<body>
+<header class="topbar" id="topbar"><div class="in">
+  <button class="theme menu-btn" id="menu-btn" type="button" aria-label="Chiudi il menu" aria-controls="menu" aria-expanded="true"><svg class="ic-burger" viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 6h13M3.5 10h13M3.5 14h13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><svg class="ic-side" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="2.75" y="3.75" width="14.5" height="12.5" rx="2.25"/><path d="M7.75 3.75v12.5"/></svg></button>
+  <a class="brand" href="#/"><strong>Roma in chiaro</strong><small>I conti dei 15 Municipi di Roma</small></a>
+  <div class="donor"><span>un progetto di</span><img src="__URBE_LOGO__" alt="Urbe Hub" width="126" height="21"></div>
+  <div class="tools">
+  <button class="theme" type="button" id="theme" aria-label="Cambia tema"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 2.5a7.5 7.5 0 0 1 0 15z" fill="currentColor"/></svg></button>
+  </div>
+</div></header>
+<div class="frame">
+  <aside id="menu" class="side">
+    <div class="side-head"><strong>Roma in chiaro</strong><button class="theme" type="button" id="menu-close" aria-label="Chiudi il menu"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5 5 15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button></div>
+    <nav aria-label="Sezioni">
+      <div class="grp"><ul><li><a href="#/"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.75 5.25 7.25 3.5l5.5 2 4.5-1.75v11L12.75 16.5l-5.5-2-4.5 1.75z"/><path d="M7.25 3.5v11M12.75 5.5v11"/></svg><span>Mappa</span></a></li><li><a href="#/municipio/1"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4.25" y="2.75" width="11.5" height="14.5" rx="2.25"/><path d="M7.5 7h5M7.5 10h5M7.5 13h3"/></svg><span>Schede</span></a></li><li><a href="#/tutti"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="3.75" width="14.5" height="12.5" rx="2.25"/><path d="M2.75 8h14.5M2.75 12h14.5M7.75 3.75v12.5"/></svg><span>Tutti i municipi</span></a></li><li><a href="#/confronto"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5v13M14 3.5v13"/><path d="M3.5 6 6 3.5 8.5 6M11.5 14l2.5 2.5 2.5-2.5"/></svg><span>Confronta</span></a></li><li><a href="#/fonti"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.75A1.75 1.75 0 0 1 5.75 3H16v11.5H5.75A1.75 1.75 0 0 0 4 16.25z"/><path d="M4 16.25A1.75 1.75 0 0 0 5.75 18H16"/></svg><span>Fonti</span></a></li></ul></div>
+      <div class="grp"><p class="grp-t">Fondi straordinari</p><ul><li><a href="#/pnrr"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5h14"/><path d="M5 16.5V9.5M10 16.5V6M15 16.5V11.5"/><path d="M3.5 7.5 10 3l6.5 4.5"/></svg><span>PNRR</span></a></li><li><a href="#/giubileo-2025"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.75v5.5M7.25 5.5h5.5"/><path d="M4 17.25V11a6 6 0 0 1 12 0v6.25"/><path d="M2.75 17.25h14.5"/></svg><span>Giubileo 2025</span></a></li></ul></div>
+    </nav>
+    <div class="grp contatti"><p class="grp-t">Contatti</p><ul>
+      <li><a href="mailto:matteo.dandreta@gmail.com"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="4.25" width="14.5" height="11.5" rx="2"/><path d="m3.5 5.5 6.5 5 6.5-5"/></svg><span>Segnalazioni, correzioni e nuovi dati: scrivi a<small>matteo.dandreta@<wbr>gmail.com</small></span></a></li>
+      <li><a href="https://t.me/+X7hXSib0Q-o5MTQ0" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17.25 3 2.75 9l5.5 2 2 5.75z"/><path d="M8.25 11 17.25 3"/></svg><span>Gruppo Telegram di Urbe Hub</span></a></li>
+      <li id="repo-side"><span class="side-txt"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 6 3 10l4 4M13 6l4 4-4 4"/></svg><span>Codice su GitHub: in arrivo</span></span></li>
+    </ul></div>
+  </aside>
+  <div class="scrim" id="scrim" hidden aria-hidden="true"></div>
+  <div class="content" id="content">
+<main id="app" class="wrap"></main>
+<footer><div class="wrap">
+  <p class="indip"><strong>Sito indipendente, non è un sito di Roma Capitale.</strong> Non usa stemmi, loghi o marchi di Roma Capitale.</p>
+  <p>Ogni numero viene da un documento ufficiale: la fonte, il periodo e i limiti sono scritti sotto ogni blocco. Un valore insolito indica dove guardare meglio, non dimostra da solo uno spreco o un illecito.</p>
+  <p>Copyright 2026 contributori di Roma in chiaro, un progetto di Urbe Hub. Codice sotto licenza <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener">GNU AGPL-3.0</a>. Software fornito senza alcuna garanzia. <span id="repo-link">Codice sorgente: in pubblicazione</span>.</p>
+  <p>Impostazione grafica ed editoriale derivata da <a href="https://github.com/Italian-Builders-Org/DoveVannoINostriSoldi">DoveVannoINostriSoldi</a> (AGPL-3.0); questo sito non è affiliato a quel progetto.</p>
+  <p>Confini dei municipi © OpenStreetMap contributors (<a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank" rel="noopener">ODbL 1.0</a>). Dati ANAC sotto <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="noopener">CC BY-SA 4.0</a>, anche le tabelle che ne ricaviamo. Documenti di Roma Capitale riusati con citazione della fonte (art. 7 del D.Lgs. 33/2013 e art. 52 del CAD).</p>
+</div></footer>
+  </div>
+</div>
+<div class="tip" id="tip" role="status"></div>
+<div id="pop" class="glass" role="note" hidden></div>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+"use strict";
+/* Indirizzo pubblico del codice sorgente (AGPL-3.0). Vuoto finché il repository non è pubblico. */
+const REPO_URL = "https://github.com/Matteoikarieth96/roma-in-chiaro";
+const D = JSON.parse(document.getElementById("data").textContent);
+const ROMANI = ["","I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII","XIII","XIV","XV"];
+const IDS = Array.from({length:15},(_,i)=>String(i+1));
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const isNum = v => typeof v === "number" && Number.isFinite(v);
+
+/* ---------- formato (regole di DoveVannoINostriSoldi: migliaia sempre raggruppate, unità coerente in colonna) ---------- */
+const NF = (min,max) => new Intl.NumberFormat("it-IT",{minimumFractionDigits:min,maximumFractionDigits:max,useGrouping:"always"});
+const fInt = NF(0,0), f1 = NF(1,1), f2 = NF(2,2), fEur = new Intl.NumberFormat("it-IT",{style:"currency",currency:"EUR",maximumFractionDigits:0,useGrouping:"always"});
+/* le cifre piccole in una colonna in milioni (es. 36.027 € accanto a 50 mln) restano in euro: mai "0,0 mln" */
+function euroLike(v, ref){ if(!isNum(v)) return "n.d."; const s=Math.abs(ref ?? v), a=Math.abs(v);
+  if(s>=1e9 && a>=5e6) return f2.format(v/1e9)+" mld €"; if(s>=1e6 && a>=5e4) return f1.format(v/1e6)+" mln €"; return fEur.format(v); }
+function fmt(v, unit, ref){
+  if(!isNum(v)) return "n.d.";
+  switch(unit){
+    case "eur": return euroLike(v, ref);
+    case "eur_exact": return fEur.format(v);
+    case "eur_ab": return fEur.format(v);
+    case "pct": return f1.format(v)+"%";
+    case "dec": return f1.format(v);
+    default: return fInt.format(v);
+  }
+}
+function exact(v, unit){ if(!isNum(v)) return ""; return unit && unit.startsWith("eur") ? fEur.format(v) : fInt.format(v); }
+const dateIt = s => { if(!s) return "n.d."; const d=new Date(s); return isNaN(d) ? s : d.toLocaleDateString("it-IT",{day:"numeric",month:"long",year:"numeric"}); };
+
+/* ---------- icona info: il testo di approfondimento si apre passando sopra, con un tocco o con la tastiera ---------- */
+const INFO_SVG = `<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 9v5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="10" cy="6.2" r="1.05" fill="currentColor"/></svg>`;
+/* html: markup già sicuro, costruito da questo script con esc() */
+const info = (html, label) => `<button type="button" class="info" aria-label="${esc("Più informazioni" + (label ? ": " + label : ""))}" aria-expanded="false" aria-controls="pop" data-info="${esc(html)}">${INFO_SVG}</button>`;
+function addInfo(el, html, label){
+  const b = el.querySelector(":scope > .info");
+  if(b) b.dataset.info += html; else el.insertAdjacentHTML("beforeend", info(html, label));
+}
+
+/* ---------- fonti ---------- */
+const safeUrl = u => /^https?:\/\//i.test(String(u||"").trim()) ? String(u).trim() : "";
+/* Link della fonte: fonte.link [{nome,url}] se c'è; altrimenti fonte.url, che può contenere più indirizzi separati da ";". */
+function fonteLinks(f){
+  if(Array.isArray(f?.link) && f.link.length) return f.link.map(l=>({nome:l.nome||l.url, url:safeUrl(l.url)})).filter(l=>l.url);
+  const urls = String(f?.url||"").split(/\s*;\s*/).map(safeUrl).filter(Boolean);
+  return urls.map(u=>({nome: urls.length>1 ? u.replace(/^https?:\/\//,"").replace(/\/+$/,"").split("/").pop() : "", url:u}));
+}
+const aLink = (url, text) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a>`;
+/* nome della fonte, linkato se c'è un solo indirizzo; con più indirizzi, i link seguono tra parentesi */
+function fonteHtml(f){
+  const L = fonteLinks(f);
+  if(L.length===1) return aLink(L[0].url, f.nome || L[0].nome);
+  return esc(f.nome||"") + (L.length ? ` (${L.map(l=>aLink(l.url,l.nome)).join(", ")})` : "");
+}
+/* Fonti di Roma Capitale: base giuridica del riuso, se lo snapshot non la riporta già */
+const LIC_ANAC_URL = "https://creativecommons.org/licenses/by-sa/4.0/deed.it";
+const LICENZA_ROMA = "Documento pubblicato da Roma Capitale. Riuso con citazione della fonte ai sensi dell'art. 7 del D.Lgs. 33/2013 e dell'art. 52, c. 2, del CAD (D.Lgs. 82/2005).";
+function licenzaTesto(f){
+  const t = String(f?.licenza||"");
+  if(/^Roma Capitale/.test(f?.ente||"") && !/33\/2013/.test(t)) return LICENZA_ROMA;
+  return t || "non indicata";
+}
+/* Riga della fonte: in pagina solo l'ente; documento, periodo, data di download e limiti nell'icona info */
+function srcLine(snapId, extra){
+  const s = D[snapId]; if(!s) return "";
+  const f = s.fonte || {};
+  const per = typeof s.periodo === "string" ? s.periodo : "";
+  const det = [`<p>Fonte: ${fonteHtml(f)}${f.ente ? ", "+esc(f.ente) : ""}</p>`];
+  if(extra) det.push(`<p>${esc(extra)}</p>`); else if(per) det.push(`<p>${esc(per)}</p>`);
+  if(s.verificato) det.push(`<p>Scaricato il ${dateIt(s.verificato)}.</p>`);
+  det.push(`<p><a href="#/fonti">Limiti di questi dati</a></p>`);
+  return `<p class="src fonte">Fonte: ${esc(f.ente || f.nome || "dettagli")}${info(det.join(""), "fonte")}</p>`;
+}
+const naBlock = what => `<div class="panel"><p class="na-note">${esc(what)}: dato non disponibile in questa versione.</p></div>`;
+
+/* ---------- indicatori (registro unico usato da mappa, schede e confronto) ---------- */
+const A = D.profilo_annuario;
+const M = [];  // {id,label,unit,group,snap,periodo,src,get(id)->number, per?:bool, roma?:number, romaLabel?:string}
+const ROMA_LABEL_DEFAULT = "Roma";
+const romaLabelOf = m => m.romaLabel || ROMA_LABEL_DEFAULT;
+function addAnnuario(key, opts={}){
+  if(!A || !A.indicatori[key]) return;
+  const ind = A.indicatori[key];
+  const unitMap = {"€":"eur","%":"pct","km²":"dec","abitanti per km²":"int"};
+  M.push({id:"ann_"+key, label:opts.label||ind.etichetta, unit:opts.unit||unitMap[ind.unita]||"int", group:opts.group||"Profilo",
+    snap:"profilo_annuario", periodo:ind.periodo, src:`${ind.tabella}, p. ${ind.pagina}`,
+    note:ind.misura, non:ind.non_misura||[], get:id => A.municipi[id]?.[key],
+    roma: A.roma?.[key+"__somma_municipi"] ?? A.roma?.[key],
+    romaLabel: isNum(A.roma?.[key+"__somma_municipi"]) ? "somma dei municipi" : "Roma (totale)"});
+}
+function perAb(base, label, opts={}){
+  const pop = id => A?.municipi[id]?.popolazione;
+  M.push({...base, id:base.id+"_ab", label, unit:"eur_ab", per:true, ...opts,
+    get:id => { const v=base.get(id), p=pop(id); return isNum(v)&&isNum(p)&&p>0 ? v/p : null; },
+    roma: null});
+}
+/* sezioni con dati propri: popolate più sotto */
+const SECTIONS = [];
+
+addAnnuario("popolazione",{group:"Profilo"});
+addAnnuario("superficie_kmq",{group:"Profilo"});
+addAnnuario("densita_ab_kmq",{group:"Profilo"});
+addAnnuario("quota_65_e_oltre_pct",{group:"Profilo"});
+addAnnuario("quota_stranieri_pct",{group:"Profilo"});
+addAnnuario("reddito_imponibile_medio_eur",{group:"Redditi",unit:"eur_exact"});
+addAnnuario("reddito_imponibile_totale_eur",{group:"Redditi"});
+addAnnuario("contribuenti",{group:"Redditi"});
+addAnnuario("addizionale_comunale_totale_eur",{group:"Redditi"});
+addAnnuario("addizionale_comunale_media_eur",{group:"Redditi",unit:"eur_exact"});
+addAnnuario("unita_locali_attive",{group:"Imprese"});
+addAnnuario("unita_locali_attive_commercio",{group:"Imprese",label:"Unità locali attive: commercio"});
+addAnnuario("unita_locali_attive_alloggio_ristorazione",{group:"Imprese",label:"Unità locali attive: alloggio e ristorazione"});
+addAnnuario("unita_locali_attive_costruzioni",{group:"Imprese",label:"Unità locali attive: costruzioni"});
+addAnnuario("unita_locali_attive_professionali_tecniche",{group:"Imprese",label:"Unità locali attive: professioni tecniche"});
+addAnnuario("asili_nido_comunali",{group:"Servizi"});
+addAnnuario("nido_lista_attesa_finale",{group:"Servizi"});
+addAnnuario("anziani_assistiti",{group:"Servizi"});
+
+/*__SECTIONS__*/
+
+const metric = id => M.find(m => m.id === id);
+const GROUP_ORDER = ["Bilancio","Appalti","Progetti","Servizi","Redditi","Imprese","Profilo"];
+const groupsOf = list => [...new Set(list.map(m=>m.group))].sort((a,b)=>(GROUP_ORDER.indexOf(a)+99)%99-(GROUP_ORDER.indexOf(b)+99)%99);
+function values(m){ return IDS.map(id => ({id, v:m.get(id)})); }
+const metricInfo = m => `<p>${esc(m.src||"")}${m.periodo?`, ${esc(m.periodo)}`:""}.</p>${m.note?`<p>${esc(m.note)}</p>`:""}`;
+
+/* ---------- componenti ---------- */
+/* In pagina: etichetta, valore e una nota breve. Valore esatto, spiegazioni lunghe e fonte nell'icona info. */
+function kpi(label, v, unit, sub, src){
+  const na = !isNum(v);
+  const ex = !na&&unit&&unit.startsWith("eur")&&unit!=="eur_ab"&&unit!=="eur_exact" ? exact(v,unit) : "";
+  const short = sub && String(sub).length <= 34;
+  const more = [ex ? `Valore esatto: ${ex}` : "", sub && !short ? esc(sub) : "", src ? `Fonte: ${src}` : ""].filter(Boolean);
+  return `<div class="kpi${na?" na":""}"><span class="l">${esc(label)}${more.length?info(more.map(x=>`<p>${x}</p>`).join(""), label):""}</span><span class="v">${na?"Non disponibile":fmt(v,unit)}</span>${short?`<span class="x">${esc(sub)}</span>`:""}</div>`;
+}
+function barsRanking(m, hl){
+  const rows = values(m).filter(r=>isNum(r.v)).sort((a,b)=>b.v-a.v);
+  if(!rows.length) return `<p class="na-note">Dato non disponibile.</p>`;
+  const max = Math.max(...rows.map(r=>r.v)), ref = max;
+  const avg = m.roma && !m.per && m.unit!=="eur" && m.unit!=="int" ? m.roma : null;
+  const line = isNum(avg) && avg<=max;
+  return `<div class="bars">${rows.map(r=>`<a class="bar-row${r.id===hl?" hl":""}" href="#/municipio/${r.id}"><span class="n">Municipio ${ROMANI[r.id]}</span><span class="t"><i style="width:${(r.v/max*100).toFixed(2)}%"></i>${line?`<b style="left:${(avg/max*100).toFixed(2)}%" title="${esc(romaLabelOf(m))}"></b>`:""}</span><span class="val">${fmt(r.v,m.unit,ref)}</span></a>`).join("")}</div>
+  ${isNum(avg)?`<p class="src keep">${line?"La linea scura è il valore di riferimento":"Valore di riferimento"}, ${esc(romaLabelOf(m))}: ${fmt(avg,m.unit)}.</p>`:""}`;
+}
+function barsList(rows, unit){ // rows: [{label, v, href?, hl?}]
+  rows = rows.filter(r=>isNum(r.v)); if(!rows.length) return `<p class="na-note">Dato non disponibile.</p>`;
+  const max = Math.max(...rows.map(r=>r.v));
+  return `<div class="bars">${rows.map(r=>`<${r.href?`a href="${r.href}"`:"div"} class="bar-row${r.hl?" hl":""}"><span class="n" title="${esc(r.label)}">${esc(r.label)}</span><span class="t"><i style="width:${max>0?(r.v/max*100).toFixed(2):0}%"></i></span><span class="val">${fmt(r.v,unit,max)}</span></${r.href?"a":"div"}>`).join("")}</div>`;
+}
+function breaks(vals){ const s=vals.filter(isNum).sort((a,b)=>a-b); if(!s.length) return [];
+  return [0.2,0.4,0.6,0.8].map(q=>s[Math.min(s.length-1,Math.floor(q*s.length))]); }
+const mapLabels = G => G.municipi.map(x=>`<text x="${x.label[0]}" y="${x.label[1]}" text-anchor="middle" dominant-baseline="middle">${x.romano}</text>`).join("");
+function mapSvg(m, hl){
+  const G = D.mappa; if(!G) return naBlock("Mappa");
+  const vals = values(m), br = breaks(vals.map(r=>r.v));
+  const cls = v => !isNum(v) ? "var(--map-na)" : `var(--map-${1+br.filter(b=>v>=b).length})`;
+  const byId = Object.fromEntries(vals.map(r=>[r.id,r.v]));
+  const li = (c, t) => `<span class="li"><i style="background:${c}"></i>${t}</span>`;
+  return `<svg viewBox="${G.viewBox}" role="img" aria-label="Mappa dei 15 municipi: ${esc(m.label)}">${G.municipi.map(x=>{const id=String(x.municipio);return `<path d="${x.path}" fill="${cls(byId[id])}" data-id="${id}" class="${id===hl?"on":""}"><title>Municipio ${x.romano}: ${fmt(byId[id],m.unit)}</title></path>`}).join("")}${mapLabels(G)}</svg>
+  <div class="legend">${br.length?[`meno di ${fmt(br[0],m.unit)}`,...br.map(b=>`da ${fmt(b,m.unit)}`)].map((t,i)=>li(`var(--map-${i+1})`,t)).join(""):""}${vals.some(r=>!isNum(r.v))?li("var(--map-na)","non disponibile"):""}</div>`;
+}
+function metricSrc(m){ return srcLine(m.snap, [m.src, m.periodo].filter(Boolean).join(", ")); }
+function metricSelect(cur, id="pick"){
+  const groups = groupsOf(M);
+  return `<select id="${id}" aria-label="Indicatore">${groups.map(g=>`<optgroup label="${esc(g)}">${M.filter(m=>m.group===g).map(m=>`<option value="${m.id}"${m.id===cur?" selected":""}>${esc(m.label)}${m.periodo?` (${esc(m.periodo)})`:""}</option>`).join("")}</optgroup>`).join("")}</select>`;
+}
+function wireMap(root, onClick){
+  const tip = $("#tip");
+  root.querySelectorAll(".map path").forEach(p=>{
+    p.addEventListener("click",()=> onClick ? onClick(p.dataset.id) : (location.hash="#/municipio/"+p.dataset.id));
+    p.addEventListener("mousemove",e=>{tip.style.display="block";tip.textContent=p.querySelector("title").textContent;tip.style.left=Math.min(e.clientX+14, innerWidth-270)+"px";tip.style.top=(e.clientY+14)+"px";});
+    p.addEventListener("mouseleave",()=>tip.style.display="none");
+  });
+}
+
+/* ---------- testo breve: le spiegazioni lunghe passano nelle icone info ---------- */
+function compact(root){
+  root.querySelectorAll(".head h2 + p").forEach(p=>{ const h=p.previousElementSibling; addInfo(h, `<p>${p.innerHTML}</p>`, h.textContent); p.remove(); });
+  root.querySelectorAll(".panel > p.src:not(.keep):not(.fonte)").forEach(p=>{ const h=p.parentElement.querySelector(":scope > h3"); if(!h) return; addInfo(h, `<p>${p.innerHTML}</p>`, h.textContent); p.remove(); });
+  root.querySelectorAll("section.block").forEach(sec=>{
+    const notes = [...sec.querySelectorAll(":scope > p.src:not(.fonte):not(.keep)")]; if(!notes.length) return;
+    const html = notes.map(n=>`<p>${n.innerHTML}</p>`).join("");
+    const f = sec.querySelector(":scope > p.fonte > .info"), h = sec.querySelector(".head h2");
+    if(f) f.dataset.info = html + f.dataset.info; else if(h) addInfo(h, html, h.textContent); else return;
+    notes.forEach(n=>n.remove());
+  });
+}
+
+/* ---------- tabelle: ordina cliccando l'intestazione ---------- */
+function cellVal(td){
+  if(!td) return null;
+  if(td.dataset.v !== undefined) return td.dataset.v === "" ? null : Number(td.dataset.v);
+  const t = (td.innerText || td.textContent).split("\n")[0].trim();
+  if(!t || t === "n.d." || t === "Non disponibile") return null;
+  if(/^\d{4}-\d{2}-\d{2}/.test(t)) return t;
+  const m = t.match(/^[+-]?\d[\d.]*(,\d+)?/);
+  if(m){ let n = Number(m[0].replace(/\./g,"").replace(",",".")); if(/\bmld\b/.test(t)) n*=1e9; else if(/\bmln\b/.test(t)) n*=1e6; return n; }
+  return t.toLowerCase();
+}
+function cmpVals(a, b, dir){
+  if(a === null) return b === null ? 0 : 1; if(b === null) return -1;   /* i vuoti restano in fondo */
+  const r = typeof a === "number" && typeof b === "number" ? a - b : String(a).localeCompare(String(b), "it", {numeric:true});
+  return r * dir;
+}
+function enhanceTables(root){
+  root.querySelectorAll(".table-wrap > table").forEach(tbl=>{
+    if(tbl.dataset.ok) return; tbl.dataset.ok = "1";
+    const tb = tbl.tBodies[0]; if(!tb || !tbl.tHead) return;
+    const heads = [...tbl.tHead.rows[tbl.tHead.rows.length-1].cells];
+    const body = [...tb.rows].filter(r=>!r.classList.contains("tot")), tot = [...tb.rows].filter(r=>r.classList.contains("tot"));
+    let sort = {col:-1, dir:1};
+    heads.forEach((th, c)=>{
+      th.classList.add("sort"); th.tabIndex = 0;
+      const first = th.firstChild; if(first && first.nodeType === 3){ const s=document.createElement("span"); s.className="lab"; s.textContent=first.textContent; th.replaceChild(s, first); }
+      const go = e => { if(e.target.closest(".info,a")) return;
+        sort = {col:c, dir: sort.col===c ? -sort.dir : (th.classList.contains("num") ? -1 : 1)};
+        heads.forEach(h=>h.removeAttribute("aria-sort")); th.setAttribute("aria-sort", sort.dir>0 ? "ascending" : "descending");
+        body.slice().sort((x,y)=>cmpVals(cellVal(x.cells[c]), cellVal(y.cells[c]), sort.dir)).concat(tot).forEach(r=>tb.appendChild(r)); };
+      th.addEventListener("click", go); th.addEventListener("keydown", e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); go(e); } });
+    });
+  });
+}
+function afterRender(root){ if(!/^#\/?fonti/.test(location.hash)) compact(root); enhanceTables(root); }
+
+/* ---------- pagine ---------- */
+/* un segnale per pagina mostrata: si chiude quando la pagina cambia e toglie i collegamenti del codice di web/lib */
+let vista = null;
+const nuovaVista = () => { vista?.abort(); vista = new AbortController(); return vista.signal; };
+let curMetric = null;
+function pageHome(){
+  const m = metric(curMetric) || M.find(x=>x.home) || M[0];
+  curMetric = m.id;
+  const heroKpis = (window.HERO_KPIS || []).map(f=>f()).join("");
+  $("#app").innerHTML = `
+  <div class="hero"><h1>Dove vanno i soldi dei Municipi di Roma</h1>
+    <p class="lede">Bilancio, appalti, progetti e servizi dei 15 municipi. Ogni numero ha fonte e periodo.</p></div>
+  ${heroKpis?`<div class="grid g4">${heroKpis}</div>`:""}
+  <section class="block"><div class="head"><div><h2>La mappa</h2><p>Scegli un indicatore: la mappa e la classifica si aggiornano. Clicca un municipio per aprire la sua scheda.</p></div><div class="metric-pick">${metricSelect(m.id)}</div></div>
+    <div class="map-layout"><div class="panel map">${mapSvg(m)}${DAWEB.creditoMappa()}</div><div class="panel"><h3>${esc(m.label)}</h3>${barsRanking(m)}${m.note?`<p class="src">${esc(m.note)}</p>`:""}</div></div>
+    ${metricSrc(m)}</section>
+  ${(window.HOME_BLOCKS||[]).map(f=>f()).join("")}`;
+  const signal = nuovaVista();
+  $("#pick").addEventListener("change",e=>{curMetric=e.target.value;pageHome();});
+  wireMap($("#app"));
+  DAWEB.montaMappa($("#app"), signal, m, id => location.hash = "#/municipio/"+id); /* mappa con i quartieri al posto dell'SVG */
+  afterRender($("#app"));
+}
+
+function pageMunicipio(id){
+  if(!IDS.includes(id)) id="1";
+  const a = A?.municipi[id] || {};
+  const head = (window.MUN_HEAD||[]).map(f=>f(id)).join("");
+  $("#app").innerHTML = `
+  <div class="hero"><nav class="mun-nav" aria-label="Municipi">${IDS.map(i=>`<a href="#/municipio/${i}"${i===id?' aria-current="page"':""}>${ROMANI[i]}</a>`).join("")}</nav>
+    <h1>Municipio ${ROMANI[id]}</h1>${head}
+    <a class="btn" href="#/confronto/${id}/${id==="1"?"2":"1"}">Confronta con un altro municipio</a></div>
+  <div class="grid g4">${(window.MUN_KPIS||[]).map(f=>f(id)).join("")}</div>
+  ${DAWEB.graficiMunicipio(id, (window.MUN_BLOCKS||[]).map(f=>f(id)))}
+  <section class="block"><div class="head"><div><h2>Profilo del territorio</h2><p>Abitanti, redditi, imprese e servizi. A destra il valore di Roma: sotto ogni numero è scritto se è la somma dei municipi o il totale della città.</p></div></div>
+    ${A?`<div class="table-wrap"><table><thead><tr><th>Indicatore</th><th>Periodo</th><th class="num">Municipio ${ROMANI[id]}</th><th class="num">Posizione</th><th class="num">Roma</th></tr></thead><tbody>
+    ${M.filter(m=>m.snap==="profilo_annuario").map(m=>{const vs=values(m).filter(r=>isNum(r.v)).sort((x,y)=>y.v-x.v);const pos=vs.findIndex(r=>r.id===id)+1;
+      return `<tr><td>${esc(m.label)}<br><small class="src" style="margin:0">${esc(m.src)}</small></td><td>${esc(m.periodo)}</td><td class="num">${fmt(m.get(id),m.unit)}</td><td class="num" data-v="${pos||""}">${pos?pos+"° su "+vs.length:"n.d."}</td><td class="num">${fmt(m.roma,m.unit)}${isNum(m.roma)?`<br><small class="src" style="margin:0">${esc(romaLabelOf(m))}</small>`:""}</td></tr>`}).join("")}
+    </tbody></table></div>${srcLine("profilo_annuario","tabelle indicate riga per riga")}`:naBlock("Profilo")}
+  </section>`;
+  DAWEB.wireGrafici($("#app"), nuovaVista());
+  afterRender($("#app"));
+}
+
+/* Tutti i municipi: ogni indicatore in tabelle per gruppo, ordinabili */
+function pageTutti(){
+  const cols = M, groups = groupsOf(cols);
+  $("#app").innerHTML = `
+  <div class="hero"><h1>Tutti i municipi</h1>
+  <p class="lede">Ogni indicatore per i 15 municipi. Clicca un'intestazione per ordinare.</p></div>
+  ${groups.map(g=>{const gc=cols.filter(m=>m.group===g);
+    const ref = Object.fromEntries(gc.map(m=>[m.id, Math.max(...IDS.map(id=>m.get(id)).filter(isNum))]));
+    return `<section class="block"><div class="head"><div><h2>${esc(g)}</h2><p>Gli indicatori hanno periodi diversi: leggi il periodo sotto ciascun nome prima di metterli in relazione.</p></div></div>
+  <div class="table-wrap"><table><thead><tr><th>Municipio</th>${gc.map(m=>`<th class="num">${esc(m.label)}${info(metricInfo(m), m.label)}<br><small>${esc(m.periodo||"")}</small></th>`).join("")}</tr></thead>
+  <tbody>${IDS.map(id=>`<tr><td data-v="${id}"><a href="#/municipio/${id}">Municipio ${ROMANI[id]}</a></td>${gc.map(m=>{const v=m.get(id);return `<td class="num" data-v="${isNum(v)?v:""}">${fmt(v,m.unit,ref[m.id])}</td>`}).join("")}</tr>`).join("")}
+  ${gc.some(m=>isNum(m.roma))?`<tr class="tot"><td>Roma</td>${gc.map(m=>`<td class="num">${fmt(m.roma,m.unit)}${isNum(m.roma)?`<br><small style="font-weight:400">${esc(romaLabelOf(m))}</small>`:""}</td>`).join("")}</tr>`:""}</tbody></table></div>
+  ${[...new Set(gc.map(m=>m.snap))].map(s=>srcLine(s)).join("")}</section>`}).join("")}`;
+  afterRender($("#app"));
+}
+
+/* Confronta: due municipi fianco a fianco (web/lib/confronto.ts, in scripts/da-web.js) */
+function pageConfronta(a, b){
+  $("#app").innerHTML = DAWEB.htmlConfronto(a, b);
+  DAWEB.wireConfronto($("#app"), nuovaVista(), a, b, href => { location.hash = href; });
+}
+
+function pageFonti(){
+  const snaps = Object.entries(D).filter(([k,s])=>s && s.fonte && k!=="mappa");
+  const lst = v => Array.isArray(v) ? v : (v ? [v] : []);
+  $("#app").innerHTML = `
+  <div class="hero"><h1>Da dove vengono i numeri</h1>
+  <p class="lede">Il sito non calcola stime e non riempie i vuoti: se un dato manca, lo dice. Ogni insieme di dati viene scaricato da uno script che si può rilanciare e controllato contro i totali stampati nella fonte.</p></div>
+  <section class="block"><div class="head"><div><h2>Regole</h2></div></div><div class="grid g2">
+    <div class="panel"><h3>Cosa facciamo</h3><ul>
+      <li>Ogni numero porta la fonte, il periodo e la data in cui abbiamo scaricato i file della fonte.</li>
+      <li>Stanziamenti, appalti e pagamenti restano separati: sono contabilità diverse e non si sommano.</li>
+      <li>I municipi si confrontano tra loro. Accanto a ogni valore di Roma scriviamo cosa è: la somma dei municipi, il totale della città o tutte le strutture di Roma Capitale.</li>
+      <li>I progetti PNRR, Giubileo e fondi UE sono mostrati nel municipio dove si trovano. Sono gestiti per lo più dai dipartimenti di Roma Capitale: non sono spesa del municipio.</li>
+      <li>I valori per abitante usano i residenti al 31/12/2025 (Annuario, Tab. 1.2).</li></ul></div>
+    <div class="panel"><h3>Cosa non facciamo</h3><ul>
+      <li>Non stimiamo i dati mancanti e non trasformiamo un vuoto in zero.</li>
+      <li>Non attribuiamo ai municipi la spesa dei dipartimenti centrali, anche se avviene sul loro territorio. Unica eccezione sono i progetti con fondi straordinari: li mostriamo per luogo, non come spesa del municipio.</li>
+      <li>Un valore alto o basso è un segnale da approfondire, non la prova di uno spreco.</li>
+      <li>SIOPE e i pagamenti trimestrali di Roma Capitale non hanno il dettaglio per municipio: per questo non mostriamo pagamenti per municipio.</li>
+      <li>Non mostriamo le imprese aggiudicatarie: il dataset dei CIG non le contiene; ANAC le pubblica in un altro insieme di dati, non ancora collegato.</li></ul></div>
+  </div></section>
+  <section class="block"><div class="head"><div><h2>Insiemi di dati</h2></div></div><div class="grid g2">
+  ${snaps.map(([k,s])=>`<div class="panel"><h3>${esc(s.titolo||k)}</h3>
+    <p class="src" style="margin-top:0">${fonteHtml(s.fonte)}${s.fonte.ente?", "+esc(s.fonte.ente):""}</p>
+    ${s.periodo?`<p><b>Periodo:</b> ${esc(typeof s.periodo==="string"?s.periodo:Object.entries(s.periodo).map(([a,b])=>a+": "+b).join("; "))}</p>`:""}
+    ${s.misura?`<p><b>Cosa misura:</b> ${esc(s.misura)}</p>`:""}
+    ${lst(s.non_misura).length?`<p><b>Cosa non misura:</b></p><ul>${lst(s.non_misura).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
+    ${s.indicatori?`<details><summary>Limiti dei singoli indicatori</summary><ul>${Object.values(s.indicatori).map(i=>`<li><b>${esc(i.etichetta)}</b> (${esc(i.tabella)}, ${esc(i.periodo)}): ${lst(i.non_misura).map(esc).join(" ")}</li>`).join("")}</ul></details>`:""}
+    <p class="src"><b>Licenza:</b> ${esc(licenzaTesto(s.fonte))}${safeUrl(s.fonte.licenza_url)?` (${aLink(safeUrl(s.fonte.licenza_url),"testo della licenza")})`:(k==="appalti_anac"?` (${aLink(LIC_ANAC_URL,"testo della licenza")})`:"")} · file scaricati il ${dateIt(s.verificato)}</p>
+    ${k==="appalti_anac"?`<p class="src">Aggreghiamo e rielaboriamo per municipio i dati ANAC. Le tabelle che ne ricaviamo sono rilasciate con la stessa licenza, CC BY-SA 4.0.</p>`:""}</div>`).join("")}
+  <div class="panel"><h3>Confini dei municipi</h3><p class="src" style="margin-top:0">${esc(D.mappa?.fonte||"")}. I confini che ne ricaviamo restano sotto ${aLink("https://opendatacommons.org/licenses/odbl/1-0/","ODbL 1.0")}.</p></div>
+  ${DAWEB.fontiMappa()}
+  </div></section>`;
+  afterRender($("#app"));
+}
+
+/* ---------- finestra delle icone info ---------- */
+{
+  const pop = $("#pop"); let btn = null, at = 0, hideT = null;
+  const hover = () => matchMedia("(hover:hover)").matches;
+  const place = () => { if(!btn) return; const r = btn.getBoundingClientRect(), vw = document.documentElement.clientWidth, vh = innerHeight;
+    const w = pop.offsetWidth, h = pop.offsetHeight; let x = Math.min(Math.max(8, r.left + r.width/2 - w/2), vw - w - 8), y = r.bottom + 8;
+    if(y + h > vh - 8 && r.top - h - 8 > 8) y = r.top - h - 8; pop.style.left = x + "px"; pop.style.top = y + "px"; };
+  const show = b => { clearTimeout(hideT); if(btn && btn !== b) btn.setAttribute("aria-expanded","false");
+    if(btn !== b) at = Date.now(); btn = b; pop.innerHTML = b.dataset.info; pop.hidden = false; b.setAttribute("aria-expanded","true"); place(); };
+  const hide = () => { clearTimeout(hideT); if(btn) btn.setAttribute("aria-expanded","false"); btn = null; pop.hidden = true; };
+  const later = () => { clearTimeout(hideT); hideT = setTimeout(hide, 200); };
+  document.addEventListener("mouseover", e => { const b = e.target.closest(".info"); if(b && hover()) show(b); else if(e.target.closest("#pop")) clearTimeout(hideT); });
+  document.addEventListener("mouseout", e => { if(hover() && e.target.closest(".info,#pop")) later(); });
+  document.addEventListener("focusin", e => { const b = e.target.closest(".info"); if(b) show(b); });
+  document.addEventListener("click", e => { const b = e.target.closest(".info");
+    if(b){ e.preventDefault(); e.stopPropagation(); if(btn === b && Date.now() - at > 400) hide(); else show(b); return; }
+    if(!e.target.closest("#pop")) hide(); }, true);
+  document.addEventListener("keydown", e => { if(e.key === "Escape" && btn){ const b = btn; hide(); b.focus(); } });
+  addEventListener("scroll", place, {passive:true}); addEventListener("resize", hide); addEventListener("hashchange", hide);
+}
+
+/* codice di web/lib (scripts/da-web.js): va dopo tutte le funzioni qui sopra, che usa già al caricamento */
+/*__DA_WEB__*/
+
+/* ---------- router ---------- */
+const TITOLI = {tutti:"Tutti i municipi", confronto:"Confronta due municipi", fonti:"Fonti", pnrr:"PNRR", "giubileo-2025":"Giubileo 2025"};
+/* PNRR e Giubileo 2025: web/lib/fondi.ts, in scripts/da-web.js */
+function pageFondo(prog){
+  $("#app").innerHTML = DAWEB.htmlFondo(prog);
+  DAWEB.wireFondo($("#app"), nuovaVista());
+  afterRender($("#app"));
+}
+function route(){
+  vista?.abort(); vista = null;
+  const h = location.hash.replace(/^#\/?/,"").split("/");
+  const tab = h[0]||"";
+  document.querySelectorAll("#menu nav a").forEach(a=>{const t=a.getAttribute("href").replace(/^#\/?/,"").split("/")[0];if(t===tab)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");});
+  const tt = tab==="municipio" ? (ROMANI[+(h[1]||"1")] ? "Municipio "+ROMANI[+(h[1]||"1")] : "") : TITOLI[tab];
+  document.title = tt ? tt+" · Roma in chiaro" : "Roma in chiaro";
+  if(tab==="municipio") pageMunicipio(h[1]||"1");
+  else if(tab==="tutti") pageTutti();
+  else if(tab==="confronto") pageConfronta(h[1]||"1", h[2]||"");
+  else if(tab==="fonti") pageFonti();
+  else if(tab==="pnrr") pageFondo("PNRR");
+  else if(tab==="giubileo-2025") pageFondo("Giubileo 2025");
+  else pageHome();
+  if(tab!=="" || h.length>1) window.scrollTo(0,0);
+}
+
+/* ---------- menu a sinistra: sotto i 960px è un pannello che si apre dal pulsante in alto ----------
+   Pannello aperto: Esc chiude, Tab resta dentro il pannello, la pagina sotto non scorre ed è inerte.
+   Sul computer lo stesso pulsante apre e chiude la colonna (data-menu="chiuso" su <html>, ricordato in localStorage). */
+{
+  const side = $("#menu"), btn = $("#menu-btn"), scrim = $("#scrim"), bar = $("#topbar"), content = $("#content");
+  const mq = matchMedia("(max-width: 959px)");
+  let open = false, prevOv = "";
+  const chiuso = () => document.documentElement.dataset.menu === "chiuso";
+  const focusables = () => [...side.querySelectorAll("a[href],button:not([disabled])")];
+  const sync = () => {
+    const mobile = mq.matches, drawer = mobile && open;
+    if(mobile){ side.setAttribute("role","dialog"); side.setAttribute("aria-label","Menu");
+      if(drawer){ side.setAttribute("aria-modal","true"); side.removeAttribute("aria-hidden"); }
+      else { side.removeAttribute("aria-modal"); side.setAttribute("aria-hidden","true"); } }
+    else ["role","aria-label","aria-modal","aria-hidden"].forEach(x=>side.removeAttribute(x));
+    if(drawer) side.dataset.open = "true"; else delete side.dataset.open;
+    btn.setAttribute("aria-expanded", String(mobile ? drawer : !chiuso()));
+    btn.setAttribute("aria-label", !mobile && !chiuso() ? "Chiudi il menu" : "Apri il menu");
+    scrim.hidden = !drawer; bar.inert = drawer; content.inert = drawer;
+    const html = document.documentElement;
+    if(drawer && html.style.overflow !== "hidden"){ prevOv = html.style.overflow; html.style.overflow = "hidden"; }
+    else if(!drawer && html.style.overflow === "hidden") html.style.overflow = prevOv;
+  };
+  const openMenu = () => { open = true; sync(); if(mq.matches) (side.querySelector('a[aria-current="page"]') || focusables()[0])?.focus(); };
+  const closeMenu = (focusBtn = true) => { if(!open) return; open = false; sync(); if(focusBtn) btn.focus(); };
+  btn.addEventListener("click", () => {
+    if(mq.matches){ openMenu(); return; }
+    const c = !chiuso(), r = document.documentElement;
+    if(c) r.dataset.menu = "chiuso"; else delete r.dataset.menu;
+    try{ localStorage.setItem("menu", c ? "chiuso" : "aperto"); }catch(e){ /* archivio non disponibile: vale fino al prossimo caricamento */ }
+    sync();
+  });
+  $("#menu-close").addEventListener("click", () => closeMenu());
+  scrim.addEventListener("click", () => closeMenu());
+  side.querySelectorAll("nav a").forEach(a => a.addEventListener("click", () => closeMenu(false)));
+  addEventListener("hashchange", () => closeMenu(false));
+  mq.addEventListener("change", () => { if(!mq.matches) open = false; sync(); });
+  document.addEventListener("keydown", e => {
+    if(!open || !mq.matches) return;
+    if(e.key === "Escape"){ e.preventDefault(); closeMenu(); return; }
+    if(e.key !== "Tab") return;
+    const f = focusables(); if(!f.length) return;
+    const i = f.indexOf(document.activeElement);
+    if(e.shiftKey && i <= 0){ e.preventDefault(); f[f.length-1].focus(); }
+    else if(!e.shiftKey && i === f.length-1){ e.preventDefault(); f[0].focus(); }
+  });
+  sync();
+}
+window.addEventListener("hashchange",route);
+$("#theme").addEventListener("click",()=>{const r=document.documentElement;const dark=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;r.dataset.theme=dark?"light":"dark";try{localStorage.setItem("tema",r.dataset.theme)}catch(e){}});
+try{const t=localStorage.getItem("tema");if(t)document.documentElement.dataset.theme=t}catch(e){}
+if(safeUrl(REPO_URL)){ $("#repo-link").innerHTML = aLink(safeUrl(REPO_URL), "Codice sorgente");
+  const c = $("#repo-side .side-txt"); c.outerHTML = `<a href="${esc(safeUrl(REPO_URL))}" target="_blank" rel="noopener noreferrer">${c.querySelector("svg").outerHTML}<span>Codice su GitHub</span></a>`; }
+route();
+</script>
+</body>
+</html>
