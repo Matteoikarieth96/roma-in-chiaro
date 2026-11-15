@@ -9,7 +9,7 @@ import { R } from "./routes";
 
 export const D: Record<string, any> = DATA;
 /* Indirizzo pubblico del codice sorgente (AGPL-3.0). Vuoto finché il repository non è pubblico. */
-export const REPO_URL = "https://github.com/Matteoikarieth96/roma-in-chiaro";
+export const REPO_URL = "https://github.com/urbe-hub/roma-in-chiaro";
 export const ROMANI = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV"];
 export const IDS = Array.from({ length: 15 }, (_, i) => String(i + 1));
 export const esc = (s: any) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" } as Record<string, string>)[c]);
