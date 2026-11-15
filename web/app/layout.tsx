@@ -13,6 +13,7 @@ import "@/components/grafici-municipio.css";
 import "./confronto/confronto.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://romainchiaro.it"),
   title: "Roma in chiaro",
   description: "Bilancio, appalti, progetti e profilo dei 15 Municipi di Roma Capitale, con fonte e periodo per ogni numero.",
   openGraph: { title: "Roma in chiaro", description: "I conti dei 15 Municipi di Roma, con fonte e periodo per ogni numero.", siteName: "Roma in chiaro", locale: "it_IT", type: "website" },
